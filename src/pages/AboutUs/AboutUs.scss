@@ -1,0 +1,95 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    margin-top: 75px;
+
+    .top {
+        display: flex;
+        align-items: center;
+        // justify-content: space;
+        gap: 200px;
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                font-size: 36px;
+                font-weight: 500;
+                color: #413566;
+
+                span {
+                    font-weight: 600;
+                    color: #FF5033;
+                }
+            }
+        }
+
+        .right {
+            width: 50%;
+
+            h3 {
+                font-weight: 500;
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+                color: #6C646A;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .bottom {
+        display: flex;
+        align-items: center;
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            h3 {
+                font-weight: 500;
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+                color: #6C646A;
+                font-weight: 400;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                padding-left: 40px;
+                
+                li {
+                    align-items: center;
+                    list-style: disc;
+                    list-style-type: disc;
+
+                    p {
+                        font-size: 16px;
+                        color: #6C646A;
+                        font-weight: 400;
+
+                        span {
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+
+                li::marker {
+                    color: #413566;
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}

@@ -1,1 +1,78 @@
-/*# sourceMappingURL=AboutUs.css.map */
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  margin-top: 75px;
+}
+.about .top {
+  display: flex;
+  align-items: center;
+  gap: 200px;
+}
+.about .top .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about .top .left h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #413566;
+}
+.about .top .left h2 span {
+  font-weight: 600;
+  color: #FF5033;
+}
+.about .top .right {
+  width: 50%;
+}
+.about .top .right h3 {
+  font-weight: 500;
+  font-size: 24px;
+}
+.about .top .right p {
+  font-size: 16px;
+  color: #6C646A;
+  font-weight: 400;
+}
+.about .bottom {
+  display: flex;
+  align-items: center;
+}
+.about .bottom .left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.about .bottom .left h3 {
+  font-weight: 500;
+  font-size: 24px;
+}
+.about .bottom .left p {
+  font-size: 16px;
+  color: #6C646A;
+  font-weight: 400;
+}
+.about .bottom .left ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+}
+.about .bottom .left ul li {
+  align-items: center;
+  list-style: disc;
+  list-style-type: disc;
+}
+.about .bottom .left ul li p {
+  font-size: 16px;
+  color: #6C646A;
+  font-weight: 400;
+}
+.about .bottom .left ul li p span {
+  font-size: 18px;
+  font-weight: 600;
+}
+.about .bottom .left ul li::marker {
+  color: #413566;
+  font-size: 40px;
+}/*# sourceMappingURL=AboutUs.css.map */
