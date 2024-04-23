@@ -1,1 +1,193 @@
-/*# sourceMappingURL=Pricing.css.map */
+.price {
+  margin: 100px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.price .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  gap: 10px;
+}
+.price .top h1 {
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+}
+.price .top p {
+  color: #6C646A;
+  font-size: 14px;
+  font-weight: 400;
+}
+.price .top .tab {
+  background-color: #E5E5EE;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+}
+.price .top .tab button {
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #E5E5EE;
+}
+.price .middle {
+  display: flex;
+  gap: 30px;
+}
+.price .middle .school, .price .middle .general {
+  display: flex;
+  gap: 50px;
+}
+.price .middle .school .container, .price .middle .general .container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border: 2px solid #5A4C84;
+  border-radius: 10px;
+  padding: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.price .middle .school .container .wrapper, .price .middle .general .container .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.price .middle .school .container .wrapper .custome-hr, .price .middle .general .container .wrapper .custome-hr {
+  border-top: 2px solid #5A4C84;
+}
+.price .middle .school .container .wrapper .tags, .price .middle .general .container .wrapper .tags {
+  display: flex;
+  gap: 10px;
+}
+.price .middle .school .container .wrapper .tags h4,
+.price .middle .school .container .wrapper .tags .pop, .price .middle .general .container .wrapper .tags h4,
+.price .middle .general .container .wrapper .tags .pop {
+  padding: 5px 20px;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: capitalize;
+  border-radius: 10px;
+  background-color: #E5E5EE;
+}
+.price .middle .school .container .wrapper .tags .pop, .price .middle .general .container .wrapper .tags .pop {
+  background-color: #FF5033;
+  color: white;
+}
+.price .middle .school .container .wrapper .amount, .price .middle .general .container .wrapper .amount {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  border-top: 1px solid #FF5033;
+  border-bottom: 1px solid #FF5033;
+}
+.price .middle .school .container .wrapper .amount h3, .price .middle .general .container .wrapper .amount h3 {
+  font-size: 44px;
+  font-weight: 500;
+}
+.price .middle .school .container .wrapper .amount h3 .symbol, .price .middle .general .container .wrapper .amount h3 .symbol {
+  font-weight: 500;
+}
+.price .middle .school .container .wrapper .amount h3 .gst, .price .middle .general .container .wrapper .amount h3 .gst {
+  font-size: 12px;
+  font-weight: 400;
+}
+.price .middle .school .container .wrapper .amount p, .price .middle .general .container .wrapper .amount p {
+  font-size: 12px;
+  font-weight: 400;
+}
+.price .middle .school .container .wrapper ul, .price .middle .general .container .wrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.price .middle .school .container .wrapper ul li, .price .middle .general .container .wrapper ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 400;
+}
+.price .middle .school .container .wrapper ul li img, .price .middle .general .container .wrapper ul li img {
+  width: 25px;
+}
+.price .middle .school .container button, .price .middle .general .container button {
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #FF5033;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 10px 30px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all ease-in 0.2s;
+}
+.price .middle .school .container button:hover, .price .middle .general .container button:hover {
+  background-color: #e64023;
+}
+.price .middle .school .container:hover, .price .middle .general .container:hover {
+  color: white;
+  background-color: #554585;
+}
+.price .middle .school .container:hover .wrapper .tags h4, .price .middle .general .container:hover .wrapper .tags h4 {
+  color: black;
+  background-color: white;
+}
+.price .middle .school .container:hover .wrapper .tags .pop, .price .middle .general .container:hover .wrapper .tags .pop {
+  background-color: #FF5033;
+  color: white;
+}
+.price .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.price .bottom h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.price .bottom img {
+  width: 200px;
+}
+.price .bottom p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.activeBtn {
+  cursor: pointer;
+  background-color: white !important;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: background 0.2s ease-in;
+}
+
+.popular {
+  color: white;
+  background-color: #554585;
+}
+.popular .wrapper .tags h4 {
+  color: black;
+  background-color: white;
+}
+.popular .wrapper .tags .pop {
+  background-color: #FF5033;
+  color: white;
+}/*# sourceMappingURL=Pricing.css.map */

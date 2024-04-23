@@ -1,0 +1,238 @@
+.price {
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+        gap: 10px;
+
+        h1 {
+            font-weight: 500;
+            font-size: 32px;
+            text-align: center;
+        }
+
+        p {
+            color: #6C646A;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        .tab {
+            background-color: #E5E5EE;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 10px 20px;
+
+            button {
+                font-weight: 500;
+                font-size: 14px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                background-color: #E5E5EE;
+            }
+        }
+    }
+
+    .middle {
+        display: flex;
+        gap: 30px;
+
+        .school, .general {
+            display: flex;
+            gap: 50px;
+            .container {
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                border: 2px solid #5A4C84;
+                border-radius: 10px;
+                padding: 30px;
+                cursor: pointer;
+                transition: all .3s ease-in;
+
+                .wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 20px;
+
+                    .custome-hr {
+                        border-top: 2px solid #5A4C84;
+                    }
+
+                    .tags {
+                        display: flex;
+                        gap: 10px;
+
+                        h4,
+                        .pop {
+                            padding: 5px 20px;
+                            font-weight: 400;
+                            font-size: 12px;
+                            text-transform: capitalize;
+                            border-radius: 10px;
+                            background-color: #E5E5EE;
+                        }
+
+                        .pop {
+                            background-color: #FF5033;
+                            color: white;
+                        }
+
+
+
+                    }
+
+
+                    .amount {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 20px 0;
+                        border-top: 1px solid #FF5033;
+                        border-bottom: 1px solid #FF5033;
+
+                        h3 {
+                            .symbol {
+                                font-weight: 500;
+                            }
+
+                            font-size: 44px;
+                            font-weight: 500;
+
+                            .gst {
+                                font-size: 12px;
+                                font-weight: 400;
+                            }
+                        }
+
+                        p {
+                            font-size: 12px;
+                            font-weight: 400;
+                        }
+                    }
+
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        li {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            font-size: 12px;
+                            font-weight: 400;
+
+                            img {
+                                width: 25px;
+                            }
+                        }
+                    }
+                }
+
+                button {
+                    border: none;
+                    outline: none;
+                    color: white;
+                    background-color: #FF5033;
+                    font-weight: 500;
+                    font-size: 18px;
+                    border-radius: 10px;
+                    padding: 10px 30px;
+                    cursor: pointer;
+                    text-align: center;
+                    text-transform: uppercase;
+                    transition: all ease-in .2s;
+
+                    &:hover {
+                        background-color: #e64023;
+                    }
+                }
+
+                &:hover {
+                    color: white;
+                    background-color: #554585;
+
+                    .wrapper {
+                        .tags {
+                            h4 {
+                                color: black;
+                                background-color: white;
+                            }
+
+                            .pop {
+                                background-color: #FF5033;
+                                color: white;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        h4 {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        img {
+            width: 200px;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+}
+
+.activeBtn {
+    cursor: pointer;
+    background-color: white !important;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: background .2s ease-in;
+}
+
+.popular {
+    color: white;
+    background-color: #554585;
+
+    .wrapper {
+        .tags {
+            h4 {
+                color: black;
+                background-color: white;
+            }
+
+            .pop {
+                background-color: #FF5033;
+                color: white;
+            }
+        }
+
+    }
+}
