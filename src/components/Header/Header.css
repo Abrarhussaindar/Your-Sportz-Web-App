@@ -1,0 +1,131 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  position: fixed;
+  background-color: white;
+  width: 95%;
+  z-index: 99999;
+}
+header .left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header .left img {
+  width: 40px;
+}
+header .left h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #413566;
+}
+header .left h2 span {
+  font-weight: 600;
+  color: #FF5033;
+}
+header .right .ham {
+  display: none;
+}
+header .right nav {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+header .right nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header .right nav ul a li {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  transition: all ease-in 0.2s;
+}
+header .right nav ul a li:hover {
+  color: #FF5033;
+  border-bottom: 1px solid #FF5033;
+}
+header .right nav .btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header .right nav .btns .langs {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 10px;
+  border: 2px solid #DE4F44;
+  background-color: #FFEEEB;
+  border-radius: 10px;
+}
+header .right nav .btns .langs img {
+  width: 20px;
+  height: 20px;
+}
+header .right nav .btns .langs .customSelect {
+  position: relative;
+  width: 100%;
+}
+header .right nav .btns .langs .customSelect select {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background-color: #FFEEEB;
+  font-weight: 600;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+}
+header .right nav .btns .langs .customSelect span {
+  position: absolute;
+  top: 15%;
+  right: -5%;
+  pointer-events: none;
+}
+header .right nav .btns .langs .customSelect span img {
+  pointer-events: none;
+}
+header .right nav .btns button {
+  padding: 5px 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #FF5033;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all ease-in 0.2s;
+}
+header .right nav .btns button:hover {
+  background-color: #e64023;
+}
+
+.active {
+  border-bottom: 1px solid #FF5033;
+}
+.active li {
+  color: #FF5033 !important;
+}
+
+.scrolled {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (width <= 440px) {
+  header {
+    width: 85%;
+  }
+  header .right .ham {
+    display: block;
+  }
+  header nav {
+    display: none !important;
+  }
+}/*# sourceMappingURL=Header.css.map */

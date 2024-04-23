@@ -1,0 +1,165 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+
+    position: fixed;
+    background-color: white;
+    width: 95%;
+    z-index: 99999;
+
+
+    .left {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        img {
+            width: 40px;
+        }
+
+        h2 {
+            font-size: 26px;
+            font-weight: 600;
+            color: #413566;
+
+            span {
+                font-weight: 600;
+                color: #FF5033;
+            }
+        }
+    }
+
+    .right {
+        .ham {
+            display: none;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 80px;
+
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+
+                a {
+
+                    li {
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: black;
+                        transition: all ease-in .2s;
+
+                        &:hover {
+                            color: #FF5033;
+                            border-bottom: 1px solid #FF5033;
+                        }
+
+                    }
+                }
+            }
+
+            .btns {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                .langs {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    padding: 5px 10px;
+                    border: 2px solid #DE4F44;
+                    background-color: #FFEEEB;
+                    border-radius: 10px;
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    .customSelect {
+                        position: relative;
+                        width: 100%;
+                        select {
+                            cursor: pointer;
+                            width: 100%;
+                            border: none;
+                            background-color: #FFEEEB;
+                            font-weight: 600;
+                            appearance: none;
+                            outline: none;
+                        }
+
+                        span {
+                            position: absolute;
+                            top: 15%;
+                            right: -5%;
+                            pointer-events: none;
+
+                            img {
+
+                                pointer-events: none;
+                            }
+                        }
+
+                    }
+
+                }
+
+                button {
+                    padding: 5px 30px;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: #FF5033;
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    text-align: center;
+                    text-transform: uppercase;
+                    transition: all ease-in .2s;
+
+                    &:hover {
+                        background-color: #e64023;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.active {
+    border-bottom: 1px solid #FF5033;
+
+    li {
+        color: #FF5033 !important;
+
+    }
+}
+
+.scrolled {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (width <=440px) {
+    header {
+        width: 85%;
+
+        .right {
+            .ham {
+                display: block;
+            }
+        }
+
+        nav {
+            display: none !important;
+        }
+    }
+
+}

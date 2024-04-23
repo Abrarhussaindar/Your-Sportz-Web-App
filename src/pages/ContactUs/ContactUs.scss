@@ -1,0 +1,85 @@
+main {
+    height: 100vh;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px !important;
+
+    h2 {
+        font-size: 32px;
+        font-weight: 600;
+        text-align: left;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        width: 40%;
+        padding: 30px;
+        gap: 10px;
+        border-radius: 10px;
+
+        // align-items: center;
+        label {
+            color: #6C7275;
+            font-weight: 400;
+        }
+
+        input {
+            border-radius: 10px;
+            border: none;
+            padding: 10px;
+            background-color: #ededed;
+            padding-left: 20px;
+            border-radius: 10px;
+            outline: none;
+            color: black;
+            font-weight: 600;
+        }
+
+        ::placeholder {
+            font-weight: 300;
+            color: grey;
+        }
+
+        textarea {
+            border-radius: 10px;
+            border: none;
+            padding: 10px;
+            background-color: #ededed;
+            padding-left: 20px;
+            border-radius: 10px;
+            outline: none;
+            color: black;
+            font-weight: 600;
+
+        }
+
+        .button {
+            display: flex;
+            justify-content: end;
+
+        }
+
+        button {
+            cursor: pointer;
+            padding: 10px 30px;
+            border: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            border-radius: 10px;
+            background-color: #FF5033;
+            cursor: pointer;
+            transition: all ease-in .2s;
+
+            &:hover {
+                background-color: #e64023;
+            }
+        }
+    }
+
+}

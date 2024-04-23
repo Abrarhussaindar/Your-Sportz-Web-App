@@ -1,0 +1,116 @@
+footer {
+  background-color: #E5E5EE;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 40px;
+  gap: 40px;
+}
+footer .top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 200px;
+}
+footer .top .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+}
+footer .top .logo img {
+  width: 80px;
+}
+footer .top .logo h3 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #413566;
+}
+footer .top .logo h3 span {
+  font-weight: 600;
+  color: #FF5033;
+}
+footer .top .links {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+footer .top .links .indiLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .top .links .indiLinks h3 {
+  font-weight: 500;
+  font-size: 22px;
+  color: #50424B;
+}
+footer .top .links .indiLinks ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .top .links .indiLinks ul a li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 400;
+  color: #6C646A;
+}
+footer .top .links .indiLinks ul a li img {
+  width: 20px;
+}
+footer .copyright {
+  border-top: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+}
+footer .copyright span, footer .copyright p {
+  color: #50424B;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media screen and (width <= 440px) {
+  footer {
+    background-color: #E5E5EE;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  footer .top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+    flex-direction: column;
+  }
+  footer .top .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  footer .top .links {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    flex-direction: column;
+  }
+  footer .top .logo img {
+    width: 80px;
+  }
+  footer .copyright {
+    border-top: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+    padding-top: 10px;
+  }
+}/*# sourceMappingURL=Footer.css.map */
