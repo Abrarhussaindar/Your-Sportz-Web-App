@@ -13,7 +13,7 @@ export default function ContatctUs() {
 
     return (
         <Layout>
-            <main>
+            <main className="contact">
                 <h2>Get in Touch!</h2>
                 <form>
                     <label htmlFor=" ">Full name </label>

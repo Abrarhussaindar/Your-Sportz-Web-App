@@ -13,6 +13,10 @@ header .left {
   align-items: center;
   gap: 20px;
 }
+header .left a {
+  display: flex;
+  gap: 20px;
+}
 header .left img {
   width: 40px;
 }

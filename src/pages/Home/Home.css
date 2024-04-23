@@ -1,7 +1,7 @@
 main {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 60px !important;
 }
 main .hero {
   display: flex;

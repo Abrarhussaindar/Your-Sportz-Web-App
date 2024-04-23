@@ -54,8 +54,10 @@ export default function Header() {
   return (
     <header className={hasScrolled ? 'scrolled' : ''}>
       <div className="left">
-        <img src={logo} alt="" />
-        <h2>Your<span>Sportz</span></h2>
+        <Link to="/">
+          <img src={logo} alt="" />
+          <h2>Your<span>Sportz</span></h2>
+        </Link>
       </div>
       <div className="right">
         <nav>

@@ -1,9 +1,9 @@
 footer {
-  background-color: #E5E5EE;
   display: flex;
   flex-direction: column;
   padding: 80px 40px;
   gap: 40px;
+  background-color: #E5E5EE;
 }
 footer .top {
   display: flex;

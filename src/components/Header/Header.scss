@@ -5,6 +5,7 @@ header {
     padding: 20px 40px;
 
     position: fixed;
+    
     background-color: white;
     width: 95%;
     z-index: 99999;
@@ -14,6 +15,11 @@ header {
         display: flex;
         align-items: center;
         gap: 20px;
+
+        a{
+            display: flex;
+            gap: 20px;
+        }
 
         img {
             width: 40px;
