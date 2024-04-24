@@ -1,0 +1,244 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: unset !important;
+  min-height: 100vh !important;
+  display: flex !important;
+  align-items: unset !important;
+  justify-content: unset !important;
+  place-items: unset !important;
+}
+body .dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+body .dashboard .topBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+body .dashboard .topBar .leftSide,
+body .dashboard .topBar .rightSide {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+body .dashboard .topBar .leftSide {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+body .dashboard .topBar .leftSide .logo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+body .dashboard .topBar .leftSide .logo a {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+body .dashboard .topBar .leftSide .logo a img {
+  width: 50px;
+}
+body .dashboard .topBar .leftSide .logo a h3 {
+  color: #413566;
+  font-size: 26px;
+  font-weight: 600;
+}
+body .dashboard .topBar .leftSide .logo a h3 span {
+  color: #FF5033;
+  font-weight: 600;
+}
+body .dashboard .topBar .leftSide h3 {
+  color: #554585;
+  font-size: 26px;
+  font-weight: 600;
+}
+body .dashboard .topBar .rightSide .search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #FF5033;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #F5F7FA;
+}
+body .dashboard .topBar .rightSide .search img {
+  width: 20px;
+  height: 20px;
+}
+body .dashboard .topBar .rightSide .search input {
+  background-color: #F5F7FA;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  font-weight: 500;
+}
+body .dashboard .topBar .rightSide .avatar {
+  border-radius: 50px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 40px;
+  height: 40px;
+}
+body .dashboard .main {
+  display: flex;
+  height: 100%;
+}
+body .dashboard .main .leftSideBar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  gap: 40px;
+  background-color: #413566;
+}
+body .dashboard .main .leftSideBar .logo {
+  padding: 0 30px;
+}
+body .dashboard .main .leftSideBar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body .dashboard .main .leftSideBar ul a li {
+  display: grid;
+  grid-template-columns: minmax(auto, 40px) auto;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 30px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all ease-in 0.2s;
+}
+body .dashboard .main .leftSideBar ul a li:hover {
+  background-color: #F5F7FA;
+  border-left: 5px solid #FF5033;
+  color: #FF5033;
+  font-weight: 700;
+}
+body .dashboard .main .leftSideBar ul a li:hover img {
+  color: #FF5033;
+}
+body .dashboard .main .MainContent {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F7FA;
+}
+body .dashboard .main .MainContent .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+body .dashboard .main .MainContent .top .heading {
+  display: flex;
+  flex-direction: column;
+}
+body .dashboard .main .MainContent .top .heading h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #554585;
+}
+body .dashboard .main .MainContent .top .heading p {
+  font-size: 14px;
+  color: #B0AFAF;
+  font-weight: 400;
+}
+body .dashboard .main .MainContent .top button {
+  padding: 10px 40px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #FF5033;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all ease-in 0.2s;
+}
+body .dashboard .main .MainContent .top button:hover {
+  background-color: #e64023;
+  color: white;
+}
+body .dashboard .main .MainContent .middle ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  gap: 20px;
+}
+body .dashboard .main .MainContent .middle ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 25%;
+  padding: 30px 40px;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+body .dashboard .main .MainContent .middle ul li .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+body .dashboard .main .MainContent .middle ul li .details h3 {
+  font-size: 26px;
+  font-weight: 700;
+}
+body .dashboard .main .MainContent .middle ul li .details p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #B0AFAF;
+}
+body .dashboard .main .MainContent .bottom {
+  display: flex;
+  padding: 40px;
+}
+body .dashboard .main .MainContent .bottom .left {
+  display: flex;
+  flex-direction: column;
+}
+body .dashboard .main .MainContent .bottom .left .top {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  gap: 20px;
+}
+body .dashboard .main .MainContent .bottom .left .top h4 {
+  font-size: 22px;
+  font-weight: 500;
+}
+body .dashboard .main .MainContent .bottom .left .top ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+body .dashboard .main .MainContent .bottom .left .top ul .teamHeading {
+  display: flex;
+}
+body .dashboard .main .MainContent .bottom .left .top ul .teamHeading li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+body .dashboard .main .MainContent .bottom .left .top ul .teamDeatails {
+  display: flex;
+  align-items: center;
+}
+body .dashboard .main .MainContent .bottom .left .top ul .teamDeatails .teamStats {
+  display: flex;
+}
+body .dashboard .main .MainContent .bottom .left .top ul .teamDeatails .teamStats li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}/*# sourceMappingURL=Dashboard.css.map */

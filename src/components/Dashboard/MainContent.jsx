@@ -1,5 +1,4 @@
-import "../../styles/Dashboard.css";
-import { Link, NavLink } from "react-router-dom"
+import "../../pages/Dashboard/Dashboard.css";
 import Group from "../../images/dashboard/Group.svg";
 import Vectory from "../../images/dashboard/Vectory.svg";
 import run from "../../images/dashboard/run.svg";
@@ -31,6 +30,39 @@ export default function MainContent() {
             Img: Group
         }
     ]
+    const teamHeading = ["Teams", 'W', 'D', 'L', 'T', 'GD', 'PTS']
+    const TeamData = [
+        {
+            teamName: "team 1",
+            teamId: "1",
+            won: "1",
+            draw: "2",
+            loss: "3",
+            tie: "0",
+            grad: "12",
+            points: "12"
+        },
+        {
+            teamName: "team 2",
+            teamId: "2",
+            won: "6",
+            draw: "7",
+            loss: "6",
+            tie: "2",
+            grad: "13",
+            points: "18"
+        },
+
+        {
+            teamName: "team 3",
+            teamId: "2",
+            won: "3",
+            draw: "5",
+            loss: "2",
+            tie: "7",
+            grad: "14",
+            points: "10"
+        },]
     return (
         <div className="MainContent">
             <div className="top">
@@ -62,6 +94,70 @@ export default function MainContent() {
 
                 <div className="left">
                     <div className="top">
+                        <h4>Premier League Details</h4>
+
+                        <ul>
+                            <div className="teamHeading">
+                                <li>
+                                    {
+                                        teamHeading.map((team) => (
+                                            <p key={team}>{team}</p>
+                                        ))
+                                    }
+                                </li>
+                            </div>
+                            <div className="teamDeatails">
+                                <div className="teamNames">
+                                    <li>
+                                        {
+                                            TeamData.map((team) => (
+                                                <p key={team.teamId}>{team.teamName}</p>
+                                            ))
+                                        }
+                                    </li>
+                                </div>
+                                <div className="teamStats">
+                                    <li>
+                                        {
+                                            TeamData.map((team) => (
+                                                <p key={team.teamId}>{team.won}</p>
+                                            ))
+                                        }
+                                    </li>
+                                    <li>
+                                        {
+                                            TeamData.map((team) => (
+                                                <p key={team.teamId}>{team.draw}</p>
+                                            ))
+                                        }
+                                    </li>
+                                    <li>
+                                        {
+                                            TeamData.map((team) => (
+                                                <p key={team.teamId}>{team.tie}</p>
+                                            ))
+                                        }
+                                    </li>
+                                    <li>
+                                        {
+                                            TeamData.map((team) => (
+                                                <p key={team.teamId}>{team.grad}</p>
+                                            ))
+                                        }
+                                    </li>
+                                    <li>
+                                        {
+                                            TeamData.map((team) => (
+                                                <p key={team.teamId}>{team.points}</p>
+                                            ))
+                                        }
+                                    </li>
+                                </div>
+                            </div>
+
+
+
+                        </ul>
 
                     </div>
                     <div className="bottom"></div>

@@ -1,7 +1,7 @@
 import LeftSideBar from "../../components/Dashboard/LeftSideBar";
 import MainContent from "../../components/Dashboard/MainContent";
 import TopBar from "../../components/Dashboard/TopBar";
-import "../../styles/Dashboard.css";
+import "./Dashboard.css";
 
 const Dashboard = () => {
   return (

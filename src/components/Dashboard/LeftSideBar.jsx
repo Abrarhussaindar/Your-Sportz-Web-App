@@ -1,16 +1,15 @@
-import "../../styles/Dashboard.css";
-import logo from "../../images/logo.png";
+import "../../pages/Dashboard/Dashboard.css";
 
 import dashboard from "../../images/dashboard/dashboard.svg";
 import management from "../../images/dashboard/management.svg";
 import setting from "../../images/dashboard/setting.svg";
 import user from "../../images/dashboard/user.svg";
-import { Link, NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 export default function LeftSideBar() {
     const navLinks = [
         {
-            to: "*",
+            to: "/dashboard",
             text: "Dashboard",
             Img: dashboard
         },
@@ -30,13 +29,14 @@ export default function LeftSideBar() {
             Img: setting
         }
     ]
+    
     return (
         <div className="leftSideBar">
 
             <ul>
                 {navLinks.map((link) => (
                     <NavLink to={link.to} key={link.text}>
-                        <li><span><img src={link.Img} alt={link.text} /></span>{link.text}</li>
+                        <li><img src={link.Img} alt={link.text} />{link.text}</li>
                     </NavLink>
                 ))}
             </ul>
