@@ -175,4 +175,34 @@
   text-decoration: underline;
   color: #FF5033;
   font-weight: 500;
+}
+
+@media screen and (width <= 440px) {
+  .login .wrapper {
+    flex-direction: column;
+  }
+  .login .wrapper .left {
+    padding: 20px;
+    width: unset;
+    gap: 5px;
+  }
+  .login .wrapper .left h1 {
+    font-size: 38px;
+  }
+  .login .wrapper .left h3 {
+    font-size: 18px;
+  }
+  .login .wrapper .left p {
+    font-size: 12px;
+  }
+  .login .wrapper .left img {
+    display: none;
+  }
+  .login .wrapper .right form {
+    background-color: white;
+    padding: 20px;
+  }
+  .login .absoluteright, .login .absoluteleft {
+    z-index: -1;
+  }
 }/*# sourceMappingURL=Login.css.map */

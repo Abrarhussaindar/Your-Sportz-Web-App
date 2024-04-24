@@ -93,3 +93,33 @@
         }
     }
 }
+
+
+
+
+@media screen and (width <=440px) {
+    .about .top {
+        display: flex;
+        align-items: center;
+        gap: 20px !important;
+        flex-direction: column;
+    }
+    .about .top .right {
+        width: unset;
+    }
+    .about .top .right h3, .about .top .right p, .about .bottom .left h3, .about .bottom .left p {
+        text-align: center;
+    }
+    .about .bottom .left ul li p {
+        font-size: 14px;
+    }
+    .about .bottom {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .bottom .right img{
+        width: 400px;
+    }
+}

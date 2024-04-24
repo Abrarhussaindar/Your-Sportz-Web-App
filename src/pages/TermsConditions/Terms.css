@@ -59,4 +59,18 @@
 }
 .termsConditon .right img {
   width: 350px;
+}
+
+@media screen and (width <= 440px) {
+  .termsConditon {
+    flex-direction: column;
+  }
+  .termsConditon .left {
+    padding: 0 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .termsConditon .left ul li .title, .termsConditon .left ul li p {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=Terms.css.map */

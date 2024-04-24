@@ -236,3 +236,21 @@
 
     }
 }
+
+@media screen and (width <=440px) {
+    .price .top {
+        width: unset;
+    }
+    .price .top h1 {
+        font-size: 24px;
+    }
+    .price .middle .school, .price .middle .general {
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+    }
+    .price .bottom p {
+        text-align: center;
+        font-size: 12px;
+    }
+}

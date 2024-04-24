@@ -226,3 +226,27 @@
         }
     }
 }
+
+@media screen and (width <=440px) {
+    .register {
+        height: unset;
+    }
+    .register .wrapper {
+        flex-direction: column;
+
+        .left{
+            width: unset;
+            padding: 20px;
+
+            img{
+                display: none;
+            }
+        }
+    }
+    .register .absoluteleft , .register .absoluteright {
+        z-index: -1;
+    }
+    .register .wrapper .right form {
+        background: white;
+    }
+}

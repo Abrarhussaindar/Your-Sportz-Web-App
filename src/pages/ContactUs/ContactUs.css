@@ -100,4 +100,30 @@
 }
 .contact .right form button:hover {
   background-color: #e64023;
+}
+
+@media screen and (width <= 440px) {
+  .contact {
+    flex-direction: column;
+    height: unset;
+    margin-top: 80px;
+    padding: 0 20px;
+    gap: 30px !important;
+  }
+  .contact .left {
+    width: unset;
+    align-items: flex-start;
+  }
+  .contact .left p {
+    text-align: center;
+  }
+  .contact .right p {
+    text-align: center;
+  }
+  .contact .right {
+    width: unset;
+  }
+  .contact .right form {
+    width: 80%;
+  }
 }/*# sourceMappingURL=ContactUs.css.map */

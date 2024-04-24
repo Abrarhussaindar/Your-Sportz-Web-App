@@ -212,3 +212,36 @@
     }
 
 }
+
+@media screen and (width <=440px) {
+    .login .wrapper {
+        flex-direction: column;
+
+        .left{
+            padding: 20px;
+            width: unset;
+            gap: 5px;
+
+            h1{
+                font-size: 38px;
+            }
+            h3{
+                font-size: 18px;
+            }
+            p{
+                font-size: 12px;
+            }
+            img{
+                display: none;
+            }
+        }
+    }
+    .login .wrapper .right form {
+        background-color: white;
+        padding: 20px;
+    }
+    .login .absoluteright, .login .absoluteleft {
+        z-index: -1;
+    }
+
+}

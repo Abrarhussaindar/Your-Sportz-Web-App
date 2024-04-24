@@ -182,11 +182,6 @@ header .open nav ul {
     right: -300px;
     display: block !important;
   }
-  header {
-    width: 85%;
-    justify-content: flex-end;
-    gap: 60px;
-  }
   header .right .ham {
     display: block;
   }

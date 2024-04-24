@@ -188,4 +188,26 @@
   text-decoration: underline;
   color: #FF5033;
   font-weight: 500;
+}
+
+@media screen and (width <= 440px) {
+  .register {
+    height: unset;
+  }
+  .register .wrapper {
+    flex-direction: column;
+  }
+  .register .wrapper .left {
+    width: unset;
+    padding: 20px;
+  }
+  .register .wrapper .left img {
+    display: none;
+  }
+  .register .absoluteleft, .register .absoluteright {
+    z-index: -1;
+  }
+  .register .wrapper .right form {
+    background: white;
+  }
 }/*# sourceMappingURL=Register.css.map */
