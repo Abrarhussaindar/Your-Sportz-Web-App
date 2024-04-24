@@ -1,30 +1,57 @@
 .contact {
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 20px !important;
-  margin-top: 75px;
+  margin-top: 40px;
+  width: 96%;
+  padding: 0 30px;
 }
-.contact h2 {
+.contact .left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  width: 50%;
+}
+.contact .left h3 {
   font-size: 32px;
-  font-weight: 600;
-  text-align: left;
+  font-weight: 500;
+  color: #413566;
 }
-.contact form {
+.contact .left img {
+  width: 350px;
+}
+.contact .left p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6C646A;
+}
+.contact .right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+.contact .right p {
+  color: #FF5033;
+  font-weight: 400;
+}
+.contact .right form {
   display: flex;
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  width: 40%;
+  width: 90%;
   padding: 30px;
   gap: 10px;
   border-radius: 10px;
 }
-.contact form label {
+.contact .right form label {
   color: #6C7275;
   font-weight: 400;
 }
-.contact form input {
+.contact .right form input {
   border-radius: 10px;
   border: none;
   padding: 10px;
@@ -35,15 +62,15 @@
   color: black;
   font-weight: 600;
 }
-.contact form ::-moz-placeholder {
+.contact .right form ::-moz-placeholder {
   font-weight: 300;
   color: grey;
 }
-.contact form ::placeholder {
+.contact .right form ::placeholder {
   font-weight: 300;
   color: grey;
 }
-.contact form textarea {
+.contact .right form textarea {
   border-radius: 10px;
   border: none;
   padding: 10px;
@@ -54,11 +81,11 @@
   color: black;
   font-weight: 600;
 }
-.contact form .button {
+.contact .right form .button {
   display: flex;
   justify-content: end;
 }
-.contact form button {
+.contact .right form button {
   cursor: pointer;
   padding: 10px 30px;
   border: none;
@@ -71,6 +98,6 @@
   cursor: pointer;
   transition: all ease-in 0.2s;
 }
-.contact form button:hover {
+.contact .right form button:hover {
   background-color: #e64023;
 }/*# sourceMappingURL=ContactUs.css.map */
