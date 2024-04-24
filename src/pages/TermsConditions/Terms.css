@@ -1,0 +1,62 @@
+.termsConditon {
+  margin: 80px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0 !important;
+}
+.termsConditon .left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.termsConditon .left h1 {
+  font-weight: 500;
+}
+.termsConditon .left ul {
+  display: flex;
+  flex-direction: column;
+}
+.termsConditon .left ul li p {
+  color: #6C646A;
+  font-size: 14px;
+  font-weight: 400;
+}
+.termsConditon .left ul li .title {
+  color: #554585;
+  font-size: 16px;
+  font-weight: 600;
+}
+.termsConditon .left .terms {
+  gap: 10px;
+}
+.termsConditon .left .terms li {
+  list-style-type: disc;
+}
+.termsConditon .left .terms .liTerms::marker {
+  font-size: 25px;
+  color: #554585;
+}
+.termsConditon .left .conditions {
+  padding-left: 30px;
+}
+.termsConditon .left .conditions li {
+  list-style-type: circle;
+}
+.termsConditon .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.termsConditon .right p {
+  font-weight: 400;
+  font-size: 12px;
+}
+.termsConditon .right h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.termsConditon .right img {
+  width: 350px;
+}/*# sourceMappingURL=Terms.css.map */

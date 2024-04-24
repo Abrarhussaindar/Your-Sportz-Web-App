@@ -1,0 +1,79 @@
+.termsConditon {
+    margin: 80px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0 !important;
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h1{
+            font-weight: 500;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+
+            li {
+
+                p {
+                    color: #6C646A;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
+                .title {
+                    color: #554585;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .terms {
+            gap: 10px;
+
+            li {
+                list-style-type: disc;
+            }
+
+            .liTerms::marker {
+                font-size: 25px;
+                color: #554585;
+            }
+        }
+
+        .conditions {
+            padding-left: 30px;
+
+            li {
+                list-style-type: circle;
+            }
+        }
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            font-weight: 400;
+            font-size: 12px;
+        }
+
+        h4 {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        img {
+            width: 350px;
+        }
+    }
+
+}

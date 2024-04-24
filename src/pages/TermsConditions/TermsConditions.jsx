@@ -1,5 +1,7 @@
 
 import Layout from "../../components/Layout";
+import terms from "../../images/terms.jpg"
+import "./Terms.css"
 
 const TermsAndConditions = [
   {
@@ -48,57 +50,28 @@ const TermsAndConditions = [
 const TermsConditions = () => {
   return (
     <Layout>
-      <div className="bg-gray-50 min-h-screen font-sans rounded-lg mb-10 ">
-        <main className="container mx-auto py-8 px-6 md:px-20">
-          <h1 className="text-3xl font-bold mt-20 mb-4 ">
-            Term and conditions
-          </h1>
-
-          {TermsAndConditions.map((terms, index) => (
-            <div
-              key={index}
-              className="bg-white py-6 px-2 md:px-6 rounded-lg shadow-md mb-8 "
-            >
-              <h1 className="text-xl font-bold mb-2 ml-5 text-gray-700 flex items-center">
-                <svg
-                  width="15"
-                  height="15"
-                  viewBox="0 0 15 15"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="mr-2"
-                >
-                  <circle
-                    cx="7.5"
-                    cy="7.5"
-                    r="7.5"
-                    fill="#554585"
-                    fillOpacity="0.91"
-                  />
-                </svg>
-
-                {terms.title}
-              </h1>
-
-              {terms.content.map((content, i) => (
-                <p
-                  key={i}
-                  className="mb-2 pl-6 md:pl-14 text-gray-600 text-xs md:text-sm"
-                >
-                  {content}
-                </p>
-              ))}
-            </div>
-          ))}
-          <div className="pl-2 md:pl-10">
-            <p className="text-sm mb-1 ">
-              For any assistance, contact our customer support at
-              contact@yoursportz.in.
-            </p>
-            <p className="text-lg ">Thank you for choosing YourSportz!</p>
-          </div>
-        </main>
-      </div>
+      <main className="termsConditon">
+        <div className="left">
+          <h1>Terms and Conditions</h1>
+          <ul className="terms">
+            {TermsAndConditions.map((terms, index) => (
+              <li className="liTerms" key={index}>
+                <p className="title">{terms.title}</p>
+                <ul className="conditions">
+                  {terms.content.map((content, i) => (
+                    <li key={i}><p>{content}</p></li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="right">
+          <img src={terms} alt="" />
+          <p>For any assistance, contact our customer support  @ yoursportz.in.</p>
+          <h4>Thank you for choosing YourSportz!</h4>
+        </div>
+      </main>
     </Layout>
   );
 };
