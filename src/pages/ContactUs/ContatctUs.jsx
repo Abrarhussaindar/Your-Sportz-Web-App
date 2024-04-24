@@ -3,11 +3,13 @@ import Layout from "../../components/Layout";
 import "./ContactUs.css"
 import contactImg from "../../images/contact.jpg"
 export default function ContatctUs() {
+    // const [name, setName] = useState("")
     const [name, setName] = useState("")
     const [phone, setPhone] = useState("")
     const [email, setEmail] = useState("")
     const [subject, setSub] = useState("")
     const [msg, setMsg] = useState("")
+    console.log("name; ", name)
     const handlesubmit = (e) => {
         console.log(e.target.value);
     }

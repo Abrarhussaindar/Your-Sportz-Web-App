@@ -17,7 +17,6 @@ const Login = () => {
     try {
       const res = await axios.post("/webauth/login", data)
       if (res.data === "logged in") {
-        setUserData('')
         navigate("/dashboard")
       }
     } catch (err) {

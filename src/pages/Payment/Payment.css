@@ -1,0 +1,181 @@
+.payment {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 70px;
+  background-color: #F5F7FA;
+  justify-content: space-between;
+  padding: 80px 40px;
+  gap: 20px !important;
+  width: 94.5%;
+}
+.payment .left {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 40%;
+}
+.payment .left h1 {
+  font-size: 38px;
+  font-weight: 500;
+  color: #413566;
+}
+.payment .left p {
+  color: #575757;
+  font-size: 14px;
+  font-weight: 400;
+}
+.payment .left form {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.payment .left form .formEle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.payment .left form .formEle label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #575757;
+}
+.payment .left form .formEle input {
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 10px 0;
+  padding-left: 15px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+.payment .left form .formEle .discount {
+  display: flex;
+  justify-content: space-between;
+}
+.payment .left form .exp_cvc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.payment .left form .exp_cvc .ele {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.payment .left button {
+  padding: 10px 60px;
+  border-radius: 10px;
+  border: none;
+  background-color: #FF5033;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  text-transform: capitalize;
+  transition: all ease-in 0.2s;
+}
+.payment .left button:hover {
+  background-color: #e64023;
+}
+.payment img {
+  width: 30%;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.payment .right {
+  width: 30%;
+  background-color: #413566;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-radius: 10px;
+  color: white;
+  padding: 30px;
+}
+.payment .right .top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.payment .right .top .price {
+  margin: 0 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+.payment .right .top .price p {
+  font-size: 18px;
+  font-weight: 400;
+}
+.payment .right .top .price h2 {
+  display: flex;
+  gap: 10px;
+}
+.payment .right .top .price h2, .payment .right .top .price span {
+  font-size: 32px;
+  font-weight: 500;
+}
+.payment .right .top .details {
+  display: flex;
+  justify-content: space-between;
+}
+.payment .right .top .details .left {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 50%;
+}
+.payment .right .top .details .left h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.payment .right .top .details .left p {
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+}
+.payment .right .top .details h3 {
+  display: flex;
+  gap: 5px;
+}
+.payment .right .top .details h3, .payment .right .top .details span {
+  font-size: 22px;
+  font-weight: 500;
+}
+.payment .right .middle {
+  display: flex;
+  justify-content: space-between;
+}
+.payment .right .middle h3, .payment .right .middle span {
+  font-size: 18px;
+  font-weight: 500;
+}
+.payment .right .middle h3 {
+  display: flex;
+  gap: 5px;
+}
+.payment .right .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.payment .right .bottom .tax, .payment .right .bottom .total {
+  display: flex;
+  justify-content: space-between;
+}
+.payment .right .bottom .tax h3, .payment .right .bottom .total h3 {
+  display: flex;
+  gap: 5px;
+}
+.payment .right .bottom .tax h3, .payment .right .bottom .tax span, .payment .right .bottom .total h3, .payment .right .bottom .total span {
+  font-size: 18px;
+  font-weight: 500;
+}/*# sourceMappingURL=Payment.css.map */

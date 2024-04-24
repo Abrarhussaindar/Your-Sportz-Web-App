@@ -8,6 +8,7 @@ import Dashboard from "./pages/Dashboard";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Pricing from "./pages/Pricing/Pricing";
 import ContatctUs from "./pages/ContactUs/ContatctUs";
+import Payment from "./pages/Payment/Payment";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/payment" element={<Payment />} />
           <Route path="/contactUs" element={<ContatctUs />} />
           <Route path="/terms-conditions" element={<TermsConditions />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />

@@ -1,0 +1,207 @@
+.payment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 70px;
+    background-color: #F5F7FA;
+    justify-content: space-between;
+    padding: 80px 40px;
+    gap: 20px !important;
+    width: 94.5%;
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        // align-items: flex-start;
+        width: 40%;
+        h1 {
+            font-size: 38px;
+            font-weight: 500;
+            color: #413566;
+        }
+
+        p {
+            color: #575757;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        form {
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .formEle {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                label{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #575757;
+                }
+                input{
+                    border: none;
+                    outline: none;
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                    padding: 10px 0;
+                    padding-left: 15px;
+                    font-weight: 500;
+                    border-radius: 10px;
+                }
+
+                .discount {
+                    display: flex;
+                    justify-content: space-between;
+
+                }
+            }
+
+            .exp_cvc {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .ele {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+            }
+        }
+
+        button {
+            padding: 10px 60px;
+            border-radius: 10px;
+            border: none;
+            background-color: #FF5033;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+            text-transform: capitalize;
+            transition: all ease-in .2s;
+
+            &:hover {
+                background-color: #e64023;
+            }
+        }
+    }
+
+    img{
+        width: 30%;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .right {
+        width: 30%;
+        background-color: #413566;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        border-radius: 10px;
+        color: white;
+        padding: 30px;
+        .top {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .price {
+                margin: 0 !important;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+                p{
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+                h2{
+                    display: flex;
+                    gap: 10px;
+                }
+                h2, span{
+                    font-size: 32px;
+                    font-weight: 500;
+                }
+            }
+
+            .details{
+                display: flex;
+                justify-content: space-between;
+
+                .left{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0;
+                    width: 50%;
+                    h3{
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                    p{
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: white;
+                    }
+                }
+                h3{
+                    display: flex;
+                    gap: 5px;
+                }
+                h3, span{
+                    font-size: 22px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .middle{
+            display: flex;
+            justify-content: space-between;
+
+            h3,span{
+                font-size: 18px;
+                font-weight: 500;
+            }
+            h3{
+                display: flex;
+                gap: 5px;
+            }
+        }
+
+        .bottom{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .tax, .total{
+                display: flex;
+                justify-content: space-between;
+
+                h3{
+                    display: flex;
+                    gap: 5px;
+                }
+                h3, span{
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+
+            }
+        }
+    }
+
+
+
+
+
+}
