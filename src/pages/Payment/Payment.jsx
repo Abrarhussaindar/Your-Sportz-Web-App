@@ -6,14 +6,14 @@ export default function Payment() {
         <Layout>
             <main className="payment">
                 <div className="left">
-                    <h1>Let's Make Payment</h1>
+                    <h1>Let&apos;s Make Payment</h1>
                     <div className="msg">
                         <p>To start your subscription, input your card details to make payment.</p>
                         <p>You will be redirected to your banks authorization page.</p>
                     </div>
                     <form>
                         <div className="formEle">
-                            <label htmlFor="cardhorder name">Cardholder's Name</label>
+                            <label htmlFor="cardhorder name">Cardholder&apos;s Name</label>
                             <input type="text"  name="cardhorder name" />
                         </div>
                         <div className="formEle">

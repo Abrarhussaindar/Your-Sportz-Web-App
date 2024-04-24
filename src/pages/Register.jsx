@@ -88,12 +88,12 @@ const Register = () => {
           <path
             d="M145.5 390.5C145.5 530.206 26.6545 643.5 -120 643.5C-266.655 643.5 -385.5 530.206 -385.5 390.5C-385.5 250.794 -266.655 137.5 -120 137.5C26.6545 137.5 145.5 250.794 145.5 390.5Z"
             stroke="#554585"
-            stroke-opacity="0.91"
+            strokeOpacity="0.91"
           />
           <path
             d="M123.5 253.5C123.5 393.206 4.65454 506.5 -142 506.5C-288.655 506.5 -407.5 393.206 -407.5 253.5C-407.5 113.794 -288.655 0.5 -142 0.5C4.65454 0.5 123.5 113.794 123.5 253.5Z"
             stroke="#554585"
-            stroke-opacity="0.91"
+            strokeOpacity="0.91"
           />
         </svg>
       </div>
@@ -118,7 +118,7 @@ const Register = () => {
             r="195.5"
             transform="rotate(1.56543 206.039 228.894)"
             stroke="url(#paint1_linear_2340_653)"
-            stroke-width="2"
+            strokeWidth="2"
           />
           <circle
             cx="206.449"
@@ -126,7 +126,7 @@ const Register = () => {
             r="195.75"
             transform="rotate(1.56543 206.449 213.9)"
             stroke="url(#paint2_linear_2340_653)"
-            stroke-width="1.5"
+            strokeWidth="1.5"
           />
           <circle
             cx="202.778"
@@ -144,10 +144,10 @@ const Register = () => {
               y2="434.184"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#9689BB" />
-              <stop offset="0.525" stop-color="#645493" />
-              <stop offset="0.725" stop-color="#5A4C84" />
-              <stop offset="1" stop-color="#5B4C88" />
+              <stop stopColor="#9689BB" />
+              <stop offset="0.525" stopColor="#645493" />
+              <stop offset="0.725" stopColor="#5A4C84" />
+              <stop offset="1" stopColor="#5B4C88" />
             </linearGradient>
             <linearGradient
               id="paint1_linear_2340_653"
@@ -157,10 +157,10 @@ const Register = () => {
               y2="425.394"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#9689BB" />
-              <stop offset="0.525" stop-color="#645493" />
-              <stop offset="0.725" stop-color="#5A4C84" />
-              <stop offset="1" stop-color="#5B4C88" />
+              <stop stopColor="#9689BB" />
+              <stop offset="0.525" stopColor="#645493" />
+              <stop offset="0.725" stopColor="#5A4C84" />
+              <stop offset="1" stopColor="#5B4C88" />
             </linearGradient>
             <linearGradient
               id="paint2_linear_2340_653"
@@ -170,10 +170,10 @@ const Register = () => {
               y2="410.4"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#9689BB" />
-              <stop offset="0.525" stop-color="#645493" />
-              <stop offset="0.725" stop-color="#5A4C84" />
-              <stop offset="1" stop-color="#5B4C88" />
+              <stop stopColor="#9689BB" />
+              <stop offset="0.525" stopColor="#645493" />
+              <stop offset="0.725" stopColor="#5A4C84" />
+              <stop offset="1" stopColor="#5B4C88" />
             </linearGradient>
             <linearGradient
               id="paint3_linear_2340_653"
@@ -183,10 +183,10 @@ const Register = () => {
               y2="398.295"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#9689BB" />
-              <stop offset="0.525" stop-color="#645493" />
-              <stop offset="0.725" stop-color="#5A4C84" />
-              <stop offset="1" stop-color="#5B4C88" />
+              <stop stopColor="#9689BB" />
+              <stop offset="0.525" stopColor="#645493" />
+              <stop offset="0.725" stopColor="#5A4C84" />
+              <stop offset="1" stopColor="#5B4C88" />
             </linearGradient>
           </defs>
         </svg>

@@ -1,4 +1,4 @@
-import React from "react";
+
 import Layout from "../components/Layout";
 
 const PrivacyPolicy = [
@@ -54,7 +54,7 @@ const TermsConditions = () => {
                     cy="7.5"
                     r="7.5"
                     fill="#554585"
-                    fill-opacity="0.91"
+                    fillOpacity="0.91"
                   />
                 </svg>
 
