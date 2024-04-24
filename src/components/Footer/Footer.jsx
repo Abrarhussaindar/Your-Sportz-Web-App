@@ -49,15 +49,11 @@ export default function Footer() {
             <h3>Need Help</h3>
             <ul>
               <a href="#">
-                <li><span><img src={email} alt="" /></span> Email</li>
+                <li>Contact Us</li>
               </a>
               <a href="">
 
-                <li><span><img src={yt} alt="" /></span> Youtube</li>
-              </a>
-              <a href="">
-
-                <li><span><img src={insta} alt="" /></span> Instagram</li>
+                <li>FAQ</li>
               </a>
             </ul>
           </div>
@@ -65,15 +61,10 @@ export default function Footer() {
             <h3>Legal</h3>
             <ul>
               <a href="#">
-                <li><span><img src={email} alt="" /></span> Email</li>
+                <li>Terms of use</li>
               </a>
               <a href="">
-
-                <li><span><img src={yt} alt="" /></span> Youtube</li>
-              </a>
-              <a href="">
-
-                <li><span><img src={insta} alt="" /></span> Instagram</li>
+                <li>Privacy Policy</li>
               </a>
             </ul>
           </div>
