@@ -144,7 +144,7 @@ header {
 
     .notOpen {
         right: -300px;
-
+        display: none;
         .ham,
         .close,
         .menuLogo {
@@ -217,8 +217,14 @@ header {
 }
 
 @media screen and (width <=440px) {
+    .notOpen {
+        right: -300px;
+        display: block !important;
+    }
     header {
         width: 85%;
+        justify-content: flex-end;
+        gap: 60px;
 
         .right {
             .ham {

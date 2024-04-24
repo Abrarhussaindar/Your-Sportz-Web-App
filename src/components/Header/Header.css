@@ -116,6 +116,7 @@ header .right nav .btns button:hover, header .open nav .btns button:hover {
 }
 header .notOpen {
   right: -300px;
+  display: none;
 }
 header .notOpen .ham,
 header .notOpen .close,
@@ -177,8 +178,14 @@ header .open nav ul {
 }
 
 @media screen and (width <= 440px) {
+  .notOpen {
+    right: -300px;
+    display: block !important;
+  }
   header {
     width: 85%;
+    justify-content: flex-end;
+    gap: 60px;
   }
   header .right .ham {
     display: block;

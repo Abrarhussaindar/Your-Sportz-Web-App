@@ -31,7 +31,6 @@ export default function Header() {
     }
   ]
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -90,8 +89,10 @@ export default function Header() {
             </Link>
           </div>
         </nav>
+        <img src={ham} onClick={toggleMenu} className="ham" id="ham" alt="ham" />
+
       </div>
-      <div className={`${isMenuOpen ? 'open' : 'notOpen'}`}>
+      <div className={`${isMenuOpen  ? 'open' : 'notOpen'}`}>
 
         <div className="top">
           <h2 className="menuLogo">Your<span>Sportz</span></h2>
@@ -128,7 +129,7 @@ export default function Header() {
           </div>
         </nav>
       </div>
-      <img src={ham} onClick={toggleMenu} className="ham" id="ham" alt="ham" />
+
     </header>
   )
 }

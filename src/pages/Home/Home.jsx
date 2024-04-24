@@ -1,6 +1,7 @@
 
 import Layout from "../../components/Layout";
 import hero from "../../images/hero.png"
+import heromobile from "../../images/heromobile.png"
 import ios from "../../images/ios.png"
 import android from "../../images/android.png"
 
@@ -13,8 +14,21 @@ import bulb from "../../images/bulb.svg"
 import faq from "../../images/faq.png"
 import features from "../../images/features.png"
 import "./Home.css"
+import { useEffect, useState } from "react";
 
 const Home = () => {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <Layout>
       <main>
@@ -31,7 +45,11 @@ const Home = () => {
             </div>
           </div>
           <div className="right">
-            <img src={hero} alt="hero img" />
+            {screenWidth > 720 ? (
+              <img src={hero} alt="hero img" />
+            ) : (
+              <img src={heromobile} alt="hero img" />
+            )}
           </div>
         </section>
         <section className="features" id="features">

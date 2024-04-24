@@ -361,6 +361,9 @@ main {
         flex-direction: column;
         align-items: stretch;
     }
+    main .hero .left .btns button {
+        padding: 10px 25px;
+    }
     main .hero .right {
         justify-content: center;
     }
