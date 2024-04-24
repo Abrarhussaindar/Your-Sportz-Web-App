@@ -5,7 +5,7 @@ header {
     padding: 20px 40px;
 
     position: fixed;
-    
+
     background-color: white;
     width: 95%;
     z-index: 99999;
@@ -16,7 +16,7 @@ header {
         align-items: center;
         gap: 20px;
 
-        a{
+        a {
             display: flex;
             gap: 30px;
         }
@@ -37,8 +37,11 @@ header {
         }
     }
 
-    .right {
-        .ham {
+    .right, .open {
+
+        .ham,
+        .close,
+        .menuLogo {
             display: none;
         }
 
@@ -91,6 +94,7 @@ header {
                     .customSelect {
                         position: relative;
                         width: 100%;
+
                         select {
                             cursor: pointer;
                             width: 100%;
@@ -134,6 +138,65 @@ header {
                         background-color: #e64023;
                     }
                 }
+            }
+        }
+    }
+
+    .notOpen {
+        right: -300px;
+
+        .ham,
+        .close,
+        .menuLogo {
+            display: none;
+        }
+    }
+
+    .open {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: white;
+        z-index: 9999;
+        padding: 20px 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        box-shadow: rgba(0, 0, 0, 0.15) -7px 16px 4px 2px;
+        transition: right 0.3s ease;
+
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h2 {
+                display: block;
+                font-size: 26px;
+                font-weight: 600;
+                color: #413566;
+
+                span {
+                    font-weight: 600;
+                    color: #FF5033;
+                }
+            }
+
+            img {
+                display: block;
+                width: 20px;
+            }
+        }
+
+        nav {
+            display: flex !important;
+            flex-direction: column;
+            align-items: flex-start;
+            height: 100vh;
+
+            ul {
+                flex-direction: column;
+                align-items: flex-start;
             }
         }
     }

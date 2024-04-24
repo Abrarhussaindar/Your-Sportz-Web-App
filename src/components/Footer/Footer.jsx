@@ -1,8 +1,8 @@
 import "./Footer.css"
 import logo from "../../images/logo.png"
-import yt from "../../images/yt.svg"
 import insta from "../../images/insta.svg"
 import email from "../../images/mail.svg"
+import { Link } from "react-router-dom"
 
 export default function Footer() {
   return (
@@ -21,10 +21,6 @@ export default function Footer() {
               </a>
               <a href="">
 
-                <li><img src={yt} alt="" />Youtube</li>
-              </a>
-              <a href="">
-
                 <li><img src={insta} alt="" /> Instagram</li>
               </a>
             </ul>
@@ -37,10 +33,6 @@ export default function Footer() {
               </a>
               <a href="">
 
-                <li><span><img src={yt} alt="" /></span> Youtube</li>
-              </a>
-              <a href="">
-
                 <li><span><img src={insta} alt="" /></span> Instagram</li>
               </a>
             </ul>
@@ -48,24 +40,25 @@ export default function Footer() {
           <div className="indiLinks">
             <h3>Need Help</h3>
             <ul>
-              <a href="#">
+              <Link to="/contactUs">
                 <li>Contact Us</li>
-              </a>
-              <a href="">
+              </Link>
+              <Link to="#faq">
 
                 <li>FAQ</li>
-              </a>
+              </Link>
             </ul>
           </div>
           <div className="indiLinks">
             <h3>Legal</h3>
             <ul>
-              <a href="#">
+              <Link to="/terms-conditions">
                 <li>Terms of use</li>
-              </a>
-              <a href="">
+              </Link>
+              <Link to="/privacy-policy">
                 <li>Privacy Policy</li>
-              </a>
+              </Link>
+
             </ul>
           </div>
         </div>

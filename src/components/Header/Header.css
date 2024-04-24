@@ -29,35 +29,39 @@ header .left h2 span {
   font-weight: 600;
   color: #FF5033;
 }
-header .right .ham {
+header .right .ham,
+header .right .close,
+header .right .menuLogo, header .open .ham,
+header .open .close,
+header .open .menuLogo {
   display: none;
 }
-header .right nav {
+header .right nav, header .open nav {
   display: flex;
   align-items: center;
   gap: 80px;
 }
-header .right nav ul {
+header .right nav ul, header .open nav ul {
   display: flex;
   align-items: center;
   gap: 30px;
 }
-header .right nav ul a li {
+header .right nav ul a li, header .open nav ul a li {
   font-size: 18px;
   font-weight: 600;
   color: black;
   transition: all ease-in 0.2s;
 }
-header .right nav ul a li:hover {
+header .right nav ul a li:hover, header .open nav ul a li:hover {
   color: #FF5033;
   border-bottom: 1px solid #FF5033;
 }
-header .right nav .btns {
+header .right nav .btns, header .open nav .btns {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-header .right nav .btns .langs {
+header .right nav .btns .langs, header .open nav .btns .langs {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -66,15 +70,15 @@ header .right nav .btns .langs {
   background-color: #FFEEEB;
   border-radius: 10px;
 }
-header .right nav .btns .langs img {
+header .right nav .btns .langs img, header .open nav .btns .langs img {
   width: 20px;
   height: 20px;
 }
-header .right nav .btns .langs .customSelect {
+header .right nav .btns .langs .customSelect, header .open nav .btns .langs .customSelect {
   position: relative;
   width: 100%;
 }
-header .right nav .btns .langs .customSelect select {
+header .right nav .btns .langs .customSelect select, header .open nav .btns .langs .customSelect select {
   cursor: pointer;
   width: 100%;
   border: none;
@@ -85,16 +89,16 @@ header .right nav .btns .langs .customSelect select {
           appearance: none;
   outline: none;
 }
-header .right nav .btns .langs .customSelect span {
+header .right nav .btns .langs .customSelect span, header .open nav .btns .langs .customSelect span {
   position: absolute;
   top: 15%;
   right: -5%;
   pointer-events: none;
 }
-header .right nav .btns .langs .customSelect span img {
+header .right nav .btns .langs .customSelect span img, header .open nav .btns .langs .customSelect span img {
   pointer-events: none;
 }
-header .right nav .btns button {
+header .right nav .btns button, header .open nav .btns button {
   padding: 5px 30px;
   border-radius: 10px;
   border: none;
@@ -107,8 +111,58 @@ header .right nav .btns button {
   text-transform: uppercase;
   transition: all ease-in 0.2s;
 }
-header .right nav .btns button:hover {
+header .right nav .btns button:hover, header .open nav .btns button:hover {
   background-color: #e64023;
+}
+header .notOpen {
+  right: -300px;
+}
+header .notOpen .ham,
+header .notOpen .close,
+header .notOpen .menuLogo {
+  display: none;
+}
+header .open {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  z-index: 9999;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  box-shadow: rgba(0, 0, 0, 0.15) -7px 16px 4px 2px;
+  transition: right 0.3s ease;
+}
+header .open .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .open .top h2 {
+  display: block;
+  font-size: 26px;
+  font-weight: 600;
+  color: #413566;
+}
+header .open .top h2 span {
+  font-weight: 600;
+  color: #FF5033;
+}
+header .open .top img {
+  display: block;
+  width: 20px;
+}
+header .open nav {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100vh;
+}
+header .open nav ul {
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .active {

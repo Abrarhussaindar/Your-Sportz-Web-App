@@ -305,10 +305,12 @@ main .faq .content .container p {
     align-items: center;
   }
   main .hero .left .heading h1 {
-    font-size: 38px;
+    font-size: 32px;
+    text-align: center;
   }
   main .hero .left .heading p {
     font-size: 12px;
+    text-align: center;
   }
   main .hero .left .btns {
     flex-direction: column;
@@ -347,7 +349,7 @@ main .faq .content .container p {
     align-items: center;
   }
   main .features img {
-    width: 90%;
+    width: 100%;
   }
   main .matches {
     gap: 20px;

@@ -50,7 +50,7 @@ const Home = () => {
                 <h4>Do you Know</h4>
               </div>
               <h3>Intuitive Match Scoring Interface</h3>
-              <p>Direct the game's score with a single touch using our scorer app. Accurately log goals, fouls, and more, with an 'Undo' feature for corrections. Simple, swift, and precise—be the game's definitive scorekeeper.</p>
+              <p>Direct the game&apos;s score with a single touch using our scorer app. Accurately log goals, fouls, and more, with an &apos;Undo&apos; feature for corrections. Simple, swift, and precise—be the game&apos;s definitive scorekeeper.</p>
             </div>
           </div>
           <div className="row2">
@@ -61,7 +61,7 @@ const Home = () => {
                 <h4>Do you Know</h4>
               </div>
               <h3>Intuitive Match Scoring Interface</h3>
-              <p>Direct the game's score with a single touch using our scorer app. Accurately log goals, fouls, and more, with an 'Undo' feature for corrections. Simple, swift, and precise—be the game's definitive scorekeeper.</p>
+              <p>Direct the game&apos;s score with a single touch using our scorer app. Accurately log goals, fouls, and more, with an &apos;Undo&apos; feature for corrections. Simple, swift, and precise—be the game&apos;s definitive scorekeeper.</p>
             </div>
           </div>
           <div className="row">
@@ -72,7 +72,7 @@ const Home = () => {
                 <h4>Do you Know</h4>
               </div>
               <h3>Intuitive Match Scoring Interface</h3>
-              <p>Direct the game's score with a single touch using our scorer app. Accurately log goals, fouls, and more, with an 'Undo' feature for corrections. Simple, swift, and precise—be the game's definitive scorekeeper.</p>
+              <p>Direct the game&apos;s score with a single touch using our scorer app. Accurately log goals, fouls, and more, with an &apos;Undo&apos; feature for corrections. Simple, swift, and precise—be the game&apos;s definitive scorekeeper.</p>
             </div>
           </div>
           <div className="row2">
@@ -83,7 +83,7 @@ const Home = () => {
                 <h4>Do you Know</h4>
               </div>
               <h3>Intuitive Match Scoring Interface</h3>
-              <p>Direct the game's score with a single touch using our scorer app. Accurately log goals, fouls, and more, with an 'Undo' feature for corrections. Simple, swift, and precise—be the game's definitive scorekeeper.</p>
+              <p>Direct the game&apos;s score with a single touch using our scorer app. Accurately log goals, fouls, and more, with an &apos;Undo&apos; feature for corrections. Simple, swift, and precise—be the game&apos;s definitive scorekeeper.</p>
             </div>
           </div>
         </section>
@@ -105,7 +105,7 @@ const Home = () => {
 
         </section>
 
-        <section className="faq">
+        <section className="faq" id="faq">
           <div className="heading">
             <h2>Frequently Asked Questions</h2>
             <img className="faqImg" src={faq} alt="" />
