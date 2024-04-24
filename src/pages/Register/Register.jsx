@@ -1,10 +1,10 @@
 import { useContext, useState } from "react";
-import LoginAvatar from "../images/login.png";
+import LoginAvatar from "../../images/login.png";
 import { NavLink, useNavigate } from "react-router-dom";
-import { multiStepContext } from "../UserContext";
-import axios from "../axios";
-import seePass from "../images/eye.png";
-import notSeePass from "../images/hidden.png";
+import { multiStepContext } from "../../UserContext";
+import axios from "../../axios";
+import seePass from "../../images/eye.png";
+import notSeePass from "../../images/hidden.png";
 
 const Register = () => {
   const { userData, setUserData } = useContext(multiStepContext);
@@ -76,8 +76,8 @@ const Register = () => {
   };
 
   return (
-    <div className="relative">
-      <div className="absolute left-0 bottom-0">
+    <main className="register">
+      <div className="absoluteleft">
         <svg
           width="146"
           height="371"
@@ -97,7 +97,7 @@ const Register = () => {
           />
         </svg>
       </div>
-      <div className="absolute right-0 bottom-0">
+      <div className="absoluteright">
         <svg
           width="302"
           height="239"
@@ -307,7 +307,7 @@ const Register = () => {
               </div>
               <div className="mb-4">
                 <label htmlFor="password" className="block font-semibold mb-1">
-                  Password 
+                  Password
                 </label>
                 <div className="relative">
                   <input
@@ -328,7 +328,7 @@ const Register = () => {
                   htmlFor="confirmPassword"
                   className="flex align-items-center gap-3  font-semibold mb-1"
                 >
-                  Confirm Password <span><img className="w-5" src={ see ? seePass : notSeePass} onClick={handleClick}/></span>
+                  Confirm Password <span><img className="w-5" src={see ? seePass : notSeePass} onClick={handleClick} /></span>
                 </label>
                 <div className="relative">
                   <input
@@ -382,7 +382,8 @@ const Register = () => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
+
   );
 };
 

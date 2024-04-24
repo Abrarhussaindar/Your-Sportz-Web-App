@@ -6,8 +6,10 @@ import { useState } from "react"
 export default function ForgotPassword() {
 
     const [email, setEmail] = useState("")
+    const [click, setClick] = useState(false)
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setClick(true)
     }
 
     return (
@@ -135,7 +137,14 @@ export default function ForgotPassword() {
                     </div>
                     <form>
                         <input type="email" placeholder="Enter Your Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-                        <button onClick={handleSubmit}>Submit</button>
+
+                        {
+                            click
+                                ?
+                                <button type="submit" disabled={true} className="disable">Loading...</button>
+                                :
+                                <button type="submit" onClick={handleSubmit}>Submit</button>
+                        }
                     </form>
                     <Link to="/login">Back to login</Link>
                 </div>

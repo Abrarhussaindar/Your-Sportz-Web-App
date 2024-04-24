@@ -11,9 +11,11 @@ export default function CreateNewPassword() {
     const [password, setPassword] = useState("")
     const [confirmPassword, setConfirmPassword] = useState("")
     const [passwordWarning, setPasswordWarning] = useState('');
+    const [click, setClick] = useState(false)
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setClick(true)
     }
     const [see, setSee] = useState(false)
     const handleClick = (e) => {
@@ -190,7 +192,13 @@ export default function CreateNewPassword() {
                             {passwordWarning && <p className="war">{passwordWarning}</p>}
 
                         </div>
-                        <button onClick={handleSubmit}>Submit</button>
+                        {
+                            click
+                                ?
+                                <button type="submit" disabled={true} className="disable">Loading...</button>
+                                :
+                                <button type="submit" onClick={handleSubmit}>Submit</button>
+                        }
                     </form>
                     <Link to="/login">Back to login</Link>
                 </div>

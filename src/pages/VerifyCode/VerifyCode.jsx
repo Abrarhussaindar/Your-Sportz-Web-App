@@ -5,8 +5,11 @@ import { useState } from "react"
 
 export default function VerifyCode() {
     const [tokenNumber, setTokenNumber] = useState("")
+    const [click, setClick] = useState(false)
+
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setClick(true)
     }
     return (
         <main className="forgot">
@@ -133,7 +136,13 @@ export default function VerifyCode() {
                     </div>
                     <form>
                         <input type="number" placeholder="Enter the token number" value={tokenNumber} onChange={(e) => setTokenNumber(e.target.value)} />
-                        <button onClick={handleSubmit}>Submit</button>
+                        {
+                            click
+                                ?
+                                <button type="submit" disabled={true} className="disable">Loading...</button>
+                                :
+                                <button type="submit" onClick={handleSubmit}>Submit</button>
+                        }
                     </form>
                     <div className="bottom">
                         <p>If you didn’t receive  a code?</p>

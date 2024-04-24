@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import TermsConditions from "./pages/TermsConditions";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import Dashboard from "./pages/Dashboard";
+import TermsConditions from "./pages/TermsConditions/TermsConditions";
+import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
+import Login from "./pages/Login/Login";
+import Register from "./pages/Register/Register";
+import Dashboard from "./pages/Dashboard/Dashboard";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Pricing from "./pages/Pricing/Pricing";
 import ContatctUs from "./pages/ContactUs/ContatctUs";
