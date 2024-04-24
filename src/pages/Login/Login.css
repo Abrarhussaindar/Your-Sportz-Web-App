@@ -180,6 +180,7 @@
 @media screen and (width <= 440px) {
   .login .wrapper {
     flex-direction: column;
+    padding-bottom: 20px;
   }
   .login .wrapper .left {
     padding: 20px;

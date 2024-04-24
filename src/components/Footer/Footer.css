@@ -67,7 +67,8 @@ footer .copyright {
   justify-content: flex-end;
   gap: 4px;
 }
-footer .copyright span, footer .copyright p {
+footer .copyright span,
+footer .copyright p {
   color: #50424B;
   font-size: 14px;
   font-weight: 400;
@@ -109,8 +110,11 @@ footer .copyright span, footer .copyright p {
     border-top: 1px solid white;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 4px;
     padding-top: 10px;
+  }
+  footer .copyright p {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=Footer.css.map */

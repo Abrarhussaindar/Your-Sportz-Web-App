@@ -231,9 +231,10 @@
     .register {
         height: unset;
     }
+    
     .register .wrapper {
         flex-direction: column;
-
+        padding-bottom: 20px;
         .left{
             width: unset;
             padding: 20px;
