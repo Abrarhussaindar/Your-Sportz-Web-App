@@ -1,0 +1,191 @@
+.register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+.register .absoluteleft {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.register .absoluteright {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.register .wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  flex-direction: row-reverse;
+}
+.register .wrapper .left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 40%;
+}
+.register .wrapper .left button {
+  padding: 5px 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #FF5033;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all ease-in 0.2s;
+}
+.register .wrapper .left button:hover {
+  background-color: #e64023;
+}
+.register .wrapper .left h1 {
+  color: #554585;
+  font-weight: 500;
+  font-size: 44px;
+}
+.register .wrapper .left h4 {
+  font-size: 22px;
+  font-weight: 400;
+}
+.register .wrapper .left p {
+  color: #50424B;
+  font-weight: 400;
+  font-size: 14px;
+}
+.register .wrapper .left img {
+  width: 350px;
+}
+.register .wrapper .right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.register .wrapper .right .tab {
+  background-color: #E5E5EE;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+}
+.register .wrapper .right .tab button {
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #E5E5EE;
+}
+.register .wrapper .right form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  padding: 30px;
+}
+.register .wrapper .right form .formEle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.register .wrapper .right form .formEle label {
+  color: #50424B;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.register .wrapper .right form .formEle label img {
+  width: 20px;
+}
+.register .wrapper .right form .formEle input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  padding-left: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+.register .wrapper .right form .keep {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+}
+.register .wrapper .right form .keep .keepLogged {
+  display: flex;
+  gap: 10px;
+}
+.register .wrapper .right form .keep .keepLogged label {
+  color: #50424B;
+  font-size: 12px;
+  font-weight: 400;
+}
+.register .wrapper .right form .keep .keepLogged input[type=checkbox] {
+  box-shadow: none;
+  accent-color: #FF5033;
+}
+.register .wrapper .right form .keep a {
+  text-decoration: underline;
+  color: #FF5033;
+  font-weight: 400;
+  font-size: 12px;
+}
+.register .wrapper .right form .terms {
+  display: flex;
+  flex-direction: row;
+}
+.register .wrapper .right form .terms label {
+  font-size: 12px;
+  font-weight: 400;
+}
+.register .wrapper .right form .terms label span {
+  font-weight: 500;
+  color: #554585;
+}
+.register .wrapper .right form .terms input[type=checkbox] {
+  box-shadow: none;
+  accent-color: #FF5033;
+}
+.register .wrapper .right form button {
+  padding: 5px 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #FF5033;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all ease-in 0.2s;
+}
+.register .wrapper .right form button:hover {
+  background-color: #e64023;
+}
+.register .wrapper .right form .disable {
+  cursor: not-allowed;
+}
+.register .wrapper .right .bottom {
+  display: flex;
+  justify-content: space-evenly;
+}
+.register .wrapper .right .bottom p {
+  color: #50424B;
+  font-weight: 400;
+}
+.register .wrapper .right .bottom a {
+  text-decoration: underline;
+  color: #FF5033;
+  font-weight: 500;
+}/*# sourceMappingURL=Register.css.map */

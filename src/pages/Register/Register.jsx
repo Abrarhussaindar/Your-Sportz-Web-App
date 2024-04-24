@@ -5,10 +5,10 @@ import { multiStepContext } from "../../UserContext";
 import axios from "../../axios";
 import seePass from "../../images/eye.png";
 import notSeePass from "../../images/hidden.png";
+import "./Register.css"
 
 const Register = () => {
   const { userData, setUserData } = useContext(multiStepContext);
-  const [isSchool, setIsSchool] = useState(true);
   const navigate = useNavigate();
   const [see, setSee] = useState(false)
   const [email, setEmail] = useState("")
@@ -16,15 +16,21 @@ const Register = () => {
   const [confirmPassword, setConfirmPassword] = useState("")
   const [warning, setWarning] = useState('');
   const [passwordWarning, setPasswordWarning] = useState('');
-  const toggleMode = () => {
+  const [isActive, setIsActive] = useState(true)
+  const [isSchool, setIsSchool] = useState(true)
+  const [click, setClick] = useState(false)
+  const handleToggle = () => {
+    setIsActive(!isActive);
     setIsSchool(!isSchool);
   };
+
   const handleClick = (e) => {
     e.preventDefault();
     setSee(!see); // Toggle the value of see
   };
   const handleRegisterUser = async (event) => {
     event.preventDefault();
+    setClick(true)
     const data = userData
     try {
       const res = await axios.post("/webauth/register", data)
@@ -191,197 +197,124 @@ const Register = () => {
           </defs>
         </svg>
       </div>
-      <div className="relative flex flex-wrap items-center mx-2 md:mx-10">
-        <div className="w-full lg:w-2/3 px-4 md:px-36 mt-20">
-          <div className="px-4 md:px-20">
-            <button onClick={() => navigate(-1)}>Go Back</button>
-            <div className="text-purple-700 font-bold text-4xl">
-              Welcome back!
-            </div>
-            <div>Nice to see you again</div>
-            <div>
-              <p className="text-gray-500">
-                YourSportz, the dynamic football app, offers a plethora of
-                health and lifestyle benefits. Let&rsquo;s delve into how it can
-                enhance your well-being
-              </p>
-            </div>
-          </div>
-          <div>
-            <img src={LoginAvatar} alt="Login Avatar" />
-          </div>
+      <div className="wrapper">
+        <div className="left">
+          <button onClick={() => navigate(-1)}>Go Back</button>
+          <h1>Welcome back!</h1>
+          <h4>Nice to see you again</h4>
+          <p>YourSportz, the dynamic football app, offers a plethora ofhealth and lifestyle benefits. Let&rsquo;s delve into how it can enhance your well-being</p>
+          <img src={LoginAvatar} alt="Login Avatar" />
         </div>
-        <div className="w-full lg:w-1/3">
-          <div className="bg-white p-8 rounded-lg ">
-            <div className="flex justify-center mb-4 ">
-              <div className="bg-gray-200 rounded-full px-2 py-2 flex items-center ">
-                <button
-                  className={`${isSchool
-                    ? " bg-white text-gray-600 shadow-md"
-                    : "bg-gray-200 text-gray-800"
-                    } rounded-full px-4 py-2 transition-colors duration-500 focus:outline-none`}
-                  onClick={toggleMode}
-                >
-                  School
-                </button>
-                <button
-                  className={`${!isSchool
-                    ? "bg-white text-gray-600 shadow-md"
-                    : "bg-gray-200 text-gray-800 "
-                    } rounded-full px-4 py-2 transition-colors duration-500 focus:outline-none`}
-                  onClick={toggleMode}
-                >
-                  Corporate
-                </button>
-              </div>
+        <div className="right">
+          <div className="tab">
+            <button className={isActive ? "activeBtn" : "notActive"} onClick={handleToggle}>General</button>
+            <button className={!isActive ? "activeBtn" : "notActive"} onClick={handleToggle}>School / Corporate</button>
+          </div>
+          <form>
+            <div className="formEle">
+              <label htmlFor="fullName">Full name</label>
+              <input
+                type="text"
+                id="fullName"
+                value={userData['fulltName']}
+                required onChange={(e) => setUserData({ ...userData, "fullName": e.target.value })}
+                placeholder="Full name"
+              />
             </div>
-            <form>
-              <div className="mb-4">
-                <label htmlFor="fullName" className="block font-semibold mb-1">
-                  Full name
-                </label>
-                <input
-                  type="text"
-                  id="fullName"
-                  value={userData['fulltName']}
-                  required onChange={(e) => setUserData({ ...userData, "fullName": e.target.value })}
-                  className="w-full border bg-gray-50 border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="Full name"
-                />
-              </div>
-              <div className="mb-4">
-                <label
-                  htmlFor="institution"
-                  className="block font-semibold mb-1"
-                >
-                  {isSchool ? "Institution" : "Company"}
-                </label>
-                {
-                  isSchool
-                    ?
-                    <input
-                      type="text"
-                      id="institution"
-                      value={userData['institution']}
-                      required onChange={(e) => setUserData({ ...userData, "institution": e.target.value })}
-                      className="w-full border bg-gray-50 border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      placeholder={"Institution"}
-                    />
-                    :
-                    <input
-                      type="text"
-                      id="company"
-                      value={userData['company']}
-                      required onChange={(e) => setUserData({ ...userData, "company": e.target.value })}
-                      className="w-full border bg-gray-50 border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                      placeholder={"Company"}
-                    />
-                }
-              </div>
-              <div className="mb-4">
-                <label htmlFor="address" className="block font-semibold mb-1">
-                  Address
-                </label>
-                <input
-                  type="text"
-                  id="address"
-                  value={userData['address']}
-                  required onChange={(e) => setUserData({ ...userData, "address": e.target.value })}
-                  className="w-full border bg-gray-50 border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="Address"
-                />
-              </div>
-              <div className="mb-4">
-                <label htmlFor="email" className="block font-semibold mb-1">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  value={email}
-                  required onChange={handleEmailChange}
-                  className="w-full border bg-gray-50 border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="Email account"
-                />
-                {warning && <p className="text-red-500">{warning}</p>}
-              </div>
-              <div className="mb-4">
-                <label htmlFor="password" className="block font-semibold mb-1">
-                  Password
-                </label>
-                <div className="relative">
+            <div className="formEle">
+              <label htmlFor="institution">{isSchool ? "Institution" : "Company"}</label>
+              {
+                isSchool
+                  ?
                   <input
                     type="text"
-                    id="password"
-                    value={password}
-                    required onChange={handlePasswordChange}
-                    className="w-full border bg-gray-50 text-gray-900 border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 pr-8"
-                    placeholder="Password"
+                    id="institution"
+                    value={userData['institution']}
+                    required onChange={(e) => setUserData({ ...userData, "institution": e.target.value })}
+                    placeholder={"Institution"}
                   />
-                  {/* <span className="absolute inset-y-0 right-0 pr-3 flex items-center">
-              👁
-            </span> */}
-                </div>
-              </div>
-              <div className="mb-6">
-                <label
-                  htmlFor="confirmPassword"
-                  className="flex align-items-center gap-3  font-semibold mb-1"
-                >
-                  Confirm Password <span><img className="w-5" src={see ? seePass : notSeePass} onClick={handleClick} /></span>
-                </label>
-                <div className="relative">
+                  :
                   <input
-                    type={see ? "text" : "password"}
-                    id="confirmPassword"
-                    value={confirmPassword}
-                    required onChange={handleConfirmPasswordChange}
-                    className="w-full border bg-gray-50 text-gray-900 border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 pr-8"
-                    placeholder="Confirm Password"
+                    type="text"
+                    id="company"
+                    value={userData['company']}
+                    required onChange={(e) => setUserData({ ...userData, "company": e.target.value })}
+                    placeholder={"Company"}
                   />
-                  {/* <span className="absolute inset-y-0 right-0 pr-3 flex items-center">
-              👁
-            </span> */}
-                  {passwordWarning && <p className="text-red-500">{passwordWarning}</p>}
-                </div>
-              </div>
-              <div className="mb-6">
-                <div className="flex items-center">
-                  <input
-                    type="checkbox"
-                    id="agreeTerms"
-                    value={userData['agreeTerms']}
-                    required onChange={() => setUserData({ ...userData, "agreeTerms": true })}
-                    className="mr-2 form-checkbox h-5 w-5 text-blue-500"
-                  />
-                  <label htmlFor="agreeTerms" className="text-gray-700">
-                    I agree to the Terms of Service and Privacy Policy
-                  </label>
-                </div>
-              </div>
-              <button
-                type="submit"
-                onClick={handleRegisterUser}
-                className="w-full bg-orange-500 text-white py-2 rounded-md hover:bg-orange-600 transition-colors duration-300"
-              >
-                Register
-              </button>
-              <p className="text-center mt-6">
-                Already have an account?{" "}
-                <NavLink
-                  to="/login"
+              }
+            </div>
+            <div className="formEle">
+              <label htmlFor="address">Address</label>
+              <input
+                type="text"
+                id="address"
+                value={userData['address']}
+                required onChange={(e) => setUserData({ ...userData, "address": e.target.value })}
+                placeholder="Address"
+              />
+            </div>
+            <div className="formEle">
+              <label htmlFor="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                value={email}
+                required onChange={handleEmailChange}
+                placeholder="Email account"
+              />
+              {warning && <p className="text-red-500">{warning}</p>}
+            </div>
+            <div className="formEle">
+              <label htmlFor="password">Password</label>
 
-                  className="text-blue-500 hover:text-blue-700"
-                >
-                  Login
-                </NavLink>
+              <input
+                type="text"
+                id="password"
+                value={password}
+                required onChange={handlePasswordChange}
+                placeholder="Password"
+              />
+            </div>
+            <div className="formEle">
+              <label htmlFor="confirmPassword">Confirm Password <img className="w-5" src={see ? seePass : notSeePass} onClick={handleClick} /></label>
 
-              </p>
+              <input
+                type={see ? "text" : "password"}
+                id="confirmPassword"
+                value={confirmPassword}
+                required onChange={handleConfirmPasswordChange}
+                placeholder="Confirm Password"
+              />
+              {passwordWarning && <p className="text-red-500">{passwordWarning}</p>}
 
-            </form>
+            </div>
+            <div className="formEle terms ">
+              <input
+                type="checkbox"
+                id="agreeTerms"
+                value={userData['agreeTerms']}
+                required onChange={() => setUserData({ ...userData, "agreeTerms": true })}
+
+              />
+              <label htmlFor="agreeTerms">
+                I agree to the Terms of Service and Privacy Policy
+              </label>
+            </div>
+            {
+              click
+                ?
+                <button type="submit" disabled={true} className="disable">Loading...</button>
+                :
+                <button type="submit" onClick={handleRegisterUser}>Register</button>
+            }
+          </form>
+          <div className="bottom">
+            <p>Already have an account?</p>
+            <NavLink to="/login">Login</NavLink>
           </div>
         </div>
       </div>
+
     </main>
 
   );
