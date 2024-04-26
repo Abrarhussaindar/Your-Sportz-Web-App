@@ -9,11 +9,13 @@
   position: absolute;
   left: 0;
   bottom: 0;
+  z-index: -1111;
 }
 .login .absoluteright {
   position: absolute;
   right: 0;
   bottom: 0;
+  z-index: -1111;
 }
 .login .wrapper {
   display: flex;
@@ -78,11 +80,16 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 10px;
   padding: 30px;
+  background-color: white;
 }
 .login .wrapper .right form .formEle {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+.login .wrapper .right form .formEle .error {
+  color: red;
+  font-weight: 400;
 }
 .login .wrapper .right form .formEle label {
   color: #50424B;

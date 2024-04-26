@@ -10,12 +10,14 @@
         position: absolute;
         left: 0;
         bottom: 0;
+        z-index: -1111;
     }
 
     .absoluteright {
         position: absolute;
         right: 0;
         bottom: 0;
+        z-index: -1111;
     }
 
     .wrapper {
@@ -89,11 +91,15 @@
                 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                 border-radius: 10px;
                 padding: 30px;
+                background-color: white;
                 .formEle {
                     display: flex;
                     flex-direction: column;
                     gap: 5px;
-
+                    .error{
+                        color: red;
+                        font-weight: 400;
+                    }
                     label {
                         color: #50424B;
                         font-size: 14px;

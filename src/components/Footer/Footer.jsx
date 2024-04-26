@@ -25,23 +25,15 @@ export default function Footer() {
               </a>
             </ul>
           </div>
-          <div className="indiLinks">
-            <h3>Pricing</h3>
-            <ul>
-              <a href="#">
-                <li><span><img src={email} alt="" /></span> Email</li>
-              </a>
-              <a href="">
-
-                <li><span><img src={insta} alt="" /></span> Instagram</li>
-              </a>
-            </ul>
-          </div>
+          
           <div className="indiLinks">
             <h3>Need Help</h3>
             <ul>
               <Link to="/contactUs">
                 <li>Contact Us</li>
+              </Link>
+              <Link to="/pricing">
+                <li>Pricing</li>
               </Link>
               <Link to="#faq">
 

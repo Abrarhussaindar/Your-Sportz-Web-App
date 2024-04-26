@@ -32,7 +32,6 @@ footer .top .logo h3 span {
 }
 footer .top .links {
   display: flex;
-  align-items: center;
   gap: 150px;
 }
 footer .top .links .indiLinks {

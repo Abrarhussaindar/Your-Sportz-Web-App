@@ -10,12 +10,14 @@
         position: absolute;
         left: 0;
         bottom: 0;
+        z-index: -1111;
     }
 
     .absoluteright {
         position: absolute;
         right: 0;
         bottom: 0;
+        z-index: -1111;
     }
 
     .wrapper {
@@ -76,6 +78,7 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
+            width: 30%;
             .tab {
                 background-color: #E5E5EE;
                 border-radius: 10px;
@@ -102,6 +105,7 @@
                 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                 border-radius: 10px;
                 padding: 30px;
+                background-color: white;
 
                 .formEle {
                     display: flex;
@@ -131,6 +135,12 @@
                         font-weight: 500;
                     }
                     
+                    .error{
+                        width: 100%;
+                        color: red;
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
 
 
                 }

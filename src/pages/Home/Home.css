@@ -66,6 +66,7 @@ main .hero .right img {
 main .features {
   height: 100vh;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 40px;
 }
@@ -75,28 +76,16 @@ main .features img {
   -o-object-fit: contain;
      object-fit: contain;
 }
-main .features .details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-main .features .details h2 {
-  font-size: 50px;
-  font-weight: 600;
-}
-main .features .details p {
-  width: 33%;
-  font-size: 18px;
-  font-weight: 500;
-  color: #6C646A;
-  text-align: center;
-}
 main .matches {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 80px;
+}
+main .matches h2 {
+  font-size: 52px;
+  font-weight: 500;
 }
 main .matches .row {
   display: flex;
@@ -110,12 +99,13 @@ main .matches .row .container {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 25%;
+  width: 30%;
   background: url("../../images/background-right.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 40px;
+  padding: 60px 40px;
+  position: relative;
 }
 main .matches .row .container .heading {
   display: flex;
@@ -138,6 +128,24 @@ main .matches .row .container p {
   font-weight: 500;
   color: #50424B;
 }
+main .matches .row .headingHoverContainer {
+  display: none;
+  /* Hide the container by default */
+}
+main .matches .row .container:hover .headingHoverContainer {
+  position: absolute;
+  top: -30%;
+  left: 5%;
+  display: block;
+  background-color: #FAFAFA;
+  padding: 30px;
+  width: 80%;
+  margin-bottom: 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  transition: all 0.2s ease-in;
+  /* Show the container when its parent container is hovered over */
+}
 main .matches .row2 {
   display: flex;
   align-items: center;
@@ -148,21 +156,24 @@ main .matches .row2 .phone {
   width: 200px;
 }
 main .matches .row2 .container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 10px;
-  width: 25%;
+  width: 30%;
   background: url("../../images/background-left.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 40px;
+  padding: 60px 40px;
+}
+main .matches .row2 .container .headingHoverContainer {
+  display: none;
 }
 main .matches .row2 .container .heading {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   gap: 10px;
 }
 main .matches .row2 .container .heading img {
@@ -181,6 +192,65 @@ main .matches .row2 .container p {
   font-weight: 500;
   color: #50424B;
   text-align: right;
+}
+main .matches .row2 .headingHoverContainer {
+  display: none;
+  /* Hide the container by default */
+}
+main .matches .row2 .container:hover .headingHoverContainer {
+  position: absolute;
+  top: -40%;
+  left: 5%;
+  display: block;
+  background-color: #FAFAFA;
+  padding: 30px;
+  width: 80%;
+  margin-bottom: 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  transition: all 0.2s ease-in;
+  /* Show the container when its parent container is hovered over */
+}
+main .explore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 50px;
+}
+main .explore h2 {
+  font-size: 52px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+main .explore ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+main .explore ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 20px;
+  padding: 60px 40px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+main .explore ul li img {
+  width: 60px;
+}
+main .explore ul li .tt {
+  width: 50px !important;
+}
+main .explore ul li:hover {
+  background-color: #f3f1f1;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 main .devices {
   height: 70vh;
@@ -226,16 +296,15 @@ main .faq {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 40px;
 }
 main .faq .heading {
   display: flex;
-  align-items: flex-end;
+  align-items: baseline;
 }
 main .faq .heading h2 {
-  font-size: 32px;
-  font-weight: 600;
+  font-size: 52px;
+  font-weight: 500;
 }
 main .faq .heading .faqImg {
   width: 80px;
@@ -279,6 +348,10 @@ main .faq .content .container p {
   color: #372E34;
   font-size: 14px;
   font-weight: 400;
+}
+
+.featuress {
+  margin-top: 75px !important;
 }
 
 .click {
@@ -372,10 +445,23 @@ main .faq .content .container p {
     font-size: 18px;
     width: 90%;
   }
-  main .matches .row, main .matches .row2 {
+  main .matches h2 {
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+  }
+  main .matches .row .container {
+    padding: 40px !important;
+  }
+  main .features {
+    height: unset;
+  }
+  main .matches .row,
+  main .matches .row2 {
     flex-direction: column;
   }
-  main .matches .row .container, main .matches .row2 .container {
+  main .matches .row .container,
+  main .matches .row2 .container {
     width: unset;
   }
   main .devices {

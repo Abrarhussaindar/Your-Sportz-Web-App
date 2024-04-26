@@ -18,7 +18,7 @@ export default function Header() {
       text: "About Us",
     },
     {
-      to: "*",
+      to: "/features",
       text: "Features",
     },
     {
@@ -63,9 +63,7 @@ export default function Header() {
           <ul>
             {navLinks.map((link) => (
               <NavLink to={link.to} key={link.text}>
-                <li className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "active" : ""
-                }>{link.text}</li>
+                <li>{link.text}</li>
               </NavLink>
             ))}
           </ul>
@@ -92,7 +90,7 @@ export default function Header() {
         <img src={ham} onClick={toggleMenu} className="ham" id="ham" alt="ham" />
 
       </div>
-      <div className={`${isMenuOpen  ? 'open' : 'notOpen'}`}>
+      <div className={`${isMenuOpen ? 'open' : 'notOpen'}`}>
 
         <div className="top">
           <h2 className="menuLogo">Your<span>Sportz</span></h2>

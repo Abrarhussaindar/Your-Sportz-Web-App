@@ -54,7 +54,6 @@ const Register = () => {
     }
   };
   const isValidProfessionalEmail = (email) => {
-    // List of professional email domains
     const professionalDomains = ['example.com', 'companydomain.com', 'yourcompany.com', 'yoursportz.in'];
     const domain = email.split('@')[1];
     return professionalDomains.includes(domain);
@@ -262,7 +261,7 @@ const Register = () => {
                 required onChange={handleEmailChange}
                 placeholder="Email account"
               />
-              {warning && <p className="text-red-500">{warning}</p>}
+              {warning && <p className="error">{warning}</p>}
             </div>
             <div className="formEle">
               <label htmlFor="password">Password</label>
@@ -285,7 +284,7 @@ const Register = () => {
                 required onChange={handleConfirmPasswordChange}
                 placeholder="Confirm Password"
               />
-              {passwordWarning && <p className="text-red-500">{passwordWarning}</p>}
+              {passwordWarning && <p className="error">{passwordWarning}</p>}
 
             </div>
             <div className="formEle terms ">

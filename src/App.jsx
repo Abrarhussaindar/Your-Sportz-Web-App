@@ -12,6 +12,7 @@ import Payment from "./pages/Payment/Payment";
 import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
 import CreateNewPassword from "./pages/CreateNewPassword/CreateNewPassword";
 import VerifyCode from "./pages/VerifyCode/VerifyCode";
+import Feature from "./pages/Feature/Feature";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/features" element={<Feature />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/payment" element={<Payment />} />
           <Route path="/contactUs" element={<ContatctUs />} />

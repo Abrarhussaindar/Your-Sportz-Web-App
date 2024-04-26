@@ -11,25 +11,42 @@ import "./Login.css"
 const Login = () => {
   const { userData, setUserData } = useContext(multiStepContext);
   const navigate = useNavigate();
-  const [see, setSee] = useState(false)
-  const [click, setClick] = useState(false)
+  const [see, setSee] = useState(false);
+  const [click, setClick] = useState(false);
+  const [emailError, setEmailError] = useState(false);
+  const emailRegex = /@example\.com$|@companydomain\.com$|@yourcompany\.com$|@yoursportz\.in$/i;
+
   const handleLogin = async (event) => {
     event.preventDefault();
-    setClick(true)
-    const data = userData
+    if (!emailRegex.test(userData.email)) {
+      setEmailError(true);
+      return;
+    }
+    setClick(true);
+    const data = userData;
     try {
-      const res = await axios.post("/webauth/login", data)
+      const res = await axios.post("/webauth/login", data);
       if (res.data === "logged in") {
-        navigate("/dashboard")
+        navigate("/dashboard");
       }
     } catch (err) {
       console.log(err);
     }
+  };
 
-  }
   const handleClick = (e) => {
     e.preventDefault();
     setSee(!see);
+  };
+
+  const handleEmailChange = (e) => {
+    const { value } = e.target;
+    setUserData({ ...userData, email: value });
+    if (!emailRegex.test(value)) {
+      setEmailError(true);
+    } else {
+      setEmailError(false);
+    }
   };
 
   return (
@@ -165,9 +182,11 @@ const Login = () => {
                 type="email"
                 id="email"
                 value={userData['email']}
-                required onChange={(e) => setUserData({ ...userData, "email": e.target.value })}
+                required
+                onChange={handleEmailChange}
                 placeholder="Enter your Email"
               />
+              {emailError && <p className="error">Please enter a valid professional email.</p>}
             </div>
             <div className="formEle">
               <label htmlFor="password">Password<img src={see ? seePass : notSeePass} onClick={handleClick} /></label>
