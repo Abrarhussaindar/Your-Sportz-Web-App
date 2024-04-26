@@ -44,18 +44,24 @@
 
     .middle {
         display: flex;
+        width: 100%;
         gap: 30px;
 
-        .school, .general {
+        .school {
             display: flex;
             gap: 50px;
+            justify-content: center;
+            width: 100%;
+
             .container {
                 display: flex;
                 flex-direction: column;
+                justify-content: space-between;
                 gap: 40px;
                 border: 2px solid #5A4C84;
                 border-radius: 10px;
                 padding: 30px;
+                width: 15%;
                 cursor: pointer;
                 transition: all .3s ease-in;
 
@@ -180,6 +186,168 @@
             }
         }
 
+        .general {
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            width: 100%;
+
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 40px;
+                border: 2px solid #5A4C84;
+                border-radius: 10px;
+                padding: 30px;
+                width: 15%;
+                cursor: pointer;
+                transition: all .3s ease-in;
+
+                .wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 20px;
+
+                    .custome-hr {
+                        border-top: 2px solid #5A4C84;
+                    }
+
+                    .tags {
+                        display: flex;
+                        gap: 10px;
+
+                        h4,
+                        .pop {
+                            padding: 5px 20px;
+                            font-weight: 400;
+                            font-size: 12px;
+                            text-transform: capitalize;
+                            border-radius: 10px;
+                            background-color: #E5E5EE;
+                        }
+
+                        .pop {
+                            background-color: #FF5033;
+                            color: white;
+                        }
+
+
+
+                    }
+
+
+                    .amount {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 20px 0;
+                        border-top: 1px solid #FF5033;
+                        border-bottom: 1px solid #FF5033;
+
+                        h3 {
+                            .symbol {
+                                font-weight: 500;
+                            }
+
+                            font-size: 36px;
+                            font-weight: 500;
+
+                            .gst {
+                                font-size: 12px;
+                                font-weight: 400;
+                            }
+                        }
+
+                        p {
+                            font-size: 12px;
+                            font-weight: 400;
+                        }
+                    }
+
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        li {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: 10px;
+                            font-size: 12px;
+                            font-weight: 400;
+
+                            .innerUl{
+                                .innerLi{
+                                    
+                                    padding-left: 30px;
+                                }
+                                .innerLi::marker {
+                                    font-size: 25px;
+                                    color: #554585;
+                                }
+                            }
+
+
+                            .innerDiv {
+                                display: flex;
+
+                                p {
+                                    font-size: 12px;
+                                    font-weight: 400;
+                                }
+
+                            }
+
+                            img {
+                                width: 25px;
+                            }
+                        }
+                    }
+                }
+
+                button {
+                    border: none;
+                    outline: none;
+                    color: white;
+                    background-color: #FF5033;
+                    font-weight: 500;
+                    font-size: 18px;
+                    border-radius: 10px;
+                    padding: 10px 30px;
+                    cursor: pointer;
+                    text-align: center;
+                    text-transform: uppercase;
+                    transition: all ease-in .2s;
+
+                    &:hover {
+                        background-color: #e64023;
+                    }
+                }
+
+                &:hover {
+                    color: white;
+                    background-color: #554585;
+
+                    .wrapper {
+                        .tags {
+                            h4 {
+                                color: black;
+                                background-color: white;
+                            }
+
+                            .pop {
+                                background-color: #FF5033;
+                                color: white;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
     }
 
     .bottom {
@@ -241,14 +409,18 @@
     .price .top {
         width: unset;
     }
+
     .price .top h1 {
         font-size: 24px;
     }
-    .price .middle .school, .price .middle .general {
+
+    .price .middle .school,
+    .price .middle .general {
         display: flex;
         gap: 50px;
         flex-direction: column;
     }
+
     .price .bottom p {
         text-align: center;
         font-size: 12px;
