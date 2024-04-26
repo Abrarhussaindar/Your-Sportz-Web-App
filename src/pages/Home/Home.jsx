@@ -71,7 +71,7 @@ const Home = () => {
               <p>Direct the game&apos;s score with a single touch using our scorer app. Accurately log goals, fouls, and more, with an &apos;Undo&apos; feature for corrections. Simple, swift, and precise—be the game&apos;s definitive scorekeeper.</p>
             </div>
           </div>
-          <div className="row">
+          <div className={`${screenWidth < 720 ? "row" : "row2"}`}>
             <img className="phone" src={andPhone} alt="" />
             <div className="container">
               <div className="heading">
@@ -93,7 +93,7 @@ const Home = () => {
               <p>Direct the game&apos;s score with a single touch using our scorer app. Accurately log goals, fouls, and more, with an &apos;Undo&apos; feature for corrections. Simple, swift, and precise—be the game&apos;s definitive scorekeeper.</p>
             </div>
           </div>
-          <div className="row">
+          <div className={`${screenWidth < 720 ? "row" : "row2"}`}>
             <img className="phone" src={andPhone} alt="" />
             <div className="container">
               <div className="heading">
