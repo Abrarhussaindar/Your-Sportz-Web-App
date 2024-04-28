@@ -17,7 +17,7 @@ export default function Pricing() {
         {
             id: 1,
             tag: ["6-Months"],
-            price: "15,000",
+            price: "25,000",
             priceTag: "With GST",
             priceDis: "Per member, per Year",
             subDetails: [
@@ -44,7 +44,7 @@ export default function Pricing() {
         {
             id: 2,
             tag: ["per match live stream"],
-            price: 149,
+            price: "15,000",
             priceTag: "with GST",
             priceDis: "",
             subDetails: [

@@ -425,4 +425,15 @@
         text-align: center;
         font-size: 12px;
     }
+
+    .price .middle .school, .price .middle .general {
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .price .middle .school .container, .price .middle .general .container {
+        width: 50%;
+    }
 }
