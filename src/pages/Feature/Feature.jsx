@@ -25,7 +25,7 @@ export default function Feature() {
                 "Direct the game's score with a single touch using our scorer app. Accurately log goals, fouls, and more, with an 'Undo' feature for corrections. Simple, swift, and precise—be the game's definitive scorekeeper.",
             hoverTitle: "Cardiovascular Health:",
             hoverDescription:
-                "The constant movement in football-covering 8 to 11 kilometers per game-keeps heart rates up. It strengthens the heart, reduces blood pressure, and burns calories effectively.",
+                "The constant movement in football-covering 8 to 11 kilometers per game-keeps heart rates up.",
             Image: andPhone,
         },
         {
@@ -55,7 +55,7 @@ export default function Feature() {
                 "Embrace the excitement of sports in your language with our app. Enjoy live commentary, real-time updates, and all the highlights in your preferred language. Break down language barriers and connect with the game like never before.",
             hoverTitle: "Mental Toughness:",
             hoverDescription:
-                "Football sharpens concentration, decision-making, and teamwork. It fosters discipline, social engagement, and confidence. YourSportz isn't just about the game; it's a holistic experience that combines passion, health, and community. So, lace up those boots and score the moment!",
+                "Football sharpens concentration, decision-making, and teamwork. It fosters discipline, social engagement, and confidence. ",
             Image: andPhone,
         },
     ];

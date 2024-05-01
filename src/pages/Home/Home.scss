@@ -237,6 +237,24 @@ main {
             .headingHoverContainer {
                 display: none;
             }
+            .container:hover .headingHoverContainer {
+                position: absolute;
+                top: -35%;
+                left: 5%;
+                display: block;
+                background-color: #FAFAFA;
+                padding: 30px;
+                width: 80%;
+                margin-bottom: 40px;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                border-radius: 20px;
+                transition: all .2s ease-in;
+
+                p{
+                    text-align: left;
+                }
+                /* Show the container when its parent container is hovered over */
+            }
         }
     }
 
