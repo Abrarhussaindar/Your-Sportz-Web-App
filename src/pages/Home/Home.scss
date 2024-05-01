@@ -161,7 +161,6 @@ main {
 
             .headingHoverContainer {
                 display: none;
-                /* Hide the container by default */
             }
 
             .container:hover .headingHoverContainer {
@@ -207,7 +206,6 @@ main {
                     display: none;
                 }
 
-                // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
                 .heading {
                     display: flex;
                     align-items: center;
@@ -221,8 +219,6 @@ main {
                         font-size: 18px;
                         font-weight: 600;
                     }
-
-
                 }
 
                 h3 {
@@ -240,22 +236,6 @@ main {
 
             .headingHoverContainer {
                 display: none;
-                /* Hide the container by default */
-            }
-
-            .container:hover .headingHoverContainer {
-                position: absolute;
-                top: -40%;
-                left: 5%;
-                display: block;
-                background-color: #FAFAFA;
-                padding: 30px;
-                width: 80%;
-                margin-bottom: 40px;
-                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-                border-radius: 20px;
-                transition: all .2s ease-in;
-                /* Show the container when its parent container is hovered over */
             }
         }
     }

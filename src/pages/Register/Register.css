@@ -221,4 +221,7 @@
   .register .wrapper .right form {
     background: white;
   }
+  .register .wrapper .right {
+    width: 90%;
+  }
 }/*# sourceMappingURL=Register.css.map */

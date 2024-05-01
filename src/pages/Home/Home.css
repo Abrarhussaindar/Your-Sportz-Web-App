@@ -130,7 +130,6 @@ main .matches .row .container p {
 }
 main .matches .row .headingHoverContainer {
   display: none;
-  /* Hide the container by default */
 }
 main .matches .row .container:hover .headingHoverContainer {
   position: absolute;
@@ -195,21 +194,6 @@ main .matches .row2 .container p {
 }
 main .matches .row2 .headingHoverContainer {
   display: none;
-  /* Hide the container by default */
-}
-main .matches .row2 .container:hover .headingHoverContainer {
-  position: absolute;
-  top: -40%;
-  left: 5%;
-  display: block;
-  background-color: #FAFAFA;
-  padding: 30px;
-  width: 80%;
-  margin-bottom: 40px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-radius: 20px;
-  transition: all 0.2s ease-in;
-  /* Show the container when its parent container is hovered over */
 }
 main .explore {
   display: flex;
