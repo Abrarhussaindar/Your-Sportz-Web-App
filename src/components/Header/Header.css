@@ -69,6 +69,7 @@ header .right nav .btns .langs, header .open nav .btns .langs {
   border: 2px solid #DE4F44;
   background-color: #FFEEEB;
   border-radius: 10px;
+  width: 115px;
 }
 header .right nav .btns .langs img, header .open nav .btns .langs img {
   width: 20px;
@@ -83,11 +84,17 @@ header .right nav .btns .langs .customSelect select, header .open nav .btns .lan
   width: 100%;
   border: none;
   background-color: #FFEEEB;
-  font-weight: 600;
+  font-weight: 500;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  font-size: 14px;
   outline: none;
+  padding: 0 10px;
+}
+header .right nav .btns .langs .customSelect select option, header .open nav .btns .langs .customSelect select option {
+  font-weight: 500;
+  padding: 10px;
 }
 header .right nav .btns .langs .customSelect span, header .open nav .btns .langs .customSelect span {
   position: absolute;

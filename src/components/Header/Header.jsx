@@ -1,33 +1,34 @@
 import { Link, NavLink } from "react-router-dom"
 import ham from "../../images/ham.svg"
 import logo from "../../images/logo.png"
-import globe from "../../images/globe.svg"
-import arrow from "../../images/Vector.svg"
 import close from "../../images/close.png"
 import "./Header.css"
 import { useEffect, useState } from "react"
+import { useTranslation } from "react-i18next"
+import LanguageSelector from "../LanguageSelector/LanguageSelector"
 
 export default function Header() {
+  const { t } = useTranslation()
   const navLinks = [
     {
       to: "/",
-      text: "Home",
+      text: `${t("navHome")}`,
     },
     {
       to: "/about",
-      text: "About Us",
+      text: `${t("navAbout")}`,
     },
     {
       to: "/features",
-      text: "Features",
+      text: `${t("navFeatures")}`,
     },
     {
       to: "/pricing",
-      text: "Pricing",
+      text: `${t("navPricing")}`,
     },
     {
       to: "/contactUs",
-      text: "Contact Us",
+      text: `${t("navContact")}`,
     }
   ]
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -55,7 +56,8 @@ export default function Header() {
       <div className="left">
         <Link to="/">
           <img src={logo} alt="" />
-          <h2>Your<span>Sportz</span></h2>
+          
+          <h2>{t("logoLeft")}<span>{t("logoRight")}</span></h2>
         </Link>
       </div>
       <div className={`right`}>
@@ -68,22 +70,10 @@ export default function Header() {
             ))}
           </ul>
           <div className="btns">
-            <div className="langs">
-              <img src={globe} alt="" />
-              <div className="customSelect">
-                <select name="Langauges" id="langs">
-                  <option value="English">En</option>
-                  <option value="Other">Other</option>
-                </select>
-                <span>
-
-                  <img src={arrow} alt="" />
-                </span>
-              </div>
-            </div>
+            <LanguageSelector />
             <Link to="/login">
 
-              <button>Login</button>
+              <button>{t("loginBtn")}</button>
             </Link>
           </div>
         </nav>
@@ -107,19 +97,7 @@ export default function Header() {
             ))}
           </ul>
           <div className="btns">
-            <div className="langs">
-              <img src={globe} alt="" />
-              <div className="customSelect">
-                <select name="Langauges" id="langs">
-                  <option value="English">En</option>
-                  <option value="Other">Other</option>
-                </select>
-                <span>
-
-                  <img src={arrow} alt="" />
-                </span>
-              </div>
-            </div>
+            
             <Link to="/login">
 
               <button>Login</button>

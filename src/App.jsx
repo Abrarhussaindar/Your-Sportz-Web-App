@@ -14,7 +14,11 @@ import CreateNewPassword from "./pages/CreateNewPassword/CreateNewPassword";
 import VerifyCode from "./pages/VerifyCode/VerifyCode";
 import Feature from "./pages/Feature/Feature";
 
+import "./18n"
+
 function App() {
+  
+
   return (
     <>
       <Router>

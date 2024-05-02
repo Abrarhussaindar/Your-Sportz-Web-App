@@ -10,6 +10,7 @@ export default function Footer() {
       <div className="top">
         <div className="logo">
           <img src={logo} alt="" />
+          {/* navbar logo left and right */}
           <h3>Your<span>Sportz</span></h3>
         </div>
         <div className="links">

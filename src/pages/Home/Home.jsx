@@ -24,8 +24,11 @@ import features from "../../images/features.png"
 
 import "./Home.css"
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+
+  const { t } = useTranslation()
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   useEffect(() => {
     const handleResize = () => {
@@ -161,12 +164,12 @@ const Home = () => {
         <section className="hero">
           <div className="left">
             <div className="heading">
-              <h1>Game it your way</h1>
-              <p>Stream, Score, Soar: Your Local Football Arena in Your Pocket. Track Your Performance, Discover Tournaments, and Team Up. All in One Dynamic App</p>
+              <h1>{t("heroH1")}</h1>
+              <p>{t("heroP")}</p>
             </div>
             <div className="btns">
-              <button><img src={ios} alt="" />Download on IOS</button>
-              <button><img src={android} alt="" />Download on Android</button>
+              <button><img src={ios} alt="" />{t("downloadIosBtn")}</button>
+              <button><img src={android} alt="" />{t("downloadAndBtn")}</button>
 
             </div>
           </div>

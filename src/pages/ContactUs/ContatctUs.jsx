@@ -33,7 +33,7 @@ export default function ContatctUs() {
                         <label htmlFor=" ">Email ID </label>
                         <input type="text" placeholder="Email ID " value={email} onChange={(e) => setEmail(e.target.value)} />
                         <label htmlFor=" ">Subject </label>
-                        <input type="text" value={subject} onChange={(e) => setSub(e.target.value)} />
+                        <input type="text" placeholder="Subject" value={subject} onChange={(e) => setSub(e.target.value)} />
                         <label htmlFor=" ">Messege </label>
                         <textarea rows={4} type="text" placeholder="Type Your messege" className="Messege" value={msg} onChange={(e) => setMsg(e.target.value)} />
                         <button onClick={handlesubmit}>Submit</button>

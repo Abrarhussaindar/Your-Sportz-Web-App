@@ -85,6 +85,7 @@ header {
                     border: 2px solid #DE4F44;
                     background-color: #FFEEEB;
                     border-radius: 10px;
+                    width: 115px;
 
                     img {
                         width: 20px;
@@ -100,9 +101,16 @@ header {
                             width: 100%;
                             border: none;
                             background-color: #FFEEEB;
-                            font-weight: 600;
+                            font-weight: 500;
                             appearance: none;
+                            font-size: 14px;
                             outline: none;
+                            padding: 0 10px;
+
+                            option{
+                                font-weight: 500;
+                                padding: 10px;
+                            }
                         }
 
                         span {
