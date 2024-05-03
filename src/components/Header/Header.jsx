@@ -97,7 +97,7 @@ export default function Header() {
             ))}
           </ul>
           <div className="btns">
-            
+            <LanguageSelector />
             <Link to="/login">
 
               <button>Login</button>
