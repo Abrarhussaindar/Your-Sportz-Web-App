@@ -3,6 +3,7 @@ import Layout from "../../components/Layout";
 import check from "../../images/check.svg"
 import cards from "../../images/card.png"
 import "./Pricing.css"
+import { useTranslation } from "react-i18next";
 
 
 export default function Pricing() {
@@ -12,60 +13,60 @@ export default function Pricing() {
         setIsActive(!isActive);
         setIsSchool(!isSchool);
     };
-
+    const { t } = useTranslation()
     const SchoolPricing = [
         {
             id: 1,
-            tag: ["6-Months"],
-            price: "25,000",
-            priceTag: "With GST",
-            priceDis: "Per member, per Year",
+            tag: [`${t("pricingSchoolPricingtag1")}`],
+            price: `${t("pricingSchoolPricingprice1")}`,
+            priceTag: `${t("pricingSchoolPricingpriceTag1")}`,
+            priceDis: `${t("pricingSchoolPricingpriceDis1")}`,
             subDetails: [
                 {
                     id: 1,
-                    title: "All features",
+                    title: `${t("pricingSchoolPricingsubtitle11")}`,
                     subDetails: [
-                        "Membership Programs",
-                        "Group Discounts",
+                        `${t("pricingSchoolPricingsubDetails111")}`,
+                        `${t("pricingSchoolPricingsubDetails112")}`,
                     ]
                 },
                 {
                     id: 2,
-                    title: "Includes 15 Free Live Matches",
+                    title: `${t("pricingSchoolPricingsubtitle12")}`,
                     subDetails: []
                 },
                 {
                     id: 3,
-                    title: "Early Access to New Content",
+                    title: `${t("pricingSchoolPricingsubtitle13")}`,
                     subDetails: []
                 },
             ]
         },
         {
             id: 2,
-            tag: ["per match live stream"],
-            price: "15,000",
-            priceTag: "with GST",
+            tag: [`${t("pricingSchoolPricingtag2")}`],
+            price: `${t("pricingSchoolPricingprice2")}`,
+            priceTag: `${t("pricingSchoolPricingpriceTag2")}`,
             priceDis: "",
             subDetails: [
                 {
                     id: 1,
-                    title: "All features",
+                    title: `${t("pricingSchoolPricingsubtitle21")}`,
                     subDetails: [
-                        "Membership Programs",
-                        "Exclusive Content",
-                        "Group Discounts",
-                        "Customizable Packages",
+                        `${t("pricingSchoolPricingsubDetails211")}`,
+                        `${t("pricingSchoolPricingsubDetails212")}`,
+                        `${t("pricingSchoolPricingsubDetails213")}`,
+                        `${t("pricingSchoolPricingsubDetails214")}`,
                     ]
                 },
                 {
                     id: 2,
-                    title: "Includes 30 Free Live Matches",
+                    title: `${t("pricingSchoolPricingsubtitle22")}`,
                     subDetails: []
                 },
                 {
                     id: 3,
-                    title: "Priority Support",
+                    title: `${t("pricingSchoolPricingsubtitle23")}`,
                     subDetails: []
                 },
             ]
@@ -75,71 +76,73 @@ export default function Pricing() {
         {
             id: 1,
             tag: [],
-            price: "Free",
+            price: `${t("pricingGeneralPricingprice1")}`,
             priceTag: "",
             priceDis: "",
             subDetails: [
-                "Tourment creations",
-                "Watch Score",
-                "Start match",
-                "Ad-Free Experience",
+                `${t("pricingGeneralPricingsubDetails111")}`,
+                `${t("pricingGeneralPricingsubDetails112")}`,
+                `${t("pricingGeneralPricingsubDetails113")}`,
+                `${t("pricingGeneralPricingsubDetails114")}`,
             ]
         },
         {
             id: 2,
-            tag: ["per match live stream"],
+            tag: [`${t("pricingGeneralPricingtag2")}`],
             price: 149,
-            priceTag: "with GST",
+            priceTag: `${t("pricingGeneralPricingpriceTag2")}`,
             priceDis: "",
             subDetails: [
-                "All features",
-                "One license key",
-                "Yearly subcription plan",
-                "One year support & updates",
-                "Per month ad-free: ₹99",
-                "6 month subscription: ₹499",
-                "12 month subscription: ₹999",
+                `${t("pricingGeneralPricingsubDetails211")}`,
+                `${t("pricingGeneralPricingsubDetails212")}`,
+                `${t("pricingGeneralPricingsubDetails213")}`,
+                `${t("pricingGeneralPricingsubDetails214")}`,
+                `${t("pricingGeneralPricingsubDetails215")}`,
+                `${t("pricingGeneralPricingsubDetails216")}`,
+                `${t("pricingGeneralPricingsubDetails217")}`,
             ]
         },
         {
             id: 3,
-            tag: ["2 cameras", "popular"],
+            tag: [`${t("pricingGeneralPricingtag31")}`, `${t("pricingGeneralPricingta32")}`],
             price: 199,
-            priceTag: "with GST",
-            priceDis: "Per member, per Month",
+            priceTag: `${t("pricingGeneralPricingpriceTag3")}`,
+            priceDis: `${t("pricingGeneralPricingpriceDis3")}`,
 
             subDetails: [
-                "Per month ad-free: ₹99",
-                "6 month subscription: ₹499",
-                "12 month subscription: ₹999",
+                `${t("pricingGeneralPricingsubDetails311")}`,
+                `${t("pricingGeneralPricingsubDetails312")}`,
+                `${t("pricingGeneralPricingsubDetails313")}`,
             ]
         },
         {
             id: 4,
-            tag: ["4 cameras"],
+            tag: [`${t("pricingGeneralPricingtag4")}`],
             price: 299,
-            priceTag: "with GST",
-            priceDis: "Per member, per Month",
+            priceTag: `${t("pricingGeneralPricingpriceTag4")}`,
+            priceDis: `${t("pricingGeneralPricingpriceDis4")}`,
             subDetails: [
-                "All features",
-                "One license key",
-                "Yearly subcription plan",
-                "One year support & updates",
-                "Per month ad-free: ₹99",
-                "6 month subscription: ₹499",
-                "12 month subscription: ₹999",
+                `${t("pricingGeneralPricingsubDetails411")}`,
+                `${t("pricingGeneralPricingsubDetails412")}`,
+                `${t("pricingGeneralPricingsubDetails413")}`,
+                `${t("pricingGeneralPricingsubDetails414")}`,
+                `${t("pricingGeneralPricingsubDetails415")}`,
+                `${t("pricingGeneralPricingsubDetails416")}`,
+                `${t("pricingGeneralPricingsubDetails417")}`,
             ]
         },
+
+
     ]
     return (
         <Layout>
             <main className="price">
                 <div className="top">
-                    <h1>Pick a plan that’s right for you</h1>
-                    <p>Pay as you go service, cancel anytime</p>
+                    <h1>{t("pricingH1")}</h1>
+                    <p>{t("pricingP")}</p>
                     <div className="tab">
-                        <button className={isActive ? "activeBtn" : "notActive"} onClick={handleClick}>General</button>
-                        <button className={!isActive ? "activeBtn" : "notActive"} onClick={handleClick}>School / Corporate</button>
+                        <button className={isActive ? "activeBtn" : "notActive"} onClick={handleClick}>{t("pricingToggelGeneral")}</button>
+                        <button className={!isActive ? "activeBtn" : "notActive"} onClick={handleClick}>{t("pricingToggelSchool")}</button>
                     </div>
                 </div>
                 <div className="middle">
@@ -188,7 +191,7 @@ export default function Pricing() {
                                                 </ul>
                                             </div>
 
-                                            <button>Choose</button>
+                                            <button>{t("pricingBtn")}Choose</button>
                                         </div>
                                     ))
                                 }
@@ -319,7 +322,7 @@ export default function Pricing() {
                                                 </ul>
                                             </div>
 
-                                            <button>Choose</button>
+                                            <button>{t("pricingBtn")}</button>
                                         </div>
                                     ))
                                 }
@@ -331,9 +334,9 @@ export default function Pricing() {
 
                 </div>
                 <div className="bottom">
-                    <h4>Payment Methods</h4>
+                    <h4>{t("pricingH4")}</h4>
                     <img src={cards} alt="" />
-                    <p>We accept Visa, American Express, Mastercard, Paypal and Crypto</p>
+                    <p>{t("pricingbottomP")}</p>
                 </div>
             </main>
         </Layout>

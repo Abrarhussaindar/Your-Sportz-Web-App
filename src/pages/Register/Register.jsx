@@ -6,10 +6,12 @@ import axios from "../../axios";
 import seePass from "../../images/eye.png";
 import notSeePass from "../../images/hidden.png";
 import "./Register.css"
+import { useTranslation } from "react-i18next";
 
 const Register = () => {
   const { userData, setUserData } = useContext(multiStepContext);
   const navigate = useNavigate();
+  const { t } = useTranslation()
   const [see, setSee] = useState(false)
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
@@ -198,30 +200,30 @@ const Register = () => {
       </div>
       <div className="wrapper">
         <div className="left">
-          <button onClick={() => navigate(-1)}>Go Back</button>
-          <h1>Welcome back!</h1>
-          <h4>Nice to see you again</h4>
-          <p>YourSportz, the dynamic football app, offers a plethora ofhealth and lifestyle benefits. Let&rsquo;s delve into how it can enhance your well-being</p>
+          <button onClick={() => navigate(-1)}>{t("registerBackBtn")}</button>
+          <h1>{t("registerH1")}</h1>
+          <h4>{t("registerH4")}</h4>
+          <p>{t("registerP")}</p>
           <img src={LoginAvatar} alt="Login Avatar" />
         </div>
         <div className="right">
           <div className="tab">
-            <button className={isActive ? "activeBtn" : "notActive"} onClick={handleToggle}>General</button>
-            <button className={!isActive ? "activeBtn" : "notActive"} onClick={handleToggle}>School / Corporate</button>
+            <button className={isActive ? "activeBtn" : "notActive"} onClick={handleToggle}>{t("registerToggleGeneral")}</button>
+            <button className={!isActive ? "activeBtn" : "notActive"} onClick={handleToggle}>{t("registerToggleSchool")}</button>
           </div>
           <form>
             <div className="formEle">
-              <label htmlFor="fullName">Full name</label>
+              <label htmlFor="fullName">{t("registerFormName")}</label>
               <input
                 type="text"
                 id="fullName"
                 value={userData['fulltName']}
                 required onChange={(e) => setUserData({ ...userData, "fullName": e.target.value })}
-                placeholder="Full name"
+                placeholder={`${t("registerFormName")}`}
               />
             </div>
             <div className="formEle">
-              <label htmlFor="institution">{isSchool ? "Institution" : "Company"}</label>
+              <label htmlFor="institution">{isSchool ? `${t("registerFormInstit")}` : `${t("registerFormComp")}`}</label>
               {
                 isSchool
                   ?
@@ -230,7 +232,7 @@ const Register = () => {
                     id="institution"
                     value={userData['institution']}
                     required onChange={(e) => setUserData({ ...userData, "institution": e.target.value })}
-                    placeholder={"Institution"}
+                    placeholder={`${t("registerFormInstit")}`}
                   />
                   :
                   <input
@@ -238,51 +240,51 @@ const Register = () => {
                     id="company"
                     value={userData['company']}
                     required onChange={(e) => setUserData({ ...userData, "company": e.target.value })}
-                    placeholder={"Company"}
+                    placeholder={`${t("registerFormComp")}`}
                   />
               }
             </div>
             <div className="formEle">
-              <label htmlFor="address">Address</label>
+              <label htmlFor="address">{t("registerFormAdd")}</label>
               <input
                 type="text"
                 id="address"
                 value={userData['address']}
                 required onChange={(e) => setUserData({ ...userData, "address": e.target.value })}
-                placeholder="Address"
+                placeholder={`${t("registerFormAdd")}`}
               />
             </div>
             <div className="formEle">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">{t("registerFormEmail")}</label>
               <input
                 type="email"
                 id="email"
                 value={email}
                 required onChange={handleEmailChange}
-                placeholder="Email"
+                placeholder={`${t("registerFormEmail")}`}
               />
               {warning && <p className="error">{warning}</p>}
             </div>
             <div className="formEle">
-              <label htmlFor="password">Password</label>
+              <label htmlFor="password">{t("registerFormPassword")}</label>
 
               <input
                 type="text"
                 id="password"
                 value={password}
                 required onChange={handlePasswordChange}
-                placeholder="Password"
+                placeholder={`${t("registerFormPassword")}`}
               />
             </div>
             <div className="formEle">
-              <label htmlFor="confirmPassword">Confirm Password <img className="w-5" src={see ? seePass : notSeePass} onClick={handleClick} /></label>
+              <label htmlFor="confirmPassword">{t("registerFormConfirmPassword")}<img className="w-5" src={see ? seePass : notSeePass} onClick={handleClick} /></label>
 
               <input
                 type={see ? "text" : "password"}
                 id="confirmPassword"
                 value={confirmPassword}
                 required onChange={handleConfirmPasswordChange}
-                placeholder="Confirm Password"
+                placeholder={`${t("registerFormConfirmPassword")}`}
               />
               {passwordWarning && <p className="error">{passwordWarning}</p>}
 
@@ -296,20 +298,20 @@ const Register = () => {
 
               />
               <label htmlFor="agreeTerms">
-                I agree to the Terms of Service and Privacy Policy
+                {t("registerFormAgree")}
               </label>
             </div>
             {
               click
                 ?
-                <button type="submit" disabled={true} className="disable">Loading...</button>
+                <button type="submit" disabled={true} className="disable">{t("registerFormLoading")}</button>
                 :
-                <button type="submit" onClick={handleRegisterUser}>Register</button>
+                <button type="submit" onClick={handleRegisterUser}>{t("registerFormRegister")}</button>
             }
           </form>
           <div className="bottom">
-            <p>Already have an account?</p>
-            <NavLink to="/login">Login</NavLink>
+            <p>{t("registerFormAlready")}</p>
+            <NavLink to="/login">{t("registerFormLogin")}</NavLink>
           </div>
         </div>
       </div>

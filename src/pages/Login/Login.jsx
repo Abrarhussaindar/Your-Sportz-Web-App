@@ -6,11 +6,15 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { multiStepContext } from "../../UserContext";
 import axios from "../../axios";
 import "./Login.css"
+import { useTranslation } from "react-i18next";
 
 
 const Login = () => {
   const { userData, setUserData } = useContext(multiStepContext);
   const navigate = useNavigate();
+  
+  
+  const { t } = useTranslation()
   const [see, setSee] = useState(false);
   const [click, setClick] = useState(false);
   const [emailError, setEmailError] = useState(false);
@@ -167,35 +171,35 @@ const Login = () => {
       </div>
       <div className="wrapper">
         <div className="left">
-          <button onClick={() => navigate(-1)}>Go Back</button>
-          <h1>Welcome back!</h1>
-          <h3>Nice to see you again</h3>
-          <p>YourSportz, the dynamic football app, offers a plethora ofhealth and lifestyle benefits. Let&rsquo;s delve into how it can enhance your well-being</p>
+          <button onClick={() => navigate(-1)}>{t("loginBackBtn")}</button>
+          <h1>{t("loginH1")}</h1>
+          <h3>{t("loginH3")}</h3>
+          <p>{t("loginP")}</p>
           <img src={LoginAvatar} alt="Login Avatar" />
         </div>
         <div className="right">
-          <h4>Login</h4>
+          <h4>{t("loginH4")}</h4>
           <form>
             <div className="formEle">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">{t("loginFormEmail")}</label>
               <input
                 type="email"
                 id="email"
                 value={userData['email']}
                 required
                 onChange={handleEmailChange}
-                placeholder="Enter your Email"
+                placeholder={`${t("loginFormEmailPlaceholder")}`}
               />
               {emailError && <p className="error">Please enter a valid professional email.</p>}
             </div>
             <div className="formEle">
-              <label htmlFor="password">Password<img src={see ? seePass : notSeePass} onClick={handleClick} /></label>
+              <label htmlFor="password">{t("registerFormName")}<img src={see ? seePass : notSeePass} onClick={handleClick} /></label>
               <input
                 type={see ? "text" : "password"}
                 id="password"
                 value={userData['password']}
                 required onChange={(e) => setUserData({ ...userData, "password": e.target.value })}
-                placeholder="Password"
+                placeholder={`${t("loginFormPasswordPlaceholder")}`}
               />
             </div>
             <div className="formEle keep">
@@ -207,10 +211,10 @@ const Login = () => {
                   onChange={() => setUserData({ ...userData, "keepLoggedIn": true })}
                 />
                 <label htmlFor="keepLoggedIn" className="text-gray-700 ">
-                  Keep me logged in
+                  {t("loginFormKeep")}
                 </label>
               </div>
-              <NavLink to="/forgot">Forgot Password?</NavLink>
+              <NavLink to="/forgot">{t("loginFormForgotPassword")}</NavLink>
             </div>
             <div className="formEle terms">
               <input
@@ -219,19 +223,19 @@ const Login = () => {
                 value={userData['agreeTerms']}
                 required onChange={() => setUserData({ ...userData, "agreeTerms": true })}
               />
-              <label htmlFor="agreeTerms">I agree to the <span>Terms of Service and Privacy Policy</span></label>
+              <label htmlFor="agreeTerms">{t("loginFormAgreeLeft")} <span>{t("loginFormAgreeRight")}</span></label>
             </div>
             {
               click
                 ?
-                <button type="submit" disabled={true} className="disable">Loading...</button>
+                <button type="submit" disabled={true} className="disable">{t("loginFormLoginLoading")}</button>
                 :
-                <button type="submit" onClick={handleLogin}>Login</button>
+                <button type="submit" onClick={handleLogin}>{t("loginFormLoginBtn")}</button>
             }
           </form>
           <div className="bottom">
-            <p>Don&apos;t have an account?</p>
-            <NavLink to="/register">Register</NavLink>
+            <p>{t("loginFormBottomP")}</p>
+            <NavLink to="/register">{t("loginFormRegister")}</NavLink>
           </div>
         </div>
       </div>

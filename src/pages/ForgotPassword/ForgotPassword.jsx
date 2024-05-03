@@ -2,9 +2,10 @@ import "../ForgotPassword/ForgotPassword.css"
 import passwordImg from "../../images/password.png"
 import { Link } from "react-router-dom"
 import { useState } from "react"
+import { useTranslation } from "react-i18next"
 
 export default function ForgotPassword() {
-
+    const { t } = useTranslation()
     const [email, setEmail] = useState("")
     const [click, setClick] = useState(false)
     const handleSubmit = async (e) => {
@@ -132,8 +133,8 @@ export default function ForgotPassword() {
                 <img src={passwordImg} alt="" />
                 <div className="formContainer">
                     <div className="heading">
-                        <h3>Forget password</h3>
-                        <p>Enter The email address associated with your account.</p>
+                        <h3>{t("forgetPasswordH3")}</h3>
+                        <p>{t("forgetPasswordP")}</p>
                     </div>
                     <form>
                         <input type="email" placeholder="Enter Your Email" value={email} onChange={(e) => setEmail(e.target.value)} />
@@ -141,12 +142,12 @@ export default function ForgotPassword() {
                         {
                             click
                                 ?
-                                <button type="submit" disabled={true} className="disable">Loading...</button>
+                                <button type="submit" disabled={true} className="disable">{t("forgetPasswordLoading")}</button>
                                 :
-                                <button type="submit" onClick={handleSubmit}>Submit</button>
+                                <button type="submit" onClick={handleSubmit}>{t("forgetPasswordSubmit")}</button>
                         }
                     </form>
-                    <Link to="/login">Back to login</Link>
+                    <Link to="/login">{t("forgetPasswordBack")}</Link>
                 </div>
             </div>
 

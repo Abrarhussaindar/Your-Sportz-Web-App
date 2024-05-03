@@ -1,40 +1,43 @@
+import { useTranslation } from "react-i18next";
 import Layout from "../../components/Layout";
 import privacy from "../../images/privacy.jpg"
 import "../TermsConditions/Terms.css"
 
-const PrivacyPolicy = [
-  {
-    title: "Cookie Policy:",
-    content: [
-      "Cookies enhance user experience by remembering preferences",
-      "Types include essential, analytics, and advertising cookies.",
-      "Users can manage cookies in app settings; disabling may affect functionality.",
-    ],
-  },
-  {
-    title: "Privacy Policy:",
-    content: [
-      "YourSportz collects personal and usage data for app functionality and analytics.",
-      "Data security measures are implemented; third-party services' privacy policies apply.",
-      "Policy updates may occur periodically; check the latest version in the app",
-    ],
-  },
-  {
-    title: "Privacy and Refund Policy:",
-    content: [
-      "User data is collected for statistics and insights, secured with encryption, and retained as necessary.",
-      "Users consent to data collection, usage, and retention by using the app.",
-      "Refunds are not issued for prepaid transactions unless services are defective or required by law.",
-    ],
-  },
-];
+
 
 const TermsConditions = () => {
+  const { t } = useTranslation()
+  const PrivacyPolicy = [
+    {
+      title: `${t("privacyTitle1")}`,
+      content: [
+        `${t("privacyContent11")}`,
+        `${t("privacyContent12")}`,
+        `${t("privacyContent13")}`,
+      ],
+    },
+    {
+      title: `${t("privacyTitle2")}`,
+      content: [
+        `${t("privacyContent21")}`,
+        `${t("privacyContent22")}`,
+        `${t("privacyContent23")}`,
+      ],
+    },
+    {
+      title: `${t("privacyTitle3")}`,
+      content: [
+        `${t("privacyContent31")}`,
+        `${t("privacyContent32")}`,
+        `${t("privacyContent33")}`,
+      ],
+    },
+  ];
   return (
     <Layout>
       <main className="termsConditon">
         <div className="left">
-          <h1>Privacy Policy</h1>
+          <h1>{t("privacyH1")}</h1>
           <ul className="terms">
             {PrivacyPolicy.map((terms, index) => (
               <li key={index}>
@@ -52,8 +55,8 @@ const TermsConditions = () => {
         </div>
         <div className="right">
           <img src={privacy} alt="" />
-          <p>For any assistance, contact our customer support @ yoursportz.in.</p>
-          <p>Thank you for choosing YourSportz!</p>
+          <p>{t("privacyLeftP")}</p>
+          <p>{t("privacyLeftH4")}</p>
         </div>
       </main>
     </Layout>
