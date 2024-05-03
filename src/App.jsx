@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import TermsConditions from "./pages/TermsConditions/TermsConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy/PrivacyPolicy";
@@ -15,6 +15,17 @@ import VerifyCode from "./pages/VerifyCode/VerifyCode";
 import Feature from "./pages/Feature/Feature";
 
 import "./18n"
+import { useEffect } from "react";
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top of the page when route changes
+  }, [pathname]);
+
+  return null; // This component doesn't render anything, it's only for side effects
+};
 
 function App() {
   
@@ -22,6 +33,7 @@ function App() {
   return (
     <>
       <Router>
+      <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />

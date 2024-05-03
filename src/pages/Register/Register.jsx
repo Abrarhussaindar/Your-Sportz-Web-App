@@ -259,7 +259,7 @@ const Register = () => {
                 id="email"
                 value={email}
                 required onChange={handleEmailChange}
-                placeholder="Email account"
+                placeholder="Email"
               />
               {warning && <p className="error">{warning}</p>}
             </div>
