@@ -85,6 +85,7 @@ header {
                     border: 2px solid #FF5033;
                     border-radius: 10px;
                     width: 115px;
+                    background-color: white;
 
                     img {
                         width: 20px;
@@ -94,7 +95,7 @@ header {
                     .customSelect {
                         position: relative;
                         width: 100%;
-
+                        background-color: white;
                         select {
                             cursor: pointer;
                             width: 100%;
@@ -104,10 +105,11 @@ header {
                             font-size: 14px;
                             outline: none;
                             padding: 0 10px;
-
+                            background-color: white;
                             option{
                                 font-weight: 500;
                                 padding: 10px;
+                                background-color: white;
                             }
                         }
 
@@ -116,7 +118,7 @@ header {
                             top: 15%;
                             right: -5%;
                             pointer-events: none;
-
+                            // background-color: white;
                             img {
 
                                 pointer-events: none;
@@ -238,6 +240,29 @@ header {
 
         nav {
             display: none !important;
+        }
+
+        .open{
+            nav{
+                .btns{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    background-color: white;
+                    .langs{
+                        width: 85%;
+                        background-color: white;
+                    }
+
+                    a{
+                        width: 100%;
+
+                        button{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
         }
     }
 

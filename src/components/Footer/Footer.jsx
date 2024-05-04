@@ -1,7 +1,10 @@
 import "./Footer.css"
 import logo from "../../images/logo.png"
-import insta from "../../images/insta.svg"
-import email from "../../images/mail.svg"
+import email from "../../images/email.png"
+import insta from "../../images/insta.png"
+import facebook from "../../images/facebook.png"
+import youtube from "../../images/youtube.png"
+import LinkedIn from "../../images/linkedin.png"
 import { Link } from "react-router-dom"
 import { useTranslation } from "react-i18next"
 
@@ -21,6 +24,17 @@ export default function Footer() {
             <ul>
               <a href="#">
                 <li><img src={email} alt="" />{t("socialLi1")} </li>
+              </a>
+              <a href="">
+
+                <li><img src={LinkedIn} alt="" />{t("socialLi4")} </li>
+              </a>
+              <a href="#">
+                <li><img src={youtube} alt="" />{t("socialLi5")} </li>
+              </a>
+              <a href="">
+
+                <li><img src={facebook} alt="" />{t("socialLi3")} </li>
               </a>
               <a href="">
 
@@ -59,7 +73,8 @@ export default function Footer() {
         </div>
       </div>
       <div className="copyright">
-        {t("copyright")}
+        <p>&copy; {t("copyright")}</p>
+        
       </div>
     </footer>
   )

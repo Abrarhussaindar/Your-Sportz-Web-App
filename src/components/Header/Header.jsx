@@ -83,7 +83,7 @@ export default function Header() {
       <div className={`${isMenuOpen ? 'open' : 'notOpen'}`}>
 
         <div className="top">
-          <h2 className="menuLogo">Your<span>Sportz</span></h2>
+          <h2 className="menuLogo">{t("logoLeft")}<span>{t("logoRight")}</span></h2>
           <img className="close" src={close} alt="" onClick={toggleMenu} />
         </div>
         <nav>
@@ -100,7 +100,7 @@ export default function Header() {
             <LanguageSelector />
             <Link to="/login">
 
-              <button>Login</button>
+              <button>{t("loginBtn")}</button>
             </Link>
           </div>
         </nav>

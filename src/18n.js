@@ -90,7 +90,11 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 // footer section
                 socialH2: "Social",
                     socialLi1: " Email",
+                    socialLi4: " LinkedIn",
+                    socialLi5: " Youtube",
+                    socialLi3: " Facebook",
                     socialLi2: " Instagram",
+                    
                 needH2: "Need Help",
                     needLi1: "Contact Us",
                     needLi2: "Pricing",
@@ -124,10 +128,10 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
             
             
                 // contact us page
-                contactUsH3: "### We&apos;re Here to Help!",
-                contactUsP: "**Got a question?** We love hearing from you! Whether you have a query about our services, need assistance, or you&apos;re crafting the next big idea and need some advice, our team is all ears.",
+                contactUsH3: "### We're Here to Help!",
+                contactUsP: "**Got a question?** We love hearing from you! Whether you have a query about our services, need assistance, or you're crafting the next big idea and need some advice, our team is all ears.",
                 
-                formHeaderP: "Just fill out the form below, and we&apos;ll get back to you with lightning speed.",
+                formHeaderP: "Just fill out the form below, and we'll get back to you with lightning speed.",
 
                 formName: "Full name",
                 formPhone: "Phone Number",
@@ -267,7 +271,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 loginBackBtn: "Go Back",
                 loginH1: "Welcome back!",
                 loginH3: "Nice to see you again",
-                loginP: "YourSportz, the dynamic football app, offers a plethora ofhealth and lifestyle benefits. Let&rsquo;s delve into how it can enhance your well-being",
+                loginP: "YourSportz, the dynamic football app, offers a plethora of health and lifestyle benefits. Let&rsquo;s delve into how it can enhance your well-being",
                 loginH4: "Login",
                 loginFormEmail: "Email",
                 loginFormPassword: "Password",
@@ -279,7 +283,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 loginFormAgreeRight: "Terms of Service and Privacy Policy",
                 loginFormLoginLoading: "Loading...",
                 loginFormLoginBtn: "Login",
-                loginFormBottomP: "Don&apos;t have an account?",
+                loginFormBottomP: "Don't have an account?",
                 loginFormRegister: "Register",
 
 
@@ -1618,10 +1622,10 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
             
             
                 // contact us page
-                contactUsH3: "### We&apos;re Here to Help!",
+                contactUsH3: "### We're Here to Help!",
                 contactUsP: "**tu as une question?** Nous aimons avoir de vos nouvelles! Que vous ayez une question sur nos services, que vous ayez besoin d'aide ou que vous élaboriez la prochaine grande idée et ayez besoin de conseils, notre équipe est à votre écoute..",
                 
-                formHeaderP: "Il suffit de remplir le formulaire ci-dessous, and we&apos;ll je reviens vers vous à la vitesse de l'éclair.",
+                formHeaderP: "Il suffit de remplir le formulaire ci-dessous, and we'll je reviens vers vous à la vitesse de l'éclair.",
 
                 formName: "Nom et prénom",
                 formPhone: "Numéro de téléphone",
@@ -1773,7 +1777,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 loginFormAgreeRight: "Conditions d'utilisation et politique de confidentialité",
                 loginFormLoginLoading: "Chargement...",
                 loginFormLoginBtn: "Se connecter",
-                loginFormBottomP: "Don&apos;t avoir un compte?",
+                loginFormBottomP: "Don't avoir un compte?",
                 loginFormRegister: "Registre",
 
 
@@ -1918,7 +1922,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
             
             
                 // contact us page
-                contactUsH3: "### We&apos;re Hier um zu helfen!",
+                contactUsH3: "### We're Hier um zu helfen!",
                 contactUsP: "**Hast du eine Frage?** Wir freuen uns, von Ihnen zu hören! Egal, ob Sie eine Frage zu unseren Dienstleistungen haben, Hilfe benötigen oder an der nächsten großen Idee arbeiten und Rat benötigen, unser Team ist immer für Sie da.",
                 
                 formHeaderP: "Füllen Sie einfach das untenstehende Formular aus und wir werden uns blitzschnell bei Ihnen melden.",

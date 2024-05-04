@@ -541,13 +541,13 @@ main {
     }
 
     main .matches h2 {
-        font-size: 32px;
+        font-size: 38px;
         font-weight: 500;
         text-align: center;
     }
 
     main .matches .row .container {
-        padding: 40px !important;
+        padding: 35px !important;
     }
 
     main .features {
@@ -585,7 +585,23 @@ main {
     }
 
     main .faq .content .container {
-        height: 40px;
+        height: unset !important;
+    }
+    main .faq .content .container .heading {
+        width: 100%;
+    }
+    main .faq .content .container .heading h3 {
+        width: 90%;
     }
 
+}
+
+@media screen and (width <=390px) {
+    main .matches .row .container {
+        padding: 30px !important;
+        width: 90% !important;
+    }
+    main .matches .row .container h3 {
+        font-size: 14px;
+    }
 }

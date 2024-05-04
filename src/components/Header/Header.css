@@ -69,6 +69,7 @@ header .right nav .btns .langs, header .open nav .btns .langs {
   border: 2px solid #FF5033;
   border-radius: 10px;
   width: 115px;
+  background-color: white;
 }
 header .right nav .btns .langs img, header .open nav .btns .langs img {
   width: 20px;
@@ -77,6 +78,7 @@ header .right nav .btns .langs img, header .open nav .btns .langs img {
 header .right nav .btns .langs .customSelect, header .open nav .btns .langs .customSelect {
   position: relative;
   width: 100%;
+  background-color: white;
 }
 header .right nav .btns .langs .customSelect select, header .open nav .btns .langs .customSelect select {
   cursor: pointer;
@@ -89,10 +91,12 @@ header .right nav .btns .langs .customSelect select, header .open nav .btns .lan
   font-size: 14px;
   outline: none;
   padding: 0 10px;
+  background-color: white;
 }
 header .right nav .btns .langs .customSelect select option, header .open nav .btns .langs .customSelect select option {
   font-weight: 500;
   padding: 10px;
+  background-color: white;
 }
 header .right nav .btns .langs .customSelect span, header .open nav .btns .langs .customSelect span {
   position: absolute;
@@ -192,5 +196,21 @@ header .open nav ul {
   }
   header nav {
     display: none !important;
+  }
+  header .open nav .btns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+  }
+  header .open nav .btns .langs {
+    width: 85%;
+    background-color: white;
+  }
+  header .open nav .btns a {
+    width: 100%;
+  }
+  header .open nav .btns a button {
+    width: 100%;
   }
 }/*# sourceMappingURL=Header.css.map */
