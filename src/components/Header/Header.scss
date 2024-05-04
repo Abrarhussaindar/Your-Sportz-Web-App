@@ -96,7 +96,6 @@ header {
                     align-items: center;
                     background-color: white;
                     width: 100%;
-                    
 
                     .customSelect {
                         position: relative;
@@ -143,20 +142,18 @@ header {
                                     border-radius: 0;
                                     color: #413566;
                                     background-color: white !important;
-                                    transition: background-color .2s ease-in;
-                                    &:hover{
+                                    transition: background-color 0.2s ease-in;
+                                    &:hover {
                                         background-color: rgb(235, 230, 230) !important;
-                                        
                                     }
                                     img {
                                         width: 20px;
                                     }
-                                    p{
+                                    p {
                                         font-size: 14px;
                                         font-weight: 400;
                                     }
                                 }
-                                
                             }
                         }
                         span {
@@ -172,10 +169,10 @@ header {
                             }
                         }
 
-                        .langUl{
+                        .langUl {
                             display: none;
                         }
-                        .openlangUl{
+                        .openlangUl {
                             display: block !important;
                         }
                     }
@@ -211,7 +208,7 @@ header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-
+            gap: 30px;
             h2 {
                 display: block;
                 font-size: 26px;
@@ -257,6 +254,10 @@ header {
 }
 
 @media screen and (width <=440px) {
+    .langs .customSelect ul {
+        left: 200% !important;
+        top: -280px;
+    }
     .notOpen {
         right: -300px;
         display: block !important;

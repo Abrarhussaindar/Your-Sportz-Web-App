@@ -211,6 +211,7 @@ header .open .top {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 30px;
 }
 header .open .top h2 {
   display: block;
@@ -249,6 +250,10 @@ header .open nav ul {
 }
 
 @media screen and (width <= 440px) {
+  .langs .customSelect ul {
+    left: 200% !important;
+    top: -280px;
+  }
   .notOpen {
     right: -300px;
     display: block !important;
