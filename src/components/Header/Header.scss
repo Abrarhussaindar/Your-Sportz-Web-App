@@ -10,7 +10,6 @@ header {
     width: 95%;
     z-index: 99999;
 
-
     .left {
         display: flex;
         align-items: center;
@@ -32,13 +31,13 @@ header {
 
             span {
                 font-weight: 600;
-                color: #FF5033;
+                color: #ff5033;
             }
         }
     }
 
-    .right, .open {
-
+    .right,
+    .open {
         .ham,
         .close,
         .menuLogo {
@@ -56,18 +55,16 @@ header {
                 gap: 30px;
 
                 a {
-
                     li {
                         font-size: 18px;
                         font-weight: 600;
                         color: black;
-                        transition: all ease-in .2s;
+                        transition: all ease-in 0.2s;
 
                         &:hover {
-                            color: #FF5033;
-                            border-bottom: 1px solid #FF5033;
+                            color: #ff5033;
+                            border-bottom: 1px solid #ff5033;
                         }
-
                     }
                 }
             }
@@ -75,26 +72,35 @@ header {
             .btns {
                 display: flex;
                 align-items: center;
-                gap: 20px;
+                gap: 40px;
+                button {
+                    width: 200px;
+                    padding: 5px 30px;
+                    border-radius: 10px;
+                    border: none;
+                    background-color: #ff5033;
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    text-align: center;
+                    text-transform: uppercase;
+                    transition: all ease-in 0.2s;
 
+                    &:hover {
+                        background-color: #e64023;
+                    }
+                }
                 .langs {
                     display: flex;
                     align-items: center;
-                    gap: 5px;
-                    padding: 5px 10px;
-                    border: 2px solid #FF5033;
-                    border-radius: 10px;
-                    width: 115px;
                     background-color: white;
-
-                    img {
-                        width: 20px;
-                        height: 20px;
-                    }
+                    width: 100%;
+                    
 
                     .customSelect {
                         position: relative;
-                        width: 100%;
+                        width: 25px;
                         background-color: white;
                         select {
                             cursor: pointer;
@@ -106,44 +112,72 @@ header {
                             outline: none;
                             padding: 0 10px;
                             background-color: white;
-                            option{
+                            option {
                                 font-weight: 500;
                                 padding: 10px;
                                 background-color: white;
                             }
                         }
 
+                        .globe {
+                            width: 25px;
+                            height: 25px;
+                        }
+                        ul {
+                            position: absolute;
+                            display: flex;
+                            flex-direction: column;
+                            background-color: white;
+                            padding: 20px 0;
+                            border-radius: 10px;
+                            gap: 10px !important;
+                            left: -255%;
+                            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                            li {
+                                width: 100%;
+                                button {
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 5px;
+                                    border-radius: 0;
+                                    color: #413566;
+                                    background-color: white !important;
+                                    transition: background-color .2s ease-in;
+                                    &:hover{
+                                        background-color: rgb(235, 230, 230) !important;
+                                        
+                                    }
+                                    img {
+                                        width: 20px;
+                                    }
+                                    p{
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                    }
+                                }
+                                
+                            }
+                        }
                         span {
                             position: absolute;
-                            top: 15%;
-                            right: -5%;
+                            top: 5%;
+                            right: -80%;
                             pointer-events: none;
                             // background-color: white;
                             img {
-
+                                width: 15px;
+                                height: 20px;
                                 pointer-events: none;
                             }
                         }
 
-                    }
-
-                }
-
-                button {
-                    padding: 5px 30px;
-                    border-radius: 10px;
-                    border: none;
-                    background-color: #FF5033;
-                    color: white;
-                    font-size: 18px;
-                    font-weight: 600;
-                    cursor: pointer;
-                    text-align: center;
-                    text-transform: uppercase;
-                    transition: all ease-in .2s;
-
-                    &:hover {
-                        background-color: #e64023;
+                        .langUl{
+                            display: none;
+                        }
+                        .openlangUl{
+                            display: block !important;
+                        }
                     }
                 }
             }
@@ -186,7 +220,7 @@ header {
 
                 span {
                     font-weight: 600;
-                    color: #FF5033;
+                    color: #ff5033;
                 }
             }
 
@@ -208,15 +242,13 @@ header {
             }
         }
     }
-
 }
 
 .active {
-    border-bottom: 1px solid #FF5033;
+    border-bottom: 1px solid #ff5033;
 
     li {
-        color: #FF5033 !important;
-
+        color: #ff5033 !important;
     }
 }
 
@@ -230,8 +262,6 @@ header {
         display: block !important;
     }
     header {
-
-
         .right {
             .ham {
                 display: block;
@@ -242,22 +272,22 @@ header {
             display: none !important;
         }
 
-        .open{
-            nav{
-                .btns{
+        .open {
+            nav {
+                .btns {
                     display: flex;
                     flex-direction: column;
                     width: 100%;
                     background-color: white;
-                    .langs{
+                    .langs {
                         width: 85%;
                         background-color: white;
                     }
 
-                    a{
+                    a {
                         width: 100%;
 
-                        button{
+                        button {
                             width: 100%;
                         }
                     }
@@ -265,5 +295,4 @@ header {
             }
         }
     }
-
 }

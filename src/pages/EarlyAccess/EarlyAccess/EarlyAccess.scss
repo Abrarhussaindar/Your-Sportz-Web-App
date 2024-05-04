@@ -4,13 +4,11 @@ body {
         align-items: center;
         justify-content: space-between;
         flex-direction: column;
-        gap: 50px !important;
+        gap: 30px !important;
         min-height: 70vh;
         padding: 20px 0;
-        background-image: linear-gradient(to bottom right, rgb(0, 0, 0) 50%, white 50%);
-        background-repeat: no-repeat;
         h2 {
-            font-size: 32px;
+            font-size: 36px;
             font-weight: 600;
             color: #413566;
 
@@ -22,24 +20,42 @@ body {
 
         .bottom {
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             justify-content: space-around;
-            width: 100%;
-            .left {
+            width: 80%;
+            gap: 50px;
+
+            h1{
+                width: 40%;
+                font-size: 40px;
+                color: #413566;
+                font-weight: 500;
+            }
+            .right {
                 width: 40%;
                 display: flex;
                 flex-direction: column;
-                gap: 50px;
-                h1 {
-                    font-size: 38px;
+                gap: 20px;
+                padding: 30px;
+                border-radius: 10px;
+                align-items: center;
+                box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+                img{
+                    width: 250px;
+                    object-fit: contain;
+                    mix-blend-mode: multiply;
+                }
+                h2 {
+                    font-size: 34px;
                     font-weight: 500;
-                    text-transform: uppercase;
-                    color: white;
+                    color: #413566;
+                    text-align: center;
                 }
 
                 form {
                     display: flex;
-                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
                     gap: 20px;
                     input {
                         border: none;
@@ -48,8 +64,7 @@ body {
                         font-weight: 500;
                         font-size: 16px;
                         outline: none;
-                        color: white;
-
+                        color: black;
                         background: transparent;
                     }
                     ::placeholder {
@@ -66,6 +81,7 @@ body {
                         padding: 10px 30px;
                         cursor: pointer;
                         text-transform: uppercase;
+                        border-radius: 10px;
                         transition: background 0.2s ease-in;
                         &:hover {
                             background-color: #e64023;
@@ -73,11 +89,79 @@ body {
                     }
                 }
             }
-
-            img {
-                width: 250px;
-            }
         }
+    }
+}
+
+@media screen and (width <=440px) {
+    body .earlyAccess{
+        padding-bottom: 50px;
+    }
+    body .earlyAccess h2 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #413566;
+        text-align: center;
+    }
+    body .earlyAccess .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 80%;
+        gap: 10px;
+        flex-direction: column;
+    }
+    body .earlyAccess .bottom h1 {
+        width: unset;
+        font-size: 20px;
+        color: #413566;
+        text-align: center;
+        font-weight: 500;
+    }
+    body .earlyAccess .bottom .right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    body .earlyAccess h2 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #413566;
+        text-align: center;
+    }
+    body .earlyAccess .bottom .right form {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+    }
+    body .earlyAccess .bottom .right form input {
+        border: none;
+        padding: 10px;
+        border-bottom: 2px solid #ff5033;
+        font-weight: 500;
+        font-size: 16px;
+        outline: none;
+        color: black;
+        width: 95%;
+        background: transparent;
+    }
+    body .earlyAccess .bottom .right form button {
+        background-color: #ff5033;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        border: none;
+        width: 100%;
+        padding: 10px 30px;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: background 0.2s ease-in;
+    }
+
+    body .earlyAccess .bottom .right h2 {
+        font-size: 30px;
     }
 }
 

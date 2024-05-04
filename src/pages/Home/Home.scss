@@ -470,6 +470,10 @@ main {
 
     main .hero .left .btns button {
         padding: 10px 25px;
+        width: 100%;
+    }
+    main .hero .left .btns button img {
+        width: 30px;
     }
 
     main .hero .right {

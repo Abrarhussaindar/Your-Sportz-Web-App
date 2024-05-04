@@ -27,60 +27,80 @@ header .left h2 {
 }
 header .left h2 span {
   font-weight: 600;
-  color: #FF5033;
+  color: #ff5033;
 }
 header .right .ham,
 header .right .close,
-header .right .menuLogo, header .open .ham,
+header .right .menuLogo,
+header .open .ham,
 header .open .close,
 header .open .menuLogo {
   display: none;
 }
-header .right nav, header .open nav {
+header .right nav,
+header .open nav {
   display: flex;
   align-items: center;
   gap: 80px;
 }
-header .right nav ul, header .open nav ul {
+header .right nav ul,
+header .open nav ul {
   display: flex;
   align-items: center;
   gap: 30px;
 }
-header .right nav ul a li, header .open nav ul a li {
+header .right nav ul a li,
+header .open nav ul a li {
   font-size: 18px;
   font-weight: 600;
   color: black;
   transition: all ease-in 0.2s;
 }
-header .right nav ul a li:hover, header .open nav ul a li:hover {
-  color: #FF5033;
-  border-bottom: 1px solid #FF5033;
+header .right nav ul a li:hover,
+header .open nav ul a li:hover {
+  color: #ff5033;
+  border-bottom: 1px solid #ff5033;
 }
-header .right nav .btns, header .open nav .btns {
+header .right nav .btns,
+header .open nav .btns {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
 }
-header .right nav .btns .langs, header .open nav .btns .langs {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  padding: 5px 10px;
-  border: 2px solid #FF5033;
+header .right nav .btns button,
+header .open nav .btns button {
+  width: 200px;
+  padding: 5px 30px;
   border-radius: 10px;
-  width: 115px;
+  border: none;
+  background-color: #ff5033;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all ease-in 0.2s;
+}
+header .right nav .btns button:hover,
+header .open nav .btns button:hover {
+  background-color: #e64023;
+}
+header .right nav .btns .langs,
+header .open nav .btns .langs {
+  display: flex;
+  align-items: center;
   background-color: white;
-}
-header .right nav .btns .langs img, header .open nav .btns .langs img {
-  width: 20px;
-  height: 20px;
-}
-header .right nav .btns .langs .customSelect, header .open nav .btns .langs .customSelect {
-  position: relative;
   width: 100%;
+}
+header .right nav .btns .langs .customSelect,
+header .open nav .btns .langs .customSelect {
+  position: relative;
+  width: 25px;
   background-color: white;
 }
-header .right nav .btns .langs .customSelect select, header .open nav .btns .langs .customSelect select {
+header .right nav .btns .langs .customSelect select,
+header .open nav .btns .langs .customSelect select {
   cursor: pointer;
   width: 100%;
   border: none;
@@ -93,35 +113,77 @@ header .right nav .btns .langs .customSelect select, header .open nav .btns .lan
   padding: 0 10px;
   background-color: white;
 }
-header .right nav .btns .langs .customSelect select option, header .open nav .btns .langs .customSelect select option {
+header .right nav .btns .langs .customSelect select option,
+header .open nav .btns .langs .customSelect select option {
   font-weight: 500;
   padding: 10px;
   background-color: white;
 }
-header .right nav .btns .langs .customSelect span, header .open nav .btns .langs .customSelect span {
+header .right nav .btns .langs .customSelect .globe,
+header .open nav .btns .langs .customSelect .globe {
+  width: 25px;
+  height: 25px;
+}
+header .right nav .btns .langs .customSelect ul,
+header .open nav .btns .langs .customSelect ul {
   position: absolute;
-  top: 15%;
-  right: -5%;
-  pointer-events: none;
-}
-header .right nav .btns .langs .customSelect span img, header .open nav .btns .langs .customSelect span img {
-  pointer-events: none;
-}
-header .right nav .btns button, header .open nav .btns button {
-  padding: 5px 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px 0;
   border-radius: 10px;
-  border: none;
-  background-color: #FF5033;
-  color: white;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
-  text-align: center;
-  text-transform: uppercase;
-  transition: all ease-in 0.2s;
+  gap: 10px !important;
+  left: -255%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-header .right nav .btns button:hover, header .open nav .btns button:hover {
-  background-color: #e64023;
+header .right nav .btns .langs .customSelect ul li,
+header .open nav .btns .langs .customSelect ul li {
+  width: 100%;
+}
+header .right nav .btns .langs .customSelect ul li button,
+header .open nav .btns .langs .customSelect ul li button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 0;
+  color: #413566;
+  background-color: white !important;
+  transition: background-color 0.2s ease-in;
+}
+header .right nav .btns .langs .customSelect ul li button:hover,
+header .open nav .btns .langs .customSelect ul li button:hover {
+  background-color: rgb(235, 230, 230) !important;
+}
+header .right nav .btns .langs .customSelect ul li button img,
+header .open nav .btns .langs .customSelect ul li button img {
+  width: 20px;
+}
+header .right nav .btns .langs .customSelect ul li button p,
+header .open nav .btns .langs .customSelect ul li button p {
+  font-size: 14px;
+  font-weight: 400;
+}
+header .right nav .btns .langs .customSelect span,
+header .open nav .btns .langs .customSelect span {
+  position: absolute;
+  top: 5%;
+  right: -80%;
+  pointer-events: none;
+}
+header .right nav .btns .langs .customSelect span img,
+header .open nav .btns .langs .customSelect span img {
+  width: 15px;
+  height: 20px;
+  pointer-events: none;
+}
+header .right nav .btns .langs .customSelect .langUl,
+header .open nav .btns .langs .customSelect .langUl {
+  display: none;
+}
+header .right nav .btns .langs .customSelect .openlangUl,
+header .open nav .btns .langs .customSelect .openlangUl {
+  display: block !important;
 }
 header .notOpen {
   right: -300px;
@@ -158,7 +220,7 @@ header .open .top h2 {
 }
 header .open .top h2 span {
   font-weight: 600;
-  color: #FF5033;
+  color: #ff5033;
 }
 header .open .top img {
   display: block;
@@ -176,10 +238,10 @@ header .open nav ul {
 }
 
 .active {
-  border-bottom: 1px solid #FF5033;
+  border-bottom: 1px solid #ff5033;
 }
 .active li {
-  color: #FF5033 !important;
+  color: #ff5033 !important;
 }
 
 .scrolled {

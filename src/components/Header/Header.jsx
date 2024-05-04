@@ -73,7 +73,7 @@ export default function Header() {
             <LanguageSelector />
             <Link to="/login">
 
-              <button>{t("loginBtn")}</button>
+              <button className="loginBtn">{t("loginBtn")}</button>
             </Link>
           </div>
         </nav>
@@ -100,7 +100,7 @@ export default function Header() {
             <LanguageSelector />
             <Link to="/login">
 
-              <button>{t("loginBtn")}</button>
+              <button className="loginBtn">{t("loginBtn")}</button>
             </Link>
           </div>
         </nav>

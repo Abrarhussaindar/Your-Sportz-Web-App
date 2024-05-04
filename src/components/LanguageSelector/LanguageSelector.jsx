@@ -1,39 +1,67 @@
+// import { useTranslation } from "react-i18next"
+import globe from "../../images/global.png"
+import arrow from "../../images/down_arrow.png"
+
+import usa from "../../images/flags/united-states.png"
+import india from "../../images/flags/india.png"
+import germany from "../../images/flags/germany.png"
+import saudi from "../../images/flags/saudi-arabia.png"
+import korean from "../../images/flags/flag.png"
+import france from "../../images/flags/france.png"
+import brazil from "../../images/flags/brazil.png"
+import spain from "../../images/flags/spain.png"
 import { useTranslation } from "react-i18next"
-import globe from "../../images/globe.svg"
-import arrow from "../../images/Vector.svg"
 import { useState } from "react"
+// import { useState } from "react"
 
 const Langauges = [
-    { code: "en", lang: "English" },
-    { code: "hi", lang: "Hindi" },
-    { code: "gr", lang: "German" },
-    { code: "ar", lang: "Arabic " },
-    { code: "ko", lang: "Korean" },
-    { code: "fr", lang: "French" },
-    { code: "br", lang: "Brazilian" },
-    { code: "sp", lang: "Spanish" },
+    { code: "en", img: usa },
+    { code: "hi", img: india },
+    { code: "de", img: germany },
+    { code: "ar", img: saudi },
+    { code: "ko", img: korean },
+    { code: "fr", img: france },
+    { code: "br", img: brazil },
+    { code: "es", img: spain },
 ]
 
 const LanguageSelector = () => {
     const { i18n } = useTranslation();
-    const [lang, setLang] = useState("English");
+    // const [lang, setLang] = useState("English");
+    const [click, setClick] = useState(false)
+    const openLangs = () =>{
+        setClick(!click)
+    }
 
-    const changeLanguage = (selectedLang) => {
-        i18n.changeLanguage(selectedLang);
-    };
-    console.log("lang: ",lang);
+    const handleLangChange = (code) =>{
+        i18n.changeLanguage(code)
+        setClick(!click)
+    }
+    
+    // console.log("lang: ", lang);
     return (
         <div className="langs">
-            <img src={globe} alt="" />
             <div className="customSelect">
-                <select name="Languages" value={lang} id="langs" onChange={(e) => {
+            <img className="globe" onClick={openLangs} src={globe} alt="" />
+
+                <ul className={click ? "openlangUl" : "langUl"}>
+                    {Langauges.map((eachLang) => (
+                        <li key={eachLang.code} value={eachLang.code}>
+                            <button className="langBtn" onClick={() => handleLangChange(eachLang.code)}>
+                                <img src={eachLang.img} /> - <p>{eachLang.code}</p>
+                            </button>
+                        </li>
+                    ))}
+                </ul>
+
+                {/* <select name="Languages" value={lang} id="langs" onChange={(e) => {
                     setLang(e.currentTarget.value);
                     changeLanguage(e.currentTarget.value);
                 }}>
                     {Langauges.map((eachLang) => (
-                        <option key={eachLang.code} value={eachLang.code}>{eachLang.lang}</option>
+                        <option key={eachLang.code} value={eachLang.code}> <img src={eachLang.img} /> - {eachLang.code}</option>
                     ))}
-                </select>
+                </select> */}
                 <span>
                     <img src={arrow} alt="" />
                 </span>

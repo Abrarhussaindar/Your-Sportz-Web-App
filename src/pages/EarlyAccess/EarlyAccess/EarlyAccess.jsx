@@ -1,24 +1,20 @@
-// import React from 'react'
-import img from "../../../images/andPhone.png"
 import './EarlyAccess.css'
+import ea from "../../../images/early_access.png"
 function EarlyAccess() {
     return (
-
-
         <main className="earlyAccess">
             <h2><span>Your</span>Sportz</h2>
-
             <div className='bottom'>
+                <h1>Excited for early access! Get a sneak peek before launch, explore features, and shape our platforms future.</h1>
 
-                <div className='left'>
-                    <h1>Excited for early access! Get a sneak peek before launch, explore features, and shape our platforms future.</h1>
-
+                <div className='right'>
+                    <img src={ea} />
+                    <h2>Join the waitlist now to get the early access</h2>
                     <form>
-                        <input type="email" placeholder="Enter Your Email" />
+                        <input type="tel" placeholder="Enter Your Phone Number" />
                         <button>Request Access</button>
                     </form>
                 </div>
-                <img src={img} />
             </div>
         </main>
 

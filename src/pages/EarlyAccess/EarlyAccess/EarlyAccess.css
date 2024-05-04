@@ -3,14 +3,12 @@ body .earlyAccess {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  gap: 50px !important;
+  gap: 30px !important;
   min-height: 70vh;
   padding: 20px 0;
-  background-image: linear-gradient(to bottom right, rgb(0, 0, 0) 50%, white 50%);
-  background-repeat: no-repeat;
 }
 body .earlyAccess h2 {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 600;
   color: #413566;
 }
@@ -20,48 +18,66 @@ body .earlyAccess h2 span {
 }
 body .earlyAccess .bottom {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-around;
-  width: 100%;
+  width: 80%;
+  gap: 50px;
 }
-body .earlyAccess .bottom .left {
+body .earlyAccess .bottom h1 {
+  width: 40%;
+  font-size: 40px;
+  color: #413566;
+  font-weight: 500;
+}
+body .earlyAccess .bottom .right {
   width: 40%;
   display: flex;
   flex-direction: column;
-  gap: 50px;
-}
-body .earlyAccess .bottom .left h1 {
-  font-size: 38px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: white;
-}
-body .earlyAccess .bottom .left form {
-  display: flex;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 10px;
   align-items: center;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+body .earlyAccess .bottom .right img {
+  width: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  mix-blend-mode: multiply;
+}
+body .earlyAccess .bottom .right h2 {
+  font-size: 34px;
+  font-weight: 500;
+  color: #413566;
+  text-align: center;
+}
+body .earlyAccess .bottom .right form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   gap: 20px;
 }
-body .earlyAccess .bottom .left form input {
+body .earlyAccess .bottom .right form input {
   border: none;
   padding: 10px;
   border-bottom: 2px solid #ff5033;
   font-weight: 500;
   font-size: 16px;
   outline: none;
-  color: white;
+  color: black;
   background: transparent;
 }
-body .earlyAccess .bottom .left form ::-moz-placeholder {
+body .earlyAccess .bottom .right form ::-moz-placeholder {
   font-weight: 400;
   font-size: 18px;
   color: gray;
 }
-body .earlyAccess .bottom .left form ::placeholder {
+body .earlyAccess .bottom .right form ::placeholder {
   font-weight: 400;
   font-size: 18px;
   color: gray;
 }
-body .earlyAccess .bottom .left form button {
+body .earlyAccess .bottom .right form button {
   background-color: #ff5033;
   color: white;
   font-size: 18px;
@@ -70,11 +86,80 @@ body .earlyAccess .bottom .left form button {
   padding: 10px 30px;
   cursor: pointer;
   text-transform: uppercase;
+  border-radius: 10px;
   transition: background 0.2s ease-in;
 }
-body .earlyAccess .bottom .left form button:hover {
+body .earlyAccess .bottom .right form button:hover {
   background-color: #e64023;
 }
-body .earlyAccess .bottom img {
-  width: 250px;
+
+@media screen and (width <= 440px) {
+  body .earlyAccess {
+    padding-bottom: 50px;
+  }
+  body .earlyAccess h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #413566;
+    text-align: center;
+  }
+  body .earlyAccess .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    gap: 10px;
+    flex-direction: column;
+  }
+  body .earlyAccess .bottom h1 {
+    width: unset;
+    font-size: 20px;
+    color: #413566;
+    text-align: center;
+    font-weight: 500;
+  }
+  body .earlyAccess .bottom .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  body .earlyAccess h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #413566;
+    text-align: center;
+  }
+  body .earlyAccess .bottom .right form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+  }
+  body .earlyAccess .bottom .right form input {
+    border: none;
+    padding: 10px;
+    border-bottom: 2px solid #ff5033;
+    font-weight: 500;
+    font-size: 16px;
+    outline: none;
+    color: black;
+    width: 95%;
+    background: transparent;
+  }
+  body .earlyAccess .bottom .right form button {
+    background-color: #ff5033;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    width: 100%;
+    padding: 10px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.2s ease-in;
+  }
+  body .earlyAccess .bottom .right h2 {
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=EarlyAccess.css.map */

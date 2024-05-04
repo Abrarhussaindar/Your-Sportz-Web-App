@@ -1212,7 +1212,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
 
             }
         },
-        sp:{
+        es:{
             translation:{
                 logoLeft: "Su",
                 logoRight: "deportes",
@@ -1811,7 +1811,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
 
             }
         },
-        gr:{
+        de:{
             translation:{
                 logoLeft: "Dein",
                 logoRight: "Sportz",
