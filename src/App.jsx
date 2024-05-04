@@ -16,6 +16,7 @@ import Feature from "./pages/Feature/Feature";
 
 import "./18n"
 import { useEffect } from "react";
+import EarlyAccess from "./pages/EarlyAccess/EarlyAccess/EarlyAccess";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -48,6 +49,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/forgot" element={<ForgotPassword />} />
           <Route path="/forgot-token" element={<VerifyCode />} />
+          <Route path="/early-access" element={<EarlyAccess />} />
           <Route path="/create-new-password" element={<CreateNewPassword />} />
         </Routes>
       </Router>

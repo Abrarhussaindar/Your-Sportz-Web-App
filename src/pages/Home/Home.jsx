@@ -25,6 +25,7 @@ import features from "../../images/features.png"
 import "./Home.css"
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const Home = () => {
 
@@ -168,8 +169,15 @@ const Home = () => {
               <p>{t("heroP")}</p>
             </div>
             <div className="btns">
-              <button><img src={ios} alt="" />{t("downloadIosBtn")}</button>
-              <button><img src={android} alt="" />{t("downloadAndBtn")}</button>
+              <Link to="/early-access">
+
+                <button><img src={ios} alt="" />{t("downloadIosBtn")}</button>
+              </Link>
+              <Link to="/early-access">
+
+                <button><img src={android} alt="" />{t("downloadAndBtn")}</button>
+              </Link>
+
 
             </div>
           </div>

@@ -1,0 +1,80 @@
+body .earlyAccess {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 50px !important;
+  min-height: 70vh;
+  padding: 20px 0;
+  background-image: linear-gradient(to bottom right, rgb(0, 0, 0) 50%, white 50%);
+  background-repeat: no-repeat;
+}
+body .earlyAccess h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #413566;
+}
+body .earlyAccess h2 span {
+  font-weight: 600;
+  color: #ff5033;
+}
+body .earlyAccess .bottom {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+}
+body .earlyAccess .bottom .left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+body .earlyAccess .bottom .left h1 {
+  font-size: 38px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+}
+body .earlyAccess .bottom .left form {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+body .earlyAccess .bottom .left form input {
+  border: none;
+  padding: 10px;
+  border-bottom: 2px solid #ff5033;
+  font-weight: 500;
+  font-size: 16px;
+  outline: none;
+  color: white;
+  background: transparent;
+}
+body .earlyAccess .bottom .left form ::-moz-placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  color: gray;
+}
+body .earlyAccess .bottom .left form ::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  color: gray;
+}
+body .earlyAccess .bottom .left form button {
+  background-color: #ff5033;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background 0.2s ease-in;
+}
+body .earlyAccess .bottom .left form button:hover {
+  background-color: #e64023;
+}
+body .earlyAccess .bottom img {
+  width: 250px;
+}/*# sourceMappingURL=EarlyAccess.css.map */
