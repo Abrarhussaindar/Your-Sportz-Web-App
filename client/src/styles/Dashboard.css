@@ -8,6 +8,7 @@ body {
   justify-content: unset !important;
   place-items: unset !important;
 }
+
 body .dashboard {
   display: flex;
   flex-direction: column;
