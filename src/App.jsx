@@ -29,14 +29,14 @@ const ScrollToTop = () => {
 };
 
 function App() {
-  
+
 
   return (
     <>
       <Router>
-      <ScrollToTop />
+        <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/features" element={<Feature />} />
           <Route path="/pricing" element={<Pricing />} />
