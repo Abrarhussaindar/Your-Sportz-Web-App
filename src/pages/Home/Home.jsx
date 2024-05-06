@@ -18,7 +18,6 @@ import "./Home.css"
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import EarlyAccess from "../EarlyAccess/EarlyAccess/EarlyAccess";
-// import { Link } from "react-router-dom";
 
 const Home = () => {
 
