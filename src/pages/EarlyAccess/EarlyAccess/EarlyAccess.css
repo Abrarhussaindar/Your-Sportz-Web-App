@@ -23,11 +23,19 @@ body .earlyAccess .bottom {
   width: 80%;
   gap: 50px;
 }
-body .earlyAccess .bottom h1 {
-  width: 40%;
+body .earlyAccess .bottom .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+body .earlyAccess .bottom .left h1 {
   font-size: 40px;
   color: #413566;
   font-weight: 500;
+}
+body .earlyAccess .bottom .left img {
+  width: 400px;
 }
 body .earlyAccess .bottom .right {
   width: 40%;

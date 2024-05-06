@@ -99,25 +99,26 @@ header {
 
                     .customSelect {
                         position: relative;
-                        width: 25px;
+                        width: 100%;
                         background-color: white;
-                        select {
-                            cursor: pointer;
-                            width: 100%;
-                            border: none;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        .lng{
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
                             font-weight: 500;
-                            appearance: none;
-                            font-size: 14px;
-                            outline: none;
-                            padding: 0 10px;
-                            background-color: white;
-                            option {
+
+                            img{
+                                width: 20px;
+                            }
+                            p{
+                                text-transform: uppercase;
                                 font-weight: 500;
-                                padding: 10px;
-                                background-color: white;
                             }
                         }
-
                         .globe {
                             width: 25px;
                             height: 25px;
@@ -130,7 +131,9 @@ header {
                             padding: 20px 0;
                             border-radius: 10px;
                             gap: 10px !important;
-                            left: -255%;
+                            right: -15%;
+                            top: 170%;
+                            
                             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                             li {
                                 width: 100%;
@@ -156,23 +159,12 @@ header {
                                 }
                             }
                         }
-                        span {
-                            position: absolute;
-                            top: 5%;
-                            right: -80%;
-                            pointer-events: none;
-                            // background-color: white;
-                            img {
-                                width: 15px;
-                                height: 20px;
-                                pointer-events: none;
-                            }
-                        }
-
                         .langUl {
                             display: none;
+                            // height: 0;
                         }
                         .openlangUl {
+                            // height: 300px;
                             display: block !important;
                         }
                     }

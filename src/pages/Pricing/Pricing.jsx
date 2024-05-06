@@ -134,6 +134,8 @@ export default function Pricing() {
 
 
     ]
+    const re = /^[0-9\b]+$/;
+    
     return (
         <Layout>
             <main className="price">
@@ -164,7 +166,7 @@ export default function Pricing() {
 
                                                 </div>
                                                 {
-                                                    each.price === "Free"
+                                                    re.test(each.price) === false
                                                         ?
                                                         <div className="amount">
 
@@ -191,7 +193,7 @@ export default function Pricing() {
                                                 </ul>
                                             </div>
 
-                                            <button>{t("pricingBtn")}Choose</button>
+                                            <button>{t("pricingBtn")}</button>
                                         </div>
                                     ))
                                 }

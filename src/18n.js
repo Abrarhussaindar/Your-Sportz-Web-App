@@ -4,6 +4,7 @@ import { initReactI18next } from "react-i18next"
 
 i18n.use(LanguageDetector).use(initReactI18next).init({
     debug: true,
+    fallbackLng: "en",
     lng: "en",
     resources: {
         en:{
@@ -90,10 +91,10 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 // footer section
                 socialH2: "Social",
                     socialLi1: " Email",
+                    socialLi2: " Instagram",
+                    socialLi3: " Facebook",
                     socialLi4: " LinkedIn",
                     socialLi5: " Youtube",
-                    socialLi3: " Facebook",
-                    socialLi2: " Instagram",
                     
                 needH2: "Need Help",
                     needLi1: "Contact Us",
@@ -200,7 +201,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 pricingToggelSchool: "School / Corporate",
                 pricingBtn: "Choose",
                 pricingSchoolPricingtag1: "6-Months",
-                pricingSchoolPricingprice1: "25,000",
+                pricingSchoolPricingprice1: 25000,
                 pricingSchoolPricingpriceTag1: "With GST",
                 pricingSchoolPricingpriceDis1: "Per member, per Year",
                     pricingSchoolPricingsubtitle11: "All features",
@@ -212,7 +213,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 
                 
                 pricingSchoolPricingtag2: "per match live streamu",
-                pricingSchoolPricingprice2: "15,000",
+                pricingSchoolPricingprice2: 15000,
                 pricingSchoolPricingpriceTag2: "with GST",
                     pricingSchoolPricingsubtitle21: "All features",
                         pricingSchoolPricingsubDetails211: "Membership Programs",
@@ -232,7 +233,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
 
 
                 pricingGeneralPricingtag2: "per match live stream",
-                pricingGeneralPricingprice2: "149",
+                pricingGeneralPricingprice2: 149,
                 pricingGeneralPricingpriceTag2: "with GST",
                     
                         pricingGeneralPricingsubDetails211: "All features",
@@ -245,7 +246,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 
                 pricingGeneralPricingtag31: "2 cameras",
                 pricingGeneralPricingta32: "popular",
-                pricingGeneralPricingprice3: "199",
+                pricingGeneralPricingprice3: 199,
                 pricingGeneralPricingpriceTag3: "with GST",
                 pricingGeneralPricingpriceDis3: "Per member, per Month",
                     
@@ -254,7 +255,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                         pricingGeneralPricingsubDetails313: "12 month subscription: ₹99",
 
                 pricingGeneralPricingtag4: "4 cameras",
-                pricingGeneralPricingprice4: "299",
+                pricingGeneralPricingprice4: 299,
                 pricingGeneralPricingpriceTag4: "with GST",
                 pricingGeneralPricingpriceDis4: "Per member, per Month",
                     
@@ -314,6 +315,14 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 forgetPasswordLoading: "Loading...",
                 forgetPasswordSubmit: "Submit",
                 forgetPasswordBack: "Back to login",
+                
+                // Early Access page
+                earlyAccessH2SpamLeft: "Your",
+                earlyAccessH2SpamRight: "Sportz",
+                earlyAccessH1: "Excited for early access! Get a sneak peek before launch, explore features, and shape our platforms future.",
+                earlyAccessH2: "Join the waitlist now to get the early access",
+                earlyAccessButton: "REQUEST ACCESS",
+                earlyAccessInputField: "Enter Your Phone Number",
             }
         },
         hi:{
@@ -342,7 +351,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
 
                 // index 2
                 title2: "रीयल-टाइम मैच कमेंट्री",
-                desciption2: "रीयल-टाइम मैच कमेंट्री",
+                desciption2: "हर खेल से अपडेट रहें। हमारी लाइव कमेंटरी सुविधा आपको मिनट-दर-मिनट अपडेट से अवगत रखती है। प्रमुख नाटकों से लेकर निर्णायक निर्णयों तक, कार्रवाई का एक भी क्षण न चूकें।",
                 hoverTitle2: "शक्ति निर्माण",
                 hoverDescription2: "फुटबॉल से पूरा शरीर काम करता है। किक मारने, कूदने और घुमाने के लिए शरीर के निचले हिस्से की ताकत आवश्यक है, जबकि ऊपरी शरीर की ताकत गेंद को बचाने और समग्र शक्ति में सहायता करती है",
 
@@ -392,13 +401,16 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 // footer section
                 socialH2: "सामाजिक",
                     socialLi1: " ईमेल",
-                    socialLi2: " Instagram",
+                    socialLi2: " इंस्टाग्राम",
+                    socialLi3: " फेसबुक",
+                    socialLi4: " लिंक्डइन",
+                    socialLi5: " यूट्यूब",
                 needH2: "मदद की ज़रूरत है",
                     needLi1: "संपर्क करें",
                     needLi2: "मूल्य निर्धारण",
                     needLi3: "सामान्य प्रश्न",
                 legalH2: "कानूनी",
-                    legalLi1: "Terms of use",
+                    legalLi1: "उपयोग की शर्तें",
                     legalLi2: "गोपनीयता नीति",
 
                 copyright: "नवरेख टेक्नोलॉजीज प्राइवेट लिमिटेड द्वारा आपका खेल",
@@ -611,6 +623,15 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 forgetPasswordLoading: "लोड हो रहा है...",
                 forgetPasswordSubmit: "जमा करना",
                 forgetPasswordBack: "लॉगिन पर वापस जाएं",
+                
+                
+                // Early Access page
+                earlyAccessH2SpamLeft: "आपका",
+                earlyAccessH2SpamRight: "स्पोर्ट्ज़",
+                earlyAccessH1: "शीघ्र पहुंच के लिए उत्साहित! लॉन्च से पहले एक झलक देखें, सुविधाओं का पता लगाएं और हमारे प्लेटफ़ॉर्म के भविष्य को आकार दें।",
+                earlyAccessH2: "शीघ्र पहुंच पाने के लिए अभी प्रतीक्षा सूची में शामिल हों",
+                earlyAccessButton: "अनुरोध का उपयोग",
+                earlyAccessInputField: "अपना फोन नंबर डालें",
             }
         },
         ar:{
@@ -690,6 +711,9 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 socialH2: "اجتماعي",
                     socialLi1: " بريد إلكتروني",
                     socialLi2: " انستغرام",
+                    socialLi3: " فيسبوك",
+                    socialLi4: " ينكدين",
+                    socialLi5: " يوتيوب",
                 needH2: "تحتاج مساعدة",
                     needLi1: "اتصل بنا",
                     needLi2: "التسعير",
@@ -909,6 +933,14 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 forgetPasswordLoading: "تحميل...",
                 forgetPasswordSubmit: "يُقدِّم",
                 forgetPasswordBack: "العودة لتسجيل الدخول",
+                
+                 // Early Access page
+                 earlyAccessH2SpamLeft: "لك",
+                 earlyAccessH2SpamRight: "سبورتز",
+                 earlyAccessH1: "متحمس للوصول المبكر! احصل على نظرة خاطفة قبل الإطلاق، واستكشف الميزات، وشكل مستقبل منصاتنا",
+                 earlyAccessH2: "انضم إلى قائمة الانتظار الآن للحصول على الوصول المبكر",
+                 earlyAccessButton: "طلب الدخول",
+                 earlyAccessInputField: "أدخل رقم هاتفك",
 
             }
         },
@@ -987,14 +1019,17 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
 
                 // footer section
                 socialH2: "Social",
-                    socialLi1: " Email",
+                    socialLi1: " E-mail",
                     socialLi2: " Instagram",
+                    socialLi3: " Facebook",
+                    socialLi4: " LinkedIn",
+                    socialLi5: " Youtube",
                 needH2: "Preciso de ajuda",
                     needLi1: "Contate-nos",
                     needLi2: "Preços",
                     needLi3: "Perguntas frequentes",
                 legalH2: "Jurídico",
-                    legalLi1: "Terms of use",
+                    legalLi1: "Termos de uso",
                     legalLi2: "política de Privacidade",
 
                 copyright: "yoursportz por Navrekh Technologies PVT LTD",
@@ -1209,6 +1244,14 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 forgetPasswordLoading: "Carregando...",
                 forgetPasswordSubmit: "Enviar",
                 forgetPasswordBack: "Volte ao login",
+                
+                 // Early Access page
+                 earlyAccessH2SpamLeft: "Seu",
+                 earlyAccessH2SpamRight: "Esportez",
+                 earlyAccessH1: "Animado pelo acesso antecipado! Dê uma olhada antes do lançamento, explore recursos e molde o futuro de nossas plataformas.",
+                 earlyAccessH2: "Junte-se à lista de espera agora para obter acesso antecipado",
+                 earlyAccessButton: "REQUEST ACCESS",
+                 earlyAccessInputField: "Digite seu número de telefone",
 
             }
         },
@@ -1289,6 +1332,9 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 socialH2: "Social",
                     socialLi1: " Correo electrónico",
                     socialLi2: " Instagram",
+                    socialLi3: " Facebook",
+                    socialLi4: " LinkedIn",
+                    socialLi5: " Youtube",
                 needH2: "Necesitas ayuda",
                     needLi1: "Contacta con nosotros",
                     needLi2: "Precios",
@@ -1508,6 +1554,14 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 forgetPasswordLoading: "Cargando...",
                 forgetPasswordSubmit: "Entregar",
                 forgetPasswordBack: "Atrás para iniciar sesión",
+                
+                 // Early Access page
+                 earlyAccessH2SpamLeft: "Su",
+                 earlyAccessH2SpamRight: "deportes",
+                 earlyAccessH1: "¡Emocionado por el acceso temprano! Eche un vistazo antes del lanzamiento, explore funciones y dé forma al futuro de nuestras plataformas.",
+                 earlyAccessH2: "Únase a la lista de espera ahora para obtener acceso temprano",
+                 earlyAccessButton: "SOLICITAR ACCESO",
+                 earlyAccessInputField: "Ingrese su número telefónico",
 
 
             }
@@ -1589,6 +1643,9 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 socialH2: "Sociale",
                     socialLi1: " E-mail",
                     socialLi2: " Instagram",
+                    socialLi3: " Facebook",
+                    socialLi4: " LinkedIn",
+                    socialLi5: " Youtube",
                 needH2: "Besoin d'aide",
                     needLi1: "Contactez-nous",
                     needLi2: "Tarifs",
@@ -1622,7 +1679,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
             
             
                 // contact us page
-                contactUsH3: "### We're Here to Help!",
+                contactUsH3: "### Nous sommes là pour vous aider!",
                 contactUsP: "**tu as une question?** Nous aimons avoir de vos nouvelles! Que vous ayez une question sur nos services, que vous ayez besoin d'aide ou que vous élaboriez la prochaine grande idée et ayez besoin de conseils, notre équipe est à votre écoute..",
                 
                 formHeaderP: "Il suffit de remplir le formulaire ci-dessous, and we'll je reviens vers vous à la vitesse de l'éclair.",
@@ -1808,6 +1865,14 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 forgetPasswordLoading: "Chargement...",
                 forgetPasswordSubmit: "Soumettre",
                 forgetPasswordBack: "Retour connexion",
+                
+                 // Early Access page
+                 earlyAccessH2SpamLeft: "Ton",
+                 earlyAccessH2SpamRight: "Sportz",
+                 earlyAccessH1: "J'ai hâte de pouvoir accéder en avant-première ! Obtenez un aperçu avant le lancement, explorez les fonctionnalités et façonnez l’avenir de nos plateformes.",
+                 earlyAccessH2: "Rejoignez la liste d'attente maintenant pour obtenir un accès anticipé",
+                 earlyAccessButton: "DEMANDE D'ACCÈS",
+                 earlyAccessInputField: "Entrez votre numéro de téléphone",
 
             }
         },
@@ -1889,6 +1954,9 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 socialH2: "Sozial",
                     socialLi1: " Email",
                     socialLi2: " Instagram",
+                    socialLi3: " Facebook",
+                    socialLi4: " LinkedIn",
+                    socialLi5: " Youtube",
                 needH2: "Brauchen Sie Hilfe",
                     needLi1: "Kontaktiere uns",
                     needLi2: "Preisgestaltung",
@@ -2108,6 +2176,14 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 forgetPasswordLoading: "Wird geladen...",
                 forgetPasswordSubmit: "Einreichen",
                 forgetPasswordBack: "Zurück zur Anmeldung",
+                
+                 // Early Access page
+                 earlyAccessH2SpamLeft: "Dein",
+                 earlyAccessH2SpamRight: "Sportz",
+                 earlyAccessH1: "Sportz-Text: Ich freue mich auf den frühen Zugriff! Werfen Sie vor dem Start einen ersten Blick darauf, erkunden Sie die Funktionen und gestalten Sie die Zukunft unserer Plattformen.",
+                 earlyAccessH2: "Tragen Sie sich jetzt auf die Warteliste ein, um den frühen Zugang zu erhalten",
+                 earlyAccessButton: "ANFRAGE ZUGANG",
+                 earlyAccessInputField: "Gib deine Telefonnummer ein",
             }
         },
         ko:{
@@ -2187,6 +2263,9 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 socialH2: "사회의",
                     socialLi1: " 이메일",
                     socialLi2: " 인스 타 그램",
+                    socialLi3: " 페이스북",
+                    socialLi4: " 링크드인",
+                    socialLi5: " 유튜브",
                 needH2: "도움이 필요하다",
                     needLi1: "문의하기",
                     needLi2: "가격",
@@ -2406,6 +2485,14 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 forgetPasswordLoading: "로드 중...",
                 forgetPasswordSubmit: "제출하다",
                 forgetPasswordBack: "로그인으로 돌아가기",
+                
+                // Early Access page
+                earlyAccessH2SpamLeft: "당신의",
+                earlyAccessH2SpamRight: "스포츠",
+                earlyAccessH1: "얼리 액세스가 기대됩니다! 출시 전에 미리 살펴보고, 기능을 살펴보고, 플랫폼의 미래를 만들어 보세요.",
+                earlyAccessH2: "지금 대기자 명단에 등록하여 조기 액세스를 받으세요",
+                earlyAccessButton: "액세스 요청",
+                earlyAccessInputField: "전화번호를 입력하세요",
             }
         },
     }

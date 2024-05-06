@@ -1,11 +1,16 @@
 import './EarlyAccess.css'
 import ea from "../../../images/early_access.png"
+import early from "../../../images/early.png"
 function EarlyAccess() {
     return (
-        <main className="earlyAccess">
+        <section className="earlyAccess">
             <h2><span>Your</span>Sportz</h2>
             <div className='bottom'>
-                <h1>Excited for early access! Get a sneak peek before launch, explore features, and shape our platforms future.</h1>
+
+                <div className='left'>
+                    <img src={early} />
+                    <h1>Excited for early access! Get a sneak peek before launch, explore features, and shape our platforms future.</h1>
+                </div>
 
                 <div className='right'>
                     <img src={ea} />
@@ -16,7 +21,7 @@ function EarlyAccess() {
                     </form>
                 </div>
             </div>
-        </main>
+        </section>
 
     )
 }

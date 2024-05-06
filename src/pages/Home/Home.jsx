@@ -1,9 +1,9 @@
 
 import Layout from "../../components/Layout";
-import hero from "../../images/hero.png"
-import heromobile from "../../images/heromobile.png"
-import ios from "../../images/ios.png"
-import android from "../../images/android.png"
+// import hero from "../../images/hero.png"
+// import heromobile from "../../images/heromobile.png"
+// import ios from "../../images/ios.png"
+// import android from "../../images/android.png"
 
 import andPhone from "../../images/andPhone.png"
 import iosPhone from "../../images/iosPhone.png"
@@ -14,18 +14,11 @@ import downarrow from "../../images/downarrow.svg"
 import bulb from "../../images/bulb.svg"
 import faq from "../../images/faq.png"
 import features from "../../images/features.png"
-
-// import book from "../../images/book.svg"
-// import chat from "../../images/chat.svg"
-// import lecture from "../../images/lecture.svg"
-// import note from "../../images/note.svg"
-// import team from "../../images/team.svg"
-// import podcast from "../../images/podcast.svg"
-
 import "./Home.css"
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import EarlyAccess from "../EarlyAccess/EarlyAccess/EarlyAccess";
+// import { Link } from "react-router-dom";
 
 const Home = () => {
 
@@ -95,38 +88,6 @@ const Home = () => {
       Image: andPhone,
     },
   ];
-  // const exploreContent = [
-  //   {
-  //     id: 1,
-  //     img: note,
-  //     content: "Find Your Teammates Quickly"
-  //   },
-  //   {
-  //     id: 2,
-  //     img: chat,
-  //     content: "Every Match, Every Moment Captured Live"
-  //   },
-  //   {
-  //     id: 3,
-  //     img: book,
-  //     content: "Teammates & Tournaments Just a Click Away"
-  //   },
-  //   {
-  //     id: 4,
-  //     img: lecture,
-  //     content: "Your Performance Dashboard"
-  //   },
-  //   {
-  //     id: 5,
-  //     img: team,
-  //     content: "Unleash Tournament and Match Play"
-  //   },
-  //   {
-  //     id: 6,
-  //     img: podcast,
-  //     content: "Your Football Hub"
-  //   },
-  // ]
   const faqQuestion = [
     {
       id: 1,
@@ -162,11 +123,12 @@ const Home = () => {
   return (
     <Layout>
       <main>
-        <section className="hero">
+        {/* <section className="hero">
           <div className="left">
             <div className="heading">
               <h1>{t("heroH1")}</h1>
               <p>{t("heroP")}</p>
+
             </div>
             <div className="btns">
               <Link to="/early-access">
@@ -188,7 +150,8 @@ const Home = () => {
               <img src={heromobile} alt="hero img" />
             )}
           </div>
-        </section>
+        </section> */}
+        <EarlyAccess />
         <section className="features" id="features">
 
           <img src={features} alt="features" />
