@@ -1,17 +1,17 @@
 const express = require('express');
-const cors = require('cors');
 const path = require('path');
 
-
 const app = express();
-app.use(express.json());
-app.use(cors());
 
-app.use(express.static("../dist"))
-app.get("*", (req, res)=>{
-    res.sendFile(path.resolve(__dirname, "../dist", "index.html"))
+const PORT = 8080
+const disPath = path.join(__dirname, "/dist");
+
+app.use(express.static(disPath));
+
+app.get("/*", (res, req) => {
+    res.sendFile('index.html', { root: disPath })
 })
-const port = 8080;
-app.listen(port, () => {
-    console.log(`server running on port ${port} `);
+
+app.listen(PORT, () => {
+    console.log(`server is running on ${PORT}`); 
 })
