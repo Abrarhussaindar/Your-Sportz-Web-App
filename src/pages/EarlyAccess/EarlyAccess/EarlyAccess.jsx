@@ -1,26 +1,22 @@
 import './EarlyAccess.css'
-import ea from "../../../images/early_access.png"
-import early from "../../../images/early.png"
+import early from "../../../images/early_access.jpg"
 function EarlyAccess() {
     return (
         <section className="earlyAccess">
-            <h2><span>Your</span>Sportz</h2>
-            <div className='bottom'>
-
-                <div className='left'>
-                    <img src={early} />
-                    <h1>Excited for early access! Get a sneak peek before launch, explore features, and shape our platforms future.</h1>
+            {/* <div className='bottom'> */}
+            <div className='left'>
+                <div className='details'>
+                    <h3>Launching Soon...</h3>
+                    <p>Your Local Football Arena in Your Pocket. Play, Track, Team Up - All in One Dynamic App!</p>
                 </div>
 
-                <div className='right'>
-                    <img src={ea} />
-                    <h2>Join the waitlist now to get the early access</h2>
-                    <form>
-                        <input type="tel" placeholder="Enter Your Phone Number" />
-                        <button>Request Access</button>
-                    </form>
-                </div>
+                <form>
+                    <input type="tel" placeholder="Enter Your Phone Number" />
+                    <button>Join the Waitlist</button>
+                </form>
             </div>
+            <img src={early} />
+            {/* </div> */}
         </section>
 
     )

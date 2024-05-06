@@ -1,71 +1,53 @@
 body .earlyAccess {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
+  justify-content: center;
   gap: 30px !important;
-  min-height: 70vh;
-  padding: 20px 0;
+  height: 100vh;
+  width: 94%;
+  padding: 20px 40px;
 }
-body .earlyAccess h2 {
-  font-size: 36px;
-  font-weight: 600;
-  color: #413566;
+body .earlyAccess img {
+  width: 40vw;
 }
-body .earlyAccess h2 span {
-  font-weight: 600;
-  color: #ff5033;
-}
-body .earlyAccess .bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 80%;
-  gap: 50px;
-}
-body .earlyAccess .bottom .left {
+body .earlyAccess .left {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  gap: 30px;
 }
-body .earlyAccess .bottom .left h1 {
-  font-size: 40px;
-  color: #413566;
-  font-weight: 500;
-}
-body .earlyAccess .bottom .left img {
-  width: 400px;
-}
-body .earlyAccess .bottom .right {
-  width: 40%;
+body .earlyAccess .left .details {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 30px;
-  border-radius: 10px;
   align-items: center;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
-body .earlyAccess .bottom .right img {
-  width: 250px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  mix-blend-mode: multiply;
-}
-body .earlyAccess .bottom .right h2 {
-  font-size: 34px;
-  font-weight: 500;
+body .earlyAccess .left .details h2 {
+  font-size: 52px;
   color: #413566;
+  font-weight: 500;
+}
+body .earlyAccess .left .details h2 span {
+  font-weight: 500;
+  color: #e64023;
+}
+body .earlyAccess .left .details h3 {
+  font-weight: 500;
+  font-size: 52px;
+  color: #413566;
+}
+body .earlyAccess .left .details p {
+  font-weight: 500;
+  font-size: 24px;
+  color: #e64023;
   text-align: center;
 }
-body .earlyAccess .bottom .right form {
+body .earlyAccess .left form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 40%;
   gap: 20px;
 }
-body .earlyAccess .bottom .right form input {
+body .earlyAccess .left form input {
   border: none;
   padding: 10px;
   border-bottom: 2px solid #ff5033;
@@ -75,17 +57,17 @@ body .earlyAccess .bottom .right form input {
   color: black;
   background: transparent;
 }
-body .earlyAccess .bottom .right form ::-moz-placeholder {
+body .earlyAccess .left form ::-moz-placeholder {
   font-weight: 400;
   font-size: 18px;
   color: gray;
 }
-body .earlyAccess .bottom .right form ::placeholder {
+body .earlyAccess .left form ::placeholder {
   font-weight: 400;
   font-size: 18px;
   color: gray;
 }
-body .earlyAccess .bottom .right form button {
+body .earlyAccess .left form button {
   background-color: #ff5033;
   color: white;
   font-size: 18px;
@@ -97,7 +79,7 @@ body .earlyAccess .bottom .right form button {
   border-radius: 10px;
   transition: background 0.2s ease-in;
 }
-body .earlyAccess .bottom .right form button:hover {
+body .earlyAccess .left form button:hover {
   background-color: #e64023;
 }
 

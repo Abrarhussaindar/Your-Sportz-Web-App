@@ -2,99 +2,81 @@ body {
     .earlyAccess {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        flex-direction: column;
+        justify-content: center;
         gap: 30px !important;
-        min-height: 70vh;
-        padding: 20px 0;
-        h2 {
-            font-size: 36px;
-            font-weight: 600;
-            color: #413566;
-
-            span {
-                font-weight: 600;
-                color: #ff5033;
-            }
+        height: 100vh;
+        width: 94%;
+        padding: 20px 40px;
+        img {
+            width: 40vw;
         }
-
-        .bottom {
+        .left {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: space-around;
-            width: 80%;
-            gap: 50px;
+            gap: 30px;
 
-            
-            .left{
+            .details {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                width: 50%;
-                h1{
-                    font-size: 40px;
-                    color: #413566;
-                    font-weight: 500;
-                }
-                img{
-                    width: 400px;
-                }
-            }
-            .right {
-                width: 40%;
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-                padding: 30px;
-                border-radius: 10px;
-                align-items: center;
-                box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-                img{
-                    width: 250px;
-                    object-fit: contain;
-                    mix-blend-mode: multiply;
-                }
                 h2 {
-                    font-size: 34px;
-                    font-weight: 500;
+                    font-size: 52px;
                     color: #413566;
+                    font-weight: 500;
+
+                    span{
+                        font-weight: 500;
+                        color: #e64023;
+                    }
+                }
+                h3{
+                    font-weight: 500;
+                    font-size: 52px;
+                    color: #413566;
+                }
+
+                p {
+                    font-weight: 500;
+                    font-size: 24px;
+                    color: #e64023;
                     text-align: center;
                 }
+            }
 
-                form {
-                    display: flex;
-                    flex-direction: column;
-                    width: 100%;
-                    gap: 20px;
-                    input {
-                        border: none;
-                        padding: 10px;
-                        border-bottom: 2px solid #ff5033;
-                        font-weight: 500;
-                        font-size: 16px;
-                        outline: none;
-                        color: black;
-                        background: transparent;
-                    }
-                    ::placeholder {
-                        font-weight: 400;
-                        font-size: 18px;
-                        color: gray;
-                    }
-                    button {
-                        background-color: #ff5033;
-                        color: white;
-                        font-size: 18px;
-                        font-weight: 500;
-                        border: none;
-                        padding: 10px 30px;
-                        cursor: pointer;
-                        text-transform: uppercase;
-                        border-radius: 10px;
-                        transition: background 0.2s ease-in;
-                        &:hover {
-                            background-color: #e64023;
-                        }
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+                gap: 20px;
+                input {
+                    border: none;
+                    padding: 10px;
+                    border-bottom: 2px solid #ff5033;
+                    font-weight: 500;
+                    font-size: 16px;
+                    outline: none;
+                    color: black;
+                    background: transparent;
+                }
+                ::placeholder {
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: gray;
+                }
+                button {
+                    background-color: #ff5033;
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 500;
+                    border: none;
+                    padding: 10px 30px;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    border-radius: 10px;
+                    transition: background 0.2s ease-in;
+                    &:hover {
+                        background-color: #e64023;
                     }
                 }
             }
@@ -103,7 +85,7 @@ body {
 }
 
 @media screen and (width <=440px) {
-    body .earlyAccess{
+    body .earlyAccess {
         padding-bottom: 50px;
     }
     body .earlyAccess h2 {
