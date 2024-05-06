@@ -1,6 +1,5 @@
 // import { useTranslation } from "react-i18next"
 import globe from "../../images/global.png"
-import arrow from "../../images/down_arrow.png"
 
 import usa from "../../images/flags/united-states.png"
 import india from "../../images/flags/india.png"
@@ -27,44 +26,39 @@ const Langauges = [
 
 const LanguageSelector = () => {
     const { i18n } = useTranslation();
-    // const [lang, setLang] = useState("English");
+    const [lang, setLang] = useState("en");
+    const [langFlag, setLangFlag] = useState(usa);
     const [click, setClick] = useState(false)
-    const openLangs = () =>{
+    const openLangs = () => {
         setClick(!click)
     }
 
-    const handleLangChange = (code) =>{
+    const handleLangChange = (code, img) => {
+        setLang(code)
+        setLangFlag(img)
         i18n.changeLanguage(code)
         setClick(!click)
     }
-    
+
     // console.log("lang: ", lang);
     return (
         <div className="langs">
             <div className="customSelect">
-            <img className="globe" onClick={openLangs} src={globe} alt="" />
+                <img className="globe" onClick={openLangs} src={globe} alt="" />
 
                 <ul className={click ? "openlangUl" : "langUl"}>
                     {Langauges.map((eachLang) => (
                         <li key={eachLang.code} value={eachLang.code}>
-                            <button className="langBtn" onClick={() => handleLangChange(eachLang.code)}>
+                            <button className="langBtn" onClick={() => handleLangChange(eachLang.code, eachLang.img)}>
                                 <img src={eachLang.img} /> - <p>{eachLang.code}</p>
                             </button>
                         </li>
                     ))}
                 </ul>
+                <div className="lng">
+                    <img src={langFlag} /> - <p>{lang}</p>
+                </div>
 
-                {/* <select name="Languages" value={lang} id="langs" onChange={(e) => {
-                    setLang(e.currentTarget.value);
-                    changeLanguage(e.currentTarget.value);
-                }}>
-                    {Langauges.map((eachLang) => (
-                        <option key={eachLang.code} value={eachLang.code}> <img src={eachLang.img} /> - {eachLang.code}</option>
-                    ))}
-                </select> */}
-                <span>
-                    <img src={arrow} alt="" />
-                </span>
             </div>
         </div>
     )

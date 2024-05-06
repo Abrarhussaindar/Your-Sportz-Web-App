@@ -28,7 +28,7 @@ export default function AboutUs() {
                             <li><p><span>{t("aboutuslipspan1")}</span>{t("aboutuslip1")}</p></li>
                             <li><p><span>{t("aboutuslipspan2")}</span>{t("aboutuslip2")}</p></li>
                             <li><p><span>{t("aboutuslipspan3")}</span>{t("aboutuslip3")}</p></li>
-                            <li><p><span>{t("aboutuslipspan4")}</span>{t("heroH4")}</p></li>
+                            <li><p><span>{t("aboutuslipspan4")}</span>{t("aboutuslip4")}</p></li>
                             <li><p><span>{t("aboutuslipspan5")}</span>{t("aboutuslip5")}</p></li>
                             <li><p><span>{t("aboutuslipspan6")} </span>{t("aboutuslip6")}</p></li>
                         </ul>

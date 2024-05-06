@@ -358,6 +358,7 @@ main .faq .content .container p {
 .click {
   height: -moz-max-content !important;
   height: max-content !important;
+  transition: height 0.2s ease-in;
 }
 .click p {
   display: block !important;

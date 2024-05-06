@@ -55,7 +55,7 @@ const TermsConditions = () => {
     <Layout>
       <main className="termsConditon">
         <div className="left">
-          <h1>{t("termsH1")}Terms and Conditions</h1>
+          <h1>{t("termsH1")}</h1>
           <ul className="terms">
             {TermsAndConditions.map((terms, index) => (
               <li className="liTerms" key={index}>
@@ -71,8 +71,8 @@ const TermsConditions = () => {
         </div>
         <div className="right">
           <img src={terms} alt="" />
-          <p>{t("termLeftP")}For any assistance, contact our customer support  @ yoursportz.in.</p>
-          <h4>{t("termLeftH4")}Thank you for choosing YourSportz!</h4>
+          <p>{t("termLeftP")}</p>
+          <h4>{t("termLeftH4")}</h4>
         </div>
       </main>
     </Layout>

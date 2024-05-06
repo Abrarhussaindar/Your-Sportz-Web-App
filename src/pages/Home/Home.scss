@@ -429,7 +429,7 @@ main {
 
 .click {
     height: max-content !important;
-
+    transition: height .2s ease-in;
     p {
         display: block !important;
     }

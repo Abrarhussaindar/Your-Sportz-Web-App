@@ -201,7 +201,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 pricingToggelSchool: "School / Corporate",
                 pricingBtn: "Choose",
                 pricingSchoolPricingtag1: "6-Months",
-                pricingSchoolPricingprice1: "25,000",
+                pricingSchoolPricingprice1: 25000,
                 pricingSchoolPricingpriceTag1: "With GST",
                 pricingSchoolPricingpriceDis1: "Per member, per Year",
                     pricingSchoolPricingsubtitle11: "All features",
@@ -213,7 +213,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 
                 
                 pricingSchoolPricingtag2: "per match live streamu",
-                pricingSchoolPricingprice2: "15,000",
+                pricingSchoolPricingprice2: 15000,
                 pricingSchoolPricingpriceTag2: "with GST",
                     pricingSchoolPricingsubtitle21: "All features",
                         pricingSchoolPricingsubDetails211: "Membership Programs",
@@ -233,7 +233,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
 
 
                 pricingGeneralPricingtag2: "per match live stream",
-                pricingGeneralPricingprice2: "149",
+                pricingGeneralPricingprice2: 149,
                 pricingGeneralPricingpriceTag2: "with GST",
                     
                         pricingGeneralPricingsubDetails211: "All features",
@@ -246,7 +246,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 
                 pricingGeneralPricingtag31: "2 cameras",
                 pricingGeneralPricingta32: "popular",
-                pricingGeneralPricingprice3: "199",
+                pricingGeneralPricingprice3: 199,
                 pricingGeneralPricingpriceTag3: "with GST",
                 pricingGeneralPricingpriceDis3: "Per member, per Month",
                     
@@ -255,7 +255,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                         pricingGeneralPricingsubDetails313: "12 month subscription: ₹99",
 
                 pricingGeneralPricingtag4: "4 cameras",
-                pricingGeneralPricingprice4: "299",
+                pricingGeneralPricingprice4: 299,
                 pricingGeneralPricingpriceTag4: "with GST",
                 pricingGeneralPricingpriceDis4: "Per member, per Month",
                     

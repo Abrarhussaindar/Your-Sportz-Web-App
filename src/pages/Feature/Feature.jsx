@@ -83,7 +83,7 @@ export default function Feature() {
                                     </div>
                                     <div className="heading">
                                         <img src={bulb} alt="" />
-                                        <h4>Do you Know</h4>
+                                        <h4>{t("matchesContainerHeading")}</h4>
                                     </div>
                                     <h3>{each.title}</h3>
                                     <p>{each.description}</p>
