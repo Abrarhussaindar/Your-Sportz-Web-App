@@ -252,7 +252,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                     
                         pricingGeneralPricingsubDetails311: "Per month ad-free: ₹99",
                         pricingGeneralPricingsubDetails312: "6 month subscription: ₹499",
-                        pricingGeneralPricingsubDetails313: "12 month subscription: ₹99",
+                        pricingGeneralPricingsubDetails313: "12 month subscription: ₹999",
 
                 pricingGeneralPricingtag4: "4 cameras",
                 pricingGeneralPricingprice4: 299,
