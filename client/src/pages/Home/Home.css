@@ -21,10 +21,10 @@ main .hero .left {
 main .hero .left .heading h1 {
   font-size: 68px;
   font-weight: 700;
-  color: #59488D;
+  color: #59488d;
 }
 main .hero .left .heading p {
-  color: #50424B;
+  color: #50424b;
   font-size: 16px;
   font-weight: 400;
 }
@@ -43,7 +43,7 @@ main .hero .left .btns button {
   font-size: 18px;
   padding: 15px 30px;
   border-radius: 10px;
-  background-color: #FF5033;
+  background-color: #ff5033;
   cursor: pointer;
   transition: all ease-in 0.2s;
 }
@@ -126,7 +126,7 @@ main .matches .row .container h3 {
 main .matches .row .container p {
   font-size: 14px;
   font-weight: 500;
-  color: #50424B;
+  color: #50424b;
 }
 main .matches .row .headingHoverContainer {
   display: none;
@@ -136,7 +136,7 @@ main .matches .row .container:hover .headingHoverContainer {
   top: -30%;
   left: 5%;
   display: block;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding: 30px;
   width: 80%;
   margin-bottom: 40px;
@@ -189,7 +189,7 @@ main .matches .row2 .container h3 {
 main .matches .row2 .container p {
   font-size: 14px;
   font-weight: 500;
-  color: #50424B;
+  color: #50424b;
   text-align: right;
 }
 main .matches .row2 .headingHoverContainer {
@@ -200,7 +200,7 @@ main .matches .row2 .container:hover .headingHoverContainer {
   top: -35%;
   left: 5%;
   display: block;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   padding: 30px;
   width: 80%;
   margin-bottom: 40px;
@@ -319,7 +319,7 @@ main .faq .content {
   width: 100%;
 }
 main .faq .content .container {
-  background-color: #F6F6F9;
+  background-color: #f6f6f9;
   padding: 20px 30px;
   width: 80%;
   height: 30px;
@@ -346,7 +346,7 @@ main .faq .content .container .heading img {
 }
 main .faq .content .container p {
   display: none;
-  color: #372E34;
+  color: #372e34;
   font-size: 14px;
   font-weight: 400;
 }
@@ -364,6 +364,62 @@ main .faq .content .container p {
   display: block !important;
 }
 
+@media screen and (770px <= width <= 1030px) {
+  body .earlyAccess .left .details h3 {
+    font-size: 42px !important;
+  }
+  body .earlyAccess .left .details p {
+    font-size: 22px !important;
+  }
+  body .earlyAccess .left form {
+    width: 100% !important;
+  }
+  body .earlyAccess {
+    justify-content: space-between !important;
+  }
+  main .matches .row .container,
+  main .matches .row2 .container {
+    width: 40% !important;
+    padding: 60px 50px;
+  }
+}
+@media screen and (440px <= width <= 770px) {
+  body .earlyAccess {
+    width: unset !important;
+  }
+  body .earlyAccess .left {
+    width: 50% !important;
+  }
+  body .earlyAccess .left .details h3 {
+    font-size: 36px !important;
+  }
+  body .earlyAccess .left .details p {
+    font-size: 22px !important;
+  }
+  main .matches h2 {
+    font-size: 42px;
+  }
+  main .matches .row2 .phone,
+  main .matches .row .phone {
+    width: 150px;
+  }
+  main .matches .row .container,
+  main .matches .row2 .container {
+    width: 50% !important;
+    padding: 40px 30px;
+  }
+  main .devices .container .phone {
+    width: 170px;
+    top: -75%;
+  }
+  main .faq .heading h2 {
+    font-size: 38px;
+    font-weight: 500;
+  }
+  body .earlyAccess .left form {
+    width: 100% !important;
+  }
+}
 @media screen and (width <= 440px) {
   main {
     gap: 30px;
@@ -499,9 +555,24 @@ main .faq .content .container p {
 @media screen and (width <= 390px) {
   main .matches .row .container {
     padding: 30px !important;
-    width: 90% !important;
+    width: 85% !important;
   }
   main .matches .row .container h3 {
     font-size: 14px;
+  }
+  main .matches .row .phone {
+    width: 150px;
+  }
+  body .earlyAccess {
+    margin-top: 60px;
+    gap: 20px !important;
+    height: 80vh !important;
+  }
+  body .earlyAccess .left .details h3 {
+    font-size: 32px !important;
+    text-align: center;
+  }
+  body .earlyAccess .left .details p {
+    font-size: 22px;
   }
 }/*# sourceMappingURL=Home.css.map */

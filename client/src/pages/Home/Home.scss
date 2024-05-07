@@ -22,12 +22,12 @@ main {
                 h1 {
                     font-size: 68px;
                     font-weight: 700;
-                    color: #59488D;
+                    color: #59488d;
                     // -webkit-text-stroke: 1px black;
                 }
 
                 p {
-                    color: #50424B;
+                    color: #50424b;
                     font-size: 16px;
                     font-weight: 400;
                 }
@@ -48,9 +48,9 @@ main {
                     font-size: 18px;
                     padding: 15px 30px;
                     border-radius: 10px;
-                    background-color: #FF5033;
+                    background-color: #ff5033;
                     cursor: pointer;
-                    transition: all ease-in .2s;
+                    transition: all ease-in 0.2s;
 
                     &:hover {
                         background-color: #e64023;
@@ -59,8 +59,6 @@ main {
                     img {
                         width: 25px;
                     }
-
-
                 }
             }
         }
@@ -85,14 +83,11 @@ main {
         flex-direction: column;
         gap: 40px;
 
-
-
         img {
             height: 70%;
             width: 100%;
             object-fit: contain;
         }
-
     }
 
     .matches {
@@ -143,8 +138,6 @@ main {
                         font-size: 18px;
                         font-weight: 600;
                     }
-
-
                 }
 
                 h3 {
@@ -155,7 +148,7 @@ main {
                 p {
                     font-size: 14px;
                     font-weight: 500;
-                    color: #50424B;
+                    color: #50424b;
                 }
             }
 
@@ -168,13 +161,13 @@ main {
                 top: -30%;
                 left: 5%;
                 display: block;
-                background-color: #FAFAFA;
+                background-color: #fafafa;
                 padding: 30px;
                 width: 80%;
                 margin-bottom: 40px;
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 border-radius: 20px;
-                transition: all .2s ease-in;
+                transition: all 0.2s ease-in;
                 /* Show the container when its parent container is hovered over */
             }
         }
@@ -229,7 +222,7 @@ main {
                 p {
                     font-size: 14px;
                     font-weight: 500;
-                    color: #50424B;
+                    color: #50424b;
                     text-align: right;
                 }
             }
@@ -242,15 +235,15 @@ main {
                 top: -35%;
                 left: 5%;
                 display: block;
-                background-color: #FAFAFA;
+                background-color: #fafafa;
                 padding: 30px;
                 width: 80%;
                 margin-bottom: 40px;
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 border-radius: 20px;
-                transition: all .2s ease-in;
+                transition: all 0.2s ease-in;
 
-                p{
+                p {
                     text-align: left;
                 }
                 /* Show the container when its parent container is hovered over */
@@ -288,7 +281,7 @@ main {
                 padding: 60px 40px;
                 background-color: #f5f5f5;
                 cursor: pointer;
-                transition: all .3s ease-in;
+                transition: all 0.3s ease-in;
 
                 img {
                     width: 60px;
@@ -303,7 +296,6 @@ main {
                     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                 }
             }
-
         }
     }
 
@@ -382,7 +374,7 @@ main {
             width: 100%;
 
             .container {
-                background-color: #F6F6F9;
+                background-color: #f6f6f9;
                 padding: 20px 30px;
                 width: 80%;
                 height: 30px;
@@ -391,7 +383,7 @@ main {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
-                transition: height .2s ease-in;
+                transition: height 0.2s ease-in;
 
                 .heading {
                     display: flex;
@@ -412,16 +404,14 @@ main {
 
                 p {
                     display: none;
-                    color: #372E34;
+                    color: #372e34;
                     font-size: 14px;
                     font-weight: 400;
                 }
             }
         }
     }
-
 }
-
 
 .featuress {
     margin-top: 75px !important;
@@ -429,13 +419,70 @@ main {
 
 .click {
     height: max-content !important;
-    transition: height .2s ease-in;
+    transition: height 0.2s ease-in;
     p {
         display: block !important;
     }
 }
 
-@media screen and (width <=440px) {
+@media screen and (770px <= width <=1030px) {
+    body .earlyAccess .left .details h3 {
+        font-size: 42px !important;
+    }
+    body .earlyAccess .left .details p {
+        font-size: 22px !important;
+    }
+    body .earlyAccess .left form {
+        width: 100% !important;
+    }
+    body .earlyAccess {
+        justify-content: space-between !important;
+    }
+    main .matches .row .container,
+    main .matches .row2 .container {
+        width: 40% !important;
+        padding: 60px 50px;
+    }
+}
+@media screen and (440px <= width <=770px) {
+    body .earlyAccess {
+        width: unset !important;
+    }
+    body .earlyAccess .left {
+        width: 50% !important;
+    }
+    body .earlyAccess .left .details h3 {
+        font-size: 36px !important;
+    }
+    body .earlyAccess .left .details p {
+        font-size: 22px !important;
+    }
+    main .matches h2 {
+        font-size: 42px;
+    }
+    main .matches .row2 .phone,
+    main .matches .row .phone {
+        width: 150px;
+    }
+    main .matches .row .container,
+    main .matches .row2 .container {
+        width: 50% !important;
+        padding: 40px 30px;
+    }
+
+    main .devices .container .phone {
+        width: 170px;
+        top: -75%;
+    }
+    main .faq .heading h2 {
+        font-size: 38px;
+        font-weight: 500;
+    }
+    body .earlyAccess .left form {
+        width: 100% !important;
+    }
+}
+@media screen and (width <= 440px) {
     main {
         gap: 30px;
     }
@@ -597,15 +644,29 @@ main {
     main .faq .content .container .heading h3 {
         width: 90%;
     }
-
 }
-
 @media screen and (width <=390px) {
     main .matches .row .container {
         padding: 30px !important;
-        width: 90% !important;
+        width: 85% !important;
     }
     main .matches .row .container h3 {
         font-size: 14px;
+    }
+    main .matches .row .phone {
+        width: 150px;
+    }
+
+    body .earlyAccess {
+        margin-top: 60px;
+        gap: 20px !important;
+        height: 80vh !important;
+    }
+    body .earlyAccess .left .details h3 {
+        font-size: 32px !important;
+        text-align: center;
+    }
+    body .earlyAccess .left .details p {
+        font-size: 22px;
     }
 }

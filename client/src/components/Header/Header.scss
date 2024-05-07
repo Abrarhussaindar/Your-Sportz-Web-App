@@ -105,16 +105,16 @@ header {
                         align-items: center;
                         gap: 10px;
 
-                        .lng{
+                        .lng {
                             display: flex;
                             align-items: center;
                             gap: 5px;
                             font-weight: 500;
                             cursor: pointer;
-                            img{
+                            img {
                                 width: 20px;
                             }
-                            p{
+                            p {
                                 text-transform: uppercase;
                                 cursor: pointer;
                                 font-weight: 500;
@@ -134,7 +134,7 @@ header {
                             gap: 10px !important;
                             right: -15%;
                             top: 170%;
-                            
+
                             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                             li {
                                 width: 100%;
@@ -246,6 +246,95 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (770px <= width <=1030px) {
+    header {
+        padding: 20px;
+    }
+    header .right nav .btns button,
+    header .open nav .btns button {
+        width: 150px;
+    }
+    header .right nav,
+    header .open nav {
+        gap: 30px;
+    }
+    header .right nav ul,
+    header .open nav ul {
+        gap: 15px;
+    }
+    header .left a {
+        gap: 20px;
+    }
+    header .right nav .btns,
+    header .open nav .btns {
+        gap: 20px;
+    }
+    header .right nav ul a li,
+    header .open nav ul a li,
+    header .right nav .btns button,
+    header .open nav .btns button {
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (440px <= width <=770px) {
+    .notOpen {
+        right: -300px;
+        display: block !important;
+    }
+    header {
+        .left {
+            width: 50% !important;
+        }
+        .right {
+            width: 50% !important;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 40px;
+            .ham {
+                display: block;
+            }
+        }
+
+        nav {
+            display: none !important;
+        }
+
+        .open {
+            nav {
+                height: 80vh !important;
+                justify-content: space-between !important;
+                .btns {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    background-color: white;
+                    .langs {
+                        width: 85%;
+                        background-color: white;
+                    }
+
+                    a {
+                        width: 100%;
+
+                        button {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    header .right nav .btns .langs .customSelect ul,
+    header .open nav .btns .langs .customSelect ul {
+        left: -5% !important;
+        bottom: 170% !important;
+        top: unset !important;
+        right: unset !important;
+    }
+}
+
 @media screen and (width <=440px) {
     .langs .customSelect ul {
         left: -10% !important;
@@ -290,5 +379,14 @@ header {
                 }
             }
         }
+    }
+}
+
+@media screen and (width <=340px) {
+    header {
+        padding: 20px;
+    }
+    header .left h2 {
+        font-size: 24px;
     }
 }
