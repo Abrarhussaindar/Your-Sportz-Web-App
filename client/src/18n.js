@@ -27,6 +27,8 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 heroP: "Stream, Score, Soar: Your Local Football Arena in Your Pocket. Track Your Performance, Discover Tournaments, and Team Up. All in One Dynamic App",
                 downloadIosBtn: "Download on IOS",
                 downloadAndBtn: "Download on Android",
+                
+                
 
 
                 // matches section
@@ -317,12 +319,11 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 forgetPasswordBack: "Back to login",
                 
                 // Early Access page
-                earlyAccessH2SpamLeft: "Your",
-                earlyAccessH2SpamRight: "Sportz",
-                earlyAccessH1: "Excited for early access! Get a sneak peek before launch, explore features, and shape our platforms future.",
-                earlyAccessH2: "Join the waitlist now to get the early access",
-                earlyAccessButton: "REQUEST ACCESS",
-                earlyAccessInputField: "Enter Your Phone Number",
+                earlyAccessH3: "Launching Soon...",
+                earlyAccessP: "Your Local Football Arena in Your Pocket. Play, Track, Team Up - All in One Dynamic App!",
+                earlyAccessPlaceHolder: "Enter Your Phone Number",
+                earlyAccessBtn: "Join the Waitlist",
+                
             }
         },
         hi:{
@@ -626,12 +627,10 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 
                 
                 // Early Access page
-                earlyAccessH2SpamLeft: "आपका",
-                earlyAccessH2SpamRight: "स्पोर्ट्ज़",
-                earlyAccessH1: "शीघ्र पहुंच के लिए उत्साहित! लॉन्च से पहले एक झलक देखें, सुविधाओं का पता लगाएं और हमारे प्लेटफ़ॉर्म के भविष्य को आकार दें।",
-                earlyAccessH2: "शीघ्र पहुंच पाने के लिए अभी प्रतीक्षा सूची में शामिल हों",
-                earlyAccessButton: "अनुरोध का उपयोग",
-                earlyAccessInputField: "अपना फोन नंबर डालें",
+                earlyAccessH3: "जल्द ही लॉन्च हो रहा है...",
+                earlyAccessP: "आपकी जेब में आपका स्थानीय फ़ुटबॉल मैदान। खेलें, ट्रैक करें, टीम बनाएं - ऑल इन वन डायनामिक ऐप!",
+                earlyAccessPlaceHolder: "अपना फोन नंबर डालें",
+                earlyAccessBtn: "प्रतीक्षा सूची में शामिल हों",
             }
         },
         ar:{
@@ -935,13 +934,11 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 forgetPasswordBack: "العودة لتسجيل الدخول",
                 
                  // Early Access page
-                 earlyAccessH2SpamLeft: "لك",
-                 earlyAccessH2SpamRight: "سبورتز",
-                 earlyAccessH1: "متحمس للوصول المبكر! احصل على نظرة خاطفة قبل الإطلاق، واستكشف الميزات، وشكل مستقبل منصاتنا",
-                 earlyAccessH2: "انضم إلى قائمة الانتظار الآن للحصول على الوصول المبكر",
-                 earlyAccessButton: "طلب الدخول",
-                 earlyAccessInputField: "أدخل رقم هاتفك",
-
+                 earlyAccessH3: "إطلاق قريبا...",
+                 earlyAccessP: "ساحة كرة القدم المحلية الخاصة بك في جيبك. العب، وتتبع، وكوّن فريقًا - الكل في تطبيق ديناميكي واحد!",
+                 earlyAccessPlaceHolder: "أدخل رقم هاتفك",
+                 earlyAccessBtn: "انضم إلى قائمة الانتظار",
+ 
             }
         },
         br:{
@@ -1246,12 +1243,10 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 forgetPasswordBack: "Volte ao login",
                 
                  // Early Access page
-                 earlyAccessH2SpamLeft: "Seu",
-                 earlyAccessH2SpamRight: "Esportez",
-                 earlyAccessH1: "Animado pelo acesso antecipado! Dê uma olhada antes do lançamento, explore recursos e molde o futuro de nossas plataformas.",
-                 earlyAccessH2: "Junte-se à lista de espera agora para obter acesso antecipado",
-                 earlyAccessButton: "REQUEST ACCESS",
-                 earlyAccessInputField: "Digite seu número de telefone",
+                 earlyAccessH3: "Lançamento em breve...",
+                 earlyAccessP: "Sua arena de futebol local no seu bolso. Jogue, acompanhe, junte-se - tudo em um aplicativo dinâmico!",
+                 earlyAccessPlaceHolder: "Digite seu número de telefone",
+                 earlyAccessBtn: "Junte-se à lista de espera",
 
             }
         },
@@ -1556,12 +1551,10 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 forgetPasswordBack: "Atrás para iniciar sesión",
                 
                  // Early Access page
-                 earlyAccessH2SpamLeft: "Su",
-                 earlyAccessH2SpamRight: "deportes",
-                 earlyAccessH1: "¡Emocionado por el acceso temprano! Eche un vistazo antes del lanzamiento, explore funciones y dé forma al futuro de nuestras plataformas.",
-                 earlyAccessH2: "Únase a la lista de espera ahora para obtener acceso temprano",
-                 earlyAccessButton: "SOLICITAR ACCESO",
-                 earlyAccessInputField: "Ingrese su número telefónico",
+                 earlyAccessH3: "Lanzando pronto...",
+                 earlyAccessP: "Tu estadio de fútbol local en tu bolsillo. Juega, sigue, forma equipo: ¡aplicación dinámica todo en uno!",
+                 earlyAccessPlaceHolder: "Ingrese su número telefónico",
+                 earlyAccessBtn: "Únase a la lista de espera",
 
 
             }
@@ -1867,12 +1860,10 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 forgetPasswordBack: "Retour connexion",
                 
                  // Early Access page
-                 earlyAccessH2SpamLeft: "Ton",
-                 earlyAccessH2SpamRight: "Sportz",
-                 earlyAccessH1: "J'ai hâte de pouvoir accéder en avant-première ! Obtenez un aperçu avant le lancement, explorez les fonctionnalités et façonnez l’avenir de nos plateformes.",
-                 earlyAccessH2: "Rejoignez la liste d'attente maintenant pour obtenir un accès anticipé",
-                 earlyAccessButton: "DEMANDE D'ACCÈS",
-                 earlyAccessInputField: "Entrez votre numéro de téléphone",
+                 earlyAccessH3: "Lancement bientôt...",
+                 earlyAccessP: "Votre arène de football locale dans votre poche. Jouez, suivez, faites équipe - Application dynamique tout-en-un !",
+                 earlyAccessPlaceHolder: "Entrez votre numéro de téléphone",
+                 earlyAccessBtn: "Rejoignez la liste d'attente",
 
             }
         },
@@ -2178,12 +2169,10 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 forgetPasswordBack: "Zurück zur Anmeldung",
                 
                  // Early Access page
-                 earlyAccessH2SpamLeft: "Dein",
-                 earlyAccessH2SpamRight: "Sportz",
-                 earlyAccessH1: "Sportz-Text: Ich freue mich auf den frühen Zugriff! Werfen Sie vor dem Start einen ersten Blick darauf, erkunden Sie die Funktionen und gestalten Sie die Zukunft unserer Plattformen.",
-                 earlyAccessH2: "Tragen Sie sich jetzt auf die Warteliste ein, um den frühen Zugang zu erhalten",
-                 earlyAccessButton: "ANFRAGE ZUGANG",
-                 earlyAccessInputField: "Gib deine Telefonnummer ein",
+                 earlyAccessH3: "Bald erhältlich...",
+                 earlyAccessP: "Ihre lokale Fußballarena in Ihrer Tasche. Spielen, verfolgen, Teams bilden – alles in einer dynamischen App!",
+                 earlyAccessPlaceHolder: "Gib deine Telefonnummer ein",
+                 earlyAccessBtn: "Treten Sie der Warteliste bei",
             }
         },
         ko:{
@@ -2487,12 +2476,10 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 forgetPasswordBack: "로그인으로 돌아가기",
                 
                 // Early Access page
-                earlyAccessH2SpamLeft: "당신의",
-                earlyAccessH2SpamRight: "스포츠",
-                earlyAccessH1: "얼리 액세스가 기대됩니다! 출시 전에 미리 살펴보고, 기능을 살펴보고, 플랫폼의 미래를 만들어 보세요.",
-                earlyAccessH2: "지금 대기자 명단에 등록하여 조기 액세스를 받으세요",
-                earlyAccessButton: "액세스 요청",
-                earlyAccessInputField: "전화번호를 입력하세요",
+                earlyAccessH3: "출시 예정...",
+                earlyAccessP: "주머니 속 지역 축구 경기장. 플레이하고, 추적하고, 팀을 구성하세요 - 올인원 다이내믹 앱!",
+                earlyAccessPlaceHolder: "전화번호를 입력하세요",
+                earlyAccessBtn: "대기자 명단에 등록",
             }
         },
     }

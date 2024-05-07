@@ -1,18 +1,21 @@
 import './EarlyAccess.css'
 import early from "../../../images/early_access.jpg"
+import { useTranslation } from "react-i18next";
 function EarlyAccess() {
+    
+    const { t } = useTranslation()
     return (
         <section className="earlyAccess">
             {/* <div className='bottom'> */}
             <div className='left'>
                 <div className='details'>
-                    <h3>Launching Soon...</h3>
-                    <p>Your Local Football Arena in Your Pocket. Play, Track, Team Up - All in One Dynamic App!</p>
+                    <h3>{t("earlyAccessH3")}</h3>
+                    <p>{t("earlyAccessP")}</p>
                 </div>
 
                 <form>
-                    <input type="tel" placeholder="Enter Your Phone Number" />
-                    <button>Join the Waitlist</button>
+                    <input type="tel" placeholder={t("earlyAccessPlaceHolder")} />
+                    <button>{t("earlyAccessBtn")}</button>
                 </form>
             </div>
             <img src={early} />
