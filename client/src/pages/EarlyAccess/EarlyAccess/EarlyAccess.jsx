@@ -1,9 +1,33 @@
 import './EarlyAccess.css'
 import early from "../../../images/early_access.jpg"
-function EarlyAccess() {
+import { useState } from 'react'
+import axios from '../../../axios'
+
+const EarlyAccess = () => {
+    const [email, setEmail] = useState("")
+    const [click, setClick] = useState(false);
+    const [error, setError] = useState("");
+
+    const validateEmail = (email) => {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+    }
+    const handleEarlyAccess = async (e) => {
+        e.preventDefault();
+        if (!validateEmail(email)) {
+            setError("Please enter a valid email address.");
+            return;
+        }
+        setClick(true);
+        try {
+            await axios.post("early-access/get-early-access", email)
+
+        } catch (err) {
+            console.log(err);
+        }
+    }
     return (
         <section className="earlyAccess">
-            {/* <div className='bottom'> */}
             <div className='left'>
                 <div className='details'>
                     <h3>Launching Soon...</h3>
@@ -11,39 +35,20 @@ function EarlyAccess() {
                 </div>
 
                 <form>
-                    <input type="tel" placeholder="Enter Your Phone Number" />
-                    <button>Join the Waitlist</button>
+                    <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter Your Email Address" />
+                    {error && <p className="error">{error}</p>}
+                    {
+                        click
+                            ?
+                            <button type="submit" disabled={true} className="disable">Loading...</button>
+                            :
+                            <button type="submit" onClick={handleEarlyAccess}>Join the Waitlist</button>
+                    }
                 </form>
             </div>
             <img src={early} />
-            {/* </div> */}
         </section>
-
     )
 }
 
 export default EarlyAccess
-
-
-{/* <div className="main">
-
-                <div className="topText">
-                    <p>YourSportz</p>
-                </div>
-                <div className="box1">
-                    <div className="para">
-                        <p>Excited for early access! Get a sneak peek before launch, explore features, and shape our platforms future.</p>
-
-                    </div>
-
-
-                    <div className="form">
-                        <input type="email" placeholder="Enter email" />
-                        <button className="btn">Request Access</button>
-                    </div>
-                </div>
-
-                <div className="box2">
-                    <img src={features} alt="" />
-                </div>
-            </div> */}

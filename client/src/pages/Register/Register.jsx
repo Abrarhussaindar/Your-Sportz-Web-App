@@ -35,7 +35,7 @@ const Register = () => {
     setClick(true)
     const data = userData
     try {
-      const res = await axios.post("/webauth/register", data)
+      const res = await axios.post("auth/register", data)
       if (res.data === "registered") {
         setUserData('')
         navigate('/login');

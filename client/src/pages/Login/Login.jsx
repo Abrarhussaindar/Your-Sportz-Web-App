@@ -29,7 +29,7 @@ const Login = () => {
     setClick(true);
     const data = userData;
     try {
-      const res = await axios.post("/webauth/login", data);
+      const res = await axios.post("auth/login", data);
       if (res.data === "logged in") {
         navigate("/dashboard");
       }

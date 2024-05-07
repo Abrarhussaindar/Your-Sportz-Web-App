@@ -48,6 +48,10 @@ body .earlyAccess .left form {
   width: 50%;
   gap: 20px;
 }
+body .earlyAccess .left form .error {
+  color: red;
+  font-weight: 600;
+}
 body .earlyAccess .left form input {
   border: none;
   padding: 10px;

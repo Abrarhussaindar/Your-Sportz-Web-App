@@ -49,6 +49,11 @@ body {
                 flex-direction: column;
                 width: 50%;
                 gap: 20px;
+
+                .error{
+                    color: red;
+                    font-weight: 600;
+                }
                 input {
                     border: none;
                     padding: 10px;
