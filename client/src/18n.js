@@ -321,7 +321,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 // Early Access page
                 earlyAccessH3: "Launching Soon...",
                 earlyAccessP: "Your Local Football Arena in Your Pocket. Play, Track, Team Up - All in One Dynamic App!",
-                earlyAccessPlaceHolder: "Enter Your Phone Number",
+                earlyAccessPlaceHolder: "Enter Your Email Address",
                 earlyAccessBtn: "Join the Waitlist",
                 
             }
@@ -629,7 +629,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 // Early Access page
                 earlyAccessH3: "जल्द ही लॉन्च हो रहा है...",
                 earlyAccessP: "आपकी जेब में आपका स्थानीय फ़ुटबॉल मैदान। खेलें, ट्रैक करें, टीम बनाएं - ऑल इन वन डायनामिक ऐप!",
-                earlyAccessPlaceHolder: "अपना फोन नंबर डालें",
+                earlyAccessPlaceHolder: "अपना ईमेल पता दर्ज करें",
                 earlyAccessBtn: "प्रतीक्षा सूची में शामिल हों",
             }
         },
@@ -936,7 +936,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                  // Early Access page
                  earlyAccessH3: "إطلاق قريبا...",
                  earlyAccessP: "ساحة كرة القدم المحلية الخاصة بك في جيبك. العب، وتتبع، وكوّن فريقًا - الكل في تطبيق ديناميكي واحد!",
-                 earlyAccessPlaceHolder: "أدخل رقم هاتفك",
+                 earlyAccessPlaceHolder: "أدخل عنوان بريدك الالكتروني",
                  earlyAccessBtn: "انضم إلى قائمة الانتظار",
  
             }
@@ -1245,7 +1245,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                  // Early Access page
                  earlyAccessH3: "Lançamento em breve...",
                  earlyAccessP: "Sua arena de futebol local no seu bolso. Jogue, acompanhe, junte-se - tudo em um aplicativo dinâmico!",
-                 earlyAccessPlaceHolder: "Digite seu número de telefone",
+                 earlyAccessPlaceHolder: "Insira o seu endereço de email",
                  earlyAccessBtn: "Junte-se à lista de espera",
 
             }
@@ -1553,7 +1553,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                  // Early Access page
                  earlyAccessH3: "Lanzando pronto...",
                  earlyAccessP: "Tu estadio de fútbol local en tu bolsillo. Juega, sigue, forma equipo: ¡aplicación dinámica todo en uno!",
-                 earlyAccessPlaceHolder: "Ingrese su número telefónico",
+                 earlyAccessPlaceHolder: "Ingrese su dirección de correo electrónicoo",
                  earlyAccessBtn: "Únase a la lista de espera",
 
 
@@ -1862,7 +1862,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                  // Early Access page
                  earlyAccessH3: "Lancement bientôt...",
                  earlyAccessP: "Votre arène de football locale dans votre poche. Jouez, suivez, faites équipe - Application dynamique tout-en-un !",
-                 earlyAccessPlaceHolder: "Entrez votre numéro de téléphone",
+                 earlyAccessPlaceHolder: "Entrez votre adresse email",
                  earlyAccessBtn: "Rejoignez la liste d'attente",
 
             }
@@ -2171,7 +2171,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                  // Early Access page
                  earlyAccessH3: "Bald erhältlich...",
                  earlyAccessP: "Ihre lokale Fußballarena in Ihrer Tasche. Spielen, verfolgen, Teams bilden – alles in einer dynamischen App!",
-                 earlyAccessPlaceHolder: "Gib deine Telefonnummer ein",
+                 earlyAccessPlaceHolder: "Geben sie ihre E-Mailadresse ein",
                  earlyAccessBtn: "Treten Sie der Warteliste bei",
             }
         },
@@ -2478,7 +2478,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 // Early Access page
                 earlyAccessH3: "출시 예정...",
                 earlyAccessP: "주머니 속 지역 축구 경기장. 플레이하고, 추적하고, 팀을 구성하세요 - 올인원 다이내믹 앱!",
-                earlyAccessPlaceHolder: "전화번호를 입력하세요",
+                earlyAccessPlaceHolder: "당신의 이메일 주소를 입력 해주세요",
                 earlyAccessBtn: "대기자 명단에 등록",
             }
         },
