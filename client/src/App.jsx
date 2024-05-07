@@ -28,7 +28,6 @@ const ScrollToTop = () => {
 };
 
 function App() {
-
   return (
     <>
       <Router>
