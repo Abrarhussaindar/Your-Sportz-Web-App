@@ -1,1 +1,54 @@
-/*# sourceMappingURL=NoPage.css.map */
+.noPage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.noPage h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #413566;
+}
+.noPage h2 span {
+  font-weight: 600;
+  color: #ff5033;
+}
+.noPage img {
+  width: 350px;
+}
+.noPage p {
+  font-weight: 500;
+  font-size: 38px;
+  color: #413566;
+}
+.noPage button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 30px;
+  font-size: 22px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all ease-in 0.2s;
+  background-color: #e64023;
+  color: white;
+}
+.noPage button:hover {
+  background-color: #e64023;
+}
+
+@media screen and (width <= 440px) {
+  .noPage img {
+    width: 250px;
+  }
+  .noPage p {
+    font-size: 24px;
+    text-align: center;
+  }
+  .noPage button {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=NoPage.css.map */
