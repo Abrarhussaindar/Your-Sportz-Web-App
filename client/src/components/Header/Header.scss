@@ -110,12 +110,13 @@ header {
                             align-items: center;
                             gap: 5px;
                             font-weight: 500;
-
+                            cursor: pointer;
                             img{
                                 width: 20px;
                             }
                             p{
                                 text-transform: uppercase;
+                                cursor: pointer;
                                 font-weight: 500;
                             }
                         }
@@ -247,8 +248,10 @@ header {
 
 @media screen and (width <=440px) {
     .langs .customSelect ul {
-        left: 200% !important;
-        top: -280px;
+        left: -10% !important;
+        bottom: 150% !important;
+        right: unset !important;
+        top: unset !important;
     }
     .notOpen {
         right: -300px;

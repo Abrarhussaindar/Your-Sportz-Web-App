@@ -3,7 +3,7 @@ import ham from "../../images/ham.svg"
 import logo from "../../images/logo.png"
 import close from "../../images/close.png"
 import "./Header.css"
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { useTranslation } from "react-i18next"
 import LanguageSelector from "../LanguageSelector/LanguageSelector"
 
@@ -36,7 +36,7 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
   const [hasScrolled, setHasScrolled] = useState(false);
-
+  const dropdownRef = useRef(null);
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -50,13 +50,26 @@ export default function Header() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
 
   return (
-    <header className={hasScrolled ? 'scrolled' : ''}>
+    <header className={hasScrolled ? 'scrolled' : ''} ref={dropdownRef}>
       <div className="left">
         <Link to="/">
           <img src={logo} alt="" />
-          
+
           <h2>{t("logoLeft")}<span>{t("logoRight")}</span></h2>
         </Link>
       </div>
