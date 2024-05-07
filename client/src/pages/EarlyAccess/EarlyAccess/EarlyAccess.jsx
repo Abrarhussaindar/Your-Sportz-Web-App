@@ -1,14 +1,13 @@
 import './EarlyAccess.css'
 import early from "../../../images/early_access.jpg"
-<<<<<<< HEAD
 import { useState } from 'react'
 import axios from '../../../axios'
-
+import { useTranslation } from "react-i18next";
 const EarlyAccess = () => {
     const [email, setEmail] = useState("")
     const [click, setClick] = useState(false);
     const [error, setError] = useState("");
-
+    const { t } = useTranslation()
     const validateEmail = (email) => {
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return regex.test(email);
@@ -27,12 +26,6 @@ const EarlyAccess = () => {
             console.log(err);
         }
     }
-=======
-import { useTranslation } from "react-i18next";
-function EarlyAccess() {
-    
-    const { t } = useTranslation()
->>>>>>> a8466b465438f5c87b2c9e7bbe48a153c86ae894
     return (
         <section className="earlyAccess">
             <div className='left'>
@@ -42,20 +35,16 @@ function EarlyAccess() {
                 </div>
 
                 <form>
-<<<<<<< HEAD
-                    <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter Your Email Address" />
+                    <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder={t("earlyAccessPlaceHolder")} />
                     {error && <p className="error">{error}</p>}
                     {
                         click
                             ?
-                            <button type="submit" disabled={true} className="disable">Loading...</button>
+                            <button type="submit" disabled={true} className="disable">{t("loginFormLoginLoading")}</button>
                             :
-                            <button type="submit" onClick={handleEarlyAccess}>Join the Waitlist</button>
+                            <button type="submit" onClick={handleEarlyAccess}>{t("earlyAccessBtn")}</button>
                     }
-=======
-                    <input type="tel" placeholder={t("earlyAccessPlaceHolder")} />
-                    <button>{t("earlyAccessBtn")}</button>
->>>>>>> a8466b465438f5c87b2c9e7bbe48a153c86ae894
+
                 </form>
             </div>
             <img src={early} />
