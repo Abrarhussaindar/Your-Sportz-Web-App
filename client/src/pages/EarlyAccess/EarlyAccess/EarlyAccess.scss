@@ -3,7 +3,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 50px !important;
+        gap: 50px;
         height: 100vh;
         width: 94%;
         padding: 20px 40px;
@@ -170,5 +170,11 @@ body {
     }
     body .earlyAccess .left form {
         width: 100%;
+    }
+}
+
+@media screen and (width <=390px){
+    .earlyAccess{
+        gap: 10px !important;
     }
 }

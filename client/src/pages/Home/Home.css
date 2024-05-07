@@ -564,8 +564,8 @@ main .faq .content .container p {
     width: 150px;
   }
   body .earlyAccess {
-    margin-top: 60px;
-    gap: 20px !important;
+    margin-top: 80px;
+    gap: 10px !important;
     height: 80vh !important;
   }
   body .earlyAccess .left .details h3 {
