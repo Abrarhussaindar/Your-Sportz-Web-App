@@ -1,5 +1,6 @@
 import './EarlyAccess.css'
 import early from "../../../images/early_access.jpg"
+<<<<<<< HEAD
 import { useState } from 'react'
 import axios from '../../../axios'
 
@@ -26,15 +27,22 @@ const EarlyAccess = () => {
             console.log(err);
         }
     }
+=======
+import { useTranslation } from "react-i18next";
+function EarlyAccess() {
+    
+    const { t } = useTranslation()
+>>>>>>> a8466b465438f5c87b2c9e7bbe48a153c86ae894
     return (
         <section className="earlyAccess">
             <div className='left'>
                 <div className='details'>
-                    <h3>Launching Soon...</h3>
-                    <p>Your Local Football Arena in Your Pocket. Play, Track, Team Up - All in One Dynamic App!</p>
+                    <h3>{t("earlyAccessH3")}</h3>
+                    <p>{t("earlyAccessP")}</p>
                 </div>
 
                 <form>
+<<<<<<< HEAD
                     <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter Your Email Address" />
                     {error && <p className="error">{error}</p>}
                     {
@@ -44,6 +52,10 @@ const EarlyAccess = () => {
                             :
                             <button type="submit" onClick={handleEarlyAccess}>Join the Waitlist</button>
                     }
+=======
+                    <input type="tel" placeholder={t("earlyAccessPlaceHolder")} />
+                    <button>{t("earlyAccessBtn")}</button>
+>>>>>>> a8466b465438f5c87b2c9e7bbe48a153c86ae894
                 </form>
             </div>
             <img src={early} />
