@@ -28,7 +28,7 @@ const ScrollToTop = () => {
 };
 
 function App() {
-  return (
+return (
     <>
       <Router>
         <ScrollToTop />
