@@ -575,4 +575,9 @@ main .faq .content .container p {
   body .earlyAccess .left .details p {
     font-size: 22px;
   }
+}
+@media screen and (width <= 440px) {
+  main .faq {
+    height: 85vh;
+  }
 }/*# sourceMappingURL=Home.css.map */

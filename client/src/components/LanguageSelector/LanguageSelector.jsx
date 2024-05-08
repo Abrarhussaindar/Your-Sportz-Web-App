@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import globe from "../../images/global.png";
+// import globe from "../../images/global.png";
 import usa from "../../images/flags/united-states.png";
 import india from "../../images/flags/india.png";
 import germany from "../../images/flags/germany.png";
@@ -55,7 +55,7 @@ const LanguageSelector = () => {
     return (
         <div className="langs" ref={dropdownRef}>
             <div className="customSelect">
-                <img className="globe" onClick={openLangs} src={globe} alt="" />
+                {/* <img className="globe" onClick={openLangs} src={globe} alt="" /> */}
 
                 <ul className={click ? "openlangUl" : "langUl"}>
                     {Languages.map((eachLang) => (

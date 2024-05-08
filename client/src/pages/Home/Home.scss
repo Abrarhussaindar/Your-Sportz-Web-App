@@ -679,5 +679,10 @@ main {
 
 
 
-@media screen and (width <= 440px){}
+@media screen and (width <= 440px){
+    
+   main .faq {
+       height: 85vh;
+   }
+}
 @media screen and (width <=390px){}
