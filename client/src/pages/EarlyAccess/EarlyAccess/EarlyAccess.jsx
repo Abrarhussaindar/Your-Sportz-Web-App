@@ -3,11 +3,24 @@ import early from "../../../images/early_access.jpg"
 import useState from 'react'
 import axios from '../../../axios'
 import { useTranslation } from "react-i18next";
+
+
 const EarlyAccess = () => {
+    
+    const [showPopup, setShowPopup] = useState(false);
+    const [popupMessage, setPopupMessage] = useState("");
+    
+    const showPopupMessage = (message) => {
+        setPopupMessage(message);
+        setShowPopup(true);
+    }
+    
+
     const [email, setEmail] = useState("")
     const [click, setClick] = useState(false);
     const [error, setError] = useState("");
     const { t } = useTranslation()
+    
     const validateEmail = (email) => {
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return regex.test(email);
@@ -20,7 +33,8 @@ const EarlyAccess = () => {
         }
         setClick(true);
         try {
-            await axios.post("early-access/get-early-access", email)
+            await axios.post("early-access/get-early-access", email);
+            showPopupMessage("Thanks for subscribing! You are added to the waitlist.");
 
         } catch (err) {
             console.log(err);
@@ -48,6 +62,13 @@ const EarlyAccess = () => {
                 </form>
             </div>
             <img src={early} />
+            
+            <div className="popup" data-show={showPopup} >
+               <div className="popup-content">
+                    <span className="close" onClick={() => setShowPopup(false)}>&times;</span>
+                    <p>{popupMessage}</p>
+               </div>
+            </div>
         </section>
     )
 }

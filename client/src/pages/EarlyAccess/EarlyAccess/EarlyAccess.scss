@@ -90,6 +90,50 @@ body {
     }
 }
 
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    .popup-content {
+        text-align: center;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .close {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+        font-size: 20px;
+        color: #888;
+
+        &:hover {
+            color: #000;
+        }
+    }
+
+    &[data-show='true'] {
+        display: block;
+    }
+}
+
+
+
+
+
 @media screen and (width <=440px) {
     body .earlyAccess {
         width: unset !important;

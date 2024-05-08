@@ -89,6 +89,39 @@ body .earlyAccess .left form button:hover {
   background-color: #e64023;
 }
 
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.popup .popup-content {
+  text-align: center;
+}
+.popup .popup-content p {
+  margin: 0;
+}
+.popup .close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #888;
+}
+.popup .close:hover {
+  color: #000;
+}
+.popup[data-show=true] {
+  display: block;
+}
+
 @media screen and (width <= 440px) {
   body .earlyAccess {
     width: unset !important;
