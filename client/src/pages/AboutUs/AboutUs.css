@@ -101,4 +101,23 @@
   .bottom .right img {
     width: 400px;
   }
+}
+.about .top {
+  gap: 120px;
+}
+
+.about .bottom {
+  flex-direction: column;
+}
+
+@media screen and (440px <= width <= 770px) {
+  .about .top {
+    gap: 40px;
+  }
+  .about .bottom {
+    flex-direction: column;
+  }
+  .about .top .left h2 {
+    font-size: 32px;
+  }
 }/*# sourceMappingURL=AboutUs.css.map */

@@ -73,4 +73,22 @@
   .termsConditon .left ul li .title, .termsConditon .left ul li p {
     font-size: 14px;
   }
+}
+@media screen and (770px <= width <= 1030px) {
+  .termsConditon {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .termsConditon .right img {
+    width: 500px;
+  }
+}
+@media screen and (440px <= width <= 770px) {
+  .termsConditon {
+    flex-direction: column;
+    padding: 20px 40px;
+  }
+  .termsConditon .right img {
+    width: 500px;
+  }
 }/*# sourceMappingURL=Terms.css.map */

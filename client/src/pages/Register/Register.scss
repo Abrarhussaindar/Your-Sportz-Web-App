@@ -266,5 +266,37 @@
 }
 
 
-@media screen and (770px <= width <=1030px){}
-@media screen and (440px <= width <=770px){}
+@media screen and (770px <= width <=1030px){
+    
+    .register {
+        height: unset !important;
+        padding: 30px 0;
+    }
+    .register .wrapper .left h1 {
+        font-size: 38px;
+    }
+    
+    .register .wrapper .right{
+        width: unset !important;
+    }
+    .register .wrapper{
+        align-items: flex-start;
+    }
+}
+@media screen and (440px <= width <=770px){
+    .register {
+        height: unset !important;
+        padding: 30px 0;
+    }
+    .register .wrapper .left h1 {
+        font-size: 38px;
+    }
+    
+    .register .wrapper .right{
+        width: unset !important;
+    }
+    .register .wrapper{
+        align-items: flex-start;
+    }
+    
+}

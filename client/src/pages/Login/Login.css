@@ -213,4 +213,14 @@
   .login .absoluteright, .login .absoluteleft {
     z-index: -1;
   }
+}
+@media screen and (770px <= width <= 1030px) {
+  .login .wrapper .left h1 {
+    font-size: 38px;
+  }
+}
+@media screen and (440px <= width <= 770px) {
+  .login .wrapper .left h1 {
+    font-size: 38px;
+  }
 }/*# sourceMappingURL=Login.css.map */

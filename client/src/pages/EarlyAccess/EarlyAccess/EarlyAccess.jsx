@@ -25,6 +25,7 @@ const EarlyAccess = () => {
         } catch (err) {
             console.log(err);
         }
+            
     }
     return (
         <section className="earlyAccess">
