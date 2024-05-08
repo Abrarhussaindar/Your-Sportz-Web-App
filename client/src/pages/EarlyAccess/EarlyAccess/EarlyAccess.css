@@ -6,6 +6,7 @@ body .earlyAccess {
   height: 100vh;
   width: 94%;
   padding: 20px 40px;
+  position: relative;
 }
 body .earlyAccess img {
   width: 40vw;
@@ -90,36 +91,40 @@ body .earlyAccess .left form button:hover {
 }
 
 .popup {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 15%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
-  width: 300px;
+  width: 450px;
+  height: 150px;
   padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.popup .popup-content {
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   text-align: center;
 }
-.popup .popup-content p {
-  margin: 0;
+.popup .top {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
-.popup .close {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  cursor: pointer;
-  font-size: 20px;
-  color: #888;
+.popup .top img {
+  width: 20px;
 }
-.popup .close:hover {
-  color: #000;
+.popup .bottom {
+  display: flex;
+  flex-direction: column;
 }
-.popup[data-show=true] {
-  display: block;
+.popup .bottom h3 {
+  font-size: 38px;
+  color: #413566;
+}
+.popup .bottom p {
+  font-size: 24px;
+  color: #e64023;
 }
 
 @media screen and (width <= 440px) {

@@ -7,6 +7,7 @@ body {
         height: 100vh;
         width: 94%;
         padding: 20px 40px;
+        position: relative;
         img {
             width: 40vw;
         }
@@ -93,41 +94,46 @@ body {
 
 
 .popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 15%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
-    width: 300px;
+    width: 450px;
+    height: 150px;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
 
-    .popup-content {
-        text-align: center;
+    
 
-        p {
-            margin: 0;
+    .top{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        img{
+            width: 20px;
         }
     }
 
-    .close {
-        position: absolute;
-        top: 5px;
-        right: 5px;
-        cursor: pointer;
-        font-size: 20px;
-        color: #888;
-
-        &:hover {
-            color: #000;
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        h3{
+            font-size: 38px;
+            color: #413566;
+        }
+    
+        p{
+            font-size: 24px;
+            color: #e64023;
         }
     }
 
-    &[data-show='true'] {
-        display: block;
-    }
 }
 
 

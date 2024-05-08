@@ -1,26 +1,19 @@
 import './EarlyAccess.css'
 import early from "../../../images/early_access.jpg"
-import useState from 'react'
+import { useEffect, useRef, useState } from 'react'
 import axios from '../../../axios'
 import { useTranslation } from "react-i18next";
-
+import close from "../../../images/close.png"
 
 const EarlyAccess = () => {
-    
-    const [showPopup, setShowPopup] = useState(false);
-    const [popupMessage, setPopupMessage] = useState("");
-    
-    const showPopupMessage = (message) => {
-        setPopupMessage(message);
-        setShowPopup(true);
-    }
-    
+
+    const [showPopup, setShowPopup] = useState(false)
 
     const [email, setEmail] = useState("")
     const [click, setClick] = useState(false);
     const [error, setError] = useState("");
     const { t } = useTranslation()
-    
+
     const validateEmail = (email) => {
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return regex.test(email);
@@ -33,13 +26,29 @@ const EarlyAccess = () => {
         }
         setClick(true);
         try {
-            await axios.post("early-access/get-early-access", email);
-            showPopupMessage("Thanks for subscribing! You are added to the waitlist.");
-
+            const res = await axios.post("early-access/get-early-access", email);
+            if (res.data === 'success') {
+                setShowPopup(true)
+                setEmail("")
+                setClick(false)
+            }
         } catch (err) {
             console.log(err);
         }
     }
+    const dropdownRef = useRef(null);
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+                setShowPopup(false)
+            }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
     return (
         <section className="earlyAccess">
             <div className='left'>
@@ -62,13 +71,22 @@ const EarlyAccess = () => {
                 </form>
             </div>
             <img src={early} />
-            
-            <div className="popup" data-show={showPopup} >
-               <div className="popup-content">
-                    <span className="close" onClick={() => setShowPopup(false)}>&times;</span>
-                    <p>{popupMessage}</p>
-               </div>
-            </div>
+
+            {
+                showPopup
+                &&
+                <div className="popup" ref={dropdownRef}>
+                    <div className='top'>
+                        <img src={close} onClick={()=>setShowPopup(false)} />
+                    </div>
+                    <div className='bottom'>
+
+                        <h3>Thanks for subscribing!</h3>
+                        <p>You are added to the waitlist.</p>
+                    </div>
+                </div>
+            }
+
         </section>
     )
 }
