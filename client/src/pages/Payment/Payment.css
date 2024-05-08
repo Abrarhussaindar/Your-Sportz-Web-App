@@ -178,4 +178,86 @@
 .payment .right .bottom .tax h3, .payment .right .bottom .tax span, .payment .right .bottom .total h3, .payment .right .bottom .total span {
   font-size: 18px;
   font-weight: 500;
+}
+
+@media screen and (770px <= width <= 1030px) {
+  .payment {
+    width: 93%;
+    padding: 30px;
+  }
+  .payment img {
+    display: none;
+  }
+  .payment .left {
+    width: unset !important;
+  }
+}
+@media screen and (440px <= width <= 770px) {
+  .payment {
+    width: 93%;
+    padding: 30px;
+  }
+  .payment img {
+    display: none;
+  }
+  .payment .left {
+    width: 60%;
+  }
+  .payment .left form .exp_cvc .ele input {
+    width: 100px;
+  }
+  .payment .right .middle h3, .payment .right .middle span {
+    font-size: 16px;
+  }
+  .payment .right .top .details .left h3 {
+    font-size: 14px;
+  }
+}
+@media screen and (width <= 440px) {
+  .payment {
+    padding: 30px;
+    width: 85%;
+    flex-direction: column;
+  }
+  .payment .left {
+    width: 100%;
+  }
+  .payment .left p {
+    font-size: 13px;
+  }
+  .payment img {
+    display: none;
+  }
+  .payment .left form .exp_cvc .ele input {
+    width: 88px;
+  }
+  .payment .right {
+    width: 85%;
+  }
+  .payment .right p {
+    font-size: 12px;
+  }
+  .payment .left h1 {
+    font-size: 33px;
+  }
+}
+@media screen and (width <= 390px) {
+  .payment {
+    flex-direction: column;
+  }
+  .payment .left {
+    width: 100%;
+  }
+  .payment img {
+    display: none;
+  }
+  .payment .left form .exp_cvc .ele input {
+    width: 68px;
+  }
+  .payment .right {
+    width: 85%;
+  }
+  .payment .left h1 {
+    font-size: 32px;
+  }
 }/*# sourceMappingURL=Payment.css.map */
