@@ -1,6 +1,6 @@
 import './EarlyAccess.css'
 import early from "../../../images/early_access.jpg"
-import { useState } from 'react'
+import useState from 'react'
 import axios from '../../../axios'
 import { useTranslation } from "react-i18next";
 const EarlyAccess = () => {
@@ -25,7 +25,6 @@ const EarlyAccess = () => {
         } catch (err) {
             console.log(err);
         }
-            
     }
     return (
         <section className="earlyAccess">
