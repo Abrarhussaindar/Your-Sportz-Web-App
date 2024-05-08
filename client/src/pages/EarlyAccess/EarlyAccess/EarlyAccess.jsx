@@ -29,6 +29,7 @@ const EarlyAccess = () => {
             const res = await axios.post("early-access/get-early-access", email);
             if (res.data === 'success') {
                 setShowPopup(true)
+                setError("")
                 setEmail("")
                 setClick(false)
             }

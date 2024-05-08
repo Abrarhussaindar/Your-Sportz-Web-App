@@ -120,7 +120,16 @@
     }
 
     .bottom .right img{
-        width: 400px;
+        width: 300px;
+    }
+    .about .bottom .left ul {
+        padding-left: 10px !important;
+    }
+    .about .bottom .left ul li p span {
+        font-size: 16px;
+    }
+    .about .bottom .left ul li::marker {
+        font-size: 30px;
     }
 }
 

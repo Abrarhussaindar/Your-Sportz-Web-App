@@ -241,6 +241,7 @@ header .open nav ul {
 @media screen and (770px <= width <= 1030px) {
   header {
     padding: 20px;
+    width: 96% !important;
   }
   header .right nav .btns button,
   header .open nav .btns button {
@@ -325,7 +326,13 @@ header .open nav ul {
   }
   .notOpen {
     right: -300px;
-    display: block !important;
+  }
+  header {
+    width: 90% !important;
+    padding: 20px !important;
+  }
+  header .left a {
+    gap: 20px;
   }
   header .right .ham {
     display: block;
@@ -350,11 +357,12 @@ header .open nav ul {
     width: 100%;
   }
 }
-@media screen and (width <= 340px) {
+@media screen and (width <= 390px) {
   header {
-    padding: 20px;
+    width: 90% !important;
+    padding: 20px !important;
   }
-  header .left h2 {
-    font-size: 24px;
+  header .left a {
+    gap: 10px;
   }
 }/*# sourceMappingURL=Header.css.map */

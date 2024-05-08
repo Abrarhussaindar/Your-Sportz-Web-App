@@ -249,6 +249,7 @@ header {
 @media screen and (770px <= width <=1030px) {
     header {
         padding: 20px;
+        width: 96% !important;
     }
     header .right nav .btns button,
     header .open nav .btns button {
@@ -344,9 +345,16 @@ header {
     }
     .notOpen {
         right: -300px;
-        display: block !important;
     }
     header {
+        width: 90% !important;
+        padding: 20px !important;
+
+        .left{
+            a{
+                gap: 20px;
+            }
+        }
         .right {
             .ham {
                 display: block;
@@ -382,11 +390,16 @@ header {
     }
 }
 
-@media screen and (width <=340px) {
-    header {
-        padding: 20px;
-    }
-    header .left h2 {
-        font-size: 24px;
+@media screen and (width <=390px) {
+    header{
+        width: 90% !important;
+        padding: 20px !important;
+        .left{
+            a{
+                gap: 10px;
+            }
+
+            
+        }
     }
 }

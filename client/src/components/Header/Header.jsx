@@ -102,10 +102,17 @@ export default function Header() {
         <nav>
           <ul>
             {navLinks.map((link) => (
+
               <NavLink to={link.to} key={link.text}>
-                <li className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "active" : ""
-                }>{link.text}</li>
+                <li className=
+                  {
+                    ({ isActive, isPending }) =>
+                      isPending ? "pending" : isActive ? "active" : ""
+                  }
+
+                >
+                  {link.text}
+                </li>
               </NavLink>
             ))}
           </ul>
@@ -119,6 +126,6 @@ export default function Header() {
         </nav>
       </div>
 
-    </header>
+    </header >
   )
 }

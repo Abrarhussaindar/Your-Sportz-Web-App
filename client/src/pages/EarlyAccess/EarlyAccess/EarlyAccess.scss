@@ -5,7 +5,7 @@ body {
         justify-content: center;
         gap: 50px;
         height: 100vh;
-        width: 94%;
+        width: 92%;
         padding: 20px 40px;
         position: relative;
         img {
@@ -27,12 +27,12 @@ body {
                     color: #413566;
                     font-weight: 500;
 
-                    span{
+                    span {
                         font-weight: 500;
                         color: #e64023;
                     }
                 }
-                h3{
+                h3 {
                     font-weight: 500;
                     font-size: 52px;
                     color: #413566;
@@ -52,7 +52,7 @@ body {
                 width: 50%;
                 gap: 20px;
 
-                .error{
+                .error {
                     color: red;
                     font-weight: 600;
                 }
@@ -91,8 +91,6 @@ body {
     }
 }
 
-
-
 .popup {
     top: 15%;
     position: absolute;
@@ -109,36 +107,47 @@ body {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     text-align: center;
 
-    
-
-    .top{
+    .top {
         width: 100%;
         display: flex;
         justify-content: flex-end;
-        img{
+        img {
             width: 20px;
         }
     }
 
-    .bottom{
+    .bottom {
         display: flex;
         flex-direction: column;
-        h3{
+        h3 {
             font-size: 38px;
             color: #413566;
         }
-    
-        p{
+
+        p {
             font-size: 24px;
             color: #e64023;
         }
     }
-
 }
 
-
-
-
+@media screen and (770px <= width <=1030px) {
+    .popup{
+        left: 25% !important; 
+    }
+}
+@media screen and (440px <= width <=770px) {
+    .popup {
+        width: 450px !important;
+        height: 160px !important;
+    }
+    .popup .bottom h3 {
+        font-size: 36px !important
+    }
+    .popup .bottom p {
+        font-size: 26px !important;
+    }
+}
 
 @media screen and (width <=440px) {
     body .earlyAccess {
@@ -155,7 +164,7 @@ body {
         color: #413566;
         text-align: center;
     }
-    
+
     body .earlyAccess .left .details h3 {
         font-size: 38px !important;
     }
@@ -222,10 +231,21 @@ body {
     body .earlyAccess .left form {
         width: 100%;
     }
+
+    .popup {
+        width: 250px !important;
+        height: 250px !important;
+    }
+    .popup .bottom h3 {
+        font-size: 32px !important;
+    }
+    .popup .bottom p {
+        font-size: 22px !important;
+    }
 }
 
-@media screen and (width <=390px){
-    .earlyAccess{
+@media screen and (width <=390px) {
+    .earlyAccess {
         gap: 10px !important;
     }
 }

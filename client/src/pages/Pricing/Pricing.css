@@ -17,12 +17,12 @@
   text-align: center;
 }
 .price .top p {
-  color: #6C646A;
+  color: #6c646a;
   font-size: 14px;
   font-weight: 400;
 }
 .price .top .tab {
-  background-color: #E5E5EE;
+  background-color: #e5e5ee;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -35,7 +35,7 @@
   border: none;
   outline: none;
   cursor: pointer;
-  background-color: #E5E5EE;
+  background-color: #e5e5ee;
 }
 .price .middle {
   display: flex;
@@ -53,7 +53,7 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 40px;
-  border: 2px solid #5A4C84;
+  border: 2px solid #5a4c84;
   border-radius: 10px;
   padding: 30px;
   width: 15%;
@@ -67,7 +67,7 @@
   gap: 20px;
 }
 .price .middle .school .container .wrapper .custome-hr {
-  border-top: 2px solid #5A4C84;
+  border-top: 2px solid #5a4c84;
 }
 .price .middle .school .container .wrapper .tags {
   display: flex;
@@ -80,18 +80,18 @@
   font-size: 12px;
   text-transform: capitalize;
   border-radius: 10px;
-  background-color: #E5E5EE;
+  background-color: #e5e5ee;
 }
 .price .middle .school .container .wrapper .tags .pop {
-  background-color: #FF5033;
+  background-color: #ff5033;
   color: white;
 }
 .price .middle .school .container .wrapper .amount {
   display: flex;
   flex-direction: column;
   padding: 20px 0;
-  border-top: 1px solid #FF5033;
-  border-bottom: 1px solid #FF5033;
+  border-top: 1px solid #ff5033;
+  border-bottom: 1px solid #ff5033;
 }
 .price .middle .school .container .wrapper .amount h3 {
   font-size: 44px;
@@ -127,7 +127,7 @@
   border: none;
   outline: none;
   color: white;
-  background-color: #FF5033;
+  background-color: #ff5033;
   font-weight: 500;
   font-size: 18px;
   border-radius: 10px;
@@ -149,7 +149,7 @@
   background-color: white;
 }
 .price .middle .school .container:hover .wrapper .tags .pop {
-  background-color: #FF5033;
+  background-color: #ff5033;
   color: white;
 }
 .price .middle .general {
@@ -163,7 +163,7 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 40px;
-  border: 2px solid #5A4C84;
+  border: 2px solid #5a4c84;
   border-radius: 10px;
   padding: 30px;
   width: 15%;
@@ -177,7 +177,7 @@
   gap: 20px;
 }
 .price .middle .general .container .wrapper .custome-hr {
-  border-top: 2px solid #5A4C84;
+  border-top: 2px solid #5a4c84;
 }
 .price .middle .general .container .wrapper .tags {
   display: flex;
@@ -190,18 +190,18 @@
   font-size: 12px;
   text-transform: capitalize;
   border-radius: 10px;
-  background-color: #E5E5EE;
+  background-color: #e5e5ee;
 }
 .price .middle .general .container .wrapper .tags .pop {
-  background-color: #FF5033;
+  background-color: #ff5033;
   color: white;
 }
 .price .middle .general .container .wrapper .amount {
   display: flex;
   flex-direction: column;
   padding: 20px 0;
-  border-top: 1px solid #FF5033;
-  border-bottom: 1px solid #FF5033;
+  border-top: 1px solid #ff5033;
+  border-bottom: 1px solid #ff5033;
 }
 .price .middle .general .container .wrapper .amount h3 {
   font-size: 36px;
@@ -252,7 +252,7 @@
   border: none;
   outline: none;
   color: white;
-  background-color: #FF5033;
+  background-color: #ff5033;
   font-weight: 500;
   font-size: 18px;
   border-radius: 10px;
@@ -274,7 +274,7 @@
   background-color: white;
 }
 .price .middle .general .container:hover .wrapper .tags .pop {
-  background-color: #FF5033;
+  background-color: #ff5033;
   color: white;
 }
 .price .bottom {
@@ -310,23 +310,50 @@
 
 .popular {
   color: white;
-  background-color: #554585;
+  background-color: #554585 !important;
+  font-weight: 500 !important;
 }
 .popular .wrapper .tags h4 {
   color: black;
   background-color: white;
 }
 .popular .wrapper .tags .pop {
-  background-color: #FF5033;
+  background-color: #ff5033;
   color: white;
 }
 
+@media screen and (770px <= width <= 1030px) {
+  .price .middle .school,
+  .price .middle .general {
+    flex-wrap: wrap;
+  }
+  .price .middle .school .container,
+  .price .middle .general .container {
+    width: 25%;
+  }
+  .price .top {
+    width: unset !important;
+  }
+}
+@media screen and (440px <= width <= 770px) {
+  .price .middle .school,
+  .price .middle .general {
+    flex-wrap: wrap;
+  }
+  .price .middle .school .container,
+  .price .middle .general .container {
+    width: 30%;
+  }
+  .price .top {
+    width: unset !important;
+  }
+}
 @media screen and (width <= 440px) {
   .price .top {
     width: unset;
   }
   .price .top h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
   .price .middle .school,
   .price .middle .general {
@@ -338,35 +365,21 @@
     text-align: center;
     font-size: 12px;
   }
-  .price .middle .school, .price .middle .general {
+  .price .middle .school,
+  .price .middle .general {
     display: flex;
     gap: 50px;
     flex-direction: column;
     align-items: center;
   }
-  .price .middle .school .container, .price .middle .general .container {
-    width: 50%;
+  .price .middle .school .container,
+  .price .middle .general .container {
+    width: 60%;
   }
 }
-@media screen and (770px <= width <= 1030px) {
-  .price .middle .school, .price .middle .general {
-    flex-wrap: wrap;
-  }
-  .price .middle .school .container, .price .middle .general .container {
-    width: 25%;
-  }
-  .price .top {
-    width: unset !important;
-  }
-}
-@media screen and (440px <= width <= 770px) {
-  .price .middle .school, .price .middle .general {
-    flex-wrap: wrap;
-  }
-  .price .middle .school .container, .price .middle .general .container {
-    width: 30%;
-  }
-  .price .top {
-    width: unset !important;
+@media screen and (width <= 340px) {
+  .price .middle .school .container,
+  .price .middle .general .container {
+    width: 70%;
   }
 }/*# sourceMappingURL=Pricing.css.map */

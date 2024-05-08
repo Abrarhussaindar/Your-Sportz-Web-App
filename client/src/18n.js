@@ -49,7 +49,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
 
                 // index 3
                 title3: "Go Live: Stream Football With Flair",
-                desciption3: "Elevate your football matches to a global stage with our advanced live streaming. Integrate effortlessly with your YouTube channel for maximum exposure, display dynamic score updates, and relish AI-crafted highlights of your game's peak moments. Ignite the spirit of football and share every goal and glory live with your audience.",
+                desciption3: "Elevate your football matches to a global stage with our advanced live streaming. Integrate effortlessly with your YouTube channel for maximum exposure, display dynamic score updates, and relish AI-crafted highlights of your game's peak moments.",
                 hoverTitle3: "Muscle Tone and Fat Burn:",
                 hoverDescription3: "Football engages both slow-twitch and fast-twitch muscle fibers, promoting muscle mass and fat loss. The aerobic-anaerobic energy pathways contribute to calorie burn.",
 
@@ -131,7 +131,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
             
             
                 // contact us page
-                contactUsH3: "### We're Here to Help!",
+                contactUsH3: "We're Here to Help!",
                 contactUsP: "**Got a question?** We love hearing from you! Whether you have a query about our services, need assistance, or you're crafting the next big idea and need some advice, our team is all ears.",
                 
                 formHeaderP: "Just fill out the form below, and we'll get back to you with lightning speed.",
@@ -439,7 +439,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
             
             
                 // contact us page
-                contactUsH3: "### हम मदद के लिए यहां हैं!",
+                contactUsH3: "हम मदद के लिए यहां हैं!",
                 contactUsP: "**कोई प्रश्न है?** हमें आपसे सुनना अच्छा लगता है! चाहे आपके पास हमारी सेवाओं के बारे में कोई प्रश्न हो, सहायता की आवश्यकता हो, या आप अगला बड़ा विचार तैयार कर रहे हों और आपको कुछ सलाह की आवश्यकता हो, हमारी टीम आपकी मदद करेगी।",
                 
                 formHeaderP: "बस नीचे दिया गया फॉर्म भरें, और हम बिजली की गति से आपसे संपर्क करेंगे।",
@@ -746,7 +746,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
             
             
                 // contact us page
-                contactUsH3: "### نحن هنا للمساعدة!",
+                contactUsH3: "نحن هنا للمساعدة!",
                 contactUsP: "**هل لديك سؤال؟** نحن نحب أن نسمع منك! سواء كان لديك استفسار حول خدماتنا، أو كنت بحاجة إلى المساعدة، أو كنت تقوم بصياغة الفكرة الكبيرة التالية وتحتاج إلى بعض النصائح، فإن فريقنا يستمع إليك.",
                 
                 formHeaderP: "ما عليك سوى ملء النموذج أدناه، وسنقوم بالرد عليك بسرعة البرق.",
@@ -1054,7 +1054,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
             
             
                 // contact us page
-                contactUsH3: "### Estamos aqui para ajudar!",
+                contactUsH3: "Estamos aqui para ajudar!",
                 contactUsP: "**Tem alguma pergunta?** Adoramos ouvir sua opinião! Quer você tenha alguma dúvida sobre nossos serviços, precise de ajuda ou esteja elaborando a próxima grande ideia e precise de alguns conselhos, nossa equipe é toda ouvidos.",
                 
                 formHeaderP: "Basta preencher o formulário abaixo e entraremos em contato com você na velocidade da luz.",
@@ -1363,7 +1363,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
             
             
                 // contact us page
-                contactUsH3: "### ¡Estamos aquí para ayudar!",
+                contactUsH3: "¡Estamos aquí para ayudar!",
                 contactUsP: "**¿Tienes alguna pregunta?** ¡Nos encanta saber de ti! Ya sea que tenga una consulta sobre nuestros servicios, necesite ayuda o esté elaborando la próxima gran idea y necesite algún consejo, nuestro equipo es todo oídos.",
                 
                 formHeaderP: "Simplemente complete el formulario a continuación y nos comunicaremos con usted a la velocidad del rayo.",
@@ -1672,7 +1672,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
             
             
                 // contact us page
-                contactUsH3: "### Nous sommes là pour vous aider!",
+                contactUsH3: "Nous sommes là pour vous aider!",
                 contactUsP: "**tu as une question?** Nous aimons avoir de vos nouvelles! Que vous ayez une question sur nos services, que vous ayez besoin d'aide ou que vous élaboriez la prochaine grande idée et ayez besoin de conseils, notre équipe est à votre écoute..",
                 
                 formHeaderP: "Il suffit de remplir le formulaire ci-dessous, and we'll je reviens vers vous à la vitesse de l'éclair.",
@@ -1981,7 +1981,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
             
             
                 // contact us page
-                contactUsH3: "### We're Hier um zu helfen!",
+                contactUsH3: "We're Hier um zu helfen!",
                 contactUsP: "**Hast du eine Frage?** Wir freuen uns, von Ihnen zu hören! Egal, ob Sie eine Frage zu unseren Dienstleistungen haben, Hilfe benötigen oder an der nächsten großen Idee arbeiten und Rat benötigen, unser Team ist immer für Sie da.",
                 
                 formHeaderP: "Füllen Sie einfach das untenstehende Formular aus und wir werden uns blitzschnell bei Ihnen melden.",
@@ -2288,7 +2288,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
             
             
                 // contact us page
-                contactUsH3: "### 우리가 도와드리겠습니다!",
+                contactUsH3: "우리가 도와드리겠습니다!",
                 contactUsP: "**질문이 있으신가요?** 우리는 당신의 의견을 듣고 싶습니다! 당사 서비스에 대한 질문이 있거나, 도움이 필요하거나, 차세대 아이디어를 구상 중이거나 조언이 필요한 경우, 당사 팀은 귀를 기울이고 있습니다.",
                 
                 formHeaderP: "아래 양식을 작성해 주시면 매우 빠른 속도로 연락드리겠습니다.",

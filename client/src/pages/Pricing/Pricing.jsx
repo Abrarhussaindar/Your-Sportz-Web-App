@@ -135,7 +135,7 @@ export default function Pricing() {
 
     ]
     const re = /^[0-9\b]+$/;
-    
+
     return (
         <Layout>
             <main className="price">
@@ -160,7 +160,7 @@ export default function Pricing() {
 
                                                     {
                                                         each.tag.map((eachTag) => (
-                                                            <h4 key={eachTag}>{eachTag}</h4>
+                                                            <h4 className={eachTag === "popular" ? "popular": ""} key={eachTag}>{eachTag}</h4>
                                                         ))
                                                     }
 
@@ -197,73 +197,6 @@ export default function Pricing() {
                                         </div>
                                     ))
                                 }
-
-                                {/* <div className="container">
-                                    <div className="wrapper">
-                                        <div className="tags">
-                                            <h4>heading</h4>
-
-                                        </div>
-
-
-                                        <div className="amount">
-                                            <h3><span className="symbol">&#8377;</span>Free <span className="gst">With GST</span></h3>
-                                            <p>Per member, per Month</p>
-                                        </div>
-
-                                        <ul>
-                                            <li><img src={check} alt="" />Tourment creations</li>
-                                            <li><img src={check} alt="" />Watch Score</li>
-                                            <li><img src={check} alt="" />Start match</li>
-                                            <li><img src={check} alt="" />Ad-Free Experience</li>
-                                        </ul>
-                                    </div>
-
-                                    <button>Choose</button>
-                                </div>
-                                <div className="container popular">
-                                    <div className="wrapper">
-                                        <div className="tags">
-                                            <h4>heading</h4>
-                                            <h4 className="pop">popular</h4>
-                                        </div>
-                                        <div className="amount">
-                                            <h3><span className="symbol">&#8377;</span>Free <span className="gst">With GST</span></h3>
-                                            <p>Per member, per Month</p>
-                                        </div>
-
-                                        <ul>
-                                            <li><img src={check} alt="" />Tourment creations</li>
-                                            <li><img src={check} alt="" />Watch Score</li>
-                                            <li><img src={check} alt="" />Start match</li>
-                                            <li><img src={check} alt="" />Ad-Free Experience</li>
-                                        </ul>
-                                    </div>
-
-                                    <button>Choose</button>
-                                </div>
-                                <div className="container">
-                                    <div className="wrapper">
-                                        <div className="tags">
-                                            <h4>heading</h4>
-
-                                        </div>
-
-                                        <div className="amount">
-                                            <h3><span className="symbol">&#8377;</span>Free <span className="gst">With GST</span></h3>
-                                            <p>Per member, per Month</p>
-                                        </div>
-
-                                        <ul>
-                                            <li><img src={check} alt="" />Tourment creations</li>
-                                            <li><img src={check} alt="" />Watch Score</li>
-                                            <li><img src={check} alt="" />Start match</li>
-                                            <li><img src={check} alt="" />Ad-Free Experience</li>
-                                        </ul>
-                                    </div>
-
-                                    <button>Choose</button>
-                                </div> */}
                             </div>
                             :
                             <div className="general">
@@ -317,10 +250,6 @@ export default function Pricing() {
                                                             </li>
                                                         ))
                                                     }
-                                                    {/* <li><img src={check} alt="" />Tourment creations</li>
-                                                    <li><img src={check} alt="" />Watch Score</li>
-                                                    <li><img src={check} alt="" />Start match</li>
-                                                    <li><img src={check} alt="" />Ad-Free Experience</li> */}
                                                 </ul>
                                             </div>
 

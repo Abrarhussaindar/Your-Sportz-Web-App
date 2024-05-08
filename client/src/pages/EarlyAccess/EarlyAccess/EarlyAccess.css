@@ -4,7 +4,7 @@ body .earlyAccess {
   justify-content: center;
   gap: 50px;
   height: 100vh;
-  width: 94%;
+  width: 92%;
   padding: 20px 40px;
   position: relative;
 }
@@ -127,6 +127,23 @@ body .earlyAccess .left form button:hover {
   color: #e64023;
 }
 
+@media screen and (770px <= width <= 1030px) {
+  .popup {
+    left: 25% !important;
+  }
+}
+@media screen and (440px <= width <= 770px) {
+  .popup {
+    width: 450px !important;
+    height: 160px !important;
+  }
+  .popup .bottom h3 {
+    font-size: 36px !important;
+  }
+  .popup .bottom p {
+    font-size: 26px !important;
+  }
+}
 @media screen and (width <= 440px) {
   body .earlyAccess {
     width: unset !important;
@@ -206,6 +223,16 @@ body .earlyAccess .left form button:hover {
   }
   body .earlyAccess .left form {
     width: 100%;
+  }
+  .popup {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  .popup .bottom h3 {
+    font-size: 32px !important;
+  }
+  .popup .bottom p {
+    font-size: 22px !important;
   }
 }
 @media screen and (width <= 390px) {

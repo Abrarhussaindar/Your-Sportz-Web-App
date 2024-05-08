@@ -382,6 +382,9 @@ main .faq .content .container p {
     width: 40% !important;
     padding: 60px 50px;
   }
+  main .faq {
+    height: 75vh !important;
+  }
 }
 @media screen and (440px <= width <= 770px) {
   body .earlyAccess {
@@ -403,10 +406,9 @@ main .faq .content .container p {
   main .matches .row .phone {
     width: 150px;
   }
-  main .matches .row .container,
-  main .matches .row2 .container {
-    width: 50% !important;
-    padding: 40px 30px;
+  main .matches .row .container, main .matches .row2 .container {
+    width: 55% !important;
+    padding: 50px 30px;
   }
   main .devices .container .phone {
     width: 170px;

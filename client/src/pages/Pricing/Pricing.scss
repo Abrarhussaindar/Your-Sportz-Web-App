@@ -18,13 +18,13 @@
         }
 
         p {
-            color: #6C646A;
+            color: #6c646a;
             font-size: 14px;
             font-weight: 400;
         }
 
         .tab {
-            background-color: #E5E5EE;
+            background-color: #e5e5ee;
             border-radius: 10px;
             display: flex;
             align-items: center;
@@ -37,7 +37,7 @@
                 border: none;
                 outline: none;
                 cursor: pointer;
-                background-color: #E5E5EE;
+                background-color: #e5e5ee;
             }
         }
     }
@@ -58,12 +58,12 @@
                 flex-direction: column;
                 justify-content: space-between;
                 gap: 40px;
-                border: 2px solid #5A4C84;
+                border: 2px solid #5a4c84;
                 border-radius: 10px;
                 padding: 30px;
                 width: 15%;
                 cursor: pointer;
-                transition: all .3s ease-in;
+                transition: all 0.3s ease-in;
 
                 .wrapper {
                     display: flex;
@@ -72,7 +72,7 @@
                     gap: 20px;
 
                     .custome-hr {
-                        border-top: 2px solid #5A4C84;
+                        border-top: 2px solid #5a4c84;
                     }
 
                     .tags {
@@ -86,25 +86,21 @@
                             font-size: 12px;
                             text-transform: capitalize;
                             border-radius: 10px;
-                            background-color: #E5E5EE;
+                            background-color: #e5e5ee;
                         }
 
                         .pop {
-                            background-color: #FF5033;
+                            background-color: #ff5033;
                             color: white;
                         }
-
-
-
                     }
-
 
                     .amount {
                         display: flex;
                         flex-direction: column;
                         padding: 20px 0;
-                        border-top: 1px solid #FF5033;
-                        border-bottom: 1px solid #FF5033;
+                        border-top: 1px solid #ff5033;
+                        border-bottom: 1px solid #ff5033;
 
                         h3 {
                             .symbol {
@@ -149,7 +145,7 @@
                     border: none;
                     outline: none;
                     color: white;
-                    background-color: #FF5033;
+                    background-color: #ff5033;
                     font-weight: 500;
                     font-size: 18px;
                     border-radius: 10px;
@@ -157,7 +153,7 @@
                     cursor: pointer;
                     text-align: center;
                     text-transform: uppercase;
-                    transition: all ease-in .2s;
+                    transition: all ease-in 0.2s;
 
                     &:hover {
                         background-color: #e64023;
@@ -176,11 +172,10 @@
                             }
 
                             .pop {
-                                background-color: #FF5033;
+                                background-color: #ff5033;
                                 color: white;
                             }
                         }
-
                     }
                 }
             }
@@ -197,12 +192,12 @@
                 flex-direction: column;
                 justify-content: space-between;
                 gap: 40px;
-                border: 2px solid #5A4C84;
+                border: 2px solid #5a4c84;
                 border-radius: 10px;
                 padding: 30px;
                 width: 15%;
                 cursor: pointer;
-                transition: all .3s ease-in;
+                transition: all 0.3s ease-in;
 
                 .wrapper {
                     display: flex;
@@ -211,7 +206,7 @@
                     gap: 20px;
 
                     .custome-hr {
-                        border-top: 2px solid #5A4C84;
+                        border-top: 2px solid #5a4c84;
                     }
 
                     .tags {
@@ -225,25 +220,21 @@
                             font-size: 12px;
                             text-transform: capitalize;
                             border-radius: 10px;
-                            background-color: #E5E5EE;
+                            background-color: #e5e5ee;
                         }
 
                         .pop {
-                            background-color: #FF5033;
+                            background-color: #ff5033;
                             color: white;
                         }
-
-
-
                     }
-
 
                     .amount {
                         display: flex;
                         flex-direction: column;
                         padding: 20px 0;
-                        border-top: 1px solid #FF5033;
-                        border-bottom: 1px solid #FF5033;
+                        border-top: 1px solid #ff5033;
+                        border-bottom: 1px solid #ff5033;
 
                         h3 {
                             .symbol {
@@ -278,9 +269,8 @@
                             font-size: 12px;
                             font-weight: 400;
 
-                            .innerUl{
-                                .innerLi{
-                                    
+                            .innerUl {
+                                .innerLi {
                                     padding-left: 30px;
                                 }
                                 .innerLi::marker {
@@ -289,7 +279,6 @@
                                 }
                             }
 
-
                             .innerDiv {
                                 display: flex;
 
@@ -297,7 +286,6 @@
                                     font-size: 12px;
                                     font-weight: 400;
                                 }
-
                             }
 
                             img {
@@ -311,7 +299,7 @@
                     border: none;
                     outline: none;
                     color: white;
-                    background-color: #FF5033;
+                    background-color: #ff5033;
                     font-weight: 500;
                     font-size: 18px;
                     border-radius: 10px;
@@ -319,7 +307,7 @@
                     cursor: pointer;
                     text-align: center;
                     text-transform: uppercase;
-                    transition: all ease-in .2s;
+                    transition: all ease-in 0.2s;
 
                     &:hover {
                         background-color: #e64023;
@@ -338,16 +326,14 @@
                             }
 
                             .pop {
-                                background-color: #FF5033;
+                                background-color: #ff5033;
                                 color: white;
                             }
                         }
-
                     }
                 }
             }
         }
-
     }
 
     .bottom {
@@ -382,12 +368,13 @@
     border: none;
     outline: none;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition: background .2s ease-in;
+    transition: background 0.2s ease-in;
 }
 
 .popular {
     color: white;
-    background-color: #554585;
+    background-color: #554585 !important;
+    font-weight: 500 !important;
 
     .wrapper {
         .tags {
@@ -397,11 +384,41 @@
             }
 
             .pop {
-                background-color: #FF5033;
+                background-color: #ff5033;
                 color: white;
             }
         }
+    }
+}
 
+@media screen and (770px <= width <=1030px) {
+    .price .middle .school,
+    .price .middle .general {
+        flex-wrap: wrap;
+    }
+
+    .price .middle .school .container,
+    .price .middle .general .container {
+        width: 25%;
+    }
+
+    .price .top {
+        width: unset !important;
+    }
+}
+@media screen and (440px <= width <=770px) {
+    .price .middle .school,
+    .price .middle .general {
+        flex-wrap: wrap;
+    }
+
+    .price .middle .school .container,
+    .price .middle .general .container {
+        width: 30%;
+    }
+
+    .price .top {
+        width: unset !important;
     }
 }
 
@@ -411,7 +428,7 @@
     }
 
     .price .top h1 {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .price .middle .school,
@@ -426,45 +443,22 @@
         font-size: 12px;
     }
 
-    .price .middle .school, .price .middle .general {
+    .price .middle .school,
+    .price .middle .general {
         display: flex;
         gap: 50px;
         flex-direction: column;
         align-items: center;
     }
 
-    .price .middle .school .container, .price .middle .general .container {
-        width: 50%;
+    .price .middle .school .container,
+    .price .middle .general .container {
+        width: 60%;
     }
 }
-
-
-
-@media screen and (770px <= width <=1030px){
-    
-    .price .middle .school,.price .middle .general {
-        flex-wrap: wrap;
+@media screen and (width <=340px) {
+    .price .middle .school .container,
+    .price .middle .general .container {
+        width: 70%;
     }
-    
-    .price .middle .school .container, .price .middle .general .container {
-        width: 25%;
-    }
-    
-    .price .top {
-        width: unset !important;
-    }
-}
-@media screen and (440px <= width <=770px){
-    .price .middle .school,.price .middle .general {
-        flex-wrap: wrap;
-    }
-    
-    .price .middle .school .container, .price .middle .general .container {
-        width: 30%;
-    }
-    
-    .price .top {
-        width: unset !important;
-    }
-    
 }

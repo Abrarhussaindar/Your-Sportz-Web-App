@@ -26,7 +26,7 @@
   text-align: center;
   font-size: 16px;
   font-weight: 400;
-  color: #6C646A;
+  color: #6c646a;
 }
 .contact .right {
   display: flex;
@@ -35,7 +35,7 @@
   width: 50%;
 }
 .contact .right p {
-  color: #FF5033;
+  color: #ff5033;
   font-weight: 400;
 }
 .contact .right form {
@@ -48,7 +48,7 @@
   border-radius: 10px;
 }
 .contact .right form label {
-  color: #6C7275;
+  color: #6c7275;
   font-weight: 400;
 }
 .contact .right form input {
@@ -94,7 +94,7 @@
   font-weight: 600;
   text-transform: uppercase;
   border-radius: 10px;
-  background-color: #FF5033;
+  background-color: #ff5033;
   cursor: pointer;
   transition: all ease-in 0.2s;
 }
@@ -109,10 +109,10 @@
     margin-top: 80px;
     padding: 0 20px;
     gap: 30px !important;
+    width: 90% !important;
   }
   .contact .left {
     width: unset;
-    align-items: flex-start;
   }
   .contact .left p {
     text-align: center;
@@ -126,11 +126,29 @@
   .contact .right form {
     width: 80%;
   }
+  .contact .left img {
+    width: 300px;
+  }
 }
 @media screen and (770px <= width <= 1030px) {
   .contact {
-    width: 94%;
+    width: 93%;
     margin-bottom: 50px;
+  }
+  .contact .left {
+    width: 40% !important;
+  }
+  .contact .left img {
+    width: 300px;
+  }
+  .contact .right {
+    width: 60% !important;
+  }
+  .contact .right p {
+    font-size: 14px;
+  }
+  .contact .right form {
+    width: 90%;
   }
 }
 @media screen and (440px <= width <= 770px) {
@@ -141,7 +159,8 @@
     height: unset !important;
     flex-direction: column !important;
   }
-  .contact .left, .contact .right {
+  .contact .left,
+  .contact .right {
     width: unset !important;
   }
 }/*# sourceMappingURL=ContactUs.css.map */
