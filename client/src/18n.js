@@ -4,10 +4,10 @@ import { initReactI18next } from "react-i18next"
 
 i18n.use(LanguageDetector).use(initReactI18next).init({
     debug: false,
-    fallbackLng: "en",
-    lng: "en",
+    fallbackLng: "english",
+    lng: "english",
     resources: {
-        en:{
+        english:{
             translation:{
                 
                 // home page
@@ -326,7 +326,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 
             }
         },
-        hi:{
+        hindi:{
             translation:{
                 logoLeft: "आपका",
                 logoRight: "स्पोर्ट्ज़",
@@ -633,7 +633,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                 earlyAccessBtn: "प्रतीक्षा सूची में शामिल हों",
             }
         },
-        ar:{
+        arabic:{
             translation:{
                 logoLeft: "لك",
                 logoRight: "سبورتز",
@@ -941,7 +941,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
  
             }
         },
-        br:{
+        brazilian:{
             translation:{
                 logoLeft: "Seu",
                 logoRight: "Esportez",
@@ -1250,7 +1250,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
 
             }
         },
-        es:{
+        spanish:{
             translation:{
                 logoLeft: "Su",
                 logoRight: "deportes",
@@ -1559,7 +1559,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
 
             }
         },
-        fr:{
+        french:{
             translation:{
                 logoLeft: "Ton",
                 logoRight: "Sportz",
@@ -1867,7 +1867,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
 
             }
         },
-        de:{
+        german:{
             translation:{
                 logoLeft: "Dein",
                 logoRight: "Sportz",
@@ -2175,7 +2175,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
                  earlyAccessBtn: "Treten Sie der Warteliste bei",
             }
         },
-        ko:{
+        korean:{
             translation:{
                 logoLeft: "당신의",
                 logoRight: "스포츠",

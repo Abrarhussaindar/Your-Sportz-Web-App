@@ -18,7 +18,7 @@ const Languages = [
     { code: "arabic", img: saudi },
     { code: "korean", img: korean },
     { code: "french", img: france },
-    { code: "portuguese", img: brazil },
+    { code: "brazilian", img: brazil },
     { code: "spanish", img: spain }
 ];
 
@@ -73,7 +73,7 @@ const LanguageSelector = () => {
                 <div className="lng" onClick={openLangs}>
                     <img src={langFlag} alt={lang} /> <p>{lang}</p>
                 </div>
-                <img onClick={openLangs} className="downImg" src={dropdown} alt="downArrow" />
+                <img onClick={openLangs} className="downImg " src={dropdown} alt="downArrow" />
             </div>
         </div>
     );

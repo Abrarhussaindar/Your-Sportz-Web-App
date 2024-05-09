@@ -98,6 +98,7 @@ header {
                     width: 100%;
 
                     .customSelect {
+                        cursor: pointer;
                         position: relative;
                         width: 100%;
                         background-color: white;
@@ -141,7 +142,7 @@ header {
                             padding: 20px 0;
                             border-radius: 10px;
                             gap: 10px !important;
-                            right: -12px;
+                            right: -2px;
                             top: 150%;
 
                             box-shadow:
@@ -153,7 +154,7 @@ header {
                                     width: 100%;
                                     display: flex;
                                     align-items: center;
-                                    gap: 20px;
+                                    gap: 10px;
                                     padding: 5px 20px;
                                     border-radius: 0;
                                     color: #413566;
