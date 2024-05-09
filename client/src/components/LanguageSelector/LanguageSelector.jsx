@@ -24,7 +24,7 @@ const Languages = [
 
 const LanguageSelector = () => {
     const { i18n } = useTranslation();
-    const [lang, setLang] = useState("en");
+    const [lang, setLang] = useState("english");
     const [langFlag, setLangFlag] = useState(usa);
     const [click, setClick] = useState(false);
     const dropdownRef = useRef(null);

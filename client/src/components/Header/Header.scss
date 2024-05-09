@@ -105,17 +105,18 @@ header {
                         align-items: center;
                         gap: 10px;
                         padding: 7px 12px;
-                        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+                        box-shadow:
+                            rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+                            rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
                         border-radius: 10px;
-                        .downImg{
+                        .downImg {
                             width: 15px;
                         }
-                        
 
                         .lng {
                             display: flex;
                             align-items: center;
-                            gap: 5px;
+                            gap: 10px;
                             font-weight: 500;
                             cursor: pointer;
                             img {
@@ -125,6 +126,7 @@ header {
                                 text-transform: uppercase;
                                 cursor: pointer;
                                 font-weight: 500;
+                                font-size: 14px;
                             }
                         }
                         .globe {
@@ -139,24 +141,26 @@ header {
                             padding: 20px 0;
                             border-radius: 10px;
                             gap: 10px !important;
-                            right: -2%;
-                            top: 170%;
+                            right: -12px;
+                            top: 150%;
 
-                            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+                            box-shadow:
+                                rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+                                rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
                             li {
                                 width: 100%;
                                 button {
                                     width: 100%;
                                     display: flex;
                                     align-items: center;
-                                    gap: 5px;
+                                    gap: 20px;
+                                    padding: 5px 20px;
                                     border-radius: 0;
                                     color: #413566;
                                     background-color: white !important;
                                     transition: background-color 0.2s ease-in;
-                                    &:hover {
-                                        background-color: rgb(235, 230, 230) !important;
-                                    }
+
+
                                     img {
                                         width: 20px;
                                     }
@@ -164,6 +168,14 @@ header {
                                         font-size: 14px;
                                         font-weight: 400;
                                     }
+                                    &:hover {
+                                        background-color: rgb(235, 230, 230) !important;
+                                        
+                                        p{
+                                            font-weight: 500;
+                                        }
+                                    }
+                                    
                                 }
                             }
                         }
@@ -265,6 +277,7 @@ header {
     header .right nav,
     header .open nav {
         gap: 30px;
+        
     }
     header .right nav ul,
     header .open nav ul {
@@ -345,7 +358,7 @@ header {
 
 @media screen and (width <=440px) {
     .langs .customSelect ul {
-        left: -10% !important;
+        left: 0 !important;
         bottom: 150% !important;
         right: unset !important;
         top: unset !important;
@@ -357,8 +370,8 @@ header {
         width: 90% !important;
         padding: 20px !important;
 
-        .left{
-            a{
+        .left {
+            a {
                 gap: 20px;
             }
         }
@@ -400,15 +413,13 @@ header {
 }
 
 @media screen and (width <=390px) {
-    header{
+    header {
         width: 90% !important;
         padding: 20px !important;
-        .left{
-            a{
+        .left {
+            a {
                 gap: 10px;
             }
-
-            
         }
     }
 }
