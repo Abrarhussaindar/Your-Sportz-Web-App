@@ -195,7 +195,7 @@ header {
         flex-direction: column;
         gap: 50px;
         box-shadow: rgba(0, 0, 0, 0.15) -7px 16px 4px 2px;
-        transition: right 0.3s ease;
+        transition: display 0.3s ease;
 
         .top {
             display: flex;
@@ -367,6 +367,8 @@ header {
 
         .open {
             nav {
+                height: 80vh !important;
+                justify-content: space-between;
                 .btns {
                     display: flex;
                     flex-direction: column;

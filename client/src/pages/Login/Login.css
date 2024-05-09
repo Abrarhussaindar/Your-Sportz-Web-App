@@ -73,6 +73,9 @@
   font-weight: 500;
   text-transform: uppercase;
 }
+.login .wrapper .right .otp {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+}
 .login .wrapper .right form {
   display: flex;
   flex-direction: column;
