@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 // import globe from "../../images/global.png";
+import dropdown from "../../images/down_arrow.png"
 import usa from "../../images/flags/united-states.png";
 import india from "../../images/flags/india.png";
 import germany from "../../images/flags/germany.png";
@@ -11,14 +12,14 @@ import spain from "../../images/flags/spain.png";
 import { useTranslation } from "react-i18next";
 
 const Languages = [
-    { code: "en", img: usa },
-    { code: "hi", img: india },
-    { code: "de", img: germany },
-    { code: "ar", img: saudi },
-    { code: "ko", img: korean },
-    { code: "fr", img: france },
-    { code: "br", img: brazil },
-    { code: "es", img: spain }
+    { code: "english", img: usa },
+    { code: "hindi", img: india },
+    { code: "german", img: germany },
+    { code: "arabic", img: saudi },
+    { code: "korean", img: korean },
+    { code: "french", img: france },
+    { code: "portuguese", img: brazil },
+    { code: "spanish", img: spain }
 ];
 
 const LanguageSelector = () => {
@@ -64,14 +65,15 @@ const LanguageSelector = () => {
                                 className="langBtn"
                                 onClick={() => handleLangChange(eachLang.code, eachLang.img)}
                             >
-                                <img src={eachLang.img} alt={eachLang.code} /> - <p>{eachLang.code}</p>
+                                <img src={eachLang.img} alt={eachLang.code} /> <p>{eachLang.code}</p>
                             </button>
                         </li>
                     ))}
                 </ul>
                 <div className="lng" onClick={openLangs}>
-                    <img src={langFlag} alt={lang} /> - <p>{lang}</p>
+                    <img src={langFlag} alt={lang} /> <p>{lang}</p>
                 </div>
+                <img onClick={openLangs} className="downImg" src={dropdown} alt="downArrow" />
             </div>
         </div>
     );

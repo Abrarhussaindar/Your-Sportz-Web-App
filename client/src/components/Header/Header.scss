@@ -104,6 +104,13 @@ header {
                         display: flex;
                         align-items: center;
                         gap: 10px;
+                        padding: 7px 12px;
+                        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+                        border-radius: 10px;
+                        .downImg{
+                            width: 15px;
+                        }
+                        
 
                         .lng {
                             display: flex;
@@ -132,10 +139,10 @@ header {
                             padding: 20px 0;
                             border-radius: 10px;
                             gap: 10px !important;
-                            right: -15%;
+                            right: -2%;
                             top: 170%;
 
-                            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
                             li {
                                 width: 100%;
                                 button {
