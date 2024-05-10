@@ -241,4 +241,40 @@ body .dashboard .main .MainContent .bottom .left .top ul .teamDeatails .teamStat
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+body .dashboard .main .MainContent .bottom .left .bottom2 {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  gap: 20px;
+}
+body .dashboard .main .MainContent .bottom .left .bottom2 ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  gap: 20px;
+}
+body .dashboard .main .MainContent .bottom .left .bottom2 ul li {
+  font-size: 15px;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 25px 30px;
+  padding: 15px 10px;
+  gap: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+body .dashboard .main .MainContent .bottom .left .bottom2 .teamDetails {
+  display: flex;
+  gap: 60px;
+}
+body .dashboard .main .MainContent .bottom .left .bottom2 .teamDetails .teamStatus li {
+  display: flex;
+  gap: 30px;
 }/*# sourceMappingURL=Dashboard.css.map */

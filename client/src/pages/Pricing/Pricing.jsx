@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Layout from "../../components/Layout";
-import check from "../../images/check.svg"
+// import check from "../../images/check.svg"
 import cards from "../../images/card.png"
 import "./Pricing.css"
 import { useTranslation } from "react-i18next";
@@ -186,7 +186,19 @@ export default function Pricing() {
                                                     {
                                                         each.subDetails.map((eachSub) => (
 
-                                                            <li key={eachSub}><img src={check} alt="" />{eachSub}</li>
+                                                            <li key={eachSub}>
+                                                            
+                                                            
+                                                            
+                                                            {/* <img src={check} alt="" /> */}
+                                                            <div className="checkbox">
+                                                            <input type="checkbox" id="a" checked />
+                                                            <label htmlFor="a"></label>
+                                                            </div>
+                                                            
+                                                            
+                                                            {eachSub}
+                                                            </li>
                                                         ))
                                                     }
 
@@ -237,7 +249,15 @@ export default function Pricing() {
 
                                                             <li key={eachSub.id}>
                                                                 <div className="innerDiv">
-                                                                    <img src={check} alt="" />
+                                                                
+                                                                
+                                                                    {/* <img src={check} alt="" /> */}
+                                                                    <div className="checkbox">
+                                                                    <input type="checkbox" id="a" checked />
+                                                                    <label htmlFor="a"></label>
+                                                                    </div>
+                                                                    
+                                                                    
                                                                     <p>{eachSub.title}</p>
                                                                 </div>
                                                                 <ul className="innerUl">

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .price {
   margin: 100px 0;
   display: flex;
@@ -60,6 +61,12 @@
   cursor: pointer;
   transition: all 0.3s ease-in;
 }
+.price .middle .school .container :hover .wrapper ul li .checkbox label {
+  background-color: #554585;
+}
+.price .middle .school .container :hover .wrapper ul li .checkbox input[type=checkbox]:checked + label::before {
+  color: white;
+}
 .price .middle .school .container .wrapper {
   display: flex;
   flex-direction: column;
@@ -120,8 +127,29 @@
   font-size: 12px;
   font-weight: 400;
 }
-.price .middle .school .container .wrapper ul li img {
-  width: 25px;
+.price .middle .school .container .wrapper ul li .checkbox input[type=checkbox] {
+  display: none;
+}
+.price .middle .school .container .wrapper ul li .checkbox label {
+  width: 13px;
+  height: 13px;
+  background-color: #554585;
+  border: 1px solid #554585;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  line-height: 20px;
+}
+.price .middle .school .container .wrapper ul li .checkbox input[type=checkbox]:checked + label::before {
+  content: "✔";
+  font-size: 9px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .price .middle .school .container button {
   border: none;
@@ -240,13 +268,35 @@
 }
 .price .middle .general .container .wrapper ul li .innerDiv {
   display: flex;
+  gap: 5px;
 }
 .price .middle .general .container .wrapper ul li .innerDiv p {
   font-size: 12px;
   font-weight: 400;
 }
-.price .middle .general .container .wrapper ul li img {
-  width: 25px;
+.price .middle .general .container .wrapper ul li .checkbox input[type=checkbox] {
+  display: none;
+}
+.price .middle .general .container .wrapper ul li .checkbox label {
+  width: 13px;
+  height: 13px;
+  background-color: #554585;
+  border: 1px solid #554585;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  line-height: 20px;
+}
+.price .middle .general .container .wrapper ul li .checkbox input[type=checkbox]:checked + label::before {
+  content: "✔";
+  font-size: 9px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .price .middle .general .container button {
   border: none;

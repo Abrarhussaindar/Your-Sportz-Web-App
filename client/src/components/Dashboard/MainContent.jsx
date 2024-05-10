@@ -160,7 +160,67 @@ export default function MainContent() {
                         </ul>
 
                     </div>
-                    <div className="bottom"></div>
+                    <div className="bottom2">
+                        <ul>
+                            <li>
+                                <h3>Top Players</h3>
+                            </li>
+                            <li>
+                                <h3>Top Scores</h3>
+                            </li>
+                            <li>
+                                <h3>Top Teams</h3>
+                            </li>
+                        </ul>
+                        
+                        
+                            <div className="teamDetails">
+                                <div className="teamNames">
+                                    <ol>
+                                    <li>Schan Fekri</li>
+                                    <li>Get Unionixed</li>
+                                    <li>Lord Bigcom</li>
+                                    <li>V75X</li>
+                                    <li>Messi</li>
+                                    </ol>
+                                </div>
+                                <div className="teamStatus">
+                               
+                                    <li>
+                                        <p>13,890</p>
+                                        <p>110</p>
+                                        <p>109</p>
+                                        <p>109</p>
+                                    </li>
+                                    <li>
+                                    <p>13,890</p>
+                                        <p>110</p>
+                                        <p>109</p>
+                                        <p>109</p>
+                                    </li>
+                                    <li>
+                                    <p>13,890</p>
+                                        <p>110</p>
+                                        <p>109</p>
+                                        <p>109</p>
+                                    </li>
+                                    <li>
+                                    <p>13,890</p>
+                                        <p>110</p>
+                                        <p>109</p>
+                                        <p>109</p>
+                                    </li>
+                                    <li>
+                                    <p>13,890</p>
+                                        <p>110</p>
+                                        <p>109</p>
+                                        <p>109</p>
+                                    </li>
+                                    
+                                </div>
+                            </div>
+                    
+                    </div>
                 </div>
                 <div className="right">
                     <div className="top"></div>
