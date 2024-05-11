@@ -64,26 +64,14 @@
                 width: 15%;
                 cursor: pointer;
                 transition: all 0.3s ease-in;
-                
-                
-                
-                
-                
-                
-                
-                :hover .wrapper ul li .checkbox label{
-                    background-color: #554585;
-                }
-                
-                :hover .wrapper ul li .checkbox input[type="checkbox"]:checked + label::before {
-                    color: white; // Change tick color to #554585 on hover
-                  }
-                
-                  
-                  
-                  
-                  
-                
+
+                // :hover .wrapper ul li .checkbox label{
+                //     background-color: #554585;
+                // }
+
+                // :hover .wrapper ul li .checkbox input[type="checkbox"]:checked + label::before {
+                //     color: white; // Change tick color to #554585 on hover
+                // }
 
                 .wrapper {
                     display: flex;
@@ -102,7 +90,7 @@
                         h4,
                         .pop {
                             padding: 5px 20px;
-                            font-weight: 400;
+                            font-weight: 500;
                             font-size: 12px;
                             text-transform: capitalize;
                             border-radius: 10px;
@@ -149,54 +137,47 @@
 
                         li {
                             display: flex;
-                            align-items: center;
-                            gap: 10px;
+                            gap: 5px;
                             font-size: 12px;
                             font-weight: 400;
 
-                            
-                            
-                            
-                            .checkbox {
-                                input[type="checkbox"] {
-                                  display: none; // Hide the default checkbox
-                                }
-                              
-                                label {
-                                  width: 13px;
-                                  height: 13px;
-                                  background-color: #554585;
-                                  border: 1px solid #554585;
-                                  border-radius: 50%;
-                                  display: inline-block;
-                                  cursor: pointer;
-                                  position: relative;
-                                  text-align: center;
-                                  line-height: 20px; // Center the check mark vertically
-                                }
-                                
-                                
-                              
-                                input[type="checkbox"]:checked + label::before {
-                                  content: '\2714'; // Unicode for check mark
-                                  font-size: 9px;   // Adjust size as needed
-                                  color: white;
-                                  position: absolute;
-                                  top: 50%;
-                                  left: 50%;
-                                  transform: translate(-50%, -50%);
-                                }
-                              }
-                              
-                              
-                              
-                              
-                            
-                            
-                            
-                            // img {
-                            //     width: 25px;
-                            // }
+                            .checkbox-container {
+                                display: flex;
+                                align-items: center;
+                                border-radius: 50%;
+                                padding: 5px;
+                                gap: 5px;
+                            }
+
+                            .checkbox-container input[type="checkbox"] {
+                                display: none; /* Hides the actual checkbox */
+                            }
+
+                            .checkbox-container p {
+                                margin: 0; /* Removes default paragraph margin */
+                            }
+
+                            /* Style the custom checkbox appearance */
+                            .checkbox-container::before {
+                                content: "\2714";
+                                display: flex;
+                                width: 7px;
+                                height: 7px;
+                                background-color: #5a4c84;
+                                border-radius: 50%;
+                                justify-content: center;
+                                align-items: center;
+                                font-size: 10px;
+                                color: white;
+                                font-weight: 600;
+                                padding: 4px;
+                                transition: all 0.3s ease-in;
+                            }
+
+                            /* Style the custom checkbox when checked */
+                            .checkbox-container input[type="checkbox"]:checked + p::before {
+                                background-color: #000; /* Adjust background color when checked */
+                            }
                         }
                     }
                 }
@@ -229,11 +210,27 @@
                             h4 {
                                 color: black;
                                 background-color: white;
+                                font-weight: 500;
                             }
 
                             .pop {
                                 background-color: #ff5033;
                                 color: white;
+                            }
+
+                            .popular {
+                                color: white;
+                                background-color: #ff5033 !important;
+                            }
+                        }
+
+                        ul {
+                            li {
+                                .checkbox-container::before {
+                                    background-color: white;
+                                    color: #5a4c84;
+                                    font-size: 10px;
+                                }
                             }
                         }
                     }
@@ -348,47 +345,6 @@
                                     font-weight: 400;
                                 }
                             }
-
-                            
-                            
-                            
-                            .checkbox {
-                                input[type="checkbox"] {
-                                  display: none; // Hide the default checkbox
-                                }
-                              
-                                label {
-                                  width: 13px;
-                                  height: 13px;
-                                  background-color: #554585;
-                                  border: 1px solid #554585;
-                                  border-radius: 50%;
-                                  display: inline-block;
-                                  cursor: pointer;
-                                  position: relative;
-                                  text-align: center;
-                                  line-height: 20px; // Center the check mark vertically
-                                }
-                              
-                                input[type="checkbox"]:checked + label::before {
-                                  content: '\2714'; // Unicode for check mark
-                                  font-size: 9px;   // Adjust size as needed
-                                  color: white;
-                                  position: absolute;
-                                  top: 50%;
-                                  left: 50%;
-                                  transform: translate(-50%, -50%);
-                                }
-                              }
-                            
-                            
-                            
-                            
-                            
-                            
-                            // img {
-                            //     width: 25px;
-                            // }
                         }
                     }
                 }
@@ -426,6 +382,10 @@
                             .pop {
                                 background-color: #ff5033;
                                 color: white;
+                            }
+                            .popular {
+                                color: white;
+                                background-color: #ff5033 !important;
                             }
                         }
                     }

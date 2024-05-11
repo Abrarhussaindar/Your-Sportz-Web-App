@@ -71,7 +71,7 @@ const LanguageSelector = () => {
                     ))}
                 </ul>
                 <div className="lng" onClick={openLangs}>
-                    <img src={langFlag} alt={lang} /> <p>{lang}</p>
+                    <img src={langFlag} alt={lang} />
                 </div>
                 <img onClick={openLangs} className="downImg " src={dropdown} alt="downArrow" />
             </div>

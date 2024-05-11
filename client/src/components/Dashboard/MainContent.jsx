@@ -185,7 +185,7 @@ export default function MainContent() {
                                     </ol>
                                 </div>
                                 <div className="teamStatus">
-                               
+                                        
                                     <li>
                                         <p>13,890</p>
                                         <p>110</p>

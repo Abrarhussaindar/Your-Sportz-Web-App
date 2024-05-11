@@ -61,12 +61,6 @@
   cursor: pointer;
   transition: all 0.3s ease-in;
 }
-.price .middle .school .container :hover .wrapper ul li .checkbox label {
-  background-color: #554585;
-}
-.price .middle .school .container :hover .wrapper ul li .checkbox input[type=checkbox]:checked + label::before {
-  color: white;
-}
 .price .middle .school .container .wrapper {
   display: flex;
   flex-direction: column;
@@ -83,7 +77,7 @@
 .price .middle .school .container .wrapper .tags h4,
 .price .middle .school .container .wrapper .tags .pop {
   padding: 5px 20px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 12px;
   text-transform: capitalize;
   border-radius: 10px;
@@ -122,34 +116,42 @@
 }
 .price .middle .school .container .wrapper ul li {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  gap: 5px;
   font-size: 12px;
   font-weight: 400;
+  /* Style the custom checkbox appearance */
+  /* Style the custom checkbox when checked */
 }
-.price .middle .school .container .wrapper ul li .checkbox input[type=checkbox] {
-  display: none;
-}
-.price .middle .school .container .wrapper ul li .checkbox label {
-  width: 13px;
-  height: 13px;
-  background-color: #554585;
-  border: 1px solid #554585;
+.price .middle .school .container .wrapper ul li .checkbox-container {
+  display: flex;
+  align-items: center;
   border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-  position: relative;
-  text-align: center;
-  line-height: 20px;
+  padding: 5px;
+  gap: 5px;
 }
-.price .middle .school .container .wrapper ul li .checkbox input[type=checkbox]:checked + label::before {
+.price .middle .school .container .wrapper ul li .checkbox-container input[type=checkbox] {
+  display: none; /* Hides the actual checkbox */
+}
+.price .middle .school .container .wrapper ul li .checkbox-container p {
+  margin: 0; /* Removes default paragraph margin */
+}
+.price .middle .school .container .wrapper ul li .checkbox-container::before {
   content: "✔";
-  font-size: 9px;
+  display: flex;
+  width: 7px;
+  height: 7px;
+  background-color: #5a4c84;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
   color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-weight: 600;
+  padding: 4px;
+  transition: all 0.3s ease-in;
+}
+.price .middle .school .container .wrapper ul li .checkbox-container input[type=checkbox]:checked + p::before {
+  background-color: #000; /* Adjust background color when checked */
 }
 .price .middle .school .container button {
   border: none;
@@ -175,10 +177,20 @@
 .price .middle .school .container:hover .wrapper .tags h4 {
   color: black;
   background-color: white;
+  font-weight: 500;
 }
 .price .middle .school .container:hover .wrapper .tags .pop {
   background-color: #ff5033;
   color: white;
+}
+.price .middle .school .container:hover .wrapper .tags .popular {
+  color: white;
+  background-color: #ff5033 !important;
+}
+.price .middle .school .container:hover .wrapper ul li .checkbox-container::before {
+  background-color: white;
+  color: #5a4c84;
+  font-size: 10px;
 }
 .price .middle .general {
   display: flex;
@@ -274,30 +286,6 @@
   font-size: 12px;
   font-weight: 400;
 }
-.price .middle .general .container .wrapper ul li .checkbox input[type=checkbox] {
-  display: none;
-}
-.price .middle .general .container .wrapper ul li .checkbox label {
-  width: 13px;
-  height: 13px;
-  background-color: #554585;
-  border: 1px solid #554585;
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-  position: relative;
-  text-align: center;
-  line-height: 20px;
-}
-.price .middle .general .container .wrapper ul li .checkbox input[type=checkbox]:checked + label::before {
-  content: "✔";
-  font-size: 9px;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .price .middle .general .container button {
   border: none;
   outline: none;
@@ -326,6 +314,10 @@
 .price .middle .general .container:hover .wrapper .tags .pop {
   background-color: #ff5033;
   color: white;
+}
+.price .middle .general .container:hover .wrapper .tags .popular {
+  color: white;
+  background-color: #ff5033 !important;
 }
 .price .bottom {
   display: flex;

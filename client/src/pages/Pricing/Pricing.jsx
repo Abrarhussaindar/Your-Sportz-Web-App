@@ -17,7 +17,7 @@ export default function Pricing() {
     const SchoolPricing = [
         {
             id: 1,
-            tag: [`${t("pricingSchoolPricingtag1")}`],
+            tag: [`${t("pricingSchoolPricingtag1")}`, `${t("pricingGeneralPricingta32")}`],
             price: `${t("pricingSchoolPricingprice1")}`,
             priceTag: `${t("pricingSchoolPricingpriceTag1")}`,
             priceDis: `${t("pricingSchoolPricingpriceDis1")}`,
@@ -160,9 +160,16 @@ export default function Pricing() {
 
                                                     {
                                                         each.tag.map((eachTag) => (
-                                                            <h4 className={eachTag === "popular" ? "popular": ""} key={eachTag}>{eachTag}</h4>
+                                                            <h4 className={eachTag === "popular" ? "popular" : ""} key={eachTag}>{eachTag}</h4>
+
+
                                                         ))
                                                     }
+                                                    {/* {
+                                                        each.tag.map((eachTag) => {
+                                                            return eachTag === "popular"
+                                                        })
+                                                    } */}
 
                                                 </div>
                                                 {
@@ -187,17 +194,10 @@ export default function Pricing() {
                                                         each.subDetails.map((eachSub) => (
 
                                                             <li key={eachSub}>
-                                                            
-                                                            
-                                                            
-                                                            {/* <img src={check} alt="" /> */}
-                                                            <div className="checkbox">
-                                                            <input type="checkbox" id="a" checked />
-                                                            <label htmlFor="a"></label>
-                                                            </div>
-                                                            
-                                                            
-                                                            {eachSub}
+                                                                <label className="checkbox-container" >
+                                                                    <input type="checkbox" id="a" checked={true} />
+                                                                    <p>{eachSub}</p>
+                                                                </label>
                                                             </li>
                                                         ))
                                                     }
@@ -221,7 +221,7 @@ export default function Pricing() {
                                                     {
 
                                                         each.tag.map((eachTag) => (
-                                                            <h4 key={eachTag}>{eachTag}</h4>
+                                                            <h4 className={eachTag === "popular" ? "popular" : ""} key={eachTag}>{eachTag}</h4>
                                                         ))
                                                     }
 
@@ -249,15 +249,15 @@ export default function Pricing() {
 
                                                             <li key={eachSub.id}>
                                                                 <div className="innerDiv">
-                                                                
-                                                                
+
+
                                                                     {/* <img src={check} alt="" /> */}
                                                                     <div className="checkbox">
-                                                                    <input type="checkbox" id="a" checked />
-                                                                    <label htmlFor="a"></label>
+                                                                        <input type="checkbox" id="a" checked />
+                                                                        <label htmlFor="a"></label>
                                                                     </div>
-                                                                    
-                                                                    
+
+
                                                                     <p>{eachSub.title}</p>
                                                                 </div>
                                                                 <ul className="innerUl">
