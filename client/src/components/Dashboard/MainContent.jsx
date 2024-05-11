@@ -2,8 +2,32 @@ import "../../pages/Dashboard/Dashboard.css";
 import Group from "../../images/dashboard/Group.svg";
 import Vectory from "../../images/dashboard/Vectory.svg";
 import run from "../../images/dashboard/run.svg";
+import { useEffect, useState } from "react";
+
+import axios from "../../axios";
 
 export default function MainContent() {
+
+
+    const [activeButton, setActiveButton] = useState(1);
+
+    const handleClick = (index) => {
+        setActiveButton(index);
+    }
+    const toggleBtns = [
+        {
+            id: 1,
+            text: "Top Players"
+        },
+        {
+            id: 2,
+            text: "Top Scores"
+        },
+        {
+            id: 3,
+            text: "Top Teams"
+        },
+    ]
     const navLinks = [
         {
 
@@ -30,39 +54,73 @@ export default function MainContent() {
             Img: Group
         }
     ]
-    const teamHeading = ["Teams", 'W', 'D', 'L', 'T', 'GD', 'PTS']
-    const TeamData = [
-        {
-            teamName: "team 1",
-            teamId: "1",
-            won: "1",
-            draw: "2",
-            loss: "3",
-            tie: "0",
-            grad: "12",
-            points: "12"
-        },
-        {
-            teamName: "team 2",
-            teamId: "2",
-            won: "6",
-            draw: "7",
-            loss: "6",
-            tie: "2",
-            grad: "13",
-            points: "18"
-        },
 
-        {
-            teamName: "team 3",
-            teamId: "2",
-            won: "3",
-            draw: "5",
-            loss: "2",
-            tie: "7",
-            grad: "14",
-            points: "10"
-        },]
+    // const scoresHeading = ["No.", "Top Scorer", 'W', 'D', 'L', 'T', 'GD', 'PTS']
+    // const ScoresData = [{}]
+
+    const teamsHeading = ["No.", "Team Name", 'City', 'TeamId', 'L', 'T', 'GD', 'PTS']
+    // const TeamsData = [
+    //     {
+    //         teamId: "1",
+    //         teamName: "team 1",
+    //         won: "1",
+    //         draw: "2",
+    //         loss: "3",
+    //         tie: "0",
+    //         grad: "12",
+    //         points: "12"
+    //     },
+    //     {
+    //         teamId: "2",
+    //         teamName: "team 2",
+    //         won: "6",
+    //         draw: "7",
+    //         loss: "6",
+    //         tie: "2",
+    //         grad: "13",
+    //         points: "18"
+    //     },
+
+    //     {
+    //         teamId: "3",
+    //         teamName: "team 3",
+    //         won: "3",
+    //         draw: "5",
+    //         loss: "2",
+    //         tie: "7",
+    //         grad: "14",
+    //         points: "10"
+    //     },
+    //     {
+    //         teamId: "4",
+    //         teamName: "team 4",
+    //         won: "3",
+    //         draw: "5",
+    //         loss: "2",
+    //         tie: "7",
+    //         grad: "14",
+    //         points: "10"
+    //     },
+    // ]
+    const [TeamsData, seTeamsData] = useState([])
+    useEffect(() => {
+        async function fetchData() {
+            const response = await axios.get("https://yoursportzbackend.azurewebsites.net/api/team/all/")
+            seTeamsData(response.data)
+        }
+        fetchData();
+    }, []);
+
+    const playersHeading = ["No.", 'Player Name', 'UserId', 'Gender', 'DOB', 'City', 'Position']
+    const [PlayersData, setPlayerData] = useState([])
+    useEffect(() => {
+        async function fetchData() {
+            const response = await axios.get("user/all/")
+            setPlayerData(response.data)
+        }
+        fetchData();
+    }, []);
+
     return (
         <div className="MainContent">
             <div className="top">
@@ -91,141 +149,123 @@ export default function MainContent() {
                 </ul>
             </div>
             <div className="bottom">
-
                 <div className="left">
-                    <div className="top">
-                        <h4>Premier League Details</h4>
-
-                        <ul>
-                            <div className="teamHeading">
-                                <li>
-                                    {
-                                        teamHeading.map((team) => (
-                                            <p key={team}>{team}</p>
-                                        ))
-                                    }
-                                </li>
-                            </div>
-                            <div className="teamDeatails">
-                                <div className="teamNames">
-                                    <li>
+                    <div className="stats">
+                        <div className="toggleBtns">
+                            {toggleBtns.map((eachBtn) => (
+                                <button
+                                    key={eachBtn.id}
+                                    className={`${activeButton === eachBtn.id ? "activeToggle" : "notActiveToggle"}`}
+                                    onClick={() => handleClick(eachBtn.id)}
+                                >
+                                    {eachBtn.text}
+                                </button>
+                            ))}
+                        </div>
+                        <div className="mainStats">
+                            {
+                                activeButton === 1
+                                &&
+                                <table className="players">
+                                    <thead>
+                                        <tr>
+                                            {
+                                                playersHeading.map((eachHeading) => (
+                                                    <th key={eachHeading}>{eachHeading}</th>
+                                                ))
+                                            }
+                                        </tr>
+                                    </thead>
+                                    <tbody>
                                         {
-                                            TeamData.map((team) => (
-                                                <p key={team.teamId}>{team.teamName}</p>
+                                            PlayersData.slice(0, 10).map((eachTeam, index) => (
+                                                <tr key={eachTeam._id}>
+                                                    <td>{index + 1}</td>
+                                                    <td>{eachTeam.name || "NA"}</td>
+                                                    <td>{eachTeam.phone || "NA"}</td>
+                                                    <td>{eachTeam.gender || "NA"}</td>
+                                                    <td>{eachTeam.dob || "NA"}</td>
+                                                    <td>{eachTeam.city || "NA"}</td>
+                                                    <td>{eachTeam.position || "NA"}</td>
+                                                </tr>
                                             ))
                                         }
-                                    </li>
-                                </div>
-                                <div className="teamStats">
-                                    <li>
+                                    </tbody>
+                                </table>
+                            }
+                            {
+                                activeButton === 2
+                                &&
+                                <table className="score">
+                                    <thead>
+                                        <tr>
+                                            {
+                                                teamsHeading.map((eachHeading) => (
+                                                    <th key={eachHeading}>{eachHeading}</th>
+                                                ))
+                                            }
+                                        </tr>
+                                    </thead>
+                                    <tbody>
                                         {
-                                            TeamData.map((team) => (
-                                                <p key={team.teamId}>{team.won}</p>
+                                            TeamsData.slice(0, 10).map((eachTeam, index) => (
+                                                <tr key={eachTeam.teamId}>
+                                                    <td>{index + 1}</td>
+                                                    <td>{eachTeam.name || "NA"}</td>
+                                                    <td>{eachTeam.city || "NA"}</td>
+                                                    <td>{eachTeam.phone || "NA"}</td>
+                                                    <td>{eachTeam.loss || "NA"}</td>
+                                                    <td>{eachTeam.tie || "NA"}</td>
+                                                    <td>{eachTeam.grad || "NA"}</td>
+                                                    <td>{eachTeam.points || "NA"}</td>
+                                                </tr>
                                             ))
                                         }
-                                    </li>
-                                    <li>
+                                    </tbody>
+                                </table>
+                            }
+                            {
+                                activeButton === 3
+                                &&
+                                <table className="teams">
+                                    <thead>
+                                        <tr>
+                                            {
+                                                teamsHeading.map((eachHeading) => (
+                                                    <th key={eachHeading}>{eachHeading}</th>
+                                                ))
+                                            }
+                                        </tr>
+                                    </thead>
+                                    <tbody>
                                         {
-                                            TeamData.map((team) => (
-                                                <p key={team.teamId}>{team.draw}</p>
+                                            TeamsData.slice(0, 10).map((eachTeam, index) => (
+                                                <tr key={eachTeam.teamId}>
+                                                    <td>{index + 1}</td>
+                                                    <td>{eachTeam.name || "NA"}</td>
+                                                    <td>{eachTeam.city || "NA"}</td>
+                                                    <td>{eachTeam.phone || "NA"}</td>
+                                                    <td>{eachTeam.loss || "NA"}</td>
+                                                    <td>{eachTeam.tie || "NA"}</td>
+                                                    <td>{eachTeam.grad || "NA"}</td>
+                                                    <td>{eachTeam.points || "NA"}</td>
+                                                </tr>
                                             ))
                                         }
-                                    </li>
-                                    <li>
-                                        {
-                                            TeamData.map((team) => (
-                                                <p key={team.teamId}>{team.tie}</p>
-                                            ))
-                                        }
-                                    </li>
-                                    <li>
-                                        {
-                                            TeamData.map((team) => (
-                                                <p key={team.teamId}>{team.grad}</p>
-                                            ))
-                                        }
-                                    </li>
-                                    <li>
-                                        {
-                                            TeamData.map((team) => (
-                                                <p key={team.teamId}>{team.points}</p>
-                                            ))
-                                        }
-                                    </li>
-                                </div>
-                            </div>
-
-
-
-                        </ul>
-
+                                    </tbody>
+                                </table>
+                            }
+                        </div>
+                        <div className="moreStats">12345...</div>
                     </div>
-                    <div className="bottom2">
-                        <ul>
-                            <li>
-                                <h3>Top Players</h3>
-                            </li>
-                            <li>
-                                <h3>Top Scores</h3>
-                            </li>
-                            <li>
-                                <h3>Top Teams</h3>
-                            </li>
-                        </ul>
-                        
-                        
-                            <div className="teamDetails">
-                                <div className="teamNames">
-                                    <ol>
-                                    <li>Schan Fekri</li>
-                                    <li>Get Unionixed</li>
-                                    <li>Lord Bigcom</li>
-                                    <li>V75X</li>
-                                    <li>Messi</li>
-                                    </ol>
-                                </div>
-                                <div className="teamStatus">
-                                        
-                                    <li>
-                                        <p>13,890</p>
-                                        <p>110</p>
-                                        <p>109</p>
-                                        <p>109</p>
-                                    </li>
-                                    <li>
-                                    <p>13,890</p>
-                                        <p>110</p>
-                                        <p>109</p>
-                                        <p>109</p>
-                                    </li>
-                                    <li>
-                                    <p>13,890</p>
-                                        <p>110</p>
-                                        <p>109</p>
-                                        <p>109</p>
-                                    </li>
-                                    <li>
-                                    <p>13,890</p>
-                                        <p>110</p>
-                                        <p>109</p>
-                                        <p>109</p>
-                                    </li>
-                                    <li>
-                                    <p>13,890</p>
-                                        <p>110</p>
-                                        <p>109</p>
-                                        <p>109</p>
-                                    </li>
-                                    
-                                </div>
-                            </div>
-                    
+                    <div className="statsChart">
+                        <p>stats chart</p>
                     </div>
                 </div>
                 <div className="right">
-                    <div className="top"></div>
-                    <div className="bottom"></div>
-
+                    <div className="nextMatch"> <p>next match</p></div>
+                    <div className="upComingMatches"><p>upcoming match</p></div>
+                    <div className="groundStats"><p>ground stats</p></div>
                 </div>
             </div>
         </div>

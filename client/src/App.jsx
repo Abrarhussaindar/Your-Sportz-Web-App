@@ -17,6 +17,9 @@ import "./18n"
 import { useEffect } from "react";
 import EarlyAccess from "./pages/EarlyAccess/EarlyAccess/EarlyAccess";
 import { NoPage } from "./pages/NoPage/NoPage";
+import { Management } from "./pages/Dashboard/Management";
+import { Profile } from "./pages/Dashboard/Profile";
+import { Settings } from "./pages/Dashboard/Settings";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -45,6 +48,9 @@ return (
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/management" element={<Management />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/settings" element={<Settings/>} />
           <Route path="/forgot" element={<ForgotPassword />} />
           <Route path="/forgot-token" element={<VerifyCode />} />
           <Route path="/early-access" element={<EarlyAccess />} />

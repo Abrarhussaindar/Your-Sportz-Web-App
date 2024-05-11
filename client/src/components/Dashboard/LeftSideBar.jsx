@@ -14,22 +14,22 @@ export default function LeftSideBar() {
             Img: dashboard
         },
         {
-            to: "*",
+            to: "/management",
             text: "Management",
             Img: management
         },
         {
-            to: "*",
+            to: "/profile",
             text: "Profile",
             Img: user
         },
         {
-            to: "*",
+            to: "/settings",
             text: "Settings",
             Img: setting
         }
     ]
-    
+
     return (
         <div className="leftSideBar">
 
