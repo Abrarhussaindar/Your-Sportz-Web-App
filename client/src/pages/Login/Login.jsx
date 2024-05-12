@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import LoginAvatar from "../../images/login.png";
 import seePass from "../../images/eye.png";
 import notSeePass from "../../images/hidden.png";
@@ -15,48 +15,44 @@ const Login = () => {
 
 
   const { t } = useTranslation()
-  // const [see, setSee] = useState(false);
-  // const [click, setClick] = useState(false);
-  // const [emailError, setEmailError] = useState(false);
-  // const emailRegex = /@example\.com$|@companydomain\.com$|@yourcompany\.com$|@yoursportz\.in$/i;
+  const [see, setSee] = useState(false);
+  const [click, setClick] = useState(false);
+  const [emailError, setEmailError] = useState(false);
+  const emailRegex = /@example\.com$|@companydomain\.com$|@yourcompany\.com$|@yoursportz\.in$/i;
 
-  // const handleLogin = async (event) => {
-  //   event.preventDefault();
-  //   if (!emailRegex.test(userData.email)) {
-  //     setEmailError(true);
-  //     return;
-  //   }
-  //   setClick(true);
-  //   const data = userData;
-  //   try {
-  //     const res = await axios.post("auth/login", data);
-  //     if (res.data === "logged in") {
-  //       navigate("/dashboard");
-  //     }
-  //   } catch (err) {
-  //     console.log(err);
-  //   }
-  // };
+  const handleLogin = async (event) => {
+    event.preventDefault();
+    if (!emailRegex.test(userData.email)) {
+      setEmailError(true);
+      return;
+    }
+    setClick(true);
+    const data = userData;
+    try {
+      const res = await axios.post("auth/login", data);
+      if (res.data === "logged in") {
+        navigate("/dashboard");
+      }
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
-  // const handleClick = (e) => {
-  //   e.preventDefault();
-  //   setSee(!see);
-  // };
+  const handleClick = (e) => {
+    e.preventDefault();
+    setSee(!see);
+  };
 
-  // const handleEmailChange = (e) => {
-  //   const { value } = e.target;
-  //   setUserData({ ...userData, email: value });
-  //   if (!emailRegex.test(value)) {
-  //     setEmailError(true);
-  //   } else {
-  //     setEmailError(false);
-  //   }
-  // };
-  useEffect(() => {
-    window.otpless = (otplessUser) => {
-      console.log(JSON.stringify(otplessUser));
-    };
-  }, []);
+  const handleEmailChange = (e) => {
+    const { value } = e.target;
+    setUserData({ ...userData, email: value });
+    if (!emailRegex.test(value)) {
+      setEmailError(true);
+    } else {
+      setEmailError(false);
+    }
+  };
+
   return (
     <main className="login">
       <div className="absoluteleft">
@@ -182,20 +178,8 @@ const Login = () => {
           <img src={LoginAvatar} alt="Login Avatar" />
         </div>
         <div className="right">
-          {/* <h4>{t("loginH4")}</h4> */}
-          <div id="otpless-login-page" className="otp"></div>
-          <div className="bottom">
-            <p>{t("loginFormBottomP")}</p>
-            <NavLink to="/register">{t("loginFormRegister")}</NavLink>
-          </div>
-        </div>
-      </div>
-    </main>
-
-  );
-};
-
-{/* <form>
+          <h4>{t("loginH4")}</h4>
+          <form>
             <div className="formEle">
               <label htmlFor="email">{t("loginFormEmail")}</label>
               <input
@@ -248,5 +232,17 @@ const Login = () => {
                 :
                 <button type="submit" onClick={handleLogin}>{t("loginFormLoginBtn")}</button>
             }
-          </form> */}
+          </form>
+          <div className="bottom">
+            <p>{t("loginFormBottomP")}</p>
+            <NavLink to="/register">{t("loginFormRegister")}</NavLink>
+          </div>
+        </div>
+      </div>
+    </main>
+
+  );
+};
+
+
 export default Login;
