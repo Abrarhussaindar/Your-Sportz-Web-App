@@ -36,7 +36,13 @@ export default function LeftSideBar() {
             <ul>
                 {navLinks.map((link) => (
                     <NavLink to={link.to} key={link.text}>
-                        <li><img src={link.Img} alt={link.text} />{link.text}</li>
+                        <li
+                            className=
+                            {
+                                ({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "activeDashboard" : ""
+                            }
+                        ><img src={link.Img} alt={link.text} />{link.text}</li>
                     </NavLink>
                 ))}
             </ul>
