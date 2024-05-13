@@ -11,7 +11,6 @@ body {
 body .dashboard {
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 body .dashboard .topBar {
   display: flex;
@@ -310,4 +309,56 @@ body .dashboard .main .MainContent .bottom .right .groundStats {
   background-color: white;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+body .dashboard .main .MainContent .bottom .right .nextMatch, body .dashboard .main .MainContent .bottom .right .upComingMatches {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+body .dashboard .main .MainContent .bottom .right .nextMatch hr, body .dashboard .main .MainContent .bottom .right .upComingMatches hr {
+  height: 1px !important;
+  background-color: #E5E5EE;
+  border: none;
+  margin: 10px 0;
+  width: 100%;
+}
+body .dashboard .main .MainContent .bottom .right .nextMatch h4, body .dashboard .main .MainContent .bottom .right .upComingMatches h4 {
+  color: #6C646A;
+  font-size: 14px;
+  font-weight: 600;
+}
+body .dashboard .main .MainContent .bottom .right .nextMatch .matches, body .dashboard .main .MainContent .bottom .right .upComingMatches .matches {
+  display: flex;
+  gap: 50px;
+}
+body .dashboard .main .MainContent .bottom .right .nextMatch .matches .team1, body .dashboard .main .MainContent .bottom .right .nextMatch .matches .team2, body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .team1, body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .team2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .dashboard .main .MainContent .bottom .right .nextMatch .matches .team1 img, body .dashboard .main .MainContent .bottom .right .nextMatch .matches .team2 img, body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .team1 img, body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .team2 img {
+  width: 40px;
+}
+body .dashboard .main .MainContent .bottom .right .nextMatch .matches .team1 p, body .dashboard .main .MainContent .bottom .right .nextMatch .matches .team2 p, body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .team1 p, body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .team2 p {
+  font-size: 12px;
+  color: #6C646A;
+}
+body .dashboard .main .MainContent .bottom .right .nextMatch .matches .date, body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .dashboard .main .MainContent .bottom .right .nextMatch .matches .date h3, body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .date h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #6C646A;
+}
+body .dashboard .main .MainContent .bottom .right .nextMatch .matches .date h3 span, body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .date h3 span {
+  font-size: 12px;
+  color: #6C646A;
+}
+body .dashboard .main .MainContent .bottom .right .nextMatch .matches .date p, body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .date p {
+  font-size: 12px;
+  color: #6C646A;
 }/*# sourceMappingURL=Dashboard.css.map */
