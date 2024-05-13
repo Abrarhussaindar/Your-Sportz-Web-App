@@ -4,6 +4,7 @@ header {
   justify-content: space-between;
   padding: 20px 40px;
   position: fixed;
+  top: 0;
   background-color: white;
   width: 95%;
   z-index: 99999;
@@ -60,6 +61,14 @@ header .right nav ul a li:hover,
 header .open nav ul a li:hover {
   color: #ff5033;
   border-bottom: 1px solid #ff5033;
+}
+header .right nav ul .active,
+header .open nav ul .active {
+  border-bottom: 1px solid #ff5033;
+}
+header .right nav ul .active li,
+header .open nav ul .active li {
+  color: #ff5033 !important;
 }
 header .right nav .btns,
 header .open nav .btns {
@@ -238,13 +247,6 @@ header .open nav {
 header .open nav ul {
   flex-direction: column;
   align-items: flex-start;
-}
-
-.active {
-  border-bottom: 1px solid #ff5033;
-}
-.active li {
-  color: #ff5033 !important;
 }
 
 .scrolled {

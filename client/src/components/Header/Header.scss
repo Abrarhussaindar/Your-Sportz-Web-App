@@ -5,7 +5,7 @@ header {
     padding: 20px 40px;
 
     position: fixed;
-
+    top: 0;
     background-color: white;
     width: 95%;
     z-index: 99999;
@@ -65,6 +65,13 @@ header {
                             color: #ff5033;
                             border-bottom: 1px solid #ff5033;
                         }
+                    }
+                }
+                .active {
+                    border-bottom: 1px solid #ff5033;
+                
+                    li {
+                        color: #ff5033 !important;
                     }
                 }
             }
@@ -251,13 +258,7 @@ header {
     }
 }
 
-.active {
-    border-bottom: 1px solid #ff5033;
 
-    li {
-        color: #ff5033 !important;
-    }
-}
 
 .scrolled {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);

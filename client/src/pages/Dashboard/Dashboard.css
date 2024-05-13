@@ -109,15 +109,6 @@ body .dashboard .main .leftSideBar ul .active-custom-link {
 body .dashboard .main .leftSideBar ul .active-custom-link img {
   color: #ff5033;
 }
-body .dashboard .main .leftSideBar ul .custom-nav-link.active-custom-link:hover {
-  background-color: #f5f7fa;
-  border-left: 5px solid #ff5033;
-  color: #ff5033;
-  font-weight: 700;
-}
-body .dashboard .main .leftSideBar ul .custom-nav-link.active-custom-link:hover img {
-  color: #ff5033;
-}
 body .dashboard .main .leftSideBar ul a li {
   display: grid;
   grid-template-columns: minmax(auto, 40px) auto;
@@ -137,6 +128,15 @@ body .dashboard .main .leftSideBar ul a li:hover {
 }
 body .dashboard .main .leftSideBar ul a li:hover img {
   color: #ff5033;
+}
+body .dashboard .main .leftSideBar ul .active {
+  border-bottom: none;
+}
+body .dashboard .main .leftSideBar ul .active li {
+  background-color: #f5f7fa;
+  border-left: 5px solid #ff5033;
+  color: #ff5033;
+  font-weight: 700;
 }
 body .dashboard .main .MainContent {
   flex: 5;
