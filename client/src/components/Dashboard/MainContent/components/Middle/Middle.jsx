@@ -35,7 +35,7 @@ export const Middle = () => {
         },
     ];
     return (
-        <div className="middle">
+        <div className="middlePart">
             <ul>
                 {navLinks.map((link) => (
                     <li key={link.text}>
