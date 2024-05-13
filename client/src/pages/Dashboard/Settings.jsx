@@ -4,7 +4,10 @@ import DashboardLayout from '../../components/DashboardLayout'
 export const Settings = () => {
     return (
         <DashboardLayout>
-            <h1>setting</h1>
+            <div className="SettingsContent">
+                <h1>Settings</h1>
+                <p>Coming Soon...</p>
+            </div>
         </DashboardLayout>
     )
 }

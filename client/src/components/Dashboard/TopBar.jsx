@@ -5,24 +5,33 @@ import search from "../../images/dashboard/search.png";
 import noti from "../../images/dashboard/notification.svg";
 import { Link } from "react-router-dom";
 
-export default function TopBar() {
+function getPageTitle(currentPage) {
+    switch (currentPage) {
+        case "/dashboard":
+            return "Overview";
+        case "/management":
+            return "Management";
+        case "/profile":
+            return "Profile";
+        case "/settings":
+            return "Settings";
+        default:
+            return "Unknown Page";
+    }
+}
+
+export default function TopBar({ currentPage }) {
+    const pageTitle = getPageTitle(currentPage);
     return (
         <div className="topBar">
             <div className="leftSide">
                 <div className="logo">
                     <Link to="/">
                         <img src={logo} alt="" />
-                        <h3>
-                            Your<span>Sportz</span>
-                        </h3>
+                        <h3>Your<span>Sportz</span></h3>
                     </Link>
-
                 </div>
-
-                <h3>
-                    Overview
-                </h3>
-
+                <h3>{pageTitle}</h3>
             </div>
             <div className="rightSide">
                 <div className="search">
@@ -31,7 +40,6 @@ export default function TopBar() {
                 </div>
                 <img className="noti" src={noti} alt="" />
                 <img className="avatar" src={avtar} alt="" />
-
             </div>
         </div>
     )
