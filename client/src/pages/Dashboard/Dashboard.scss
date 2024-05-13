@@ -14,7 +14,7 @@ body {
         .topBar {
             display: flex;
             justify-content: space-between;
-            padding: 15px 40px;
+            padding: 15px 30px;
 
             .leftSide,
             .rightSide {
@@ -26,7 +26,7 @@ body {
             .leftSide {
                 display: flex;
                 align-items: center;
-                gap: 45px;
+                gap: 40px;
 
                 .logo {
                     display: flex;
@@ -171,7 +171,7 @@ body {
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
-                    padding: 10px 40px;
+                    padding: 10px 30px 10px 20px;
 
                     .heading {
                         display: flex;
@@ -218,7 +218,7 @@ body {
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        padding: 10px 40px;
+                        padding: 10px 30px 10px 20px;
                         gap: 20px;
 
                         li {
@@ -268,7 +268,7 @@ body {
 
                 .bottom {
                     display: flex;
-                    padding: 10px 40px;
+                    padding: 10px 30px 10px 20px;
                     gap: 20px;
                     .left {
                         display: flex;
@@ -458,6 +458,7 @@ body {
                         }
 
                         .nextMatch {
+                            padding: 10px 20px;
                             .next {
                                 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                                 scale: 1.03;

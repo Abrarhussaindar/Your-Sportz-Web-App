@@ -14,7 +14,7 @@ body .dashboard {
 body .dashboard .topBar {
   display: flex;
   justify-content: space-between;
-  padding: 15px 40px;
+  padding: 15px 30px;
 }
 body .dashboard .topBar .leftSide,
 body .dashboard .topBar .rightSide {
@@ -25,7 +25,7 @@ body .dashboard .topBar .rightSide {
 body .dashboard .topBar .leftSide {
   display: flex;
   align-items: center;
-  gap: 45px;
+  gap: 40px;
 }
 body .dashboard .topBar .leftSide .logo {
   display: flex;
@@ -147,7 +147,7 @@ body .dashboard .main .MainContent .top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 40px;
+  padding: 10px 30px 10px 20px;
 }
 body .dashboard .main .MainContent .top .heading {
   display: flex;
@@ -185,7 +185,7 @@ body .dashboard .main .MainContent .middle ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 40px;
+  padding: 10px 30px 10px 20px;
   gap: 20px;
 }
 body .dashboard .main .MainContent .middle ul li {
@@ -225,7 +225,7 @@ body .dashboard .main .MainContent .middle ul li:hover {
 }
 body .dashboard .main .MainContent .bottom {
   display: flex;
-  padding: 10px 40px;
+  padding: 10px 30px 10px 20px;
   gap: 20px;
 }
 body .dashboard .main .MainContent .bottom .left {
@@ -403,6 +403,9 @@ body .dashboard .main .MainContent .bottom .right .upComingMatches .matches:hove
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   scale: 1.03;
   border-radius: 10px;
+}
+body .dashboard .main .MainContent .bottom .right .nextMatch {
+  padding: 10px 20px;
 }
 body .dashboard .main .MainContent .bottom .right .nextMatch .next {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
