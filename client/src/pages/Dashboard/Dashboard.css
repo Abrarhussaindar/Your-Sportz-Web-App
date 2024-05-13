@@ -310,55 +310,86 @@ body .dashboard .main .MainContent .bottom .right .groundStats {
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-body .dashboard .main .MainContent .bottom .right .nextMatch, body .dashboard .main .MainContent .bottom .right .upComingMatches {
+body .dashboard .main .MainContent .bottom .right .nextMatch,
+body .dashboard .main .MainContent .bottom .right .upComingMatches {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
 }
-body .dashboard .main .MainContent .bottom .right .nextMatch hr, body .dashboard .main .MainContent .bottom .right .upComingMatches hr {
+body .dashboard .main .MainContent .bottom .right .nextMatch hr,
+body .dashboard .main .MainContent .bottom .right .upComingMatches hr {
   height: 1px !important;
-  background-color: #E5E5EE;
+  background-color: #e5e5ee;
   border: none;
   margin: 10px 0;
   width: 100%;
 }
-body .dashboard .main .MainContent .bottom .right .nextMatch h4, body .dashboard .main .MainContent .bottom .right .upComingMatches h4 {
-  color: #6C646A;
+body .dashboard .main .MainContent .bottom .right .nextMatch h4,
+body .dashboard .main .MainContent .bottom .right .upComingMatches h4 {
+  color: #6c646a;
   font-size: 14px;
   font-weight: 600;
 }
-body .dashboard .main .MainContent .bottom .right .nextMatch .matches, body .dashboard .main .MainContent .bottom .right .upComingMatches .matches {
-  display: flex;
+body .dashboard .main .MainContent .bottom .right .nextMatch .matches,
+body .dashboard .main .MainContent .bottom .right .upComingMatches .matches {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 50px;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.2s ease-in;
 }
-body .dashboard .main .MainContent .bottom .right .nextMatch .matches .team1, body .dashboard .main .MainContent .bottom .right .nextMatch .matches .team2, body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .team1, body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .team2 {
+body .dashboard .main .MainContent .bottom .right .nextMatch .matches .team1,
+body .dashboard .main .MainContent .bottom .right .nextMatch .matches .team2,
+body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .team1,
+body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .team2 {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body .dashboard .main .MainContent .bottom .right .nextMatch .matches .team1 img, body .dashboard .main .MainContent .bottom .right .nextMatch .matches .team2 img, body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .team1 img, body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .team2 img {
-  width: 40px;
+body .dashboard .main .MainContent .bottom .right .nextMatch .matches .team1 img,
+body .dashboard .main .MainContent .bottom .right .nextMatch .matches .team2 img,
+body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .team1 img,
+body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .team2 img {
+  width: 35px;
+  border-radius: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-body .dashboard .main .MainContent .bottom .right .nextMatch .matches .team1 p, body .dashboard .main .MainContent .bottom .right .nextMatch .matches .team2 p, body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .team1 p, body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .team2 p {
+body .dashboard .main .MainContent .bottom .right .nextMatch .matches .team1 p,
+body .dashboard .main .MainContent .bottom .right .nextMatch .matches .team2 p,
+body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .team1 p,
+body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .team2 p {
+  text-align: center;
   font-size: 12px;
-  color: #6C646A;
+  color: #6c646a;
 }
-body .dashboard .main .MainContent .bottom .right .nextMatch .matches .date, body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .date {
+body .dashboard .main .MainContent .bottom .right .nextMatch .matches .date,
+body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .date {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body .dashboard .main .MainContent .bottom .right .nextMatch .matches .date h3, body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .date h3 {
+body .dashboard .main .MainContent .bottom .right .nextMatch .matches .date h3,
+body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .date h3 {
   font-size: 22px;
   font-weight: 600;
-  color: #6C646A;
+  color: #6c646a;
 }
-body .dashboard .main .MainContent .bottom .right .nextMatch .matches .date h3 span, body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .date h3 span {
+body .dashboard .main .MainContent .bottom .right .nextMatch .matches .date h3 span,
+body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .date h3 span {
   font-size: 12px;
-  color: #6C646A;
+  color: #6c646a;
 }
-body .dashboard .main .MainContent .bottom .right .nextMatch .matches .date p, body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .date p {
-  font-size: 12px;
-  color: #6C646A;
+body .dashboard .main .MainContent .bottom .right .nextMatch .matches .date p,
+body .dashboard .main .MainContent .bottom .right .upComingMatches .matches .date p {
+  font-size: 10px;
+  color: #6c646a;
+}
+body .dashboard .main .MainContent .bottom .right .nextMatch .matches:hover,
+body .dashboard .main .MainContent .bottom .right .upComingMatches .matches:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  scale: 1.03;
+  border-radius: 10px;
 }/*# sourceMappingURL=Dashboard.css.map */

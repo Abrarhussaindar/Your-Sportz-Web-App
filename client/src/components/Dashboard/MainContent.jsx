@@ -124,28 +124,19 @@ export default function MainContent() {
         }
         fetchData();
     }, []);
-    
+
     const [MatchesData, setMatchesData] = useState([]);
     useEffect(() => {
         async function fetchData() {
             const response = await axios.get(
                 "https://yoursportzbackend.azurewebsites.net/api/match/get/all/"
             );
-            
+
             setMatchesData(response.data);
         }
         fetchData();
-        
+
     }, []);
-    
-    
-    
-    
-    
-    
-    
-   
-    
 
     const playersHeading = [
         "No.",
@@ -287,21 +278,43 @@ export default function MainContent() {
                     </div>
                 </div>
                 <div className="right">
-                    <div className="nextMatch">
-                        <h4>Next Match</h4>
-                        <Matches />
+                    <div className="rainbow-container">
+                        <div className="nextMatch rainbow">
+                            <h4>Next Match</h4>
+                            {
+                                MatchesData.slice(18, 19).map((eachMatch) => (
+                                    
+                                        <Matches
+                                            key={eachMatch._id}
+                                            teamA={eachMatch.teamA}
+                                            teamB={eachMatch.teamB}
+                                            date={eachMatch.ground.date}
+                                            teamALogo={eachMatch.teamALogo}
+                                            teamBLogo={eachMatch.teamBLogo}
+                                        />
+                                ))
+                            }
+                        </div>
                     </div>
+
                     <div className="upComingMatches">
 
                         <h4>Upcoming Matches</h4>
 
                         {
-                            MatchesData.slice(0,5).map((eachMatch)=>(
-                                <>
-                                <Matches key={eachMatch._id} match ={eachMatch} />
-                                 <hr />
-                                </>
-         
+                            MatchesData.slice(18, 21).map((eachMatch) => (
+                                <div key={eachMatch._id}>
+                                    <Matches
+                                        key={eachMatch._id}
+                                        teamA={eachMatch.teamA}
+                                        teamB={eachMatch.teamB}
+                                        date={eachMatch.ground.date}
+                                        teamALogo={eachMatch.teamALogo}
+                                        teamBLogo={eachMatch.teamBLogo}
+                                    />
+                                    <hr />
+                                </div> 
+
                             ))
                         }
 
