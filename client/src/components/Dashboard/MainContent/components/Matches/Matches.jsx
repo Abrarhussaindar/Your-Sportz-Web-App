@@ -2,7 +2,7 @@ import "./Matches.css"
 
 export const Matches = ({teamA, teamB, date, teamALogo, teamBLogo}) => {
     return (
-        <div className="matches next">
+        <div className="indiMatches next">
 
 
             <div className="team1">
