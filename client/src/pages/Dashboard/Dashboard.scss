@@ -28,7 +28,7 @@ body {
             .leftSide {
                 display: flex;
                 align-items: center;
-                gap: 60px;
+                gap: 45px;
 
                 .logo {
                     display: flex;
@@ -38,10 +38,10 @@ body {
                     a {
                         display: flex;
                         align-items: center;
-                        gap: 30px;
+                        gap: 20px;
 
                         img {
-                            width: 50px;
+                            width: 40px;
                         }
 
                         h3 {
@@ -69,9 +69,9 @@ body {
                     display: flex;
                     align-items: center;
                     border: 1px solid #ff5033;
-                    padding: 10px;
+                    padding: 7px 10px;
                     border-radius: 30px;
-                    background-color: #f5f7fa;
+                    background-color: white;
 
                     img {
                         width: 20px;
@@ -79,7 +79,7 @@ body {
                     }
 
                     input {
-                        background-color: #f5f7fa;
+                        background-color: white;
                         padding-left: 10px;
                         outline: none;
                         border: none;
@@ -234,7 +234,9 @@ body {
                             gap: 20px;
                             border-radius: 10px;
                             box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-
+                            img{
+                                width: 35px;
+                            }
                             .details {
                                 display: flex;
                                 flex-direction: column;
@@ -303,6 +305,8 @@ body {
 
                                 .activeToggle {
                                     background-color: #e5e5ee;
+
+                                    font-weight: 500;
                                 }
                             }
                             .mainStats {

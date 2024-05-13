@@ -27,7 +27,7 @@ body .dashboard .topBar .rightSide {
 body .dashboard .topBar .leftSide {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 45px;
 }
 body .dashboard .topBar .leftSide .logo {
   display: flex;
@@ -37,10 +37,10 @@ body .dashboard .topBar .leftSide .logo {
 body .dashboard .topBar .leftSide .logo a {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 body .dashboard .topBar .leftSide .logo a img {
-  width: 50px;
+  width: 40px;
 }
 body .dashboard .topBar .leftSide .logo a h3 {
   color: #413566;
@@ -60,16 +60,16 @@ body .dashboard .topBar .rightSide .search {
   display: flex;
   align-items: center;
   border: 1px solid #ff5033;
-  padding: 10px;
+  padding: 7px 10px;
   border-radius: 30px;
-  background-color: #f5f7fa;
+  background-color: white;
 }
 body .dashboard .topBar .rightSide .search img {
   width: 20px;
   height: 20px;
 }
 body .dashboard .topBar .rightSide .search input {
-  background-color: #f5f7fa;
+  background-color: white;
   padding-left: 10px;
   outline: none;
   border: none;
@@ -200,6 +200,9 @@ body .dashboard .main .MainContent .middle ul li {
   border-radius: 10px;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
+body .dashboard .main .MainContent .middle ul li img {
+  width: 35px;
+}
 body .dashboard .main .MainContent .middle ul li .details {
   display: flex;
   flex-direction: column;
@@ -260,6 +263,7 @@ body .dashboard .main .MainContent .bottom .left .stats .toggleBtns button:hover
 }
 body .dashboard .main .MainContent .bottom .left .stats .toggleBtns .activeToggle {
   background-color: #e5e5ee;
+  font-weight: 500;
 }
 body .dashboard .main .MainContent .bottom .left .stats .mainStats table {
   width: 100%;

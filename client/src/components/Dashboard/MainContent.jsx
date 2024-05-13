@@ -1,7 +1,9 @@
 import "../../pages/Dashboard/Dashboard.css";
-import Group from "../../images/dashboard/Group.svg";
-import Vectory from "../../images/dashboard/Vectory.svg";
-import run from "../../images/dashboard/run.svg";
+import players from "../../images/dashboard/soccer-player.png"
+import team from "../../images/dashboard/group.png"
+import match from "../../images/dashboard/football.png"
+import won from "../../images/dashboard/Vectory.svg";
+import lost from "../../images/dashboard/trophy.png";
 import { useEffect, useState } from "react";
 
 import axios from "../../axios";
@@ -32,27 +34,35 @@ export default function MainContent() {
         {
 
             text: "100",
-            desc: "Total Members",
-            Img: Group
+            desc: "Total Players",
+            Img: players
         },
         {
 
             text: "10",
-            desc: "Total Players",
-            Img: run
-        },
-        {
-
-            text: "11",
-            desc: "Total Wins",
-            Img: Vectory
+            desc: "Total Teams",
+            Img: team
         },
         {
 
             text: "20",
             desc: "Total Matches",
-            Img: Group
-        }
+            Img: match
+        },
+        
+        {
+
+            text: "11",
+            desc: "Total Wins",
+            Img: won
+        },
+        {
+
+            text: "5",
+            desc: "Total Lost",
+            Img: lost
+        },
+        
     ]
 
     // const scoresHeading = ["No.", "Top Scorer", 'W', 'D', 'L', 'T', 'GD', 'PTS']
