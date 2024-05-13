@@ -211,7 +211,6 @@ header {
         display: flex;
         flex-direction: column;
         gap: 50px;
-        height: 100vh;
         box-shadow: rgba(0, 0, 0, 0.15) -7px 16px 4px 2px;
         transition: display 0.3s ease;
 
@@ -385,8 +384,8 @@ header {
         }
 
         .open {
+            height: 94vh !important;
             nav {
-                height: 90vh !important;
                 justify-content: space-between;
                 .btns {
                     display: flex;
@@ -418,6 +417,12 @@ header {
         .left {
             a {
                 gap: 10px;
+            }
+        }
+        .open {
+            height: 96vh !important;
+            nav {
+                justify-content: space-between;
             }
         }
     }

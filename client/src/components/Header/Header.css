@@ -206,7 +206,6 @@ header .open {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  height: 100vh;
   box-shadow: rgba(0, 0, 0, 0.15) -7px 16px 4px 2px;
   transition: display 0.3s ease;
 }
@@ -354,8 +353,10 @@ header .open nav ul {
   header nav {
     display: none !important;
   }
+  header .open {
+    height: 94vh !important;
+  }
   header .open nav {
-    height: 90vh !important;
     justify-content: space-between;
   }
   header .open nav .btns {
@@ -382,5 +383,11 @@ header .open nav ul {
   }
   header .left a {
     gap: 10px;
+  }
+  header .open {
+    height: 96vh !important;
+  }
+  header .open nav {
+    justify-content: space-between;
   }
 }/*# sourceMappingURL=Header.css.map */
