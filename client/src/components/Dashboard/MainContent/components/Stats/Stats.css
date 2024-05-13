@@ -1,0 +1,64 @@
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.stats .toggleBtns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.stats .toggleBtns button {
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 10px 60px;
+  background-color: white;
+  color: #060606;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  cursor: pointer;
+  transition: background 0.2s ease-in;
+}
+.stats .toggleBtns button:hover {
+  background-color: #e5e5ee;
+  font-weight: 500;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.stats .toggleBtns .activeToggle {
+  background-color: #e5e5ee;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  font-weight: 500;
+}
+.stats .mainStats table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.stats .mainStats th,
+.stats .mainStats td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+.stats .mainStats th {
+  background-color: #ff5033;
+  color: white;
+}
+.stats .mainStats tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.stats .mainStats tr:hover {
+  scale: 1.01;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.stats .mainStats tr:hover td {
+  font-weight: 500;
+}
+.stats .moreStats {
+  display: flex;
+  justify-content: flex-end;
+}/*# sourceMappingURL=Stats.css.map */

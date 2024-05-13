@@ -17,9 +17,9 @@ import "./18n"
 import { useEffect } from "react";
 import EarlyAccess from "./pages/EarlyAccess/EarlyAccess/EarlyAccess";
 import { NoPage } from "./pages/NoPage/NoPage";
-import { Management } from "./pages/Dashboard/Management";
-import { Profile } from "./pages/Dashboard/Profile";
-import { Settings } from "./pages/Dashboard/Settings";
+import { Management } from "./components/Dashboard/Management/Management";
+import { Profile } from "./components/Dashboard/Profile/Profile";
+import { Settings } from "./components/Dashboard/Settings/Settings";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();

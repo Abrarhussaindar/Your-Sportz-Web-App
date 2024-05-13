@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
-import LeftSideBar from "./Dashboard/LeftSideBar";
-import TopBar from "./Dashboard/TopBar";
+import LeftSideBar from "./Dashboard/LeftSideBar/LeftSideBar";
+import TopBar from "./Dashboard/TopBar/TopBar";
 
 const DashboardLayout = ({ children }) => {
     const location = useLocation();

@@ -1,0 +1,32 @@
+.nextMatch,
+.upComingMatches {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    hr {
+        height: 1px !important;
+        background-color: #e5e5ee;
+        border: none;
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    h4 {
+        color: #6c646a;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+
+}
+
+.nextMatch {
+    padding: 10px 20px;
+    .next {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        scale: 1.03;
+        border-radius: 10px;
+    }
+}

@@ -1,4 +1,4 @@
-import MainContent from "../../components/Dashboard/MainContent";
+import MainContent from "../../components/Dashboard/MainContent/MainContent";
 import DashboardLayout from "../../components/DashboardLayout";
 import "./Dashboard.css";
 

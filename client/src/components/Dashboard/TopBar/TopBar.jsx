@@ -1,8 +1,8 @@
-import "../../pages/Dashboard/Dashboard.css";
-import logo from "../../images/logo.png";
-import avtar from "../../images/dashboard/avtar.png";
-import search from "../../images/dashboard/search.png";
-import noti from "../../images/dashboard/notification.svg";
+import "./TopBar.css"
+import logo from "../../../images/logo.png";
+import avtar from "../../../images/dashboard/avtar.png";
+import search from "../../../images/dashboard/search.png";
+import noti from "../../../images/dashboard/notification.svg";
 import { Link } from "react-router-dom";
 
 function getPageTitle(currentPage) {

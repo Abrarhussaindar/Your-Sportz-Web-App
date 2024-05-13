@@ -1,6 +1,6 @@
 
-import DashboardLayout from '../../components/DashboardLayout'
-
+import DashboardLayout from '../../DashboardLayout'
+import "./Profile.css"
 export const Profile = () => {
     return (
         <DashboardLayout>

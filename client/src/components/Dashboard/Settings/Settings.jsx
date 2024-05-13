@@ -1,6 +1,6 @@
 
-import DashboardLayout from '../../components/DashboardLayout'
-
+import DashboardLayout from '../../DashboardLayout'
+import "./Settings.css"
 export const Settings = () => {
     return (
         <DashboardLayout>

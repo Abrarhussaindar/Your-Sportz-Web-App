@@ -1,0 +1,86 @@
+.MainContent {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f7fa;
+
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 30px 10px 20px;
+
+        .heading {
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                font-size: 22px;
+                font-weight: 600;
+                color: #554585;
+            }
+
+            p {
+                font-size: 14px;
+                color: #b0afaf;
+                font-weight: 400;
+            }
+        }
+
+        button {
+            padding: 5px 40px;
+            border-radius: 10px;
+            font-weight: 500;
+            font-size: 18px;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: #ff5033;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: all ease-in 0.2s;
+
+            &:hover {
+                background-color: #e64023;
+                color: white;
+                box-shadow:
+                    rgba(0, 0, 0, 0.16) 0px 3px 6px,
+                    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            }
+        }
+    }
+
+    .bottom {
+        display: flex;
+        padding: 10px 30px 10px 20px;
+        gap: 20px;
+        .left {
+            display: flex;
+            flex-direction: column;
+            flex: 3.5;
+            gap: 20px;
+
+            .stats,
+            .statsChart {
+                padding: 20px;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+        }
+        .right {
+            display: flex;
+            flex-direction: column;
+            flex: 1.5;
+            gap: 20px;
+            .nextMatch,
+            .upComingMatches,
+            .groundStats {
+                padding: 20px;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+        }
+    }
+}

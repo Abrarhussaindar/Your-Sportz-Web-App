@@ -1,0 +1,54 @@
+.leftSideBar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  gap: 40px;
+  background-color: #413566;
+}
+.leftSideBar .logo {
+  padding: 0 30px;
+}
+.leftSideBar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.leftSideBar ul .active-custom-link {
+  background-color: #f5f7fa;
+  border-left: 5px solid #ff5033;
+  color: #ff5033;
+  font-weight: 700;
+}
+.leftSideBar ul .active-custom-link img {
+  color: #ff5033;
+}
+.leftSideBar ul a li {
+  display: grid;
+  grid-template-columns: minmax(auto, 40px) auto;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 30px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all ease-in 0.2s;
+}
+.leftSideBar ul a li:hover {
+  background-color: #f5f7fa;
+  border-left: 5px solid #ff5033;
+  color: #ff5033;
+  font-weight: 700;
+}
+.leftSideBar ul a li:hover img {
+  color: #ff5033;
+}
+.leftSideBar ul .active {
+  border-bottom: none;
+}
+.leftSideBar ul .active li {
+  background-color: #f5f7fa;
+  border-left: 5px solid #ff5033;
+  color: #ff5033;
+  font-weight: 700;
+}/*# sourceMappingURL=LeftSideBar.css.map */
