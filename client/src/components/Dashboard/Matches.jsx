@@ -1,6 +1,6 @@
 export const Matches = ({teamA, teamB, date, teamALogo, teamBLogo}) => {
     return (
-        <div className="matches">
+        <div className="matches next">
 
 
             <div className="team1">

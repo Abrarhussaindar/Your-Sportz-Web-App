@@ -211,6 +211,9 @@ body {
                         &:hover {
                             background-color: #e64023;
                             color: white;
+                            box-shadow:
+                                rgba(0, 0, 0, 0.16) 0px 3px 6px,
+                                rgba(0, 0, 0, 0.23) 0px 3px 6px;
                         }
                     }
                 }
@@ -231,8 +234,12 @@ body {
                             width: 25%;
                             padding: 20px;
                             gap: 20px;
+                            cursor: pointer;
                             border-radius: 10px;
-                            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+                            box-shadow:
+                                rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+                                rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                            transition: all 0.2s ease-in;
                             img {
                                 width: 35px;
                             }
@@ -244,7 +251,7 @@ body {
 
                                 h3 {
                                     font-size: 26px;
-                                    font-weight: 700;
+                                    font-weight: 600;
                                 }
 
                                 p {
@@ -252,6 +259,13 @@ body {
                                     font-weight: 500;
                                     color: #b0afaf;
                                 }
+                            }
+
+                            &:hover {
+                                scale: 1.01;
+                                box-shadow:
+                                    rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+                                    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
                             }
                         }
                     }
@@ -292,19 +306,26 @@ body {
                                     background-color: white;
                                     color: #060606;
                                     box-shadow:
-                                        rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-                                        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                                        rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+                                        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
                                     cursor: pointer;
                                     transition: background 0.2s ease-in;
 
                                     &:hover {
                                         background-color: #e5e5ee;
+                                        font-weight: 500;
+                                        box-shadow:
+                                            rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+                                            rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
                                     }
                                 }
 
                                 .activeToggle {
                                     background-color: #e5e5ee;
-
+                                    box-shadow:
+                                        rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+                                        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
                                     font-weight: 500;
                                 }
                             }
@@ -342,6 +363,7 @@ body {
                                     }
                                 }
                             }
+
                             .moreStats {
                                 display: flex;
                                 justify-content: flex-end;
@@ -388,16 +410,23 @@ body {
                                 gap: 50px;
                                 cursor: pointer;
                                 padding: 10px;
-                                transition: all .2s ease-in;
+                                transition: all 0.2s ease-in;
                                 .team1,
                                 .team2 {
                                     display: flex;
                                     flex-direction: column;
                                     align-items: center;
+                                    gap: 10px;
                                     img {
                                         width: 35px;
                                         border-radius: 50%;
                                         object-fit: contain;
+                                        box-shadow:
+                                            rgba(0, 0, 0, 0.25) 0px 54px 55px,
+                                            rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                                            rgba(0, 0, 0, 0.12) 0px 4px 6px,
+                                            rgba(0, 0, 0, 0.17) 0px 12px 13px;
+                                        // box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
                                     }
                                     p {
                                         text-align: center;
@@ -425,7 +454,7 @@ body {
                                     }
                                 }
 
-                                &:hover{
+                                &:hover {
                                     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
                                     scale: 1.03;
                                     border-radius: 10px;
@@ -433,7 +462,13 @@ body {
                             }
                         }
 
-                        
+                        .nextMatch {
+                            .next {
+                                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                                scale: 1.03;
+                                border-radius: 10px;
+                            }
+                        }
                     }
                 }
             }
