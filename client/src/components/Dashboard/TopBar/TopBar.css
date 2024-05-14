@@ -1,7 +1,14 @@
 .topBar {
+  position: sticky;
+  top: 0;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  background-color: #fff;
+  width: 96%;
+  z-index: 99999;
   padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 .topBar .leftSide,
 .topBar .rightSide {
