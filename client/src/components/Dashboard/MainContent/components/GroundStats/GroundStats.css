@@ -1,1 +1,17 @@
-/*# sourceMappingURL=GroundStats.css.map */
+.groundStats {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.groundStats h4 {
+  color: #6c646a;
+  font-size: 14px;
+  font-weight: 600;
+}
+.groundStats img {
+  width: 100%;
+  border-radius: 10px;
+}/*# sourceMappingURL=GroundStats.css.map */

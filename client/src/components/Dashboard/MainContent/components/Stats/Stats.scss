@@ -76,5 +76,25 @@
     .moreStats {
         display: flex;
         justify-content: flex-end;
+        ul {
+            padding: 5px 20px;
+            border-radius: 10px;
+            background-color: #E5E5EE;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            li {
+                color: #50424B;
+            }
+            
+            .activeNum{
+                color: #6C646A;
+                font-weight: 600;
+            }
+
+            img{
+                width: 15px;
+            }
+        }
     }
 }

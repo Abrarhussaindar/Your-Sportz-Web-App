@@ -61,4 +61,22 @@
 .stats .moreStats {
   display: flex;
   justify-content: flex-end;
+}
+.stats .moreStats ul {
+  padding: 5px 20px;
+  border-radius: 10px;
+  background-color: #E5E5EE;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.stats .moreStats ul li {
+  color: #50424B;
+}
+.stats .moreStats ul .activeNum {
+  color: #6C646A;
+  font-weight: 600;
+}
+.stats .moreStats ul img {
+  width: 15px;
 }/*# sourceMappingURL=Stats.css.map */

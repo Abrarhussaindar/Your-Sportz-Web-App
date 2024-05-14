@@ -5,8 +5,13 @@ import { StatsChart } from "./components/StatsChart/StatsChart";
 import { NextMatch } from "./components/NextMatch/NextMatch";
 import { GroundStats } from "./components/GroundStats/GroundStats";
 import { UpComingMatches } from "./components/UpComingMatches/UpComingMatches";
+import { useState } from "react";
 
 export default function MainContent() {
+    const [activeButton, setActiveButton] = useState(1);
+    const handleClick = (index) => {
+        setActiveButton(index);
+    };
     return (
         <div className="MainContent">
             <div className="top">
@@ -19,8 +24,8 @@ export default function MainContent() {
             <Middle />
             <div className="bottom">
                 <div className="left">
-                    <Stats />
-                    <StatsChart />
+                    <Stats click={handleClick} active={activeButton} setActive={setActiveButton}/>
+                    <StatsChart active={activeButton}/>
                 </div>
                 <div className="right">
 

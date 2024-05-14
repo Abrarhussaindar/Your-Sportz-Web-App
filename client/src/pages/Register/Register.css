@@ -30,6 +30,7 @@
   align-items: flex-start;
   gap: 10px;
   width: 40%;
+  height: 100%;
 }
 .register .wrapper .left button {
   padding: 5px 30px;

@@ -1,14 +1,9 @@
 import { useEffect, useState } from "react";
 import axios from "../../../../../axios";
 import "./Stats.css"
+import arrow from "../../../../../images/dashboard/arrow.png"
+export const Stats = ({ click, active, setActive }) => {
 
-export const Stats = () => {
-
-    const [activeButton, setActiveButton] = useState(1);
-
-    const handleClick = (index) => {
-        setActiveButton(index);
-    };
     const toggleBtns = [
         {
             id: 1,
@@ -65,24 +60,26 @@ export const Stats = () => {
         }
         fetchData();
     }, []);
+
+    const nums = [1, 2, 3, 4, 5]
     return (
         <div className="stats">
             <div className="toggleBtns">
                 {toggleBtns.map((eachBtn) => (
                     <button
                         key={eachBtn.id}
-                        className={`${activeButton === eachBtn.id
+                        className={`${active === eachBtn.id
                             ? "activeToggle"
                             : "notActiveToggle"
                             }`}
-                        onClick={() => handleClick(eachBtn.id)}
+                        onClick={() => click(eachBtn.id)}
                     >
                         {eachBtn.text}
                     </button>
                 ))}
             </div>
             <div className="mainStats">
-                {activeButton === 1 && (
+                {active === 1 && (
                     <table className="players">
                         <thead>
                             <tr>
@@ -92,7 +89,7 @@ export const Stats = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            {PlayersData.slice(0, 10).map((eachTeam, index) => (
+                            {PlayersData.slice(0, 6).map((eachTeam, index) => (
                                 <tr key={eachTeam._id}>
                                     <td>{index + 1}</td>
                                     <td>{eachTeam.name || "NA"}</td>
@@ -106,7 +103,7 @@ export const Stats = () => {
                         </tbody>
                     </table>
                 )}
-                {activeButton === 2 && (
+                {active === 2 && (
                     <table className="score">
                         <thead>
                             <tr>
@@ -116,7 +113,7 @@ export const Stats = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            {TeamsData.slice(0, 10).map((eachTeam, index) => (
+                            {TeamsData.slice(0, 6).map((eachTeam, index) => (
                                 <tr key={eachTeam.teamId}>
                                     <td>{index + 1}</td>
                                     <td>{eachTeam.name || "NA"}</td>
@@ -131,7 +128,7 @@ export const Stats = () => {
                         </tbody>
                     </table>
                 )}
-                {activeButton === 3 && (
+                {active === 3 && (
                     <table className="teams">
                         <thead>
                             <tr>
@@ -141,7 +138,7 @@ export const Stats = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            {TeamsData.slice(0, 10).map((eachTeam, index) => (
+                            {TeamsData.slice(0, 6).map((eachTeam, index) => (
                                 <tr key={eachTeam.teamId}>
                                     <td>{index + 1}</td>
                                     <td>{eachTeam.name || "NA"}</td>
@@ -157,7 +154,18 @@ export const Stats = () => {
                     </table>
                 )}
             </div>
-            <div className="moreStats">12345...</div>
+            <div className="moreStats">
+                <ul>
+                    {
+                        nums.map((each) =>
+                            <li key={each} 
+                                className={each===1 ? "activeNum" : "" }
+                            >{each}</li>
+                        )
+                    }
+                    <img  src={arrow} />
+                </ul>
+            </div>
         </div>
     )
 }

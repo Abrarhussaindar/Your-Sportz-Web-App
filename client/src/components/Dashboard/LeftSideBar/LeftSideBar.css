@@ -29,6 +29,8 @@
   align-items: center;
   gap: 10px;
   padding: 10px 30px;
+  margin-right: 5px;
+  border-radius: 1px 100px 100px 100px;
   color: white;
   font-size: 18px;
   font-weight: 600;
@@ -39,6 +41,8 @@
   border-left: 5px solid #ff5033;
   color: #ff5033;
   font-weight: 700;
+  margin-right: 5px;
+  border-radius: 1px 100px 100px 100px;
 }
 .leftSideBar ul a li:hover img {
   color: #ff5033;
