@@ -4,6 +4,7 @@ import avtar from "../../../images/dashboard/avtar.png";
 import search from "../../../images/dashboard/search.png";
 import noti from "../../../images/dashboard/notification.svg";
 import { Link } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
 
 function getPageTitle(currentPage) {
     switch (currentPage) {
@@ -20,10 +21,26 @@ function getPageTitle(currentPage) {
     }
 }
 
+
 export default function TopBar({ currentPage }) {
     const pageTitle = getPageTitle(currentPage);
+    const [hasScrolled, setHasScrolled] = useState(false);
+    const dropdownRef = useRef(null);
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setHasScrolled(true);
+            } else {
+                setHasScrolled(false);
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
-        <div className="topBar">
+        <div className={`${hasScrolled ? 'scrolled' : ''} topBar` }   ref={dropdownRef}>
             <div className="leftSide">
                 <div className="logo">
                     <Link to="/">
