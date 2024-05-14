@@ -72,6 +72,7 @@
 }
 .stats .moreStats ul li {
   color: #50424B;
+  cursor: pointer;
 }
 .stats .moreStats ul .activeNum {
   color: #6C646A;
