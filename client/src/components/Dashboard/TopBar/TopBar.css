@@ -73,6 +73,224 @@
   width: 40px;
   height: 40px;
 }
+.topBar .right .ham,
+.topBar .right .close,
+.topBar .right .menuLogo,
+.topBar .open .ham,
+.topBar .open .close,
+.topBar .open .menuLogo {
+  display: none;
+}
+.topBar .right nav,
+.topBar .open nav {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+.topBar .right nav ul,
+.topBar .open nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.topBar .right nav ul a li,
+.topBar .open nav ul a li {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  transition: all ease-in 0.2s;
+}
+.topBar .right nav ul a li:hover,
+.topBar .open nav ul a li:hover {
+  color: #ff5033;
+  border-bottom: 1px solid #ff5033;
+}
+.topBar .right nav ul .active,
+.topBar .open nav ul .active {
+  border-bottom: 1px solid #ff5033;
+}
+.topBar .right nav ul .active li,
+.topBar .open nav ul .active li {
+  color: #ff5033 !important;
+}
+.topBar .right nav .btns,
+.topBar .open nav .btns {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.topBar .right nav .btns button,
+.topBar .open nav .btns button {
+  width: 200px;
+  padding: 5px 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ff5033;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all ease-in 0.2s;
+}
+.topBar .right nav .btns button:hover,
+.topBar .open nav .btns button:hover {
+  background-color: #e64023;
+}
+.topBar .right nav .btns .langs,
+.topBar .open nav .btns .langs {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+}
+.topBar .right nav .btns .langs .customSelect,
+.topBar .open nav .btns .langs .customSelect {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 12px;
+  border-radius: 10px;
+}
+.topBar .right nav .btns .langs .customSelect .downImg,
+.topBar .open nav .btns .langs .customSelect .downImg {
+  width: 15px;
+}
+.topBar .right nav .btns .langs .customSelect .lng,
+.topBar .open nav .btns .langs .customSelect .lng {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.topBar .right nav .btns .langs .customSelect .lng img,
+.topBar .open nav .btns .langs .customSelect .lng img {
+  width: 20px;
+}
+.topBar .right nav .btns .langs .customSelect .lng p,
+.topBar .open nav .btns .langs .customSelect .lng p {
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+}
+.topBar .right nav .btns .langs .customSelect .globe,
+.topBar .open nav .btns .langs .customSelect .globe {
+  width: 25px;
+  height: 25px;
+}
+.topBar .right nav .btns .langs .customSelect ul,
+.topBar .open nav .btns .langs .customSelect ul {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px 0;
+  border-radius: 10px;
+  gap: 10px !important;
+  right: -2px;
+  top: 150%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.topBar .right nav .btns .langs .customSelect ul li,
+.topBar .open nav .btns .langs .customSelect ul li {
+  width: 100%;
+}
+.topBar .right nav .btns .langs .customSelect ul li button,
+.topBar .open nav .btns .langs .customSelect ul li button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 20px;
+  border-radius: 0;
+  color: #413566;
+  background-color: white !important;
+  transition: background-color 0.2s ease-in;
+}
+.topBar .right nav .btns .langs .customSelect ul li button img,
+.topBar .open nav .btns .langs .customSelect ul li button img {
+  width: 20px;
+}
+.topBar .right nav .btns .langs .customSelect ul li button p,
+.topBar .open nav .btns .langs .customSelect ul li button p {
+  font-size: 14px;
+  font-weight: 400;
+}
+.topBar .right nav .btns .langs .customSelect ul li button:hover,
+.topBar .open nav .btns .langs .customSelect ul li button:hover {
+  background-color: rgb(235, 230, 230) !important;
+}
+.topBar .right nav .btns .langs .customSelect ul li button:hover p,
+.topBar .open nav .btns .langs .customSelect ul li button:hover p {
+  font-weight: 500;
+}
+.topBar .right nav .btns .langs .customSelect .langUl,
+.topBar .open nav .btns .langs .customSelect .langUl {
+  display: none;
+}
+.topBar .right nav .btns .langs .customSelect .openlangUl,
+.topBar .open nav .btns .langs .customSelect .openlangUl {
+  display: block !important;
+}
+.topBar .notOpen {
+  right: -300px;
+  display: none;
+}
+.topBar .notOpen .ham,
+.topBar .notOpen .close,
+.topBar .notOpen .menuLogo {
+  display: none;
+}
+.topBar .open {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  z-index: 9999;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  box-shadow: rgba(0, 0, 0, 0.15) -7px 16px 4px 2px;
+  transition: display 0.3s ease;
+}
+.topBar .open .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.topBar .open .top h2 {
+  display: block;
+  font-size: 26px;
+  font-weight: 600;
+  color: #413566;
+}
+.topBar .open .top h2 span {
+  font-weight: 600;
+  color: #ff5033;
+}
+.topBar .open .top img {
+  display: block;
+  width: 20px;
+}
+.topBar .open nav {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100vh;
+}
+.topBar .open nav ul {
+  flex-direction: column;
+  align-items: flex-start;
+}
 
 @media screen and (width <= 440px) {
   .topBar .rightSide {

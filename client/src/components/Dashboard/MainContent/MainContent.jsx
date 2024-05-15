@@ -6,21 +6,31 @@ import { NextMatch } from "./components/NextMatch/NextMatch";
 import { GroundStats } from "./components/GroundStats/GroundStats";
 import { UpComingMatches } from "./components/UpComingMatches/UpComingMatches";
 import { useState } from "react";
+import ham from "../../../images/ham.svg"
 
-export default function MainContent() {
+export default function MainContent( {toggleLeftMenu} ) {
     const [activeButton, setActiveButton] = useState(1);
+    
+    const [isLeftOpen, setIsLeftOpen] = useState(false);
+    const toggleMenu = () => {
+        setIsLeftOpen(!isLeftOpen);
+    };
     const handleClick = (index) => {
         setActiveButton(index);
     };
     return (
         <div className="MainContent">
             <div className="top">
+            
+            <img onClick={toggleLeftMenu} src={ham} alt="" />
+            
                 <div className="heading">
                     <h3>Welcome!</h3>
                     <p>Fuel Your Passion for Football</p>
                 </div>
                 <button>Invite</button>
             </div>
+            
             <Middle />
             <div className="bottom">
                 <div className="left">

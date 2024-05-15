@@ -50,8 +50,12 @@
   font-weight: 700;
 }
 
-@media screen and (width <= 440px) {
-  .leftSideBar {
-    display: none !important;
-  }
+.leftOpen {
+  position: fixed;
+  left: 300px;
+}
+
+.notLeftOpen {
+  left: -300px;
+  display: none;
 }/*# sourceMappingURL=LeftSideBar.css.map */

@@ -5,7 +5,7 @@ import search from "../../../images/dashboard/search.png";
 import noti from "../../../images/dashboard/notification.svg";
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
-
+import ham from "../../../images/ham.svg"
 function getPageTitle(currentPage) {
     switch (currentPage) {
         case "/dashboard":
@@ -25,6 +25,11 @@ function getPageTitle(currentPage) {
 export default function TopBar({ currentPage }) {
     const pageTitle = getPageTitle(currentPage);
     const [hasScrolled, setHasScrolled] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     const dropdownRef = useRef(null);
     useEffect(() => {
         const handleScroll = () => {
@@ -40,7 +45,7 @@ export default function TopBar({ currentPage }) {
         };
     }, []);
     return (
-        <div className={`${hasScrolled ? 'scrolled' : ''} topBar` }   ref={dropdownRef}>
+        <div className={`${hasScrolled ? 'scrolled' : ''} topBar`} ref={dropdownRef}>
             <div className="leftSide">
                 <div className="logo">
                     <Link to="/">
@@ -58,6 +63,32 @@ export default function TopBar({ currentPage }) {
                 <img className="noti" src={noti} alt="" />
                 <img className="avatar" src={avtar} alt="" />
             </div>
+
+            <img onClick={toggleMenu} src={ham} alt="" />
+
+            <div className={`${isMenuOpen ? 'open' : 'notOpen'}`}>
+
+                <div className="top">
+
+                    <img className="close" src={close} alt="" onClick={toggleMenu} />
+                </div>
+
+                <div className="bottom">
+                    <div className="search">
+                        <img src={search} alt="" />
+                        <input type="text" placeholder="Search" />
+                    </div>
+                    <img className="noti" src={noti} alt="" />
+                    <img className="avatar" src={avtar} alt="" />
+                </div>
+
+            </div>
+
+
         </div>
+
+
+
+
     )
 }

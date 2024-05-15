@@ -79,6 +79,12 @@
   .MainContent {
     width: 100%;
   }
+  .MainContent .top .heading h3 {
+    font-size: 16px;
+  }
+  .MainContent .top .heading p {
+    font-size: 12px;
+  }
   .MainContent .top button {
     font-size: 16px;
     padding: 5px 30px;
