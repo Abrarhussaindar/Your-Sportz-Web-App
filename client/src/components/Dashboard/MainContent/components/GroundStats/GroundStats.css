@@ -21,8 +21,23 @@
   scale: 1.01;
 }
 
+@media screen and (770px <= width <= 1030px) {
+  .groundStats {
+    width: unset !important;
+  }
+}
+@media screen and (440px <= width <= 770px) {
+  .groundStats {
+    width: unset !important;
+  }
+}
 @media screen and (width <= 440px) {
   .groundStats img {
     width: 100% !important;
+  }
+}
+@media screen and (width <= 390px) {
+  .groundStats {
+    width: unset !important;
   }
 }/*# sourceMappingURL=GroundStats.css.map */

@@ -22,6 +22,11 @@ export const Middle = () => {
             desc: "Total Matches",
             Img: match,
         },
+        {
+            text: "5",
+            desc: "Total Tournaments",
+            Img: match,
+        },
 
         {
             text: "11",

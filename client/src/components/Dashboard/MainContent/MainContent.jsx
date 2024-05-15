@@ -6,15 +6,11 @@ import { NextMatch } from "./components/NextMatch/NextMatch";
 import { GroundStats } from "./components/GroundStats/GroundStats";
 import { UpComingMatches } from "./components/UpComingMatches/UpComingMatches";
 import { useState } from "react";
-import ham from "../../../images/ham.svg"
+import ham from "../../../images/dashboard/dots.png"
 
 export default function MainContent( {toggleLeftMenu} ) {
     const [activeButton, setActiveButton] = useState(1);
     
-    const [isLeftOpen, setIsLeftOpen] = useState(false);
-    const toggleMenu = () => {
-        setIsLeftOpen(!isLeftOpen);
-    };
     const handleClick = (index) => {
         setActiveButton(index);
     };
@@ -22,7 +18,7 @@ export default function MainContent( {toggleLeftMenu} ) {
         <div className="MainContent">
             <div className="top">
             
-            <img onClick={toggleLeftMenu} src={ham} alt="" />
+            <img onClick={toggleLeftMenu} className="leftHam" src={ham} alt="" />
             
                 <div className="heading">
                     <h3>Welcome!</h3>

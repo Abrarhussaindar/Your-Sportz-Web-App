@@ -79,43 +79,75 @@
         ul {
             padding: 5px 20px;
             border-radius: 10px;
-            background-color: #E5E5EE;
+            background-color: #e5e5ee;
             display: flex;
             align-items: center;
             gap: 20px;
             li {
-                color: #50424B;
+                color: #50424b;
                 cursor: pointer;
             }
-            
-            .activeNum{
-                color: #6C646A;
+
+            .activeNum {
+                color: #6c646a;
                 font-weight: 600;
             }
 
-            img{
+            img {
                 width: 15px;
             }
         }
     }
 }
 
+@media screen and (770px <= width <=1030px) {
+    .stats .toggleBtns button{
+        padding: 10px 30px;
+    }
 
-
-@media screen and (770px <= width <=1030px){}
-@media screen and (440px <= width <=770px){}
-@media screen and (width <= 440px){
     .stats{
         .mainStats{
             overflow: scroll;
+            table{
+                font-size: 14px;
+            }
         }
-        .toggleBtns{
-            
-            button{
+    }
+}
+@media screen and (440px <= width <=770px) {
+    .stats .toggleBtns button {
+        font-size: 12px;
+        padding: 10px 30px;
+    }
+
+    .stats{
+        .mainStats {
+            overflow: scroll;
+            table{
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media screen and (width <= 440px) {
+    .stats {
+        padding: 10px !important;
+        .mainStats {
+            overflow: scroll;
+        }
+        .toggleBtns {
+            button {
                 padding: 10px;
                 font-size: 12px;
             }
         }
     }
+    .stats .mainStats table {
+        font-size: 12px;
+    }
+    .stats .moreStats ul {
+        gap: 10px !important;
+    }
 }
-@media screen and (width <=390px){}
+@media screen and (width <=390px) {
+}

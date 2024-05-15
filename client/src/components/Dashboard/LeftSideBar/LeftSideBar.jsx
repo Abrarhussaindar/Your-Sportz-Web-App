@@ -6,7 +6,7 @@ import setting from "../../../images/dashboard/setting.svg";
 import user from "../../../images/dashboard/user.svg";
 import { NavLink } from "react-router-dom"
 
-export default function LeftSideBar( {isLeftOpen} ) {
+export default function LeftSideBar( {isLeftOpen, something} ) {
     const navLinks = [
         {
             to: "/dashboard",
@@ -31,7 +31,7 @@ export default function LeftSideBar( {isLeftOpen} ) {
     ]
 
     return (
-        <div  className={`${isLeftOpen ? 'leftOpen' : 'notLeftOpen'} leftSideBar`}>
+        <div  className={`${isLeftOpen ? 'leftOpen' : 'notLeftOpen'} leftSideBar`} ref={something}>
 
             <ul>
                 {navLinks.map((link) => (

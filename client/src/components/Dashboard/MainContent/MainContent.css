@@ -10,6 +10,9 @@
   justify-content: space-between;
   padding: 10px 30px 10px 20px;
 }
+.MainContent .top .leftHam {
+  display: none;
+}
 .MainContent .top .heading {
   display: flex;
   flex-direction: column;
@@ -46,12 +49,14 @@
   display: flex;
   padding: 10px 30px 10px 20px;
   gap: 20px;
+  width: 96%;
 }
 .MainContent .bottom .left {
   display: flex;
   flex-direction: column;
   flex: 3.5;
   gap: 30px;
+  width: 60%;
 }
 .MainContent .bottom .left .stats,
 .MainContent .bottom .left .statsChart {
@@ -65,6 +70,7 @@
   flex-direction: column;
   flex: 1.5;
   gap: 20px;
+  width: 40%;
 }
 .MainContent .bottom .right .nextMatch,
 .MainContent .bottom .right .upComingMatches,
@@ -75,9 +81,40 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+@media screen and (770px <= width <= 1030px) {
+  .MainContent .top {
+    padding: 10px 20px;
+  }
+  .MainContent .bottom {
+    width: 95% !important;
+    padding: 10px 20px;
+  }
+  .MainContent .bottom .left, .MainContent .bottom .right {
+    width: 40% !important;
+  }
+}
+@media screen and (440px <= width <= 770px) {
+  .MainContent .top {
+    padding: 10px 20px;
+  }
+  .MainContent .top button {
+    padding: 5px 30px;
+  }
+  .MainContent .bottom {
+    padding: 10px 20px;
+    flex-direction: column;
+    width: unset !important;
+  }
+  .MainContent .bottom .left, .MainContent .bottom .right {
+    width: unset !important;
+  }
+}
 @media screen and (width <= 440px) {
   .MainContent {
     width: 100%;
+  }
+  .MainContent .top .leftHam {
+    display: block;
   }
   .MainContent .top .heading h3 {
     font-size: 16px;
@@ -91,8 +128,20 @@
   }
   .MainContent .bottom {
     flex-direction: column;
+    width: unset !important;
   }
-  .MainContent .top, .MainContent .bottom, .MainContent .middlePart ul {
+  .MainContent .bottom .left, .MainContent .bottom .right {
+    width: unset !important;
+  }
+  .MainContent .top,
+  .MainContent .bottom,
+  .MainContent .middlePart ul {
     padding: 20px !important;
+  }
+}
+@media screen and (width <= 390px) {
+  .MainContent .top button {
+    font-size: 14px;
+    padding: 5px 20px;
   }
 }/*# sourceMappingURL=MainContent.css.map */

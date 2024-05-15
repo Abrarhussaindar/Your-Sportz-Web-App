@@ -15,7 +15,9 @@ body {
         .main {
             display: flex;
             
-
+            .content{
+                width: 85%;
+            }
             
 
             .ManagementContent,
@@ -38,7 +40,31 @@ body {
 
 
 
-@media screen and (770px <= width <=1030px){}
-@media screen and (440px <= width <=770px){}
-@media screen and (width <= 440px){}
+@media screen and (770px <= width <=1030px){
+    .dashboard{
+        .main{
+            .content{
+                width: 80% !important;
+            }
+        }
+    }
+}
+@media screen and (440px <= width <=770px){
+    .dashboard .main {
+        width: 100%;
+
+        .content{
+            width: 75% !important;
+        }
+    }
+}
+@media screen and (width <= 440px){
+    .dashboard{
+        .main{
+            .content{
+                width: 100% !important;
+            }
+        }
+    }
+}
 @media screen and (width <=390px){}

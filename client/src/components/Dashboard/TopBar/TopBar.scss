@@ -85,166 +85,13 @@
             height: 40px;
         }
     }
-    
+
     .right,
     .open {
         .ham,
         .close,
         .menuLogo {
             display: none;
-        }
-
-        nav {
-            display: flex;
-            align-items: center;
-            gap: 80px;
-
-            ul {
-                display: flex;
-                align-items: center;
-                gap: 30px;
-
-                a {
-                    li {
-                        font-size: 18px;
-                        font-weight: 600;
-                        color: black;
-                        transition: all ease-in 0.2s;
-
-                        &:hover {
-                            color: #ff5033;
-                            border-bottom: 1px solid #ff5033;
-                        }
-                    }
-                }
-                .active {
-                    border-bottom: 1px solid #ff5033;
-                
-                    li {
-                        color: #ff5033 !important;
-                    }
-                }
-            }
-
-            .btns {
-                display: flex;
-                align-items: center;
-                gap: 40px;
-                button {
-                    width: 200px;
-                    padding: 5px 30px;
-                    border-radius: 10px;
-                    border: none;
-                    background-color: #ff5033;
-                    color: white;
-                    font-size: 18px;
-                    font-weight: 600;
-                    cursor: pointer;
-                    text-align: center;
-                    text-transform: uppercase;
-                    transition: all ease-in 0.2s;
-
-                    &:hover {
-                        background-color: #e64023;
-                    }
-                }
-                .langs {
-                    display: flex;
-                    align-items: center;
-                    background-color: white;
-                    width: 100%;
-
-                    .customSelect {
-                        cursor: pointer;
-                        position: relative;
-                        width: 100%;
-                        background-color: white;
-                        display: flex;
-                        align-items: center;
-                        gap: 10px;
-                        padding: 7px 12px;
-                        border-radius: 10px;
-                        .downImg {
-                            width: 15px;
-                        }
-
-                        .lng {
-                            display: flex;
-                            align-items: center;
-                            gap: 10px;
-                            font-weight: 500;
-                            cursor: pointer;
-                            img {
-                                width: 20px;
-                            }
-                            p {
-                                text-transform: uppercase;
-                                cursor: pointer;
-                                font-weight: 500;
-                                font-size: 14px;
-                            }
-                        }
-                        .globe {
-                            width: 25px;
-                            height: 25px;
-                        }
-                        ul {
-                            position: absolute;
-                            display: flex;
-                            flex-direction: column;
-                            background-color: white;
-                            padding: 20px 0;
-                            border-radius: 10px;
-                            gap: 10px !important;
-                            right: -2px;
-                            top: 150%;
-
-                            box-shadow:
-                                rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-                                rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-                            li {
-                                width: 100%;
-                                button {
-                                    width: 100%;
-                                    display: flex;
-                                    align-items: center;
-                                    gap: 10px;
-                                    padding: 5px 20px;
-                                    border-radius: 0;
-                                    color: #413566;
-                                    background-color: white !important;
-                                    transition: background-color 0.2s ease-in;
-
-
-                                    img {
-                                        width: 20px;
-                                    }
-                                    p {
-                                        font-size: 14px;
-                                        font-weight: 400;
-                                    }
-                                    &:hover {
-                                        background-color: rgb(235, 230, 230) !important;
-                                        
-                                        p{
-                                            font-weight: 500;
-                                        }
-                                    }
-                                    
-                                }
-                            }
-                        }
-                        .langUl {
-                            display: none;
-                            // height: 0;
-                        }
-                        .openlangUl {
-                            // height: 300px;
-                            display: block !important;
-                        }
-                    }
-                }
-            }
         }
     }
 
@@ -268,51 +115,74 @@
         display: flex;
         flex-direction: column;
         gap: 50px;
+        z-index: 99999;
+        height: 100vh;
         box-shadow: rgba(0, 0, 0, 0.15) -7px 16px 4px 2px;
         transition: display 0.3s ease;
 
         .top {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 30px;
-            h2 {
-                display: block;
-                font-size: 26px;
-                font-weight: 600;
-                color: #413566;
-
-                span {
-                    font-weight: 600;
-                    color: #ff5033;
-                }
-            }
-
             img {
                 display: block;
                 width: 20px;
             }
         }
 
-        nav {
-            display: flex !important;
-            flex-direction: column;
-            align-items: flex-start;
-            height: 100vh;
+        .bottom {
+            display: flex;
+            flex-direction: column-reverse;
 
-            ul {
-                flex-direction: column;
-                align-items: flex-start;
+            .imgs {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                .avatar {
+                    border-radius: 50%;
+                    object-fit: contain;
+                    width: 40px;
+                }
+            }
+
+            .search {
+                display: flex;
+                align-items: center;
+                border: 1px solid #ff5033;
+                padding: 7px 10px;
+                border-radius: 30px;
+                background-color: white;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                input {
+                    background-color: white;
+                    padding-left: 10px;
+                    outline: none;
+                    border: none;
+                    font-weight: 500;
+                }
             }
         }
     }
+
+    .avtar {
+        display: none;
+    }
 }
 
+@media screen and (770px <=width <=1030px) {
+}
 
-
-@media screen and (770px <=width <=1030px) {}
-
-@media screen and (440px <=width <=770px) {}
+@media screen and (440px <=width <=770px) {
+    .topBar .notOpen {
+        display: none !important;
+    }
+    .topBar .leftSide .pageTitle{
+        display: none;
+    }
+}
 
 @media screen and (width <=440px) {
     .topBar {
@@ -326,11 +196,14 @@
             }
         }
     }
-
+    .avtar {
+        display: block !important;
+    }
 
     .topBar .leftSide .logo a h3 {
         font-size: 24px;
     }
 }
 
-@media screen and (width <=390px) {}
+@media screen and (width <=390px) {
+}

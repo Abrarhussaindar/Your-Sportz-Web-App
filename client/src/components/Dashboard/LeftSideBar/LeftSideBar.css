@@ -2,6 +2,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  width: 15%;
   padding: 20px 0;
   gap: 40px;
   background-color: #413566;
@@ -50,12 +51,33 @@
   font-weight: 700;
 }
 
-.leftOpen {
-  position: fixed;
-  left: 300px;
+@media screen and (770px <= width <= 1030px) {
+  .leftSideBar {
+    width: 20%;
+  }
 }
-
-.notLeftOpen {
-  left: -300px;
-  display: none;
+@media screen and (440px <= width <= 770px) {
+  .leftSideBar {
+    width: 25%;
+  }
+  .leftSideBar ul a li {
+    padding: 10px 20px;
+  }
+  .leftSideBar ul .active li {
+    font-weight: 600;
+  }
+}
+@media screen and (width <= 440px) {
+  .leftOpen {
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    z-index: 99999;
+    width: unset !important;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  }
+  .notLeftOpen {
+    left: -300px;
+    display: none;
+  }
 }/*# sourceMappingURL=LeftSideBar.css.map */

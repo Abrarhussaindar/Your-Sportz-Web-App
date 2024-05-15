@@ -65,29 +65,61 @@
 .stats .moreStats ul {
   padding: 5px 20px;
   border-radius: 10px;
-  background-color: #E5E5EE;
+  background-color: #e5e5ee;
   display: flex;
   align-items: center;
   gap: 20px;
 }
 .stats .moreStats ul li {
-  color: #50424B;
+  color: #50424b;
   cursor: pointer;
 }
 .stats .moreStats ul .activeNum {
-  color: #6C646A;
+  color: #6c646a;
   font-weight: 600;
 }
 .stats .moreStats ul img {
   width: 15px;
 }
 
+@media screen and (770px <= width <= 1030px) {
+  .stats .toggleBtns button {
+    padding: 10px 30px;
+  }
+  .stats .mainStats {
+    overflow: scroll;
+  }
+  .stats .mainStats table {
+    font-size: 14px;
+  }
+}
+@media screen and (440px <= width <= 770px) {
+  .stats .toggleBtns button {
+    font-size: 12px;
+    padding: 10px 30px;
+  }
+  .stats .mainStats {
+    overflow: scroll;
+  }
+  .stats .mainStats table {
+    font-size: 14px;
+  }
+}
 @media screen and (width <= 440px) {
+  .stats {
+    padding: 10px !important;
+  }
   .stats .mainStats {
     overflow: scroll;
   }
   .stats .toggleBtns button {
     padding: 10px;
     font-size: 12px;
+  }
+  .stats .mainStats table {
+    font-size: 12px;
+  }
+  .stats .moreStats ul {
+    gap: 10px !important;
   }
 }/*# sourceMappingURL=Stats.css.map */

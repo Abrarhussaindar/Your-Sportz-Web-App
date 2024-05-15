@@ -10,6 +10,10 @@
         justify-content: space-between;
         padding: 10px 30px 10px 20px;
 
+        .leftHam {
+            display: none;
+        }
+
         .heading {
             display: flex;
             flex-direction: column;
@@ -54,13 +58,13 @@
         display: flex;
         padding: 10px 30px 10px 20px;
         gap: 20px;
-
+        width: 96%;
         .left {
             display: flex;
             flex-direction: column;
             flex: 3.5;
             gap: 30px;
-
+            width: 60%;
             .stats,
             .statsChart {
                 padding: 20px;
@@ -75,7 +79,7 @@
             flex-direction: column;
             flex: 1.5;
             gap: 20px;
-
+            width: 40%;
             .nextMatch,
             .upComingMatches,
             .groundStats {
@@ -88,38 +92,86 @@
     }
 }
 
+@media screen and (770px <=width <=1030px) {
+    .MainContent{
+        .top{
+            padding: 10px 20px;
+        }
 
+        .bottom{
+            width: 95% !important;
+            padding: 10px 20px;
 
-@media screen and (770px <=width <=1030px) {}
+            .left, .right{
+                width: 40% !important;
+            }
+        }
+    }
+}
 
-@media screen and (440px <=width <=770px) {}
+@media screen and (440px <=width <=770px) {
+
+    .MainContent{
+        .top{
+            padding: 10px 20px;
+
+            button{
+                padding: 5px 30px;
+            }
+        }
+
+        .bottom{
+            padding: 10px 20px;
+            flex-direction: column;
+            width: unset !important;
+
+            .left, .right{
+                width: unset !important;
+            }
+        }
+    }
+}
 
 @media screen and (width <=440px) {
     .MainContent {
         width: 100%;
-        
-        .top{
-            .heading{
-                h3{
+
+        .top {
+            .leftHam {
+                display: block;
+            }
+            .heading {
+                h3 {
                     font-size: 16px;
                 }
-                p{
+                p {
                     font-size: 12px;
                 }
             }
-            button{
-                font-size: 16px ;
+            button {
+                font-size: 16px;
                 padding: 5px 30px;
             }
         }
-        .bottom{
+        .bottom {
             flex-direction: column;
-            
+            width: unset !important;
+            .left, .right{
+                width: unset !important;
+            }
         }
-        .top, .bottom, .middlePart ul {
+        
+        .top,
+        .bottom,
+        .middlePart ul {
             padding: 20px !important;
         }
     }
 }
 
-@media screen and (width <=390px) {}
+@media screen and (width <=390px) {
+    .MainContent .top button {
+        font-size: 14px;
+        padding: 5px 20px;
+    }
+}

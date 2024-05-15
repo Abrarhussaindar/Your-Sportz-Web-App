@@ -11,7 +11,7 @@
             align-items: center;
             justify-content: center;
             background-color: white;
-            width: 25%;
+            width: unset;
             padding: 20px;
             gap: 20px;
             cursor: pointer;
@@ -35,7 +35,8 @@
                 }
 
                 p {
-                    font-size: 16px;
+                    font-size: 14px;
+                    text-align: center;
                     font-weight: 500;
                     color: #b0afaf;
                 }
@@ -53,8 +54,43 @@
 
 
 
-@media screen and (770px <= width <=1030px){}
-@media screen and (440px <= width <=770px){}
+@media screen and (770px <= width <=1030px){
+    .middlePart{
+        ul{
+            padding: 10px 20px;
+            flex-wrap: wrap;
+            li{
+                width: 25% !important;
+            }
+        }
+    }
+}
+@media screen and (440px <= width <=770px){
+    .middlePart{
+        ul{
+            flex-wrap: wrap;
+            padding: 10px 20px;
+            gap: 10px;
+            li{
+                width: 24%;
+                gap: 10px;
+                .details{
+                    flex-direction: row !important;
+                    gap: 10px;
+
+                    h4{
+                        font-size: 22px;
+                    }
+
+                    p{
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (width <= 440px){
     .middlePart{
         ul{
