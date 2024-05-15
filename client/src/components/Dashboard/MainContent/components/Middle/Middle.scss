@@ -50,3 +50,34 @@
         }
     }
 }
+
+
+
+@media screen and (770px <= width <=1030px){}
+@media screen and (440px <= width <=770px){}
+@media screen and (width <= 440px){
+    .middlePart{
+        ul{
+            flex-wrap: wrap;
+            
+            li{
+                
+                width: 35%;
+                
+                .details{
+                    flex-direction: unset !important;
+                    
+                    h4{
+                        font-size: 22px;
+                    }
+                    p{
+                        font-size: 14px;
+                        text-align: center;
+                    
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (width <=390px){}

@@ -48,7 +48,7 @@ export default function TopBar({ currentPage }) {
                         <h3>Your<span>Sportz</span></h3>
                     </Link>
                 </div>
-                <h3>{pageTitle}</h3>
+                <h3 className="pageTitle">{pageTitle}</h3>
             </div>
             <div className="rightSide">
                 <div className="search">

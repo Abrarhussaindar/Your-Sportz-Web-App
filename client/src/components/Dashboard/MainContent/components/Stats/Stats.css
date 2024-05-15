@@ -80,4 +80,14 @@
 }
 .stats .moreStats ul img {
   width: 15px;
+}
+
+@media screen and (width <= 440px) {
+  .stats .mainStats {
+    overflow: scroll;
+  }
+  .stats .toggleBtns button {
+    padding: 10px;
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=Stats.css.map */

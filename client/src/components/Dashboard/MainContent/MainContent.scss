@@ -54,6 +54,7 @@
         display: flex;
         padding: 10px 30px 10px 20px;
         gap: 20px;
+
         .left {
             display: flex;
             flex-direction: column;
@@ -68,11 +69,13 @@
                 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             }
         }
+
         .right {
             display: flex;
             flex-direction: column;
             flex: 1.5;
             gap: 20px;
+
             .nextMatch,
             .upComingMatches,
             .groundStats {
@@ -84,3 +87,31 @@
         }
     }
 }
+
+
+
+@media screen and (770px <=width <=1030px) {}
+
+@media screen and (440px <=width <=770px) {}
+
+@media screen and (width <=440px) {
+    .MainContent {
+        width: 100%;
+        
+        .top{
+            button{
+                font-size: 16px ;
+                padding: 5px 30px;
+            }
+        }
+        .bottom{
+            flex-direction: column;
+            
+        }
+        .top, .bottom, .middlePart ul {
+            padding: 20px !important;
+        }
+    }
+}
+
+@media screen and (width <=390px) {}

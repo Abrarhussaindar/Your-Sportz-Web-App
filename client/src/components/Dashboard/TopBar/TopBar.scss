@@ -5,7 +5,6 @@
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
-    width: 96%;
     z-index: 99999;
     padding: 15px 30px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -87,3 +86,30 @@
         }
     }
 }
+
+
+
+@media screen and (770px <=width <=1030px) {}
+
+@media screen and (440px <=width <=770px) {}
+
+@media screen and (width <=440px) {
+    .topBar {
+        .rightSide {
+            display: none !important;
+        }
+
+        .leftSide {
+            .pageTitle {
+                display: none;
+            }
+        }
+    }
+
+
+    .topBar .leftSide .logo a h3 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (width <=390px) {}

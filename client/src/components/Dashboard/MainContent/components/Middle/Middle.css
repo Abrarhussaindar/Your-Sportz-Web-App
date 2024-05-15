@@ -39,4 +39,23 @@
 .middlePart ul li:hover {
   scale: 1.01;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+@media screen and (width <= 440px) {
+  .middlePart ul {
+    flex-wrap: wrap;
+  }
+  .middlePart ul li {
+    width: 35%;
+  }
+  .middlePart ul li .details {
+    flex-direction: unset !important;
+  }
+  .middlePart ul li .details h4 {
+    font-size: 22px;
+  }
+  .middlePart ul li .details p {
+    font-size: 14px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=Middle.css.map */

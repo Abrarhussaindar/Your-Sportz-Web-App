@@ -73,4 +73,20 @@
   background-color: white;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media screen and (width <= 440px) {
+  .MainContent {
+    width: 100%;
+  }
+  .MainContent .top button {
+    font-size: 16px;
+    padding: 5px 30px;
+  }
+  .MainContent .bottom {
+    flex-direction: column;
+  }
+  .MainContent .top, .MainContent .bottom, .MainContent .middlePart ul {
+    padding: 20px !important;
+  }
 }/*# sourceMappingURL=MainContent.css.map */

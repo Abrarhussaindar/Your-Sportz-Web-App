@@ -19,4 +19,10 @@
 }
 .groundStats img:hover {
   scale: 1.01;
+}
+
+@media screen and (width <= 440px) {
+  .groundStats img {
+    width: 100% !important;
+  }
 }/*# sourceMappingURL=GroundStats.css.map */
