@@ -27,9 +27,9 @@
   justify-content: center;
   align-items: center;
 }
-.middlePart ul li .details h3 {
+.middlePart ul li .details h4 {
   font-size: 26px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .middlePart ul li .details p {
   font-size: 16px;

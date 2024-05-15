@@ -41,7 +41,7 @@ export const Middle = () => {
                     <li key={link.text}>
                         <img src={link.Img} alt={link.text} />
                         <div className="details">
-                            <h3>{link.text}</h3>
+                            <h4>{link.text}</h4>
                             <p>{link.desc}</p>
                         </div>
                     </li>

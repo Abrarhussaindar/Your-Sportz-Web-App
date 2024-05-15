@@ -17,8 +17,8 @@ export const NextMatch = () => {
 
     }, []);
     return (
-        <div className="rainbow-container">
-            <div className="nextMatch rainbow">
+        
+            <div className="nextMatch">
                 <h4>Next Match</h4>
                 {
                     MatchesData.slice(18, 19).map((eachMatch) => (
@@ -34,6 +34,5 @@ export const NextMatch = () => {
                     ))
                 }
             </div>
-        </div>
     )
 }

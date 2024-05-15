@@ -249,10 +249,6 @@ header .open nav ul {
   align-items: flex-start;
 }
 
-.scrolled {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
 @media screen and (770px <= width <= 1030px) {
   header {
     padding: 20px;
