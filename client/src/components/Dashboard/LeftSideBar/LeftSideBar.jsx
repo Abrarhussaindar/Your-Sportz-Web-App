@@ -14,7 +14,7 @@ export default function LeftSideBar( {isLeftOpen, something} ) {
             Img: dashboard
         },
         {
-            to: "/management",
+            to: "/manage-team",
             text: "Management",
             Img: management
         },

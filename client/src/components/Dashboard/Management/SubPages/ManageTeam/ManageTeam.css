@@ -1,0 +1,67 @@
+.ManageTeam {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #f5f7fa;
+  padding: 10px;
+}
+.ManageTeam .topSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+.ManageTeam .topSection h4 {
+  font-weight: 500;
+  font-size: 18px;
+}
+.ManageTeam .topSection button {
+  border: 0;
+  outline: 0;
+  padding: 5px 30px;
+  font-size: 16px;
+  color: white;
+  background-color: #ff5033;
+  cursor: pointer;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+.ManageTeam .mainSection {
+  display: flex;
+}
+.ManageTeam .mainSection .leftSection {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+}
+.ManageTeam .mainSection .leftSection .teamMembers {
+  display: flex;
+  gap: 10px;
+}
+.ManageTeam .mainSection .leftSection .teamMembers li {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+.ManageTeam .mainSection .leftSection .teamMembers li img {
+  width: 30px;
+  border-radius: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.ManageTeam .mainSection .leftSection .teamMembers li .details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+.ManageTeam .mainSection .rightSection {
+  display: flex;
+  flex: 1;
+}/*# sourceMappingURL=ManageTeam.css.map */
