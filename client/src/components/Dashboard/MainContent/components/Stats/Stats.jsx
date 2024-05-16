@@ -43,6 +43,7 @@ export const Stats = ({ click, active, setActive }) => {
         }
         fetchData();
     }, []);
+
     const playersHeading = [
         "No.",
         "Player Name",

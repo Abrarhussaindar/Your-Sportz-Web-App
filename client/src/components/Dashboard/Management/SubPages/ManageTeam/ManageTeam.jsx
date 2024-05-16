@@ -2,84 +2,87 @@ import DashboardLayout from "../../../../DashboardLayout"
 import "./ManageTeam.css"
 import playerIcon from "../../../../../images/dashboard/player1.png"
 
+import dots from "../../../../../images/dashboard/dots.png"
+import { useEffect, useState } from "react"
+import axios from "../../../../../axios"
+
 export const ManageTeam = () => {
+    const [TeamsData, seTeamsData] = useState([]);
+    useEffect(() => {
+        async function fetchData() {
+            const response = await axios.get(
+                "https://yoursportzbackend.azurewebsites.net/api/team/all/"
+            );
+            seTeamsData(response.data);
+        }
+        fetchData();
+    }, []);
+    console.log("ta", TeamsData);
     return (
         <DashboardLayout>
             <div className="ManageTeam">
-
                 <div className="topSection">
-
-                    <h4>Welcome User</h4>
-                   <button>Add Member</button>
-
+                    <h4>Welcome! User</h4>
+                    <button>Add Member</button>
                 </div>
 
                 <div className="mainSection">
                     <div className="leftSection">
-                        <h3>Team Members</h3>
+                        <div className="members">
+                            <div className="heading">
+                                <h3>Team Members</h3>
+                                <p>View All</p>
+                            </div>
+                            <ul className="teamMembers">
+                                {
+                                    TeamsData.slice(0, 4).map((eachTeam) => (
+                                        <li key={eachTeam._id} >
+                                            <img src={eachTeam.logo} />
+                                            <div className="details">
+                                                <h4>{eachTeam.name}</h4>
+                                                <p>{eachTeam.city}</p>
+                                            </div>
+                                        </li>
+                                    ))
+                                }
 
 
-                        <ul className="teamMembers">
-                            <li >
-                                <img src={playerIcon} />
-                                <div className="details">
-                                    <h4>Jon Doe</h4>
-                                    <p>Goal Keeper</p>
-                                </div>
-                            </li>
-                            <li >
-                                <img src={playerIcon} />
-                                <div className="details">
-                                    <h4>Mario</h4>
-                                    <p>Forward</p>
-                                </div>
-                            </li>
-                            <li >
-                                <img src={playerIcon} />
-                                <div className="details">
-                                    <h4>Ronaldo</h4>
-                                    <p>forward</p>
-                                </div>
-                            </li>
-                            <li >
-                                <img src={playerIcon} />
-                                <div className="details">
-                                    <h4>Messi</h4>
-                                    <p>Backward </p>
-                                </div>
-                            </li>
-                            <li >
-                                <img src={playerIcon} />
-                                <div className="details">
-                                    <h4>Deep</h4>
-                                    <p>Center</p>
-                                </div>
-                            </li>
-                            <li >
-                                <img src={playerIcon} />
-                                <div className="details">
-                                    <h4>Zubair</h4>
-                                    <p>Defender</p>
-                                </div>
-                            </li>
-                        </ul>
-
+                            </ul>
+                        </div>
                         <div className="teamActivity">
-                                 <h3>Team Activity</h3>
+                            <h3>Team Activity</h3>
                         </div>
                     </div>
 
                     <div className="rightSection">
-                        <div className="teamMemberDetails">
+                        {
+                            TeamsData.slice(0,1).map((eachTeam) => (
+                                <>
+                                    <div className="top">
+                                        <img src={eachTeam.logo} alt="" />
+                                        
+                                        <p>{eachTeam.city}</p>
+                                    </div>
+                                    <div className="middle">
+                                        <div className="playingTeamName">{eachTeam.name}</div>
 
-                            <div className="top">
-                                <img src={playerIcon} alt="" />
-                                <h4>Ronaldo</h4>
-                                <p>Forward</p>
-                            </div>
+                                        <div className="left">
+                                            <img src={playerIcon} />
+                                            <div className="teamDetails">
+                                                <h4>{eachTeam.phone}</h4>
+                                                <p>Head position</p>
+                                            </div>
+                                        </div>
+                                        <img src={dots} className="dots" />
+
+                                    </div>
+                                    <div className="bottom"></div>
+                                </>
+                                )
+                            )
+                        }
 
 
-                        </div>
                     </div>
                 </div>
             </div>
