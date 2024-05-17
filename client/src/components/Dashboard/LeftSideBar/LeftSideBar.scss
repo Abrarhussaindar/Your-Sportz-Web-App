@@ -37,6 +37,9 @@
                 font-size: 18px;
                 font-weight: 500;
                 transition: all ease-in 0.2s;
+                color: white;
+                font-size: 18px;
+                font-weight: 500;
 
                 &:hover {
                     background-color: #f5f7fa;
@@ -54,31 +57,27 @@
                 border-left: 5px solid #ff5033;
                 color: #ff5033;
                 font-weight: 700;
-                // border-radius: 1px 100px 100px;
-                // border-bottom: 2px solid;
-                // border-radius: 1px 100px 100px 1px;
             }
         }
     }
 }
 
 @media screen and (770px <= width <=1030px) {
-    .leftSideBar{
+    .leftSideBar {
         width: 20%;
     }
 }
 @media screen and (440px <= width <=770px) {
-
-    .leftSideBar{
+    .leftSideBar {
         width: 25%;
 
-        ul{
-            a{
-                li{
+        ul {
+            a {
+                li {
                     padding: 10px 20px;
                 }
             }
-            .active li{
+            .active li {
                 font-weight: 600;
             }
         }

@@ -5,27 +5,12 @@ import search from "../../../images/dashboard/search.png";
 import noti from "../../../images/dashboard/notification.svg";
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
-import ham from "../../../images/ham.svg"
 import avtarPlaceholder from "../../../images/dashboard/avtarPlaceholder.png"
 import close from "../../../images/close.png"
-function getPageTitle(currentPage) {
-    switch (currentPage) {
-        case "/dashboard":
-            return "Overview";
-        case "/management":
-            return "Management";
-        case "/profile":
-            return "Profile";
-        case "/settings":
-            return "Settings";
-        default:
-            return "Unknown Page";
-    }
-}
 
 
-export default function TopBar({ currentPage }) {
-    const pageTitle = getPageTitle(currentPage);
+export default function TopBar() {
+    
     const [hasScrolled, setHasScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const toggleMenu = () => {
@@ -67,7 +52,7 @@ export default function TopBar({ currentPage }) {
                         <h3>Your<span>Sportz</span></h3>
                     </Link>
                 </div>
-                <h3 className="pageTitle">{pageTitle}</h3>
+                <h3 className="pageTitle">Organization Name</h3>
             </div>
             <div className="rightSide">
                 <div className="search">

@@ -34,6 +34,9 @@
   font-size: 18px;
   font-weight: 500;
   transition: all ease-in 0.2s;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
 }
 .leftSideBar ul a li:hover {
   background-color: #f5f7fa;

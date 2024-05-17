@@ -20,7 +20,6 @@ import { NoPage } from "./pages/NoPage/NoPage";
 import { Management } from "./components/Dashboard/Management/Management";
 import { Profile } from "./components/Dashboard/Profile/Profile";
 import { Settings } from "./components/Dashboard/Settings/Settings";
-import { ManageTeam } from "./components/Dashboard/Management/SubPages/ManageTeam/ManageTeam";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -57,7 +56,6 @@ return (
           <Route path="/early-access" element={<EarlyAccess />} />
           <Route path="/create-new-password" element={<CreateNewPassword />} />
           <Route path="*" element={<NoPage />} />
-          <Route path="/manage-team" element={<ManageTeam />} />
         </Routes>
       </Router>
     </>
